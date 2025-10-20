@@ -1,8 +1,12 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const Header = () => {
+  const { language } = useLanguage();
+  const t = translations[language].header;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -37,7 +41,7 @@ const Header = () => {
             onClick={() => scrollToSection("inicio")}
             className="text-xl md:text-2xl font-heading font-bold text-luxury-gold transition-smooth hover:opacity-80"
           >
-            Sightseeing di Thomas Tagliatti
+            {t.brand}
           </button>
 
           {/* Desktop Navigation */}
@@ -46,25 +50,25 @@ const Header = () => {
               onClick={() => scrollToSection("inicio")}
               className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
             >
-              Início
+              {t.inicio}
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
               className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
             >
-              Serviços
+              {t.servicos}
             </button>
             <button
               onClick={() => scrollToSection("contato")}
               className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
             >
-              Contato
+              {t.contato}
             </button>
             <Button
               onClick={() => scrollToSection("contato")}
               className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
             >
-              Reserve Agora
+              {t.reserveAgora}
             </Button>
           </nav>
 
@@ -85,25 +89,25 @@ const Header = () => {
                 onClick={() => scrollToSection("inicio")}
                 className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left"
               >
-                Início
+                {t.inicio}
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
                 className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left"
               >
-                Serviços
+                {t.servicos}
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
                 className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left"
               >
-                Contato
+                {t.contato}
               </button>
               <Button
                 onClick={() => scrollToSection("contato")}
                 className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full"
               >
-                Reserve Agora
+                {t.reserveAgora}
               </Button>
             </div>
           </nav>

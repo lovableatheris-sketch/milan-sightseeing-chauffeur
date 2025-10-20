@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-duomo.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+  
   const scrollToContact = () => {
     const element = document.getElementById("contato");
     if (element) {
@@ -27,19 +32,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in">
-          Seu motorista particular em Milão,
+          {t.title}
           <br />
-          <span className="text-luxury-gold">com conforto e pontualidade</span>
+          <span className="text-luxury-gold">{t.titleHighlight}</span>
         </h1>
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto animate-fade-in-up font-light">
-          Transporte executivo de excelência na cidade mais elegante da Itália
+          {t.subtitle}
         </p>
         <Button
           onClick={scrollToContact}
           size="lg"
           className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
         >
-          Solicitar Corrida
+          {t.cta}
         </Button>
       </div>
 

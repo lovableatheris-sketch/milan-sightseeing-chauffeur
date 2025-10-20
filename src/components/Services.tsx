@@ -1,26 +1,31 @@
 import { Car, Clock, Globe2, MapPin } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const Services = () => {
+  const { language } = useLanguage();
+  const t = translations[language].services;
+
   const services = [
     {
       icon: Globe2,
-      title: "Motoristas Bilíngues",
-      description: "Profissionais fluentes em italiano e inglês, prontos para atendê-lo",
+      title: t.bilingualTitle,
+      description: t.bilingualDesc,
     },
     {
       icon: Clock,
-      title: "Atendimento 24h",
-      description: "Disponível em Milão e arredores a qualquer hora do dia ou da noite",
+      title: t.availabilityTitle,
+      description: t.availabilityDesc,
     },
     {
       icon: Car,
-      title: "Reservas Simples",
-      description: "Sistema de reserva rápido e fácil para sua comodidade",
+      title: t.bookingTitle,
+      description: t.bookingDesc,
     },
     {
       icon: MapPin,
-      title: "Transfers Completos",
-      description: "Aeroportos, eventos corporativos e passeios turísticos personalizados",
+      title: t.transfersTitle,
+      description: t.transfersDesc,
     },
   ];
 
@@ -29,11 +34,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-            Como Funciona Nosso Serviço
+            {t.title}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Oferecemos uma experiência de transporte executivo incomparável,
-            combinando luxo, segurança e pontualidade
+            {t.subtitle}
           </p>
         </div>
 

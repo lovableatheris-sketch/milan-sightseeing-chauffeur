@@ -1,26 +1,28 @@
 import duomoImage from "@/assets/duomo-card.jpg";
 import galleriaImage from "@/assets/galleria-card.jpg";
 import castelloImage from "@/assets/castello-card.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const LocationCards = () => {
+  const { language } = useLanguage();
+  const t = translations[language].locations;
+
   const locations = [
     {
       image: duomoImage,
-      title: "Centro Histórico",
-      description:
-        "Descubra a majestade do Duomo e as maravilhas do coração de Milão com todo conforto e segurança",
+      title: t.historicTitle,
+      description: t.historicDesc,
     },
     {
       image: galleriaImage,
-      title: "Luxo e Estilo",
-      description:
-        "Explore a elegante Galleria Vittorio Emanuele II e o distrito da moda com um serviço exclusivo",
+      title: t.luxuryTitle,
+      description: t.luxuryDesc,
     },
     {
       image: castelloImage,
-      title: "Tradição e Cultura",
-      description:
-        "Visite o histórico Castello Sforzesco e descubra os tesouros culturais de Milão",
+      title: t.cultureTitle,
+      description: t.cultureDesc,
     },
   ];
 
@@ -29,11 +31,10 @@ const LocationCards = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
-            Explore Milão com Exclusividade
+            {t.title}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Conheça os principais pontos turísticos da cidade com o conforto e a
-            elegância que você merece
+            {t.subtitle}
           </p>
         </div>
 

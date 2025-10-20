@@ -1,6 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const FinalCTA = () => {
+  const { language } = useLanguage();
+  const t = translations[language].finalCta;
+  
   const scrollToContact = () => {
     const element = document.getElementById("contato");
     if (element) {
@@ -19,21 +24,21 @@ const FinalCTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in">
-            Agende seu motorista agora
+            {t.title}
             <br />
-            <span className="text-luxury-gold">e descubra Milão com exclusividade</span>
+            <span className="text-luxury-gold">{t.titleHighlight}</span>
           </h2>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-12 animate-fade-in-up font-light">
-            Experimente o melhor serviço de transporte executivo em Milão.
+            {t.subtitle}
             <br />
-            Profissionalismo, conforto e pontualidade garantidos.
+            {t.subtitleExtra}
           </p>
           <Button
             onClick={scrollToContact}
             size="lg"
             className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-lg px-12 py-6 animate-scale-in font-semibold"
           >
-            Reservar Agora
+            {t.cta}
           </Button>
         </div>
       </div>
