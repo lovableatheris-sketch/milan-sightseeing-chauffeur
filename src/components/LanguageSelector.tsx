@@ -38,10 +38,6 @@ const LanguageSelector = () => {
           title={item.label}
           style={{ background: item.gradient }}
         >
-          <div className="absolute inset-0 flex items-center justify-center text-2xl">
-            {item.flag}
-          </div>
-
           {language === item.code && (
             <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-luxury-gold rounded-full animate-pulse shadow-lg" />
           )}
