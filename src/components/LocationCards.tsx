@@ -1,6 +1,6 @@
-import duomoImage from "@/assets/duomo-card.jpg";
-import galleriaImage from "@/assets/galleria-card.jpg";
-import castelloImage from "@/assets/castello-card.jpg";
+import sanSiroImage from "@/assets/san-siro-card.jpg";
+import lagoMaggioreImage from "@/assets/lago-maggiore-card.jpg";
+import lagoComoImage from "@/assets/lago-como-card.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 
@@ -10,17 +10,17 @@ const LocationCards = () => {
 
   const locations = [
     {
-      image: duomoImage,
+      image: sanSiroImage,
       title: t.historicTitle,
       description: t.historicDesc,
     },
     {
-      image: galleriaImage,
+      image: lagoMaggioreImage,
       title: t.luxuryTitle,
       description: t.luxuryDesc,
     },
     {
-      image: castelloImage,
+      image: lagoComoImage,
       title: t.cultureTitle,
       description: t.cultureDesc,
     },
