@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
+import LanguageSelector from "@/components/LanguageSelector";
 
 const Header = () => {
   const { language } = useLanguage();
@@ -64,6 +65,7 @@ const Header = () => {
             >
               {t.contato}
             </button>
+            <LanguageSelector />
             <Button
               onClick={() => scrollToSection("contato")}
               className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
@@ -103,6 +105,9 @@ const Header = () => {
               >
                 {t.contato}
               </button>
+              <div className="flex justify-center py-2">
+                <LanguageSelector />
+              </div>
               <Button
                 onClick={() => scrollToSection("contato")}
                 className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full"
