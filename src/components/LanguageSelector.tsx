@@ -32,14 +32,16 @@ const LanguageSelector = () => {
           onClick={() => setLanguage(item.code)}
           className={`group relative w-10 h-10 rounded shadow-elegant hover:shadow-luxury transition-elegant overflow-hidden ${
             language === item.code
-              ? "ring-2 ring-luxury-gold scale-105"
+              ? "ring-2 ring-luxury-gold"
               : "hover:scale-105"
           }`}
           title={item.label}
           style={{ background: item.gradient }}
         >
           {language === item.code && (
-            <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-luxury-gold rounded-full animate-pulse shadow-lg" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-2 h-2 bg-luxury-gold rounded-full animate-pulse shadow-lg" />
+            </div>
           )}
         </button>
       ))}
