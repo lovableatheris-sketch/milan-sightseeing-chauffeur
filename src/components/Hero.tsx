@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-duomo.jpg";
+import heroImage from "@/assets/hero-duomo-cars.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 
