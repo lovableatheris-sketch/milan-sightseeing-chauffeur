@@ -2,10 +2,24 @@ import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-duomo-cars.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
+import { useState, useEffect } from "react";
 
 const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language].hero;
+  const [scrollBlur, setScrollBlur] = useState(0);
+  
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const maxScroll = 500;
+      const blurValue = Math.min((scrollY / maxScroll) * 10, 10);
+      setScrollBlur(blurValue);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/393891430907", "_blank");
@@ -18,9 +32,10 @@ const Hero = () => {
     >
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-300"
         style={{
           backgroundImage: `url(${heroImage})`,
+          filter: `blur(${scrollBlur}px)`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
