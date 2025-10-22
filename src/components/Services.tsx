@@ -10,6 +10,23 @@ const Services = () => {
   const navigate = useNavigate();
   const sectionRef = useRef<HTMLDivElement>(null);
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
+  const [scrollDirection, setScrollDirection] = useState<'down' | 'up'>('down');
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY.current) {
+        setScrollDirection('down');
+      } else {
+        setScrollDirection('up');
+      }
+      lastScrollY.current = currentScrollY;
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const services = [
     {
@@ -76,37 +93,63 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <button
-              key={index}
-              data-index={index}
-              onClick={service.onClick}
-              className={`bg-card p-6 md:p-8 rounded-xl md:rounded-lg shadow-luxury border-2 border-luxury-gold/40 md:border-transparent hover:shadow-luxury hover:-translate-y-2 hover:scale-105 active:scale-95 active:shadow-card transition-all duration-500 text-center group cursor-pointer md:hover:border-luxury-gold/30 relative overflow-hidden ${
-                visibleCards.includes(index)
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
-              }`}
-            >
+          {services.map((service, index) => {
+            const isScrollingDown = scrollDirection === 'down' && visibleCards.includes(index);
+            const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+            const shouldApplyHoverEffect = isMobile && isScrollingDown;
+            
+            return (
+              <button
+                key={index}
+                data-index={index}
+                onClick={service.onClick}
+                className={`bg-card p-6 md:p-8 rounded-xl md:rounded-lg border-2 transition-all duration-500 text-center group cursor-pointer relative overflow-hidden ${
+                  visibleCards.includes(index)
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-8"
+                } ${
+                  shouldApplyHoverEffect
+                    ? "shadow-luxury border-luxury-gold/40 -translate-y-2 scale-105"
+                    : "shadow-card border-luxury-gold/20"
+                } md:border-transparent md:hover:shadow-luxury md:hover:-translate-y-2 md:hover:scale-105 md:hover:border-luxury-gold/30 active:scale-95 active:shadow-card`}
+              >
               {/* Gradient overlay on hover */}
-              <div className="absolute inset-0 bg-gradient-to-br from-luxury-gold/0 to-luxury-gold/0 group-hover:from-luxury-gold/5 group-hover:to-luxury-gold/10 transition-elegant" />
+              <div className={`absolute inset-0 bg-gradient-to-br transition-elegant ${
+                shouldApplyHoverEffect || !isMobile
+                  ? "from-luxury-gold/5 to-luxury-gold/10"
+                  : "from-luxury-gold/0 to-luxury-gold/0"
+              } md:from-luxury-gold/0 md:to-luxury-gold/0 md:group-hover:from-luxury-gold/5 md:group-hover:to-luxury-gold/10`} />
               
               <div className="relative z-10">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-luxury-gold/10 text-luxury-gold mb-6 group-hover:scale-110 group-hover:bg-luxury-gold group-hover:text-primary transition-smooth">
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 transition-smooth ${
+                  shouldApplyHoverEffect || !isMobile
+                    ? "bg-luxury-gold text-primary scale-110"
+                    : "bg-luxury-gold/10 text-luxury-gold"
+                } md:bg-luxury-gold/10 md:text-luxury-gold md:group-hover:scale-110 md:group-hover:bg-luxury-gold md:group-hover:text-primary`}>
                   <service.icon size={32} />
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-foreground mb-3 group-hover:text-luxury-gold transition-smooth">
+                <h3 className={`text-xl font-heading font-semibold mb-3 transition-smooth ${
+                  shouldApplyHoverEffect || !isMobile
+                    ? "text-luxury-gold"
+                    : "text-foreground"
+                } md:text-foreground md:group-hover:text-luxury-gold`}>
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground mb-4">{service.description}</p>
                 
                 {/* Click indicator */}
-                <div className="flex items-center justify-center gap-2 text-luxury-gold opacity-0 group-hover:opacity-100 transition-smooth font-semibold">
+                <div className={`flex items-center justify-center gap-2 text-luxury-gold font-semibold transition-smooth ${
+                  shouldApplyHoverEffect || !isMobile
+                    ? "opacity-100"
+                    : "opacity-0"
+                } md:opacity-0 md:group-hover:opacity-100`}>
                   <span className="text-sm">Clique para acessar</span>
                   <ArrowRight size={16} className="group-hover:translate-x-1 transition-smooth" />
                 </div>
               </div>
             </button>
-          ))}
+          );
+        })}
         </div>
       </div>
     </section>
