@@ -103,15 +103,13 @@ const Services = () => {
               } md:from-luxury-gold/0 md:to-luxury-gold/0 md:group-hover:from-luxury-gold/5 md:group-hover:to-luxury-gold/10`} />
               
               <div className="relative z-10">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 transition-smooth ${
-                  shouldApplyHoverEffect || !isMobile
-                    ? "bg-luxury-gold text-primary scale-110"
-                    : "bg-luxury-gold/10 text-luxury-gold"
-                } md:bg-luxury-gold/10 md:text-luxury-gold md:group-hover:scale-110 md:group-hover:bg-luxury-gold md:group-hover:text-primary`}>
+                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 transition-smooth bg-luxury-gold/10 text-luxury-gold md:group-hover:scale-110 md:group-hover:bg-luxury-gold md:group-hover:text-primary ${
+                  shouldApplyHoverEffect ? "scale-110" : ""
+                }`}>
                   <service.icon size={32} />
                 </div>
                 <h3 className={`text-xl font-heading font-semibold mb-3 transition-smooth ${
-                  shouldApplyHoverEffect || !isMobile
+                  shouldApplyHoverEffect
                     ? "text-luxury-gold"
                     : "text-foreground"
                 } md:text-foreground md:group-hover:text-luxury-gold`}>
