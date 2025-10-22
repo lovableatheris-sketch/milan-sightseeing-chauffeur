@@ -81,14 +81,17 @@ const Header = () => {
               </Button>
             </nav>
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-primary-foreground hover:text-luxury-gold transition-smooth p-2"
-              aria-label="Menu"
-            >
-              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-            </button>
+            {/* Mobile Language Selector & Menu Button */}
+            <div className="flex md:hidden items-center gap-3">
+              <LanguageSelector />
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth p-2"
+                aria-label="Menu"
+              >
+                {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+              </button>
+            </div>
           </div>
 
           {/* Mobile Navigation */}
@@ -113,9 +116,6 @@ const Header = () => {
                 >
                   {t.contato}
                 </button>
-                <div className="flex justify-center py-2 border-t border-primary-foreground/10 mt-2">
-                  <LanguageSelector />
-                </div>
                 <Button
                   onClick={() => scrollToSection("contato")}
                   className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-semibold active:scale-95"
