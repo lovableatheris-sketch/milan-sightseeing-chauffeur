@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import LanguageSelector from "@/components/LanguageSelector";
 
 const Header = () => {
+  const navigate = useNavigate();
   const { language } = useLanguage();
   const t = translations[language].header;
   const [isScrolled, setIsScrolled] = useState(false);
@@ -39,7 +41,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <button
-            onClick={() => scrollToSection("inicio")}
+            onClick={() => navigate("/")}
             className="text-xl md:text-2xl font-heading font-bold text-luxury-gold transition-smooth hover:opacity-80"
           >
             {t.brand}
