@@ -10,23 +10,6 @@ const Services = () => {
   const navigate = useNavigate();
   const sectionRef = useRef<HTMLDivElement>(null);
   const [visibleCards, setVisibleCards] = useState<number[]>([]);
-  const [scrollDirection, setScrollDirection] = useState<'down' | 'up'>('down');
-  const lastScrollY = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY.current) {
-        setScrollDirection('down');
-      } else {
-        setScrollDirection('up');
-      }
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const services = [
     {
@@ -94,9 +77,8 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => {
-            const isScrollingDown = scrollDirection === 'down' && visibleCards.includes(index);
             const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-            const shouldApplyHoverEffect = isMobile && isScrollingDown;
+            const shouldApplyHoverEffect = isMobile && visibleCards.includes(index);
             
             return (
               <button
