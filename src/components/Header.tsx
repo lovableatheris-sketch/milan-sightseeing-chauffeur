@@ -30,97 +30,108 @@ const Header = () => {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-elegant ${
-        isScrolled
-          ? "bg-primary/95 backdrop-blur-md shadow-elegant"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <button
-            onClick={() => navigate("/")}
-            className="text-xl md:text-2xl font-heading font-bold text-luxury-gold transition-smooth hover:opacity-80"
-          >
-            {t.brand}
-          </button>
+    <>
+      {/* Mobile Overlay */}
+      {isMobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 z-40 md:hidden animate-fade-in"
+          onClick={() => setIsMobileMenuOpen(false)}
+        />
+      )}
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-elegant ${
+          isScrolled
+            ? "bg-primary/95 backdrop-blur-md shadow-elegant"
+            : "bg-transparent"
+        }`}
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16 md:h-20">
+            {/* Logo */}
             <button
-              onClick={() => scrollToSection("inicio")}
-              className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+              onClick={() => navigate("/")}
+              className="text-lg md:text-2xl font-heading font-bold text-luxury-gold transition-smooth hover:opacity-80"
             >
-              {t.inicio}
+              {t.brand}
             </button>
-            <button
-              onClick={() => scrollToSection("servicos")}
-              className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
-            >
-              {t.servicos}
-            </button>
-            <button
-              onClick={() => scrollToSection("contato")}
-              className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
-            >
-              {t.contato}
-            </button>
-            <LanguageSelector />
-            <Button
-              onClick={() => scrollToSection("contato")}
-              className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
-            >
-              {t.reserveAgora}
-            </Button>
-          </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden text-primary-foreground hover:text-luxury-gold transition-smooth"
-          >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMobileMenuOpen && (
-          <nav className="md:hidden pb-6 animate-fade-in">
-            <div className="flex flex-col gap-4">
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
               >
                 {t.inicio}
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
               >
                 {t.servicos}
               </button>
               <button
                 onClick={() => scrollToSection("contato")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
               >
                 {t.contato}
               </button>
-              <div className="flex justify-center py-2">
-                <LanguageSelector />
-              </div>
+              <LanguageSelector />
               <Button
                 onClick={() => scrollToSection("contato")}
-                className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full"
+                className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
               >
                 {t.reserveAgora}
               </Button>
-            </div>
-          </nav>
-        )}
-      </div>
-    </header>
+            </nav>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="md:hidden text-primary-foreground hover:text-luxury-gold transition-smooth p-2"
+              aria-label="Menu"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isMobileMenuOpen && (
+            <nav className="md:hidden pb-6 pt-2 animate-fade-in">
+              <div className="flex flex-col gap-4 bg-primary/95 backdrop-blur-lg rounded-lg p-6 shadow-luxury">
+                <button
+                  onClick={() => scrollToSection("inicio")}
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                >
+                  {t.inicio}
+                </button>
+                <button
+                  onClick={() => scrollToSection("servicos")}
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                >
+                  {t.servicos}
+                </button>
+                <button
+                  onClick={() => scrollToSection("contato")}
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                >
+                  {t.contato}
+                </button>
+                <div className="flex justify-center py-2 border-t border-primary-foreground/10 mt-2">
+                  <LanguageSelector />
+                </div>
+                <Button
+                  onClick={() => scrollToSection("contato")}
+                  className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-semibold active:scale-95"
+                >
+                  {t.reserveAgora}
+                </Button>
+              </div>
+            </nav>
+          )}
+        </div>
+      </header>
+    </>
   );
 };
 
