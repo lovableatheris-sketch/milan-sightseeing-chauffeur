@@ -8,13 +8,16 @@ const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language].hero;
   const [scrollBlur, setScrollBlur] = useState(0);
+  const [scrollDarkness, setScrollDarkness] = useState(0);
   
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const maxScroll = 500;
       const blurValue = Math.min((scrollY / maxScroll) * 10, 10);
+      const darknessValue = Math.min((scrollY / maxScroll) * 0.6, 0.6);
       setScrollBlur(blurValue);
+      setScrollDarkness(darknessValue);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -32,14 +35,19 @@ const Hero = () => {
     >
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-300"
+        className="absolute inset-0 bg-cover bg-no-repeat transition-all duration-300"
         style={{
           backgroundImage: `url(${heroImage})`,
+          backgroundPosition: 'center 65%',
           filter: `blur(${scrollBlur}px)`,
           transform: `scale(${1 + scrollBlur * 0.01})`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        <div 
+          className="absolute inset-0 bg-black transition-opacity duration-300"
+          style={{ opacity: scrollDarkness }}
+        />
         <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
       </div>
 
