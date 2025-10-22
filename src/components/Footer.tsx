@@ -27,14 +27,14 @@ const Footer = () => {
             </h4>
             <div className="space-y-3">
               <a
-                href="tel:+390212345678"
+                href="tel:+393891430907"
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"
               >
                 <Phone size={18} />
-                <span>+39 02 1234 5678</span>
+                <span>+39 389 143 0907</span>
               </a>
               <a
-                href="https://wa.me/390212345678"
+                href="https://wa.me/393891430907"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"
