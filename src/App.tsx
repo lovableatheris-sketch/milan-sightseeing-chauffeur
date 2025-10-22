@@ -6,6 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
+import TouristTours from "./pages/TouristTours";
+import HourlyDisposal from "./pages/HourlyDisposal";
+import Transfers from "./pages/Transfers";
+import LongDistance from "./pages/LongDistance";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +22,10 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/tours" element={<TouristTours />} />
+            <Route path="/disposicoes" element={<HourlyDisposal />} />
+            <Route path="/transfers" element={<Transfers />} />
+            <Route path="/viagens-longas" element={<LongDistance />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

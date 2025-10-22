@@ -7,11 +7,8 @@ const Hero = () => {
   const { language } = useLanguage();
   const t = translations[language].hero;
   
-  const scrollToContact = () => {
-    const element = document.getElementById("contato");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleWhatsAppClick = () => {
+    window.open("https://wa.me/393891430907", "_blank");
   };
 
   return (
@@ -40,7 +37,7 @@ const Hero = () => {
           {t.subtitle}
         </p>
         <Button
-          onClick={scrollToContact}
+          onClick={handleWhatsAppClick}
           size="lg"
           className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
         >
