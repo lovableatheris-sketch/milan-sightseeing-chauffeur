@@ -2,11 +2,14 @@ import { Car, Clock, MapPin, MessageCircle, Navigation, ArrowRight } from "lucid
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useRef, useState } from "react";
 
 const Services = () => {
   const { language } = useLanguage();
   const t = translations[language].services;
   const navigate = useNavigate();
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const [visibleCards, setVisibleCards] = useState<number[]>([]);
 
   const services = [
     {
@@ -41,8 +44,27 @@ const Services = () => {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute("data-index") || "0");
+            setVisibleCards((prev) => [...new Set([...prev, index])]);
+          }
+        });
+      },
+      { threshold: 0.2, rootMargin: "-50px" }
+    );
+
+    const cards = sectionRef.current?.querySelectorAll("[data-index]");
+    cards?.forEach((card) => observer.observe(card));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <section id="servicos" className="py-20 md:py-32 bg-secondary">
+    <section id="servicos" className="py-20 md:py-32 bg-secondary" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
@@ -57,9 +79,13 @@ const Services = () => {
           {services.map((service, index) => (
             <button
               key={index}
+              data-index={index}
               onClick={service.onClick}
-              className="bg-card p-6 md:p-8 rounded-xl md:rounded-lg shadow-luxury border-2 border-luxury-gold/40 md:border-transparent hover:shadow-luxury hover:-translate-y-2 hover:scale-105 active:scale-95 active:shadow-card transition-elegant animate-fade-in-up text-center group cursor-pointer md:hover:border-luxury-gold/30 relative overflow-hidden"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className={`bg-card p-6 md:p-8 rounded-xl md:rounded-lg shadow-luxury border-2 border-luxury-gold/40 md:border-transparent hover:shadow-luxury hover:-translate-y-2 hover:scale-105 active:scale-95 active:shadow-card transition-all duration-500 text-center group cursor-pointer md:hover:border-luxury-gold/30 relative overflow-hidden ${
+                visibleCards.includes(index)
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+              }`}
             >
               {/* Gradient overlay on hover */}
               <div className="absolute inset-0 bg-gradient-to-br from-luxury-gold/0 to-luxury-gold/0 group-hover:from-luxury-gold/5 group-hover:to-luxury-gold/10 transition-elegant" />
