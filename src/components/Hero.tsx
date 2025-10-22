@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-duomo-cars.png";
+import heroImage from "@/assets/hero-duomo-new.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useState, useEffect } from "react";
@@ -36,6 +36,7 @@ const Hero = () => {
         style={{
           backgroundImage: `url(${heroImage})`,
           filter: `blur(${scrollBlur}px)`,
+          transform: `scale(${1 + scrollBlur * 0.01})`,
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
