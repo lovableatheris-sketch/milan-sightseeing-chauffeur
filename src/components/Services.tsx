@@ -1,4 +1,4 @@
-import { Car, Clock, MapPin, MessageCircle, Navigation } from "lucide-react";
+import { Car, Clock, MapPin, MessageCircle, Navigation, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useNavigate } from "react-router-dom";
@@ -55,20 +55,31 @@ const Services = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div
+            <button
               key={index}
               onClick={service.onClick}
-              className="bg-card p-8 rounded-lg shadow-card hover:shadow-luxury transition-elegant animate-fade-in-up text-center group cursor-pointer"
+              className="bg-card p-8 rounded-lg shadow-card hover:shadow-luxury hover:-translate-y-2 hover:scale-105 active:scale-100 transition-elegant animate-fade-in-up text-center group cursor-pointer border-2 border-transparent hover:border-luxury-gold/30 relative overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-luxury-gold/10 text-luxury-gold mb-6 group-hover:scale-110 transition-smooth">
-                <service.icon size={32} />
+              {/* Gradient overlay on hover */}
+              <div className="absolute inset-0 bg-gradient-to-br from-luxury-gold/0 to-luxury-gold/0 group-hover:from-luxury-gold/5 group-hover:to-luxury-gold/10 transition-elegant" />
+              
+              <div className="relative z-10">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-luxury-gold/10 text-luxury-gold mb-6 group-hover:scale-110 group-hover:bg-luxury-gold group-hover:text-primary transition-smooth">
+                  <service.icon size={32} />
+                </div>
+                <h3 className="text-xl font-heading font-semibold text-foreground mb-3 group-hover:text-luxury-gold transition-smooth">
+                  {service.title}
+                </h3>
+                <p className="text-muted-foreground mb-4">{service.description}</p>
+                
+                {/* Click indicator */}
+                <div className="flex items-center justify-center gap-2 text-luxury-gold opacity-0 group-hover:opacity-100 transition-smooth font-semibold">
+                  <span className="text-sm">Clique para acessar</span>
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-smooth" />
+                </div>
               </div>
-              <h3 className="text-xl font-heading font-semibold text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground">{service.description}</p>
-            </div>
+            </button>
           ))}
         </div>
       </div>
