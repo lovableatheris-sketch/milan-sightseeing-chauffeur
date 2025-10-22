@@ -58,7 +58,7 @@ const Services = () => {
             <button
               key={index}
               onClick={service.onClick}
-              className="bg-card p-8 rounded-lg shadow-card hover:shadow-luxury hover:-translate-y-2 hover:scale-105 active:scale-100 transition-elegant animate-fade-in-up text-center group cursor-pointer border-2 border-transparent hover:border-luxury-gold/30 relative overflow-hidden"
+              className="bg-card p-6 md:p-8 rounded-xl md:rounded-lg shadow-luxury border-2 border-luxury-gold/40 md:border-transparent hover:shadow-luxury hover:-translate-y-2 hover:scale-105 active:scale-95 active:shadow-card transition-elegant animate-fade-in-up text-center group cursor-pointer md:hover:border-luxury-gold/30 relative overflow-hidden"
               style={{ animationDelay: `${index * 100}ms` }}
             >
               {/* Gradient overlay on hover */}
