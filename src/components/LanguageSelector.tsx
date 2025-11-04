@@ -24,6 +24,12 @@ const LanguageSelector = () => {
       label: "Português",
       gradient: `url(${brazilFlag})`
     },
+    { 
+      code: "fr" as const, 
+      flag: "🇫🇷", 
+      label: "Français",
+      gradient: "linear-gradient(to right, #002395 0%, #002395 33%, #FFFFFF 33%, #FFFFFF 66%, #ED2939 66%, #ED2939 100%)"
+    },
   ];
 
   return (
