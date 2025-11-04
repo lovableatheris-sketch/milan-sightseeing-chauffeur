@@ -1,5 +1,6 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import ukFlag from "@/assets/flag-uk.png";
+import brazilFlag from "@/assets/flag-brazil.png";
 
 const LanguageSelector = () => {
   const { language, setLanguage } = useLanguage();
@@ -21,7 +22,7 @@ const LanguageSelector = () => {
       code: "pt" as const, 
       flag: "🇧🇷", 
       label: "Português",
-      gradient: "linear-gradient(135deg, #009C3B 0%, #009C3B 45%, #FFDF00 45%, #FFDF00 55%, #002776 55%, #002776 100%)"
+      gradient: `url(${brazilFlag})`
     },
   ];
 
@@ -38,7 +39,7 @@ const LanguageSelector = () => {
           }`}
           title={item.label}
           style={{ 
-            background: item.code === "en" ? "#012169" : item.gradient,
+            background: item.code === "en" ? "#012169" : item.code === "pt" ? "#009C3B" : item.gradient,
             backgroundImage: item.gradient,
             backgroundSize: "cover",
             backgroundPosition: "center"
