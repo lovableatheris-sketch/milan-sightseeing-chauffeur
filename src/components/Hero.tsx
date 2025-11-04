@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-duomo-new.jpg";
+import heroImage from "@/assets/hero-galleria.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useState, useEffect } from "react";
