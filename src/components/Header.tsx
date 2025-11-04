@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import LanguageSelector from "@/components/LanguageSelector";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -47,9 +48,9 @@ const Header = () => {
             {/* Logo */}
             <button
               onClick={() => navigate("/")}
-              className="text-lg md:text-2xl font-heading font-bold text-luxury-gold transition-smooth hover:opacity-80"
+              className="transition-smooth hover:opacity-80"
             >
-              {t.brand}
+              <img src={logo} alt="Sightseeing" className="h-12 md:h-16" />
             </button>
 
             {/* Desktop Navigation */}
