@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-galleria.jpg";
+import logo from "@/assets/logo.png";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useState, useEffect } from "react";
@@ -53,6 +54,11 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
+        {/* Logo */}
+        <div className="mb-8 animate-fade-in flex justify-center">
+          <img src={logo} alt="Sightseeing di Thomas Tagliatti" className="h-32 md:h-40 lg:h-48 w-auto object-contain drop-shadow-2xl" />
+        </div>
+        
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in">
           {t.title}
           <br />
