@@ -1,4 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
+import ukFlag from "@/assets/flag-uk.png";
 
 const LanguageSelector = () => {
   const { language, setLanguage } = useLanguage();
@@ -14,7 +15,7 @@ const LanguageSelector = () => {
       code: "en" as const, 
       flag: "🇬🇧", 
       label: "English",
-      gradient: "linear-gradient(135deg, #012169 0%, #012169 40%, #FFFFFF 40%, #FFFFFF 60%, #C8102E 60%, #C8102E 100%)"
+      gradient: `url(${ukFlag})`
     },
     { 
       code: "pt" as const, 
@@ -36,7 +37,12 @@ const LanguageSelector = () => {
               : "hover:scale-105"
           }`}
           title={item.label}
-          style={{ background: item.gradient }}
+          style={{ 
+            background: item.code === "en" ? "#012169" : item.gradient,
+            backgroundImage: item.gradient,
+            backgroundSize: "cover",
+            backgroundPosition: "center"
+          }}
         >
           {language === item.code && (
             <div className="absolute inset-0 flex items-center justify-center">
