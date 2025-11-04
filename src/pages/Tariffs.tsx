@@ -73,6 +73,24 @@ const Tariffs = () => {
               {t.tariffs.distanceNote}
             </p>
 
+            {/* Tariffe Orarie & Olimpiadi */}
+            <div className="mb-16 p-8 rounded-2xl bg-accent/20 border border-accent/30 shadow-card animate-fade-in">
+              <div className="max-w-3xl mx-auto space-y-3 text-center">
+                <p className="text-foreground">
+                  <span className="font-semibold">{t.tariffs.ratesBox.baseRate}</span> €1,50/km
+                </p>
+                <p className="text-foreground">
+                  <span className="font-semibold">{t.tariffs.ratesBox.mountainRate}</span> +30% (→ €1,95/km)
+                </p>
+                <p className="text-foreground">
+                  <span className="font-semibold">{t.tariffs.ratesBox.hourlyRate}</span> €90/ora
+                </p>
+                <p className="text-foreground">
+                  <span className="font-semibold">{t.tariffs.ratesBox.olympicsRate}</span> €100/ora + €1,90/km
+                </p>
+              </div>
+            </div>
+
             {/* Section 1: MONTAGNE & LAGHI */}
             <div className="mb-16 animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 uppercase text-luxury-gold">
@@ -122,24 +140,6 @@ const Tariffs = () => {
                     </div>
                   </Card>
                 ))}
-              </div>
-            </div>
-
-            {/* Tariffe Orarie & Olimpiadi */}
-            <div className="mb-12 p-8 rounded-2xl bg-accent/20 border border-accent/30 shadow-card animate-fade-in">
-              <div className="max-w-3xl mx-auto space-y-3 text-center">
-                <p className="text-foreground">
-                  <span className="font-semibold">{t.tariffs.ratesBox.baseRate}</span> €1,50/km
-                </p>
-                <p className="text-foreground">
-                  <span className="font-semibold">{t.tariffs.ratesBox.mountainRate}</span> +30% (→ €1,95/km)
-                </p>
-                <p className="text-foreground">
-                  <span className="font-semibold">{t.tariffs.ratesBox.hourlyRate}</span> €90/ora
-                </p>
-                <p className="text-foreground">
-                  <span className="font-semibold">{t.tariffs.ratesBox.olympicsRate}</span> €100/ora + €1,90/km
-                </p>
               </div>
             </div>
 
