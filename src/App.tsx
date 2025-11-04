@@ -10,6 +10,7 @@ import TouristTours from "./pages/TouristTours";
 import HourlyDisposal from "./pages/HourlyDisposal";
 import Transfers from "./pages/Transfers";
 import LongDistance from "./pages/LongDistance";
+import Tariffs from "./pages/Tariffs";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
             <Route path="/disposicoes" element={<HourlyDisposal />} />
             <Route path="/transfers" element={<Transfers />} />
             <Route path="/viagens-longas" element={<LongDistance />} />
+            <Route path="/tarifas" element={<Tariffs />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
