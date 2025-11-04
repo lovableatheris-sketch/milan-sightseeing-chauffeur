@@ -105,6 +105,11 @@ export const translations = {
       subtitleExtra: "Profissionalismo, conforto e pontualidade garantidos.",
       cta: "Reservar Agora",
     },
+    tariffs: {
+      title: "Tarifas de Viagem",
+      description: "Confira nossas tarifas para destinos de montanha, lagos, praias e grandes cidades, partindo do Aeroporto di Malpensa.",
+      viewAll: "Ver todas as tarifas",
+    },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
       brandDesc: "Seu motorista particular de confiança em Milão. Transporte executivo com excelência, conforto e pontualidade.",
@@ -219,6 +224,11 @@ export const translations = {
       subtitle: "Experience the best executive transportation service in Milan.",
       subtitleExtra: "Professionalism, comfort and punctuality guaranteed.",
       cta: "Book Now",
+    },
+    tariffs: {
+      title: "Travel Rates",
+      description: "Check our rates for mountain, lake, beach and major city destinations, departing from Malpensa Airport.",
+      viewAll: "View all rates",
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
@@ -335,6 +345,11 @@ export const translations = {
       subtitleExtra: "Professionalità, comfort e puntualità garantiti.",
       cta: "Prenota Ora",
     },
+    tariffs: {
+      title: "Tariffe di Viaggio",
+      description: "Consulta le nostre tariffe per destinazioni di montagna, laghi, mare e grandi città, partendo dall'Aeroporto di Malpensa.",
+      viewAll: "Visualizza tutte le tariffe",
+    },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
       brandDesc: "Il tuo autista privato di fiducia a Milano. Trasporto esecutivo con eccellenza, comfort e puntualità.",
@@ -449,6 +464,11 @@ export const translations = {
       subtitle: "Vivez le meilleur service de transport exécutif à Milan.",
       subtitleExtra: "Professionnalisme, confort et ponctualité garantis.",
       cta: "Réserver",
+    },
+    tariffs: {
+      title: "Tarifs de Voyage",
+      description: "Consultez nos tarifs pour les destinations de montagne, lacs, plages et grandes villes, au départ de l'Aéroport de Malpensa.",
+      viewAll: "Voir tous les tarifs",
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",

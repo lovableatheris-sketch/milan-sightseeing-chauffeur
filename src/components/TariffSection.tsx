@@ -1,9 +1,13 @@
 import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const TariffSection = () => {
   const navigate = useNavigate();
+  const { language } = useLanguage();
+  const t = translations[language];
 
   return (
     <section className="py-20 bg-background">
@@ -16,13 +20,13 @@ const TariffSection = () => {
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary-foreground mb-4">
-                  Tarifas de Viagem
+                  {t.tariffs.title}
                 </h2>
                 <p className="text-lg text-primary-foreground/90 mb-6">
-                  Confira nossas tarifas para destinos de montanha, lagos, praias e grandes cidades, partindo do Aeroporto di Malpensa.
+                  {t.tariffs.description}
                 </p>
                 <div className="flex items-center justify-center md:justify-start gap-2 text-primary-foreground font-semibold group-hover:gap-4 transition-all duration-300">
-                  <span>Ver todas as tarifas</span>
+                  <span>{t.tariffs.viewAll}</span>
                   <ArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
                 </div>
               </div>
