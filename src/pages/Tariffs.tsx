@@ -2,6 +2,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 interface Destination {
   name: string;
@@ -10,6 +12,9 @@ interface Destination {
 }
 
 const Tariffs = () => {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   const mountainDestinations: Destination[] = [
     { name: "St. Moritz", km: 332, price: 647 },
     { name: "Chamonix", km: 572, price: 1116 },
@@ -52,10 +57,10 @@ const Tariffs = () => {
         <section className="relative py-20 bg-gradient-luxury">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary-foreground mb-4 animate-fade-in">
-              Tarifas de Viagem
+              {t.tariffs.pageTitle}
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 max-w-2xl mx-auto animate-fade-in">
-              Partindo do Aeroporto di Malpensa
+              {t.tariffs.pageSubtitle}
             </p>
           </div>
         </section>
@@ -65,13 +70,13 @@ const Tariffs = () => {
           <div className="container mx-auto px-4">
             {/* Subtitle */}
             <p className="text-center text-muted-foreground text-sm mb-12 animate-fade-in">
-              Tutte le distanze indicate sono andata e ritorno (A/R).
+              {t.tariffs.distanceNote}
             </p>
 
             {/* Section 1: MONTAGNE & LAGHI */}
             <div className="mb-16 animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 uppercase text-luxury-gold">
-                Montagne & Laghi (+30%)
+                {t.tariffs.mountainsTitle}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {mountainDestinations.map((dest, index) => (
@@ -84,7 +89,7 @@ const Tariffs = () => {
                       <div className="flex-1">
                         <h3 className="font-semibold text-foreground mb-2">{dest.name}</h3>
                         <p className="text-sm text-muted-foreground">
-                          Km (A/R): <span className="font-medium text-foreground">{dest.km}</span> — Prezzo:{" "}
+                          {t.tariffs.kmLabel} <span className="font-medium text-foreground">{dest.km}</span> — {t.tariffs.priceLabel}{" "}
                           <span className="font-bold text-luxury-gold">{dest.price}€</span>
                         </p>
                       </div>
@@ -97,7 +102,7 @@ const Tariffs = () => {
             {/* Section 2: MARE & GRANDI CITTÀ */}
             <div className="mb-16 animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-center mb-8 uppercase text-luxury-gold">
-                Mare & Grandi Città
+                {t.tariffs.seaTitle}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                 {seaDestinations.map((dest, index) => (
@@ -110,7 +115,7 @@ const Tariffs = () => {
                       <div className="flex-1">
                         <h3 className="font-semibold text-foreground mb-2">{dest.name}</h3>
                         <p className="text-sm text-muted-foreground">
-                          Km (A/R): <span className="font-medium text-foreground">{dest.km}</span> — Prezzo:{" "}
+                          {t.tariffs.kmLabel} <span className="font-medium text-foreground">{dest.km}</span> — {t.tariffs.priceLabel}{" "}
                           <span className="font-bold text-luxury-gold">{dest.price}€</span>
                         </p>
                       </div>
@@ -124,16 +129,16 @@ const Tariffs = () => {
             <div className="mb-12 p-8 rounded-2xl bg-accent/20 border border-accent/30 shadow-card animate-fade-in">
               <div className="max-w-3xl mx-auto space-y-3 text-center">
                 <p className="text-foreground">
-                  <span className="font-semibold">Tariffa chilometrica base:</span> €1,50/km
+                  <span className="font-semibold">{t.tariffs.ratesBox.baseRate}</span> €1,50/km
                 </p>
                 <p className="text-foreground">
-                  <span className="font-semibold">Laghi e Montagne:</span> +30% (→ €1,95/km)
+                  <span className="font-semibold">{t.tariffs.ratesBox.mountainRate}</span> +30% (→ €1,95/km)
                 </p>
                 <p className="text-foreground">
-                  <span className="font-semibold">Disposizioni orarie:</span> €90/ora
+                  <span className="font-semibold">{t.tariffs.ratesBox.hourlyRate}</span> €90/ora
                 </p>
                 <p className="text-foreground">
-                  <span className="font-semibold">Olimpiadi Milano-Cortina:</span> €100/ora + €1,90/km
+                  <span className="font-semibold">{t.tariffs.ratesBox.olympicsRate}</span> €100/ora + €1,90/km
                 </p>
               </div>
             </div>
@@ -145,7 +150,7 @@ const Tariffs = () => {
                 size="lg"
                 className="bg-luxury-gold hover:bg-luxury-gold/90 text-white font-semibold px-12 py-6 rounded-full shadow-luxury hover:shadow-elegant transition-all duration-300 hover:scale-105 text-lg"
               >
-                Prenota ora
+                {t.tariffs.bookNow}
               </Button>
             </div>
           </div>
