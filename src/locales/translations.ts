@@ -14,7 +14,7 @@ export const translations = {
       cta: "Solicitar Corrida",
     },
     services: {
-      title: "Nossos Serviços NCC",
+      title: "Nossos Serviços de Taxi",
       subtitle: "Serviços de noleggio con conducente para todas as suas necessidades de transporte executivo",
       touristTitle: "Tours Turísticos",
       touristDesc: "Lagos e destinos com motorista particular",
@@ -42,7 +42,7 @@ export const translations = {
       bookNow: "Reservar Agora",
     },
     hourlyDisposal: {
-      title: "NCC - Serviços de Noleggio con Conducente",
+      title: "Taxi - Serviços de Noleggio con Conducente",
       subtitle: "Disposições Horárias",
       description: "Carro à disposição com motorista particular para suas necessidades empresariais ou pessoais",
       package2h: "Pacote 2 Horas",
@@ -72,7 +72,7 @@ export const translations = {
     },
     longDistance: {
       title: "Viagens Longas - Tarifas por Km",
-      subtitle: "NCC - Servizi di Noleggio con Conducente para qualquer destino na Itália",
+      subtitle: "Taxi - Servizi di Noleggio con Conducente para qualquer destino na Itália",
       description: "Viaje com conforto para qualquer cidade italiana",
       perKm: "por km",
       examples: "Exemplos de Rotas",
@@ -129,7 +129,7 @@ export const translations = {
       cta: "Request a Ride",
     },
     services: {
-      title: "Our NCC Services",
+      title: "Our Taxi Services",
       subtitle: "Noleggio con conducente services for all your executive transportation needs",
       touristTitle: "Tourist Tours",
       touristDesc: "Lakes and destinations with private driver",
@@ -157,7 +157,7 @@ export const translations = {
       bookNow: "Book Now",
     },
     hourlyDisposal: {
-      title: "NCC - Noleggio con Conducente Services",
+      title: "Taxi - Noleggio con Conducente Services",
       subtitle: "Hourly Disposal",
       description: "Car at disposal with private driver for your business or personal needs",
       package2h: "2 Hours Package",
@@ -187,7 +187,7 @@ export const translations = {
     },
     longDistance: {
       title: "Long Distance - Per Km Rates",
-      subtitle: "NCC - Noleggio con Conducente services to any destination in Italy",
+      subtitle: "Taxi - Noleggio con Conducente services to any destination in Italy",
       description: "Travel in comfort to any Italian city",
       perKm: "per km",
       examples: "Route Examples",
@@ -239,12 +239,12 @@ export const translations = {
     },
     hero: {
       title: "Agenzia di Noleggio con Conducente",
-      titleHighlight: "NCC Milano",
+      titleHighlight: "Taxi Milano",
       subtitle: "Servizi di noleggio con conducente: viaggi, transfer, disposizioni e pacchetti turistici",
       cta: "Prenota su WhatsApp",
     },
     services: {
-      title: "I Nostri Servizi NCC",
+      title: "I Nostri Servizi Taxi",
       subtitle: "Servizi di noleggio con conducente per tutte le vostre esigenze di trasporto esecutivo",
       touristTitle: "Pacchetti Turistici",
       touristDesc: "Laghi e destinazioni con autista privato",
@@ -272,7 +272,7 @@ export const translations = {
       bookNow: "Prenota Ora",
     },
     hourlyDisposal: {
-      title: "NCC - Servizi di Noleggio con Conducente",
+      title: "Taxi - Servizi di Noleggio con Conducente",
       subtitle: "Disposizioni Orarie",
       description: "Auto a disposizione con autista privato per le vostre esigenze aziendali o personali",
       package2h: "Pacchetto 2 Ore",
@@ -302,7 +302,7 @@ export const translations = {
     },
     longDistance: {
       title: "Viaggi Lunghi - Tariffe al Km",
-      subtitle: "NCC - Servizi di Noleggio con Conducente per qualsiasi destinazione in Italia",
+      subtitle: "Taxi - Servizi di Noleggio con Conducente per qualsiasi destinazione in Italia",
       description: "Viaggia con comfort verso qualsiasi città italiana",
       perKm: "al km",
       examples: "Esempi di Rotte",
