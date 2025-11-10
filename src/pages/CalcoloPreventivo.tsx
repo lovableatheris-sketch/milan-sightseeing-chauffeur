@@ -18,7 +18,7 @@ const CalcoloPreventivo = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="pt-24 pb-16">
+      <main className="pt-32 pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-12 text-center">
