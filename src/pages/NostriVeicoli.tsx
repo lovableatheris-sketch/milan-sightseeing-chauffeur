@@ -42,11 +42,11 @@ const NostriVeicoli = () => {
                   <div className="flex items-center gap-4 mb-4 text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <Users className="w-5 h-5" />
-                      <span>3 passeggeri</span>
+                      <span>3 {t.passengers}</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Briefcase className="w-5 h-5" />
-                      <span>Bagagli</span>
+                      <span>{t.luggage}</span>
                     </div>
                   </div>
                   <p className="text-foreground/80 mb-6 leading-relaxed">
@@ -77,11 +77,11 @@ const NostriVeicoli = () => {
                   <div className="flex items-center gap-4 mb-4 text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <Users className="w-5 h-5" />
-                      <span>7 passeggeri</span>
+                      <span>7 {t.passengers}</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Briefcase className="w-5 h-5" />
-                      <span>Bagagli</span>
+                      <span>{t.luggage}</span>
                     </div>
                   </div>
                   <p className="text-foreground/80 mb-6 leading-relaxed">

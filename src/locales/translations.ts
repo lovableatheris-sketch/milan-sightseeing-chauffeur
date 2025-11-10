@@ -28,6 +28,8 @@ export const translations = {
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
       calcPreventivo: "Calcola il preventivo",
+      passengers: "passeggeri",
+      luggage: "Bagagli",
     },
     services: {
       title: "Nossos Serviços de Taxi",
@@ -207,6 +209,8 @@ export const translations = {
       vehicle2Title: "Mercedes V-Class",
       vehicle2Desc: "Luxury van ideal for groups and families. Capacity: up to 7 passengers + luggage. Spacious interior, superior comfort and perfect for tourist tours and airport transfers with multiple people.",
       calcPreventivo: "Calculate quote",
+      passengers: "passengers",
+      luggage: "Luggage",
     },
     services: {
       title: "Our Taxi Services",
@@ -386,6 +390,8 @@ export const translations = {
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
       calcPreventivo: "Calcola il preventivo",
+      passengers: "passeggeri",
+      luggage: "Bagagli",
     },
     services: {
       title: "I Nostri Servizi Taxi",
@@ -565,6 +571,8 @@ export const translations = {
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van de luxe idéal pour les groupes et familles. Capacité: jusqu'à 7 passagers + bagages. Espace spacieux, confort supérieur et parfait pour les tours touristiques et transferts aéroportuaires avec plusieurs personnes.",
       calcPreventivo: "Calculer le devis",
+      passengers: "passagers",
+      luggage: "Bagages",
     },
     services: {
       title: "Nos Services de Taxi",
