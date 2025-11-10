@@ -20,6 +20,14 @@ export const translations = {
       subtitle: "Profissionalismo, confiabilidade e conforto",
       description: "Sightseeing di Thomas Tagliatti é um serviço de motorista particular de alto nível em Milão. Oferecemos uma experiência de viagem exclusiva com veículos Mercedes de luxo e motoristas profissionais. Nossa missão é garantir conforto, pontualidade e segurança em cada viagem, seja para transfers aeroportuários, passeios turísticos ou serviços por hora para eventos corporativos.",
     },
+    whyChoose: {
+      subtitle: "TRANSFERS PRIVADOS E PASSEIOS PELA CIDADE",
+      title: "POR QUE ESCOLHER SIGHTSEEING DI THOMAS TAGLIATTI",
+      description: "Oferecemos um serviço profissional e confortável de motorista de Milão ou arredores para qualquer destino: transfers para aeroportos, passeios pela cidade e viagens personalizadas para negócios ou lazer.",
+      feature1: "SERVIÇO PONTUAL E CONFIÁVEL",
+      feature2: "VEÍCULOS CONFORTÁVEIS E LIMPOS",
+      feature3: "PREÇOS JUSTOS E TRANSPARENTES"
+    },
     nostriVeicoli: {
       title: "Nossos veículos",
       subtitle: "Frota Mercedes de luxo para o seu conforto",
@@ -200,6 +208,14 @@ export const translations = {
       title: "About us",
       subtitle: "Professionalism, reliability and comfort",
       description: "Sightseeing di Thomas Tagliatti is a premium chauffeur service in Milan. We offer an exclusive travel experience with luxury Mercedes vehicles and professional drivers. Our mission is to guarantee comfort, punctuality and safety on every journey, whether it's airport transfers, tourist tours or hourly arrangements for corporate events.",
+    },
+    whyChoose: {
+      subtitle: "PRIVATE TRANSFERS & CITY TOURS",
+      title: "WHY CHOOSE SIGHTSEEING DI THOMAS TAGLIATTI",
+      description: "We offer a professional and comfortable driver service from Milan or surrounding areas to any destination: airport transfers, city tours, and personalized trips for business or leisure.",
+      feature1: "ON-TIME, RELIABLE SERVICE",
+      feature2: "COMFORTABLE AND CLEAN VEHICLES",
+      feature3: "FAIR AND TRANSPARENT PRICING"
     },
     nostriVeicoli: {
       title: "Our vehicles",
@@ -382,6 +398,14 @@ export const translations = {
       subtitle: "Professionalità, affidabilità e comfort",
       description: "Sightseeing di Thomas Tagliatti è un servizio di noleggio con conducente di alto livello a Milano. Offriamo un'esperienza di viaggio esclusiva con veicoli Mercedes di lusso e autisti professionisti. La nostra missione è garantire comfort, puntualità e sicurezza in ogni viaggio, che si tratti di transfer aeroportuali, tour turistici o disposizioni orarie per eventi aziendali.",
     },
+    whyChoose: {
+      subtitle: "TRANSFER PRIVATI E TOUR CITTADINI",
+      title: "PERCHÉ SCEGLIERE SIGHTSEEING DI THOMAS TAGLIATTI",
+      description: "Offriamo un servizio professionale e confortevole di autista da Milano o zone limitrofe verso qualsiasi destinazione: transfer aeroportuali, tour cittadini e viaggi personalizzati per affari o piacere.",
+      feature1: "SERVIZIO PUNTUALE E AFFIDABILE",
+      feature2: "VEICOLI CONFORTEVOLI E PULITI",
+      feature3: "PREZZI EQUI E TRASPARENTI"
+    },
     nostriVeicoli: {
       title: "I nostri veicoli",
       subtitle: "Flotta Mercedes di lusso per il tuo comfort",
@@ -562,6 +586,14 @@ export const translations = {
       title: "Qui sommes-nous?",
       subtitle: "Professionnalisme, fiabilité et confort",
       description: "Sightseeing di Thomas Tagliatti est un service de chauffeur premium à Milan. Nous offrons une expérience de voyage exclusive avec des véhicules Mercedes de luxe et des chauffeurs professionnels. Notre mission est de garantir confort, ponctualité et sécurité à chaque voyage, qu'il s'agisse de transferts aéroportuaires, de visites touristiques ou de services horaires pour événements d'entreprise.",
+    },
+    whyChoose: {
+      subtitle: "TRANSFERTS PRIVÉS ET VISITES DE LA VILLE",
+      title: "POURQUOI CHOISIR SIGHTSEEING DI THOMAS TAGLIATTI",
+      description: "Nous offrons un service de chauffeur professionnel et confortable de Milan ou des environs vers n'importe quelle destination : transferts aéroport, visites de la ville et voyages personnalisés pour affaires ou loisirs.",
+      feature1: "SERVICE PONCTUEL ET FIABLE",
+      feature2: "VÉHICULES CONFORTABLES ET PROPRES",
+      feature3: "TARIFS ÉQUITABLES ET TRANSPARENTS"
     },
     nostriVeicoli: {
       title: "Nos véhicules",
