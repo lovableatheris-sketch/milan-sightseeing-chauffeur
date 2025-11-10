@@ -14,6 +14,7 @@ import Tariffs from "./pages/Tariffs";
 import ChiSiamo from "./pages/ChiSiamo";
 import NostriVeicoli from "./pages/NostriVeicoli";
 import CalcoloPreventivo from "./pages/CalcoloPreventivo";
+import Contact from "./pages/Contact";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/chi-siamo" element={<ChiSiamo />} />
             <Route path="/nostri-veicoli" element={<NostriVeicoli />} />
             <Route path="/calcolo-preventivo" element={<CalcoloPreventivo />} />
+            <Route path="/contato" element={<Contact />} />
             <Route path="/tours" element={<TouristTours />} />
             <Route path="/disposicoes" element={<HourlyDisposal />} />
             <Route path="/transfers" element={<Transfers />} />

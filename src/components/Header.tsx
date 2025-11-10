@@ -80,7 +80,7 @@ const Header = () => {
                 {t.servicos}
               </button>
               <button
-                onClick={() => scrollToSection("contato")}
+                onClick={() => navigate("/contato")}
                 className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
               >
                 {t.contato}
@@ -142,7 +142,10 @@ const Header = () => {
                   {t.servicos}
                 </button>
                 <button
-                  onClick={() => scrollToSection("contato")}
+                  onClick={() => {
+                    navigate("/contato");
+                    setIsMobileMenuOpen(false);
+                  }}
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.contato}
