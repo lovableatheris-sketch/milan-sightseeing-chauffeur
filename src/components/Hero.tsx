@@ -62,6 +62,12 @@ const Hero = () => {
             </>
           )}
         </h1>
+        <a 
+          href="tel:+393891430907"
+          className="inline-block text-2xl md:text-3xl font-bold text-luxury-gold hover:text-luxury-gold-dark transition-smooth mb-6 animate-fade-in"
+        >
+          +39 389 143 0907
+        </a>
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto animate-fade-in-up font-light">
           {t.subtitle}
         </p>
