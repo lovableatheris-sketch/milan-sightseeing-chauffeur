@@ -38,23 +38,10 @@ const ChiSiamo = () => {
               </div>
             </div>
 
-            {/* Italian Description */}
-            <div className="mb-8 p-8 bg-card rounded-lg shadow-lg">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-4">
-                Italiano
-              </h2>
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                {t.descriptionIT}
-              </p>
-            </div>
-
-            {/* English Description */}
+            {/* Description */}
             <div className="p-8 bg-card rounded-lg shadow-lg">
-              <h2 className="text-2xl font-heading font-bold text-foreground mb-4">
-                English
-              </h2>
               <p className="text-lg text-foreground/90 leading-relaxed">
-                {t.descriptionEN}
+                {t.description}
               </p>
             </div>
           </div>
