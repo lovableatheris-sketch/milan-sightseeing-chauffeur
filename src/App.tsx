@@ -11,6 +11,9 @@ import HourlyDisposal from "./pages/HourlyDisposal";
 import Transfers from "./pages/Transfers";
 import LongDistance from "./pages/LongDistance";
 import Tariffs from "./pages/Tariffs";
+import ChiSiamo from "./pages/ChiSiamo";
+import NostriVeicoli from "./pages/NostriVeicoli";
+import CalcoloPreventivo from "./pages/CalcoloPreventivo";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +26,9 @@ const App = () => (
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
+            <Route path="/chi-siamo" element={<ChiSiamo />} />
+            <Route path="/nostri-veicoli" element={<NostriVeicoli />} />
+            <Route path="/calcolo-preventivo" element={<CalcoloPreventivo />} />
             <Route path="/tours" element={<TouristTours />} />
             <Route path="/disposicoes" element={<HourlyDisposal />} />
             <Route path="/transfers" element={<Transfers />} />

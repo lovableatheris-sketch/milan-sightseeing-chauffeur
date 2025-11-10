@@ -62,6 +62,18 @@ const Header = () => {
                 {t.inicio}
               </button>
               <button
+                onClick={() => navigate("/chi-siamo")}
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+              >
+                {t.chiSiamo}
+              </button>
+              <button
+                onClick={() => navigate("/nostri-veicoli")}
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+              >
+                {t.nostriVeicoli}
+              </button>
+              <button
                 onClick={() => scrollToSection("servicos")}
                 className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
               >
@@ -104,6 +116,24 @@ const Header = () => {
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.inicio}
+                </button>
+                <button
+                  onClick={() => {
+                    navigate("/chi-siamo");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                >
+                  {t.chiSiamo}
+                </button>
+                <button
+                  onClick={() => {
+                    navigate("/nostri-veicoli");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                >
+                  {t.nostriVeicoli}
                 </button>
                 <button
                   onClick={() => scrollToSection("servicos")}

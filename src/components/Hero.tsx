@@ -55,8 +55,12 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in">
           {t.title}
-          <br />
-          <span className="text-luxury-gold">{t.titleHighlight}</span>
+          {t.titleHighlight && (
+            <>
+              <br />
+              <span className="text-luxury-gold">{t.titleHighlight}</span>
+            </>
+          )}
         </h1>
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto animate-fade-in-up font-light">
           {t.subtitle}
