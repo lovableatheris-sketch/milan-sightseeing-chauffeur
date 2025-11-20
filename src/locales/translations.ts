@@ -10,7 +10,7 @@ export const translations = {
       reserveAgora: "Reserve Agora",
     },
     hero: {
-      title: "PRENOTA ORA LA TUA AUTO",
+      title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
       subtitle: "Oferecemos transfers de táxi de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu táxi de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
       cta: "Solicitar Corrida",
