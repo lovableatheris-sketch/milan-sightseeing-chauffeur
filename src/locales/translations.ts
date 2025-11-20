@@ -13,7 +13,7 @@ export const translations = {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
       subtitle:
-        "Oferecemos transfers de táxi de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu táxi de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
+        "Oferecemos transfers de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
       cta: "Solicitar Corrida",
     },
     chiSiamo: {
@@ -45,7 +45,7 @@ export const translations = {
       luggage: "Bagagem",
     },
     services: {
-      title: "Nossos Serviços de Taxi",
+      title: "Nossos Serviços",
       subtitle: "Serviços de noleggio con conducente para todas as suas necessidades de transporte executivo",
       touristTitle: "Tours Turísticos",
       touristDesc: "Lagos e destinos com motorista particular",
@@ -73,7 +73,7 @@ export const translations = {
       bookNow: "Reservar Agora",
     },
     hourlyDisposal: {
-      title: "Taxi - Serviços de Noleggio con Conducente",
+      title: "Serviços de Noleggio con Conducente",
       subtitle: "Disposições Horárias",
       description: "Carro à disposição com motorista particular para suas necessidades empresariais ou pessoais",
       package2h: "Pacote 2 Horas",
@@ -91,7 +91,7 @@ export const translations = {
       title: "Transfers Aeroportos",
       subtitle: "Serviço porta-a-porta para todos os aeroportos de Milão",
       mainTitle:
-        "Malpensa Taxi Service oferece um serviço de aluguel com motorista de e para o aeroporto de Malpensa em Milão.",
+        "Oferecemos um serviço de aluguel com motorista de e para o aeroporto de Malpensa em Milão.",
       chooseService: "Escolha nosso serviço e aproveite várias vantagens:",
       flightMonitoring: "planeje sua viagem com antecedência usando um dos veículos à sua disposição",
       comfortTravel: "viaje com total conforto em um carro de luxo",
@@ -113,7 +113,7 @@ export const translations = {
     },
     longDistance: {
       title: "Viagens Longas - Tarifas por Km",
-      subtitle: "Taxi - Servizi di Noleggio con Conducente para qualquer destino na Itália",
+      subtitle: "Servizi di Noleggio con Conducente para qualquer destino na Itália",
       description: "Viaje com conforto para qualquer cidade italiana",
       perKm: "por km",
       examples: "Exemplos de Rotas",
@@ -223,7 +223,7 @@ export const translations = {
       title: "BOOK YOUR CAR NOW",
       titleHighlight: "",
       subtitle:
-        "We provide taxi transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your taxi from or to Malpensa airport now and travel in total safety with a professional service.",
+        "We provide transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel in total safety with a professional service.",
       cta: "Request a Ride",
     },
     chiSiamo: {
@@ -255,7 +255,7 @@ export const translations = {
       luggage: "Luggage",
     },
     services: {
-      title: "Our Taxi Services",
+      title: "Our Services",
       subtitle: "Noleggio con conducente services for all your executive transportation needs",
       touristTitle: "Tourist Tours",
       touristDesc: "Lakes and destinations with private driver",
@@ -283,7 +283,7 @@ export const translations = {
       bookNow: "Book Now",
     },
     hourlyDisposal: {
-      title: "Taxi - Noleggio con Conducente Services",
+      title: "Noleggio con Conducente Services",
       subtitle: "Hourly Disposal",
       description: "Car at disposal with private driver for your business or personal needs",
       package2h: "2 Hours Package",
@@ -300,7 +300,7 @@ export const translations = {
     transfers: {
       title: "Airport Transfers",
       subtitle: "Door-to-door service to all Milan airports",
-      mainTitle: "Malpensa Taxi Service provides a Hire with driver service to and from Milan Malpensa airport.",
+      mainTitle: "We provide a Hire with driver service to and from Milan Malpensa airport.",
       chooseService: "Choose our service and enjoy various advantages:",
       flightMonitoring: "plan your journey in advance using one of the vehicles at your disposal",
       comfortTravel: "travel in complete comfort in a luxury car",
@@ -322,7 +322,7 @@ export const translations = {
     },
     longDistance: {
       title: "Long Distance - Per Km Rates",
-      subtitle: "Taxi - Noleggio con Conducente services to any destination in Italy",
+      subtitle: "Noleggio con Conducente services to any destination in Italy",
       description: "Travel in comfort to any Italian city",
       perKm: "per km",
       examples: "Route Examples",
@@ -432,7 +432,7 @@ export const translations = {
       title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
       subtitle:
-        "Forniamo trasferimenti taxi da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito il tuo taxi da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
+        "Forniamo trasferimenti da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
       cta: "Prenota su WhatsApp",
     },
     chiSiamo: {
@@ -492,7 +492,7 @@ export const translations = {
       bookNow: "Prenota Ora",
     },
     hourlyDisposal: {
-      title: "Taxi - Servizi di Noleggio con Conducente",
+      title: "Servizi di Noleggio con Conducente",
       subtitle: "Disposizioni Orarie",
       description: "Auto a disposizione con autista privato per le vostre esigenze aziendali o personali",
       package2h: "Pacchetto 2 Ore",
@@ -510,7 +510,7 @@ export const translations = {
       title: "Transfer Aeroporti",
       subtitle: "Servizio porta a porta per tutti gli aeroporti di Milano",
       mainTitle:
-        "Malpensa Taxi Service offre un servizio Noleggio con Conducente da e per l'aeroporto di Milano Malpensa.",
+        "Offriamo un servizio Noleggio con Conducente da e per l'aeroporto di Milano Malpensa.",
       chooseService: "Scegli il nostro servizio e goditi vari vantaggi:",
       flightMonitoring: "pianifica il tuo viaggio in anticipo utilizzando uno dei veicoli a tua disposizione",
       comfortTravel: "viaggia in completo comfort in un'auto di lusso",
@@ -532,7 +532,7 @@ export const translations = {
     },
     longDistance: {
       title: "Viaggi Lunghi - Tariffe al Km",
-      subtitle: "Taxi - Servizi di Noleggio con Conducente per qualsiasi destinazione in Italia",
+      subtitle: "Servizi di Noleggio con Conducente per qualsiasi destinazione in Italia",
       description: "Viaggia con comfort verso qualsiasi città italiana",
       perKm: "al km",
       examples: "Esempi di Rotte",
@@ -642,7 +642,7 @@ export const translations = {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
       subtitle:
-        "Nous fournissons des transferts taxi depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre taxi depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
+        "Nous fournissons des transferts depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
       cta: "Demander une course",
     },
     chiSiamo: {
@@ -674,7 +674,7 @@ export const translations = {
       luggage: "Bagages",
     },
     services: {
-      title: "Nos Services de Taxi",
+      title: "Nos Services",
       subtitle: "Services de noleggio con conducente pour tous vos besoins de transport exécutif",
       touristTitle: "Tours Touristiques",
       touristDesc: "Lacs et destinations avec chauffeur privé",
@@ -702,7 +702,7 @@ export const translations = {
       bookNow: "Réserver",
     },
     hourlyDisposal: {
-      title: "Taxi - Services de Noleggio con Conducente",
+      title: "Services de Noleggio con Conducente",
       subtitle: "Mise à Disposition Horaire",
       description: "Voiture à disposition avec chauffeur privé pour vos besoins professionnels ou personnels",
       package2h: "Forfait 2 Heures",
@@ -720,7 +720,7 @@ export const translations = {
       title: "Transferts Aéroports",
       subtitle: "Service porte-à-porte vers tous les aéroports de Milan",
       mainTitle:
-        "Malpensa Taxi Service propose un service de location avec chauffeur vers et depuis l'aéroport de Milan Malpensa.",
+        "Nous proposons un service de location avec chauffeur vers et depuis l'aéroport de Milan Malpensa.",
       chooseService: "Choisissez notre service et profitez de plusieurs avantages:",
       flightMonitoring: "planifiez votre voyage à l'avance en utilisant l'un des véhicules à votre disposition",
       comfortTravel: "voyagez en tout confort dans une voiture de luxe",
@@ -742,7 +742,7 @@ export const translations = {
     },
     longDistance: {
       title: "Longue Distance - Tarifs au Km",
-      subtitle: "Taxi - Services de Noleggio con Conducente vers toute destination en Italie",
+      subtitle: "Services de Noleggio con Conducente vers toute destination en Italie",
       description: "Voyagez confortablement vers n'importe quelle ville italienne",
       perKm: "par km",
       examples: "Exemples de Trajets",
