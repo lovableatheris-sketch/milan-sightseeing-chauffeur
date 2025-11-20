@@ -390,7 +390,7 @@ export const translations = {
     hero: {
       title: "PRENOTA ORA IL TUO TAXI",
       titleHighlight: "",
-      subtitle: "Servizi di noleggio con conducente: viaggi, transfer, disposizioni e pacchetti turistici",
+      subtitle: "Forniamo trasferimenti taxi da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito il tuo taxi da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
       cta: "Prenota su WhatsApp",
     },
     chiSiamo: {
