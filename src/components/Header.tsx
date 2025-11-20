@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import LanguageSelector from "@/components/LanguageSelector";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/logo-tmt.png";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ const Header = () => {
               onClick={() => navigate("/")}
               className="transition-smooth hover:opacity-80"
             >
-              <img src={logo} alt="Sightseeing" className="h-12 md:h-14 w-auto object-contain object-left" style={{ maxWidth: '60px' }} />
+              <img src={logo} alt="TMT Sightseeing" className="h-10 md:h-12 w-auto object-contain" />
             </button>
 
             {/* Desktop Navigation */}
