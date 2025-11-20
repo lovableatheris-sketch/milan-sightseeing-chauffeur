@@ -524,8 +524,8 @@ export const translations = {
       cultureDesc: "Esplora l'elegante Lago di Como, circondato da ville lussuose, montagne maestose e villaggi pittoreschi",
     },
     finalCta: {
-      title: "Prenota il tuo autista ora",
-      titleHighlight: "e scopri Milano con esclusività",
+      title: "Prenota subito la tua auto",
+      titleHighlight: "e scopri Milano in esclusiva",
       subtitle: "Prova il miglior servizio di trasporto esecutivo a Milano.",
       subtitleExtra: "Professionalità, comfort e puntualità garantiti.",
       cta: "Prenota Ora",
