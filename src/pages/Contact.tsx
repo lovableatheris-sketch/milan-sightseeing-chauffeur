@@ -16,11 +16,8 @@ const Contact = () => {
           <div className="max-w-6xl mx-auto">
             {/* Header Section */}
             <div className="text-center mb-20">
-              <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">
-                CAR RENTAL WITH DRIVER
-              </p>
               <h1 className="text-4xl md:text-5xl font-heading font-bold mb-2">
-                MALPENSA <span className="text-primary">TAXI</span> SERVICE
+                {t.title}
               </h1>
               <div className="w-20 h-1 bg-luxury-gold mx-auto mb-8"></div>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
