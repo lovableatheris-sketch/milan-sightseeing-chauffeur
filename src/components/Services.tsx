@@ -40,7 +40,7 @@ const Services = () => {
       icon: Car,
       title: t.longDistanceTitle,
       description: t.longDistanceDesc,
-      onClick: () => navigate("/viagens-longas"),
+      onClick: () => navigate("/calcolo-preventivo"),
     },
   ];
 
