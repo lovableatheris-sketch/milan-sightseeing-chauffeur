@@ -31,7 +31,7 @@ export const translations = {
     nostriVeicoli: {
       title: "Nossos veículos",
       subtitle: "Frota Mercedes de luxo para o seu conforto",
-      vehicle1Title: "Mercedes van v250",
+      vehicle1Title: "Mercedes Benz v250",
       vehicle1Desc: "Sedã elegante e confortável, perfeito para transfers e viagens de negócios. Capacidade: até 3 passageiros + bagagens. Equipado com ar condicionado, bancos de couro e tecnologia de última geração.",
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van de luxo ideal para grupos e famílias. Capacidade: até 7 passageiros + bagagens. Espaço amplo, conforto superior e perfeito para passeios turísticos e transfers aeroportuários com várias pessoas.",
@@ -220,7 +220,7 @@ export const translations = {
     nostriVeicoli: {
       title: "Our vehicles",
       subtitle: "Luxury Mercedes fleet for your comfort",
-      vehicle1Title: "Mercedes van v250",
+      vehicle1Title: "Mercedes Benz v250",
       vehicle1Desc: "Elegant and comfortable sedan, perfect for transfers and business trips. Capacity: up to 3 passengers + luggage. Equipped with air conditioning, leather seats and latest technology.",
       vehicle2Title: "Mercedes V-Class",
       vehicle2Desc: "Luxury van ideal for groups and families. Capacity: up to 7 passengers + luggage. Spacious interior, superior comfort and perfect for tourist tours and airport transfers with multiple people.",
@@ -409,7 +409,7 @@ export const translations = {
     nostriVeicoli: {
       title: "I nostri veicoli",
       subtitle: "Flotta Mercedes di lusso per il tuo comfort",
-      vehicle1Title: "Mercedes van v250",
+      vehicle1Title: "Mercedes Benz v250",
       vehicle1Desc: "Berlina elegante e confortevole, perfetta per transfer e viaggi d'affari. Capacità: fino a 3 passeggeri + bagagli. Dotata di aria condizionata, sedili in pelle e tecnologia di ultima generazione.",
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
@@ -598,7 +598,7 @@ export const translations = {
     nostriVeicoli: {
       title: "Nos véhicules",
       subtitle: "Flotte Mercedes de luxe pour votre confort",
-      vehicle1Title: "Mercedes van v250",
+      vehicle1Title: "Mercedes Benz v250",
       vehicle1Desc: "Berline élégante et confortable, parfaite pour les transferts et voyages d'affaires. Capacité: jusqu'à 3 passagers + bagages. Équipée de climatisation, sièges en cuir et technologie de dernière génération.",
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van de luxe idéal pour les groupes et familles. Capacité: jusqu'à 7 passagers + bagages. Espace spacieux, confort supérieur et parfait pour les tours touristiques et transferts aéroportuaires avec plusieurs personnes.",
