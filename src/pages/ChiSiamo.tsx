@@ -13,7 +13,7 @@ const ChiSiamo = () => {
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-6xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-4 text-center">
               {t.title}
             </h1>
@@ -21,20 +21,23 @@ const ChiSiamo = () => {
               {t.subtitle}
             </p>
 
-            {/* Main Image */}
-            <div className="mb-12 rounded-lg overflow-hidden shadow-elegant">
-              <img 
-                src={chiSiamoImage} 
-                alt="Mercedes luxury vehicle - Sightseeing di Thomas Tagliatti"
-                className="w-full h-auto object-cover"
-              />
-            </div>
+            {/* Image and Text Layout */}
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              {/* Image - Left Side */}
+              <div className="rounded-lg overflow-hidden shadow-elegant">
+                <img 
+                  src={chiSiamoImage} 
+                  alt="Mercedes luxury vehicle - Sightseeing di Thomas Tagliatti"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
 
-            {/* Description */}
-            <div className="p-8 bg-card rounded-lg shadow-lg">
-              <p className="text-lg text-foreground/90 leading-relaxed">
-                {t.description}
-              </p>
+              {/* Description - Right Side */}
+              <div className="p-8 bg-card rounded-lg shadow-lg">
+                <p className="text-lg text-foreground/90 leading-relaxed">
+                  {t.description}
+                </p>
+              </div>
             </div>
           </div>
         </div>
