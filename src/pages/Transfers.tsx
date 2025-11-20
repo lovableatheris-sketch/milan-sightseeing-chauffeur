@@ -1,102 +1,106 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Check, Plane } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
+import { useNavigate } from "react-router-dom";
+import airportImage from "@/assets/airport-transfer.jpg";
 
 const Transfers = () => {
   const { language } = useLanguage();
   const t = translations[language].transfers;
+  const navigate = useNavigate();
 
-  const airports = [
+  const advantages = [
     {
-      name: t.malpensa,
-      code: "MXP",
-      price: "€90",
+      text: t.flightMonitoring,
+      highlight: "in advance",
     },
     {
-      name: t.linate,
-      code: "LIN",
-      price: "€70",
+      text: t.comfortTravel,
+      highlight: "comfort",
     },
     {
-      name: t.bergamo,
-      code: "BGY",
-      price: "€120",
+      text: t.inclusivePrice,
+      highlight: "price",
+    },
+    {
+      text: t.doorToDoor,
+      highlight: "door to door",
     },
   ];
 
-  const features = [
-    t.flightMonitoring,
-    t.meetGreet,
-    t.luggageAssistance,
-    t.professionalDriver,
-  ];
-
-  const handleWhatsAppClick = () => {
-    window.open("https://wa.me/393891430907", "_blank");
+  const handleContactClick = () => {
+    navigate("/contato");
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-background">
       <Header />
-      <main className="pt-20">
-        {/* Hero Section */}
-        <section className="py-20 bg-gradient-dark">
-          <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-6xl font-heading font-bold text-primary-foreground mb-6">
-              {t.title}
-            </h1>
-            <p className="text-lg md:text-xl text-primary-foreground/80 max-w-3xl mx-auto">
-              {t.subtitle}
-            </p>
-          </div>
-        </section>
+      <main className="pt-32 pb-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            {/* Icon Header */}
+            <div className="flex justify-center mb-12">
+              <div className="w-28 h-28 rounded-full bg-primary flex items-center justify-center shadow-lg">
+                <Plane size={56} className="text-primary-foreground" strokeWidth={1.5} />
+              </div>
+            </div>
 
-        {/* Airports Grid */}
-        <section className="py-20 bg-background">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-              {airports.map((airport, index) => (
-                <Card key={index} className="text-center hover:shadow-luxury transition-elegant">
-                  <CardHeader>
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-luxury-gold/10 text-luxury-gold mx-auto mb-4">
-                      <Plane size={32} />
-                    </div>
-                    <CardTitle className="text-2xl font-heading text-foreground mb-2">
-                      {airport.name}
-                    </CardTitle>
-                    <CardDescription className="text-sm text-muted-foreground">
-                      {airport.code}
-                    </CardDescription>
-                  </CardHeader>
-                  <CardContent className="space-y-6">
-                    <div className="text-4xl font-bold text-luxury-gold">
-                      {t.priceFrom} {airport.price}
-                    </div>
-                    <div className="space-y-3">
-                      <p className="text-sm text-muted-foreground font-semibold">{t.features}</p>
-                      {features.map((feature, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
-                          <Check size={20} className="text-luxury-gold" />
-                          <span className="text-sm">{feature}</span>
+            {/* Main Content */}
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* Left Side - Image */}
+              <div className="order-2 md:order-1">
+                <img
+                  src={airportImage}
+                  alt="Airport Transfer"
+                  className="w-full h-auto rounded-lg shadow-xl"
+                />
+              </div>
+
+              {/* Right Side - Content */}
+              <div className="order-1 md:order-2 space-y-6">
+                <div>
+                  <h1 className="text-3xl md:text-4xl font-heading font-normal text-foreground mb-6 leading-tight">
+                    {t.mainTitle}
+                  </h1>
+                  
+                  <p className="text-muted-foreground mb-8">
+                    {t.chooseService}
+                  </p>
+
+                  {/* Advantages List */}
+                  <div className="space-y-4 mb-8">
+                    {advantages.map((advantage, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <div className="mt-1">
+                          <Check size={20} className="text-luxury-gold" strokeWidth={3} />
                         </div>
-                      ))}
-                    </div>
-                    <Button 
-                      onClick={handleWhatsAppClick}
-                      className="w-full bg-luxury-gold text-primary hover:bg-luxury-gold-dark"
-                    >
-                      {t.bookNow}
-                    </Button>
-                  </CardContent>
-                </Card>
-              ))}
+                        <p className="text-muted-foreground">
+                          {advantage.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Highlight Text */}
+                  <h2 className="text-xl md:text-2xl font-bold text-primary uppercase mb-8 leading-tight">
+                    {t.highlightTitle}
+                  </h2>
+
+                  {/* Contact Button */}
+                  <Button
+                    onClick={handleContactClick}
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-base font-semibold uppercase"
+                  >
+                    {t.contactUs}
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
       </main>
       <Footer />
     </div>
