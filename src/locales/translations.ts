@@ -577,7 +577,7 @@ export const translations = {
       reserveAgora: "Réserver",
     },
     hero: {
-      title: "RÉSERVEZ VOTRE TAXI MAINTENANT",
+      title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
       subtitle: "Nous fournissons des transferts taxi depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre taxi depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
       cta: "Demander une course",
