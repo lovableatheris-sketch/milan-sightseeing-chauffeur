@@ -64,7 +64,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="servicos" className="py-20 md:py-32 bg-background" ref={sectionRef}>
+    <section id="servicos" className="py-20 md:py-32 bg-primary/5" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
