@@ -510,7 +510,7 @@ export const translations = {
       cta: "Prenota Ora",
     },
     tariffs: {
-      title: "Tariffe di Viaggio",
+      title: "Calcola il Preventivo",
       description: "Consulta le nostre tariffe per destinazioni di montagna, laghi, mare e grandi città, partendo dall'Aeroporto di Malpensa.",
       viewAll: "Visualizza tutte le tariffe",
       pageTitle: "Tariffe di Viaggio",
