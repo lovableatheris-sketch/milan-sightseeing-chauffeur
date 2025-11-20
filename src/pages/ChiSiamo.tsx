@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
+import chiSiamoImage from "@/assets/chi-siamo-mercedes.jpeg";
 
 const ChiSiamo = () => {
   const { language } = useLanguage();
@@ -20,22 +21,13 @@ const ChiSiamo = () => {
               {t.subtitle}
             </p>
 
-            {/* Images Grid */}
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80" 
-                  alt="Luxury chauffeur service"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="aspect-video bg-muted rounded-lg overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=800&q=80" 
-                  alt="Mercedes luxury vehicle"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            {/* Main Image */}
+            <div className="mb-12 rounded-lg overflow-hidden shadow-elegant">
+              <img 
+                src={chiSiamoImage} 
+                alt="Mercedes luxury vehicle - Sightseeing di Thomas Tagliatti"
+                className="w-full h-auto object-cover"
+              />
             </div>
 
             {/* Description */}

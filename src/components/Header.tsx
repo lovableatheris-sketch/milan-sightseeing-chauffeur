@@ -27,6 +27,10 @@ const Header = () => {
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
+    } else {
+      // If element doesn't exist, navigate to home first
+      navigate("/");
+      setIsMobileMenuOpen(false);
     }
   };
 
