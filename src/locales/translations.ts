@@ -777,11 +777,11 @@ export const translations = {
       cta: "Réserver",
     },
     tariffs: {
-      title: "Tarifs de Voyage",
+      title: "Calculer le devis",
       description:
         "Consultez nos tarifs pour les destinations de montagne, lacs, plages et grandes villes, au départ de l'Aéroport de Malpensa.",
       viewAll: "Voir tous les tarifs",
-      pageTitle: "Tarifs de Voyage",
+      pageTitle: "Calculer le devis",
       pageSubtitle: "Au départ de l'Aéroport de Malpensa",
       distanceNote: "Toutes les distances indiquées sont aller-retour (A/R).",
       mountainsTitle: "MONTAGNES & LACS (+30%)",
