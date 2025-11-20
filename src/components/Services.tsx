@@ -75,56 +75,35 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => {
-            const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
-            const shouldApplyHoverEffect = isMobile && visibleCards.includes(index);
-            
             return (
               <button
                 key={index}
                 data-index={index}
                 onClick={service.onClick}
-                className={`bg-card p-6 md:p-8 rounded-xl md:rounded-lg border-2 transition-all duration-500 text-center group cursor-pointer relative overflow-hidden ${
+                className={`bg-background p-8 rounded-lg border border-border/50 transition-all duration-300 text-left group cursor-pointer hover:border-luxury-gold/50 hover:shadow-lg ${
                   visibleCards.includes(index)
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
-                } ${
-                  shouldApplyHoverEffect
-                    ? "shadow-luxury border-luxury-gold/40 -translate-y-2 scale-105"
-                    : "shadow-card border-luxury-gold/20"
-                } md:border-transparent md:hover:shadow-luxury md:hover:-translate-y-2 md:hover:scale-105 md:hover:border-luxury-gold/30 active:scale-95 active:shadow-card`}
+                }`}
               >
-              {/* Gradient overlay on hover */}
-              <div className={`absolute inset-0 bg-gradient-to-br transition-elegant ${
-                shouldApplyHoverEffect || !isMobile
-                  ? "from-luxury-gold/5 to-luxury-gold/10"
-                  : "from-luxury-gold/0 to-luxury-gold/0"
-              } md:from-luxury-gold/0 md:to-luxury-gold/0 md:group-hover:from-luxury-gold/5 md:group-hover:to-luxury-gold/10`} />
-              
-              <div className="relative z-10">
-                <div className={`inline-flex items-center justify-center w-16 h-16 rounded-full mb-6 transition-smooth bg-luxury-gold/10 text-luxury-gold md:group-hover:scale-110 md:group-hover:bg-luxury-gold md:group-hover:text-primary ${
-                  shouldApplyHoverEffect ? "scale-110" : ""
-                }`}>
-                  <service.icon size={32} />
+              <div className="flex flex-col gap-4">
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg transition-colors bg-muted text-foreground group-hover:bg-luxury-gold/10 group-hover:text-luxury-gold self-start">
+                  <service.icon size={24} strokeWidth={1.5} />
                 </div>
-                <h3 className={`text-xl font-heading font-semibold mb-3 transition-smooth ${
-                  shouldApplyHoverEffect
-                    ? "text-luxury-gold"
-                    : "text-foreground"
-                } md:text-foreground md:group-hover:text-luxury-gold`}>
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground mb-4">{service.description}</p>
                 
-                {/* Click indicator */}
-                <div className={`flex items-center justify-center gap-2 text-luxury-gold font-semibold transition-smooth ${
-                  shouldApplyHoverEffect || !isMobile
-                    ? "opacity-100"
-                    : "opacity-0"
-                } md:opacity-0 md:group-hover:opacity-100`}>
-                  <span className="text-sm">Clique para acessar</span>
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-smooth" />
+                <div>
+                  <h3 className="text-lg font-heading font-semibold mb-2 text-foreground group-hover:text-luxury-gold transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
+                
+                <div className="flex items-center gap-2 text-luxury-gold font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity mt-2">
+                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
             </button>
