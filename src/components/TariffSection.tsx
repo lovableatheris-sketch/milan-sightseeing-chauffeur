@@ -14,7 +14,7 @@ const TariffSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <Card
-            onClick={() => navigate("/tarifas")}
+            onClick={() => navigate("/nostri-veicoli")}
             className="p-8 md:p-12 rounded-2xl shadow-elegant hover:shadow-luxury transition-all duration-300 hover:scale-[1.02] bg-gradient-luxury cursor-pointer group"
           >
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
