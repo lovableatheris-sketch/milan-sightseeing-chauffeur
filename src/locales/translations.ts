@@ -171,7 +171,7 @@ export const translations = {
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
       brandDesc:
-        "Seu motorista particular de confiança em Milão. Transporte executivo com excelência, conforto e pontualidade.",
+        "Seu motorista particular de confiança em Milão. Transporte de luxo com excelência, conforto e pontualidade.",
       contactTitle: "Contato",
       whatsapp: "WhatsApp",
       socialTitle: "Redes Sociais",
@@ -380,7 +380,7 @@ export const translations = {
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
       brandDesc:
-        "Your trusted private driver in Milan. Executive transportation with excellence, comfort and punctuality.",
+        "Your trusted private driver in Milan. Luxury transportation with excellence, comfort and punctuality.",
       contactTitle: "Contact",
       whatsapp: "WhatsApp",
       socialTitle: "Social Media",
@@ -798,7 +798,7 @@ export const translations = {
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
       brandDesc:
-        "Votre chauffeur privé de confiance à Milan. Transport exécutif avec excellence, confort et ponctualité.",
+        "Votre chauffeur privé de confiance à Milan. Transport de luxe avec excellence, confort et ponctualité.",
       contactTitle: "Contact",
       whatsapp: "WhatsApp",
       socialTitle: "Réseaux Sociaux",
