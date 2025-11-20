@@ -12,29 +12,34 @@ export const translations = {
     hero: {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
-      subtitle: "Oferecemos transfers de táxi de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu táxi de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
+      subtitle:
+        "Oferecemos transfers de táxi de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu táxi de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
       cta: "Solicitar Corrida",
     },
     chiSiamo: {
       title: "Quem somos?",
       subtitle: "Profissionalismo, confiabilidade e conforto",
-      description: "Sightseeing di Thomas Tagliatti é um serviço de motorista particular de alto nível em Milão. Oferecemos uma experiência de viagem exclusiva com veículos Mercedes de luxo e motoristas profissionais. Nossa missão é garantir conforto, pontualidade e segurança em cada viagem, seja para transfers aeroportuários, passeios turísticos ou serviços por hora para eventos corporativos.",
+      description:
+        "Sightseeing di Thomas Tagliatti é um serviço de motorista particular de alto nível em Milão. Oferecemos uma experiência de viagem exclusiva com veículos Mercedes de luxo e motoristas profissionais. Nossa missão é garantir conforto, pontualidade e segurança em cada viagem, seja para transfers aeroportuários, passeios turísticos ou serviços por hora para eventos corporativos.",
     },
     whyChoose: {
       subtitle: "TRANSFERS PRIVADOS E PASSEIOS PELA CIDADE",
       title: "POR QUE ESCOLHER NOSSOS SERVIÇOS?",
-      description: "Oferecemos um serviço profissional e confortável de motorista de Milão ou arredores para qualquer destino: transfers para aeroportos, passeios pela cidade e viagens personalizadas para negócios ou lazer.",
+      description:
+        "Oferecemos um serviço profissional e confortável de motorista de Milão ou arredores para qualquer destino: transfers para aeroportos, passeios pela cidade e viagens personalizadas para negócios ou lazer.",
       feature1: "SERVIÇO PONTUAL E CONFIÁVEL",
       feature2: "VEÍCULOS CONFORTÁVEIS E LIMPOS",
-      feature3: "PREÇOS JUSTOS E TRANSPARENTES"
+      feature3: "PREÇOS JUSTOS E TRANSPARENTES",
     },
     nostriVeicoli: {
       title: "Nossos veículos",
       subtitle: "Frota Mercedes de luxo para o seu conforto",
       vehicle1Title: "Mercedes Benz v250",
-      vehicle1Desc: "Sedã elegante e confortável, perfeito para transfers e viagens de negócios. Capacidade: até 3 passageiros + bagagens. Equipado com ar condicionado, bancos de couro e tecnologia de última geração.",
+      vehicle1Desc:
+        "Sedã elegante e confortável, perfeito para transfers e viagens de negócios. Capacidade: até 3 passageiros + bagagens. Equipado com ar condicionado, bancos de couro e tecnologia de última geração.",
       vehicle2Title: "Mercedes Classe V",
-      vehicle2Desc: "Van de luxo ideal para grupos e famílias. Capacidade: até 7 passageiros + bagagens. Espaço amplo, conforto superior e perfeito para passeios turísticos e transfers aeroportuários com várias pessoas.",
+      vehicle2Desc:
+        "Van de luxo ideal para grupos e famílias. Capacidade: até 7 passageiros + bagagens. Espaço amplo, conforto superior e perfeito para passeios turísticos e transfers aeroportuários com várias pessoas.",
       calcPreventivo: "Calcular orçamento",
       passengers: "passageiros",
       luggage: "Bagagem",
@@ -85,12 +90,15 @@ export const translations = {
     transfers: {
       title: "Transfers Aeroportos",
       subtitle: "Serviço porta-a-porta para todos os aeroportos de Milão",
-      mainTitle: "Malpensa Taxi Service oferece um serviço de aluguel com motorista de e para o aeroporto de Malpensa em Milão.",
+      mainTitle:
+        "Malpensa Taxi Service oferece um serviço de aluguel com motorista de e para o aeroporto de Malpensa em Milão.",
       chooseService: "Escolha nosso serviço e aproveite várias vantagens:",
       flightMonitoring: "planeje sua viagem com antecedência usando um dos veículos à sua disposição",
       comfortTravel: "viaje com total conforto em um carro de luxo",
-      inclusivePrice: "conheça o preço inclusivo da sua viagem com antecedência: é fornecido ao solicitar um orçamento, para evitar surpresas desagradáveis e extras caros",
-      doorToDoor: "chegue ao seu destino final rapidamente: um serviço porta-a-porta que economizará tempo e garantirá uma experiência excepcional",
+      inclusivePrice:
+        "conheça o preço inclusivo da sua viagem com antecedência: é fornecido ao solicitar um orçamento, para evitar surpresas desagradáveis e extras caros",
+      doorToDoor:
+        "chegue ao seu destino final rapidamente: um serviço porta-a-porta que economizará tempo e garantirá uma experiência excepcional",
       highlightTitle: "SEU TRANSFER DE E PARA MILÃO MALPENSA, SEM RISCO E SEM ESTRESSE",
       contactUs: "CONTATE-NOS",
       malpensa: "Aeroporto Malpensa",
@@ -125,11 +133,14 @@ export const translations = {
       title: "Explore Milão com Exclusividade",
       subtitle: "Conheça os principais pontos turísticos da cidade com o conforto e a elegância que você merece",
       historicTitle: "San Siro",
-      historicDesc: "Visite o lendário estádio San Siro, lar dos gigantes do futebol italiano Inter e Milan, um templo do esporte mundial",
+      historicDesc:
+        "Visite o lendário estádio San Siro, lar dos gigantes do futebol italiano Inter e Milan, um templo do esporte mundial",
       luxuryTitle: "Lago Maggiore",
-      luxuryDesc: "Descubra as águas cristalinas e as ilhas encantadoras do Lago Maggiore, com seus jardins históricos e vistas deslumbrantes",
+      luxuryDesc:
+        "Descubra as águas cristalinas e as ilhas encantadoras do Lago Maggiore, com seus jardins históricos e vistas deslumbrantes",
       cultureTitle: "Lago di Como",
-      cultureDesc: "Explore o elegante Lago di Como, cercado por vilas luxuosas, montanhas majestosas e vilarejos pitorescos",
+      cultureDesc:
+        "Explore o elegante Lago di Como, cercado por vilas luxuosas, montanhas majestosas e vilarejos pitorescos",
     },
     finalCta: {
       title: "Agende seu motorista agora",
@@ -140,7 +151,8 @@ export const translations = {
     },
     tariffs: {
       title: "Tarifas de Viagem",
-      description: "Confira nossas tarifas para destinos de montanha, lagos, praias e grandes cidades, partindo do Aeroporto di Malpensa.",
+      description:
+        "Confira nossas tarifas para destinos de montanha, lagos, praias e grandes cidades, partindo do Aeroporto di Malpensa.",
       viewAll: "Ver todas as tarifas",
       pageTitle: "Tarifas de Viagem",
       pageSubtitle: "Partindo do Aeroporto di Malpensa",
@@ -159,7 +171,8 @@ export const translations = {
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
-      brandDesc: "Seu motorista particular de confiança em Milão. Transporte executivo com excelência, conforto e pontualidade.",
+      brandDesc:
+        "Seu motorista particular de confiança em Milão. Transporte executivo com excelência, conforto e pontualidade.",
       contactTitle: "Contato",
       whatsapp: "WhatsApp",
       socialTitle: "Redes Sociais",
@@ -174,7 +187,8 @@ export const translations = {
         email: "E-mail",
         phone: "Telefone",
         message: "Mensagem",
-        privacyConsent: "Dou o consentimento para o processamento dos meus dados pessoais de acordo com os procedimentos e limitações estabelecidos na declaração de privacidade.",
+        privacyConsent:
+          "Dou o consentimento para o processamento dos meus dados pessoais de acordo com os procedimentos e limitações estabelecidos na declaração de privacidade.",
         privacyLink: "Ler a Declaração de Privacidade",
         send: "Enviar",
         namePlaceholder: "Seu nome",
@@ -208,29 +222,34 @@ export const translations = {
     hero: {
       title: "BOOK YOUR CAR NOW",
       titleHighlight: "",
-      subtitle: "We provide taxi transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your taxi from or to Malpensa airport now and travel in total safety with a professional service.",
+      subtitle:
+        "We provide taxi transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your taxi from or to Malpensa airport now and travel in total safety with a professional service.",
       cta: "Request a Ride",
     },
     chiSiamo: {
       title: "About us",
       subtitle: "Professionalism, reliability and comfort",
-      description: "Sightseeing di Thomas Tagliatti is a premium chauffeur service in Milan. We offer an exclusive travel experience with luxury Mercedes vehicles and professional drivers. Our mission is to guarantee comfort, punctuality and safety on every journey, whether it's airport transfers, tourist tours or hourly arrangements for corporate events.",
+      description:
+        "Sightseeing di Thomas Tagliatti is a premium chauffeur service in Milan. We offer an exclusive travel experience with luxury Mercedes vehicles and professional drivers. Our mission is to guarantee comfort, punctuality and safety on every journey, whether it's airport transfers, tourist tours or hourly arrangements for corporate events.",
     },
     whyChoose: {
       subtitle: "PRIVATE TRANSFERS & CITY TOURS",
       title: "WHY CHOOSE OUR SERVICES?",
-      description: "We offer a professional and comfortable driver service from Milan or surrounding areas to any destination: airport transfers, city tours, and personalized trips for business or leisure.",
+      description:
+        "We offer a professional and comfortable driver service from Milan or surrounding areas to any destination: airport transfers, city tours, and personalized trips for business or leisure.",
       feature1: "ON-TIME, RELIABLE SERVICE",
       feature2: "COMFORTABLE AND CLEAN VEHICLES",
-      feature3: "FAIR AND TRANSPARENT PRICING"
+      feature3: "FAIR AND TRANSPARENT PRICING",
     },
     nostriVeicoli: {
       title: "Our vehicles",
       subtitle: "Luxury Mercedes fleet for your comfort",
       vehicle1Title: "Mercedes Benz v250",
-      vehicle1Desc: "Elegant and comfortable sedan, perfect for transfers and business trips. Capacity: up to 3 passengers + luggage. Equipped with air conditioning, leather seats and latest technology.",
+      vehicle1Desc:
+        "Elegant and comfortable sedan, perfect for transfers and business trips. Capacity: up to 3 passengers + luggage. Equipped with air conditioning, leather seats and latest technology.",
       vehicle2Title: "Mercedes V-Class",
-      vehicle2Desc: "Luxury van ideal for groups and families. Capacity: up to 7 passengers + luggage. Spacious interior, superior comfort and perfect for tourist tours and airport transfers with multiple people.",
+      vehicle2Desc:
+        "Luxury van ideal for groups and families. Capacity: up to 7 passengers + luggage. Spacious interior, superior comfort and perfect for tourist tours and airport transfers with multiple people.",
       calcPreventivo: "Calculate quote",
       passengers: "passengers",
       luggage: "Luggage",
@@ -285,8 +304,10 @@ export const translations = {
       chooseService: "Choose our service and enjoy various advantages:",
       flightMonitoring: "plan your journey in advance using one of the vehicles at your disposal",
       comfortTravel: "travel in complete comfort in a luxury car",
-      inclusivePrice: "know the inclusive price of your trip in advance: it's provided when you get a quote, so you avoid unpleasant surprises and expensive extras",
-      doorToDoor: "reach your final destination quickly: a door to door service that will save you time and guarantee you an outstanding experience",
+      inclusivePrice:
+        "know the inclusive price of your trip in advance: it's provided when you get a quote, so you avoid unpleasant surprises and expensive extras",
+      doorToDoor:
+        "reach your final destination quickly: a door to door service that will save you time and guarantee you an outstanding experience",
       highlightTitle: "YOUR TRANSFER TO AND FROM MILAN MALPENSA, RISK AND STRESS FREE",
       contactUs: "CONTACT US",
       malpensa: "Malpensa Airport",
@@ -321,11 +342,14 @@ export const translations = {
       title: "Explore Milan with Exclusivity",
       subtitle: "Discover the city's main tourist attractions with the comfort and elegance you deserve",
       historicTitle: "San Siro",
-      historicDesc: "Visit the legendary San Siro stadium, home to Italian football giants Inter and Milan, a temple of world sport",
+      historicDesc:
+        "Visit the legendary San Siro stadium, home to Italian football giants Inter and Milan, a temple of world sport",
       luxuryTitle: "Lago Maggiore",
-      luxuryDesc: "Discover the crystal-clear waters and enchanting islands of Lake Maggiore, with its historic gardens and breathtaking views",
+      luxuryDesc:
+        "Discover the crystal-clear waters and enchanting islands of Lake Maggiore, with its historic gardens and breathtaking views",
       cultureTitle: "Lago di Como",
-      cultureDesc: "Explore the elegant Lake Como, surrounded by luxury villas, majestic mountains and picturesque villages",
+      cultureDesc:
+        "Explore the elegant Lake Como, surrounded by luxury villas, majestic mountains and picturesque villages",
     },
     finalCta: {
       title: "Book your driver now",
@@ -336,7 +360,8 @@ export const translations = {
     },
     tariffs: {
       title: "Travel Rates",
-      description: "Check our rates for mountain, lake, beach and major city destinations, departing from Malpensa Airport.",
+      description:
+        "Check our rates for mountain, lake, beach and major city destinations, departing from Malpensa Airport.",
       viewAll: "View all rates",
       pageTitle: "Travel Rates",
       pageSubtitle: "Departing from Malpensa Airport",
@@ -355,7 +380,8 @@ export const translations = {
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
-      brandDesc: "Your trusted private driver in Milan. Executive transportation with excellence, comfort and punctuality.",
+      brandDesc:
+        "Your trusted private driver in Milan. Executive transportation with excellence, comfort and punctuality.",
       contactTitle: "Contact",
       whatsapp: "WhatsApp",
       socialTitle: "Social Media",
@@ -370,7 +396,8 @@ export const translations = {
         email: "E-mail",
         phone: "Phone",
         message: "Message",
-        privacyConsent: "I consent to the processing of my personal data in accordance with the procedures and limitations set out in the privacy statement.",
+        privacyConsent:
+          "I consent to the processing of my personal data in accordance with the procedures and limitations set out in the privacy statement.",
         privacyLink: "Read the Privacy Statement",
         send: "Send",
         namePlaceholder: "Your name",
@@ -404,35 +431,40 @@ export const translations = {
     hero: {
       title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
-      subtitle: "Forniamo trasferimenti taxi da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito il tuo taxi da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
+      subtitle:
+        "Forniamo trasferimenti taxi da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito il tuo taxi da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
       cta: "Prenota su WhatsApp",
     },
     chiSiamo: {
       title: "Chi siamo?",
       subtitle: "Professionalità, affidabilità e comfort",
-      description: "Sightseeing di Thomas Tagliatti è un servizio di noleggio con conducente di alto livello a Milano. Offriamo un'esperienza di viaggio esclusiva con veicoli Mercedes di lusso e autisti professionisti. La nostra missione è garantire comfort, puntualità e sicurezza in ogni viaggio, che si tratti di transfer aeroportuali, tour turistici o disposizioni orarie per eventi aziendali.",
+      description:
+        "Sightseeing di Thomas Tagliatti è un servizio di noleggio con conducente di alto livello a Milano. Offriamo un'esperienza di viaggio esclusiva con veicoli Mercedes di lusso e autisti professionisti. La nostra missione è garantire comfort, puntualità e sicurezza in ogni viaggio, che si tratti di transfer aeroportuali, tour turistici o disposizioni orarie per eventi aziendali.",
     },
     whyChoose: {
       subtitle: "TRANSFER PRIVATI E TOUR CITTADINI",
       title: "PERCHÉ SCEGLIERE I NOSTRI SERVIZI?",
-      description: "Offriamo un servizio professionale e confortevole di autista da Milano o zone limitrofe verso qualsiasi destinazione: transfer aeroportuali, tour cittadini e viaggi personalizzati per affari o piacere.",
+      description:
+        "Offriamo un servizio professionale e confortevole di autista da Milano o zone limitrofe verso qualsiasi destinazione: transfer aeroportuali, tour cittadini e viaggi personalizzati per affari o piacere.",
       feature1: "SERVIZIO PUNTUALE E AFFIDABILE",
       feature2: "VEICOLI CONFORTEVOLI E PULITI",
-      feature3: "PREZZI EQUI E TRASPARENTI"
+      feature3: "PREZZI EQUI E TRASPARENTI",
     },
     nostriVeicoli: {
       title: "I nostri veicoli",
       subtitle: "Flotta Mercedes di lusso per il tuo comfort",
       vehicle1Title: "Mercedes Benz v250",
-      vehicle1Desc: "Capacità: fino a 6 passeggeri + bagagli. La Mercedes-Benz V250 unisce lusso, spazio e comfort in un unico veicolo. Con interni raffinati, ampia capacità per passeggeri e bagagli e tecnologia moderna, garantisce viaggi silenziosi e confortevoli. Perfetta per trasferimenti aziendali, gruppi e servizi VIP, offre eleganza e prestazioni eccellenti.",
+      vehicle1Desc:
+        "Capacità: fino a 6 passeggeri + bagagli. La Mercedes-Benz V250 unisce lusso, spazio e comfort in un unico veicolo. Con interni raffinati, ampia capacità per passeggeri e bagagli e tecnologia moderna, garantisce viaggi silenziosi e confortevoli. Perfetta per trasferimenti aziendali, gruppi e servizi VIP, offre eleganza e prestazioni eccellenti.",
       vehicle2Title: "Mercedes Classe V",
-      vehicle2Desc: "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
+      vehicle2Desc:
+        "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
       calcPreventivo: "Calcola il preventivo",
       passengers: "passeggeri",
       luggage: "Bagagli",
     },
     services: {
-      title: "I Nostri Servizi Taxi",
+      title: "I Nostri Servizi",
       subtitle: "Servizi di noleggio con conducente per tutte le vostre esigenze di trasporto esecutivo",
       touristTitle: "Pacchetti Turistici",
       touristDesc: "Laghi e destinazioni con autista privato",
@@ -477,12 +509,15 @@ export const translations = {
     transfers: {
       title: "Transfer Aeroporti",
       subtitle: "Servizio porta a porta per tutti gli aeroporti di Milano",
-      mainTitle: "Malpensa Taxi Service offre un servizio Noleggio con Conducente da e per l'aeroporto di Milano Malpensa.",
+      mainTitle:
+        "Malpensa Taxi Service offre un servizio Noleggio con Conducente da e per l'aeroporto di Milano Malpensa.",
       chooseService: "Scegli il nostro servizio e goditi vari vantaggi:",
       flightMonitoring: "pianifica il tuo viaggio in anticipo utilizzando uno dei veicoli a tua disposizione",
       comfortTravel: "viaggia in completo comfort in un'auto di lusso",
-      inclusivePrice: "conosci il prezzo inclusivo del tuo viaggio in anticipo: viene fornito quando richiedi un preventivo, così eviti spiacevoli sorprese ed extra costosi",
-      doorToDoor: "raggiungi rapidamente la tua destinazione finale: un servizio porta a porta che ti farà risparmiare tempo e ti garantirà un'esperienza eccezionale",
+      inclusivePrice:
+        "conosci il prezzo inclusivo del tuo viaggio in anticipo: viene fornito quando richiedi un preventivo, così eviti spiacevoli sorprese ed extra costosi",
+      doorToDoor:
+        "raggiungi rapidamente la tua destinazione finale: un servizio porta a porta che ti farà risparmiare tempo e ti garantirà un'esperienza eccezionale",
       highlightTitle: "IL TUO TRANSFER DA E PER MILANO MALPENSA, SENZA RISCHI E STRESS",
       contactUs: "CONTATTACI",
       malpensa: "Aeroporto Malpensa",
@@ -517,11 +552,14 @@ export const translations = {
       title: "Esplora Milano con Esclusività",
       subtitle: "Scopri le principali attrazioni turistiche della città con il comfort e l'eleganza che meriti",
       historicTitle: "San Siro",
-      historicDesc: "Visita il leggendario stadio San Siro, casa dei giganti del calcio italiano Inter e Milan, un tempio dello sport mondiale",
+      historicDesc:
+        "Visita il leggendario stadio San Siro, casa dei giganti del calcio italiano Inter e Milan, un tempio dello sport mondiale",
       luxuryTitle: "Lago Maggiore",
-      luxuryDesc: "Scopri le acque cristalline e le isole incantevoli del Lago Maggiore, con i suoi giardini storici e viste mozzafiato",
+      luxuryDesc:
+        "Scopri le acque cristalline e le isole incantevoli del Lago Maggiore, con i suoi giardini storici e viste mozzafiato",
       cultureTitle: "Lago di Como",
-      cultureDesc: "Esplora l'elegante Lago di Como, circondato da ville lussuose, montagne maestose e villaggi pittoreschi",
+      cultureDesc:
+        "Esplora l'elegante Lago di Como, circondato da ville lussuose, montagne maestose e villaggi pittoreschi",
     },
     finalCta: {
       title: "Prenota subito la tua auto",
@@ -532,7 +570,8 @@ export const translations = {
     },
     tariffs: {
       title: "Calcola il Preventivo",
-      description: "Consulta le nostre tariffe per destinazioni di montagna, laghi, mare e grandi città, partendo dall'Aeroporto di Malpensa.",
+      description:
+        "Consulta le nostre tariffe per destinazioni di montagna, laghi, mare e grandi città, partendo dall'Aeroporto di Malpensa.",
       viewAll: "Visualizza tutte le tariffe",
       pageTitle: "Tariffe di Viaggio",
       pageSubtitle: "Partendo dall'Aeroporto di Malpensa",
@@ -551,7 +590,8 @@ export const translations = {
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
-      brandDesc: "Il tuo autista privato di fiducia a Milano. Trasporto esecutivo con eccellenza, comfort e puntualità.",
+      brandDesc:
+        "Il tuo autista privato di fiducia a Milano. Trasporto esecutivo con eccellenza, comfort e puntualità.",
       contactTitle: "Contatto",
       whatsapp: "WhatsApp",
       socialTitle: "Social Media",
@@ -566,7 +606,8 @@ export const translations = {
         email: "E-mail",
         phone: "Telefono",
         message: "Messaggio",
-        privacyConsent: "Acconsento al trattamento dei miei dati personali secondo le modalità e i limiti stabiliti nell'informativa sulla privacy.",
+        privacyConsent:
+          "Acconsento al trattamento dei miei dati personali secondo le modalità e i limiti stabiliti nell'informativa sulla privacy.",
         privacyLink: "Leggi l'Informativa sulla Privacy",
         send: "Invia",
         namePlaceholder: "Il tuo nome",
@@ -600,29 +641,34 @@ export const translations = {
     hero: {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
-      subtitle: "Nous fournissons des transferts taxi depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre taxi depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
+      subtitle:
+        "Nous fournissons des transferts taxi depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre taxi depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
       cta: "Demander une course",
     },
     chiSiamo: {
       title: "Qui sommes-nous?",
       subtitle: "Professionnalisme, fiabilité et confort",
-      description: "Sightseeing di Thomas Tagliatti est un service de chauffeur premium à Milan. Nous offrons une expérience de voyage exclusive avec des véhicules Mercedes de luxe et des chauffeurs professionnels. Notre mission est de garantir confort, ponctualité et sécurité à chaque voyage, qu'il s'agisse de transferts aéroportuaires, de visites touristiques ou de services horaires pour événements d'entreprise.",
+      description:
+        "Sightseeing di Thomas Tagliatti est un service de chauffeur premium à Milan. Nous offrons une expérience de voyage exclusive avec des véhicules Mercedes de luxe et des chauffeurs professionnels. Notre mission est de garantir confort, ponctualité et sécurité à chaque voyage, qu'il s'agisse de transferts aéroportuaires, de visites touristiques ou de services horaires pour événements d'entreprise.",
     },
     whyChoose: {
       subtitle: "TRANSFERTS PRIVÉS ET VISITES DE LA VILLE",
       title: "POURQUOI CHOISIR SIGHTSEEING DI THOMAS TAGLIATTI",
-      description: "Nous offrons un service de chauffeur professionnel et confortable de Milan ou des environs vers n'importe quelle destination : transferts aéroport, visites de la ville et voyages personnalisés pour affaires ou loisirs.",
+      description:
+        "Nous offrons un service de chauffeur professionnel et confortable de Milan ou des environs vers n'importe quelle destination : transferts aéroport, visites de la ville et voyages personnalisés pour affaires ou loisirs.",
       feature1: "SERVICE PONCTUEL ET FIABLE",
       feature2: "VÉHICULES CONFORTABLES ET PROPRES",
-      feature3: "TARIFS ÉQUITABLES ET TRANSPARENTS"
+      feature3: "TARIFS ÉQUITABLES ET TRANSPARENTS",
     },
     nostriVeicoli: {
       title: "Nos véhicules",
       subtitle: "Flotte Mercedes de luxe pour votre confort",
       vehicle1Title: "Mercedes Benz v250",
-      vehicle1Desc: "Berline élégante et confortable, parfaite pour les transferts et voyages d'affaires. Capacité: jusqu'à 3 passagers + bagages. Équipée de climatisation, sièges en cuir et technologie de dernière génération.",
+      vehicle1Desc:
+        "Berline élégante et confortable, parfaite pour les transferts et voyages d'affaires. Capacité: jusqu'à 3 passagers + bagages. Équipée de climatisation, sièges en cuir et technologie de dernière génération.",
       vehicle2Title: "Mercedes Classe V",
-      vehicle2Desc: "Van de luxe idéal pour les groupes et familles. Capacité: jusqu'à 7 passagers + bagages. Espace spacieux, confort supérieur et parfait pour les tours touristiques et transferts aéroportuaires avec plusieurs personnes.",
+      vehicle2Desc:
+        "Van de luxe idéal pour les groupes et familles. Capacité: jusqu'à 7 passagers + bagages. Espace spacieux, confort supérieur et parfait pour les tours touristiques et transferts aéroportuaires avec plusieurs personnes.",
       calcPreventivo: "Calculer le devis",
       passengers: "passagers",
       luggage: "Bagages",
@@ -673,12 +719,15 @@ export const translations = {
     transfers: {
       title: "Transferts Aéroports",
       subtitle: "Service porte-à-porte vers tous les aéroports de Milan",
-      mainTitle: "Malpensa Taxi Service propose un service de location avec chauffeur vers et depuis l'aéroport de Milan Malpensa.",
+      mainTitle:
+        "Malpensa Taxi Service propose un service de location avec chauffeur vers et depuis l'aéroport de Milan Malpensa.",
       chooseService: "Choisissez notre service et profitez de plusieurs avantages:",
       flightMonitoring: "planifiez votre voyage à l'avance en utilisant l'un des véhicules à votre disposition",
       comfortTravel: "voyagez en tout confort dans une voiture de luxe",
-      inclusivePrice: "connaissez le prix inclusif de votre trajet à l'avance: il est fourni lorsque vous demandez un devis, afin d'éviter les mauvaises surprises et les suppléments coûteux",
-      doorToDoor: "atteignez rapidement votre destination finale: un service porte-à-porte qui vous fera gagner du temps et vous garantira une expérience exceptionnelle",
+      inclusivePrice:
+        "connaissez le prix inclusif de votre trajet à l'avance: il est fourni lorsque vous demandez un devis, afin d'éviter les mauvaises surprises et les suppléments coûteux",
+      doorToDoor:
+        "atteignez rapidement votre destination finale: un service porte-à-porte qui vous fera gagner du temps et vous garantira une expérience exceptionnelle",
       highlightTitle: "VOTRE TRANSFERT VERS ET DEPUIS MILAN MALPENSA, SANS RISQUE ET SANS STRESS",
       contactUs: "CONTACTEZ-NOUS",
       malpensa: "Aéroport Malpensa",
@@ -711,13 +760,17 @@ export const translations = {
     },
     locations: {
       title: "Explorez Milan en Exclusivité",
-      subtitle: "Découvrez les principales attractions touristiques de la ville avec le confort et l'élégance que vous méritez",
+      subtitle:
+        "Découvrez les principales attractions touristiques de la ville avec le confort et l'élégance que vous méritez",
       historicTitle: "San Siro",
-      historicDesc: "Visitez le légendaire stade San Siro, domicile des géants du football italien Inter et Milan, un temple du sport mondial",
+      historicDesc:
+        "Visitez le légendaire stade San Siro, domicile des géants du football italien Inter et Milan, un temple du sport mondial",
       luxuryTitle: "Lac Majeur",
-      luxuryDesc: "Découvrez les eaux cristallines et les îles enchanteresses du Lac Majeur, avec ses jardins historiques et ses vues à couper le souffle",
+      luxuryDesc:
+        "Découvrez les eaux cristallines et les îles enchanteresses du Lac Majeur, avec ses jardins historiques et ses vues à couper le souffle",
       cultureTitle: "Lac de Côme",
-      cultureDesc: "Explorez l'élégant Lac de Côme, entouré de villas luxueuses, de montagnes majestueuses et de villages pittoresques",
+      cultureDesc:
+        "Explorez l'élégant Lac de Côme, entouré de villas luxueuses, de montagnes majestueuses et de villages pittoresques",
     },
     finalCta: {
       title: "Réservez votre chauffeur maintenant",
@@ -728,7 +781,8 @@ export const translations = {
     },
     tariffs: {
       title: "Tarifs de Voyage",
-      description: "Consultez nos tarifs pour les destinations de montagne, lacs, plages et grandes villes, au départ de l'Aéroport de Malpensa.",
+      description:
+        "Consultez nos tarifs pour les destinations de montagne, lacs, plages et grandes villes, au départ de l'Aéroport de Malpensa.",
       viewAll: "Voir tous les tarifs",
       pageTitle: "Tarifs de Voyage",
       pageSubtitle: "Au départ de l'Aéroport de Malpensa",
@@ -747,7 +801,8 @@ export const translations = {
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
-      brandDesc: "Votre chauffeur privé de confiance à Milan. Transport exécutif avec excellence, confort et ponctualité.",
+      brandDesc:
+        "Votre chauffeur privé de confiance à Milan. Transport exécutif avec excellence, confort et ponctualité.",
       contactTitle: "Contact",
       whatsapp: "WhatsApp",
       socialTitle: "Réseaux Sociaux",
@@ -762,7 +817,8 @@ export const translations = {
         email: "E-mail",
         phone: "Téléphone",
         message: "Message",
-        privacyConsent: "Je consens au traitement de mes données personnelles conformément aux procédures et limitations énoncées dans la déclaration de confidentialité.",
+        privacyConsent:
+          "Je consens au traitement de mes données personnelles conformément aux procédures et limitations énoncées dans la déclaration de confidentialité.",
         privacyLink: "Lire la Déclaration de Confidentialité",
         send: "Envoyer",
         namePlaceholder: "Votre nom",
