@@ -2,8 +2,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { Card } from "@/components/ui/card";
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useCallback } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 import mercedesInt1 from "@/assets/mercedes-interior-1.jpeg";
 import mercedesExt1 from "@/assets/mercedes-exterior-1.jpeg";
 import mercedesInt2 from "@/assets/mercedes-interior-2.jpeg";
@@ -15,15 +16,77 @@ import mercedesExt3 from "@/assets/mercedes-exterior-3.jpeg";
 const LocationCards = () => {
   const { language } = useLanguage();
   const t = translations[language].locations;
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
+  const autoplayRef = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+  
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    { 
+      loop: true, 
+      align: "center",
+      containScroll: "trimSnaps",
+      slidesToScroll: 1,
+    },
+    [autoplayRef.current]
+  );
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [isInteracting, setIsInteracting] = useState(false);
+  const interactionTimeoutRef = useRef<NodeJS.Timeout>();
 
   const scrollPrev = useCallback(() => {
-    if (emblaApi) emblaApi.scrollPrev();
+    if (emblaApi) {
+      emblaApi.scrollPrev();
+      handleUserInteraction();
+    }
   }, [emblaApi]);
 
   const scrollNext = useCallback(() => {
-    if (emblaApi) emblaApi.scrollNext();
+    if (emblaApi) {
+      emblaApi.scrollNext();
+      handleUserInteraction();
+    }
   }, [emblaApi]);
+
+  const handleUserInteraction = () => {
+    setIsInteracting(true);
+    if (autoplayRef.current) {
+      autoplayRef.current.stop();
+    }
+    
+    if (interactionTimeoutRef.current) {
+      clearTimeout(interactionTimeoutRef.current);
+    }
+    
+    interactionTimeoutRef.current = setTimeout(() => {
+      setIsInteracting(false);
+      if (autoplayRef.current) {
+        autoplayRef.current.play();
+      }
+    }, 3000);
+  };
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setSelectedIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    return () => {
+      emblaApi.off("select", onSelect);
+    };
+  }, [emblaApi, onSelect]);
+
+  useEffect(() => {
+    return () => {
+      if (interactionTimeoutRef.current) {
+        clearTimeout(interactionTimeoutRef.current);
+      }
+    };
+  }, []);
 
   const carouselImages = [
     mercedesInt1,
@@ -47,43 +110,74 @@ const LocationCards = () => {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto relative">
-          <Card className="overflow-hidden shadow-luxury">
-            <div className="overflow-hidden" ref={emblaRef}>
-              <div className="flex">
-                {carouselImages.map((image, index) => (
-                  <div
-                    key={index}
-                    className="flex-[0_0_100%] min-w-0"
-                  >
-                    <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+        <div className="max-w-7xl mx-auto relative">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="flex gap-4 md:gap-6">
+              {carouselImages.map((image, index) => (
+                <div
+                  key={index}
+                  className="flex-[0_0_85%] md:flex-[0_0_70%] lg:flex-[0_0_60%] min-w-0 transition-all duration-500"
+                  onMouseEnter={handleUserInteraction}
+                  onTouchStart={handleUserInteraction}
+                >
+                  <Card className="overflow-hidden shadow-luxury h-full group">
+                    <div className="aspect-[16/10] md:aspect-[16/9] overflow-hidden relative">
                       <img
                         src={image}
                         alt={`Mercedes Benz V250 ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                        style={{
+                          filter: selectedIndex === index ? 'brightness(1)' : 'brightness(0.6)',
+                          transform: selectedIndex === index ? 'scale(1)' : 'scale(0.95)',
+                        }}
+                      />
+                      <div 
+                        className="absolute inset-0 bg-black transition-opacity duration-700"
+                        style={{
+                          opacity: selectedIndex === index ? 0 : 0.3,
+                        }}
                       />
                     </div>
-                  </div>
-                ))}
-              </div>
+                  </Card>
+                </div>
+              ))}
             </div>
+          </div>
 
-            {/* Navigation Buttons */}
-            <button
-              onClick={scrollPrev}
-              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background/90 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
-              aria-label="Previous image"
-            >
-              <ChevronLeft className="w-6 h-6 text-foreground" />
-            </button>
-            <button
-              onClick={scrollNext}
-              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background/90 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
-              aria-label="Next image"
-            >
-              <ChevronRight className="w-6 h-6 text-foreground" />
-            </button>
-          </Card>
+          {/* Navigation Buttons */}
+          <button
+            onClick={scrollPrev}
+            className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/95 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
+            aria-label="Previous image"
+          >
+            <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
+          </button>
+          <button
+            onClick={scrollNext}
+            className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/95 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
+            aria-label="Next image"
+          >
+            <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
+          </button>
+
+          {/* Dots Indicator */}
+          <div className="flex justify-center gap-2 mt-6">
+            {carouselImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => {
+                  emblaApi?.scrollTo(index);
+                  handleUserInteraction();
+                }}
+                className={`transition-all duration-300 rounded-full ${
+                  selectedIndex === index
+                    ? "w-8 h-2 bg-luxury-gold"
+                    : "w-2 h-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>
