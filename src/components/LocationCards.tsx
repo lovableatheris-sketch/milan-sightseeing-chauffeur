@@ -9,7 +9,6 @@ import mercedesInt1 from "@/assets/mercedes-interior-1.jpeg";
 import mercedesExt1 from "@/assets/mercedes-exterior-1.jpeg";
 import mercedesInt2 from "@/assets/mercedes-interior-2.jpeg";
 import mercedesInt3 from "@/assets/mercedes-interior-3.jpeg";
-import mercedesInt4 from "@/assets/mercedes-interior-4.jpeg";
 import mercedesExt2 from "@/assets/mercedes-exterior-2.jpeg";
 import mercedesExt3 from "@/assets/mercedes-exterior-3.jpeg";
 
@@ -93,7 +92,6 @@ const LocationCards = () => {
     mercedesExt1,
     mercedesInt2,
     mercedesInt3,
-    mercedesInt4,
     mercedesExt2,
     mercedesExt3,
   ];
