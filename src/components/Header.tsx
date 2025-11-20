@@ -50,7 +50,7 @@ const Header = () => {
               onClick={() => navigate("/")}
               className="transition-smooth hover:opacity-80"
             >
-              <img src={logo} alt="TMT Sightseeing" className="h-10 md:h-12 w-auto object-contain" />
+              <img src={logo} alt="TMT Sightseeing" className="h-14 md:h-16 w-auto object-contain" />
             </button>
 
             {/* Desktop Navigation */}
