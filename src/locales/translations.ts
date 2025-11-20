@@ -13,7 +13,7 @@ export const translations = {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
       subtitle:
-        "Oferecemos transfers de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
+        "Oferecemos serviços de tipo taxi do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
       cta: "Solicitar Corrida",
     },
     chiSiamo: {
@@ -222,7 +222,7 @@ export const translations = {
       title: "BOOK YOUR CAR NOW",
       titleHighlight: "",
       subtitle:
-        "We provide transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel in total safety with a professional service.",
+        "We offer taxi-type services from Malpensa airport to any destination with sanitized vehicles, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel with safety and professionalism.",
       cta: "Request a Ride",
     },
     chiSiamo: {
@@ -431,7 +431,7 @@ export const translations = {
       title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
       subtitle:
-        "Forniamo trasferimenti da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
+        "Offriamo servizi di tipo taxi dall'aeroporto di Malpensa verso qualsiasi destinazione con veicoli sanificati, comfort garantito e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in sicurezza e professionalità.",
       cta: "Prenota su WhatsApp",
     },
     chiSiamo: {
@@ -639,7 +639,7 @@ export const translations = {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
       subtitle:
-        "Nous fournissons des transferts depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
+        "Nous offrons des services de type taxi depuis l'aéroport de Malpensa vers n'importe quelle destination avec des véhicules désinfectés, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en sécurité et professionnalisme.",
       cta: "Demander une course",
     },
     chiSiamo: {
