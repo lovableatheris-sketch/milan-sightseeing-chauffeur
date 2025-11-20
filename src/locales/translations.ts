@@ -410,7 +410,7 @@ export const translations = {
       title: "I nostri veicoli",
       subtitle: "Flotta Mercedes di lusso per il tuo comfort",
       vehicle1Title: "Mercedes Benz v250",
-      vehicle1Desc: "Berlina elegante e confortevole, perfetta per transfer e viaggi d'affari. Capacità: fino a 3 passeggeri + bagagli. Dotata di aria condizionata, sedili in pelle e tecnologia di ultima generazione.",
+      vehicle1Desc: "Capacità: fino a 6 passeggeri + bagagli. La Mercedes-Benz V250 unisce lusso, spazio e comfort in un unico veicolo. Con interni raffinati, ampia capacità per passeggeri e bagagli e tecnologia moderna, garantisce viaggi silenziosi e confortevoli. Perfetta per trasferimenti aziendali, gruppi e servizi VIP, offre eleganza e prestazioni eccellenti.",
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc: "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
       calcPreventivo: "Calcola il preventivo",
