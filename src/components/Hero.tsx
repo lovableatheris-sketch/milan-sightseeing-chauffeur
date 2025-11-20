@@ -3,6 +3,7 @@ import heroImage from "@/assets/hero-galleria.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const { language } = useLanguage();
@@ -71,13 +72,24 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto animate-fade-in-up font-light">
           {t.subtitle}
         </p>
-        <Button
-          onClick={handleWhatsAppClick}
-          size="lg"
-          className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
-        >
-          {t.cta}
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Button
+            onClick={handleWhatsAppClick}
+            size="lg"
+            className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
+          >
+            {t.cta}
+          </Button>
+          <Link to="/contato">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
+            >
+              {t.ctaContact}
+            </Button>
+          </Link>
+        </div>
       </div>
 
       {/* Scroll Indicator */}

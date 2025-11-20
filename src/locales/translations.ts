@@ -15,6 +15,7 @@ export const translations = {
       subtitle:
         "Oferecemos serviços de tipo taxi do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
       cta: "Solicitar Corrida",
+      ctaContact: "Entre em Contato",
     },
     chiSiamo: {
       title: "Quem somos?",
@@ -224,6 +225,7 @@ export const translations = {
       subtitle:
         "We offer taxi-type services from Malpensa airport to any destination with sanitized vehicles, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel with safety and professionalism.",
       cta: "Request a Ride",
+      ctaContact: "Contact Us",
     },
     chiSiamo: {
       title: "About us",
@@ -433,6 +435,7 @@ export const translations = {
       subtitle:
         "Offriamo servizi di tipo taxi dall'aeroporto di Malpensa verso qualsiasi destinazione con veicoli sanificati, comfort garantito e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in sicurezza e professionalità.",
       cta: "Prenota su WhatsApp",
+      ctaContact: "Contattaci",
     },
     chiSiamo: {
       title: "Chi siamo?",
@@ -641,6 +644,7 @@ export const translations = {
       subtitle:
         "Nous offrons des services de type taxi depuis l'aéroport de Malpensa vers n'importe quelle destination avec des véhicules désinfectés, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en sécurité et professionnalisme.",
       cta: "Demander une course",
+      ctaContact: "Contactez-nous",
     },
     chiSiamo: {
       title: "Qui sommes-nous?",
