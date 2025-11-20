@@ -10,7 +10,7 @@ export const translations = {
       reserveAgora: "Reserve Agora",
     },
     hero: {
-      title: "PRENOTA ORA IL TUO TAXI",
+      title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
       subtitle: "Oferecemos transfers de táxi de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu táxi de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
       cta: "Solicitar Corrida",
@@ -199,7 +199,7 @@ export const translations = {
       reserveAgora: "Book Now",
     },
     hero: {
-      title: "BOOK YOUR TAXI NOW",
+      title: "BOOK YOUR CAR NOW",
       titleHighlight: "",
       subtitle: "We provide taxi transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your taxi from or to Malpensa airport now and travel in total safety with a professional service.",
       cta: "Request a Ride",
@@ -388,7 +388,7 @@ export const translations = {
       reserveAgora: "Prenota Ora",
     },
     hero: {
-      title: "PRENOTA ORA IL TUO TAXI",
+      title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
       subtitle: "Forniamo trasferimenti taxi da Malpensa verso ogni destinazione con auto igienizzate, comodità garantita e prezzo fisso. Prenota subito il tuo taxi da o per l'aeroporto di Malpensa e viaggia in totale sicurezza con un servizio professionale.",
       cta: "Prenota su WhatsApp",
