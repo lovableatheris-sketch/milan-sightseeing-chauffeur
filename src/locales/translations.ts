@@ -12,7 +12,7 @@ export const translations = {
     hero: {
       title: "PRENOTA ORA IL TUO TAXI",
       titleHighlight: "",
-      subtitle: "Transporte executivo de excelência na cidade mais elegante da Itália",
+      subtitle: "Oferecemos transfers de táxi de Malpensa para qualquer destino com carros higienizados, conforto garantido e preço fixo. Reserve agora seu táxi de ou para o aeroporto de Malpensa e viaje com total segurança com um serviço profissional.",
       cta: "Solicitar Corrida",
     },
     chiSiamo: {
@@ -201,7 +201,7 @@ export const translations = {
     hero: {
       title: "BOOK YOUR TAXI NOW",
       titleHighlight: "",
-      subtitle: "Executive transportation excellence in Italy's most elegant city",
+      subtitle: "We provide taxi transfers from Malpensa to any destination with sanitized cars, guaranteed comfort and fixed price. Book your taxi from or to Malpensa airport now and travel in total safety with a professional service.",
       cta: "Request a Ride",
     },
     chiSiamo: {
@@ -579,7 +579,7 @@ export const translations = {
     hero: {
       title: "RÉSERVEZ VOTRE TAXI MAINTENANT",
       titleHighlight: "",
-      subtitle: "Excellence du transport exécutif dans la ville la plus élégante d'Italie",
+      subtitle: "Nous fournissons des transferts taxi depuis Malpensa vers toute destination avec des voitures désinfectées, confort garanti et prix fixe. Réservez maintenant votre taxi depuis ou vers l'aéroport de Malpensa et voyagez en toute sécurité avec un service professionnel.",
       cta: "Demander une course",
     },
     chiSiamo: {
