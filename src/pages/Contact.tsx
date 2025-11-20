@@ -9,9 +9,9 @@ const Contact = () => {
   const t = translations[language].contact;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      <main className="pt-32 pb-20">
+      <main className="flex-1 flex items-center py-32">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Header Section */}
