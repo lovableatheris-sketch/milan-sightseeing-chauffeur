@@ -358,11 +358,11 @@ export const translations = {
       cta: "Book Now",
     },
     tariffs: {
-      title: "Travel Rates",
+      title: "Calculate quote",
       description:
         "Check our rates for mountain, lake, beach and major city destinations, departing from Malpensa Airport.",
       viewAll: "View all rates",
-      pageTitle: "Travel Rates",
+      pageTitle: "Calculate quote",
       pageSubtitle: "Departing from Malpensa Airport",
       distanceNote: "All distances indicated are round trip (A/R).",
       mountainsTitle: "MOUNTAINS & LAKES (+30%)",
