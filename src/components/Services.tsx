@@ -76,7 +76,7 @@ const Services = () => {
           <div className="w-20 h-1 bg-luxury-gold mx-auto"></div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-12 md:gap-16 lg:gap-24">
+        <div className="flex flex-wrap justify-center gap-16 md:gap-20 lg:gap-28">
           {services.map((service, index) => {
             return (
               <button
