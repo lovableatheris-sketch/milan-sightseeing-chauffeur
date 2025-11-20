@@ -43,7 +43,7 @@ const NostriVeicoli = () => {
                   <div className="flex items-center gap-4 mb-4 text-muted-foreground">
                     <div className="flex items-center gap-2">
                       <Users className="w-5 h-5" />
-                      <span>3 {t.passengers}</span>
+                      <span>6 {t.passengers}</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Briefcase className="w-5 h-5" />
