@@ -64,51 +64,41 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="servicos" className="py-20 md:py-32 bg-secondary" ref={sectionRef}>
+    <section id="servicos" className="py-20 md:py-32 bg-background" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
+          <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
+            HOW WE CAN HELP
+          </p>
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-2">
             {t.title}
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t.subtitle}
-          </p>
+          <div className="w-20 h-1 bg-luxury-gold mx-auto"></div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 lg:gap-16">
           {services.map((service, index) => {
             return (
               <button
                 key={index}
                 data-index={index}
                 onClick={service.onClick}
-                className={`bg-background p-8 rounded-lg border border-border/50 transition-all duration-300 text-left group cursor-pointer hover:border-luxury-gold/50 hover:shadow-lg ${
+                className={`flex flex-col items-center gap-4 transition-all duration-300 group cursor-pointer max-w-[200px] ${
                   visibleCards.includes(index)
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-8"
                 }`}
               >
-              <div className="flex flex-col gap-4">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg transition-colors bg-muted text-foreground group-hover:bg-luxury-gold/10 group-hover:text-luxury-gold self-start">
-                  <service.icon size={24} strokeWidth={1.5} />
+                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
+                  <service.icon size={40} strokeWidth={1.5} className="text-primary-foreground" />
                 </div>
                 
-                <div>
-                  <h3 className="text-lg font-heading font-semibold mb-2 text-foreground group-hover:text-luxury-gold transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground leading-relaxed">
-                    {service.description}
-                  </p>
-                </div>
-                
-                <div className="flex items-center gap-2 text-luxury-gold font-medium text-sm opacity-0 group-hover:opacity-100 transition-opacity mt-2">
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                </div>
-              </div>
-            </button>
-          );
-        })}
+                <h3 className="text-sm md:text-base font-heading font-semibold text-foreground text-center uppercase tracking-wide leading-tight">
+                  {service.title}
+                </h3>
+              </button>
+            );
+          })}
         </div>
       </div>
     </section>
