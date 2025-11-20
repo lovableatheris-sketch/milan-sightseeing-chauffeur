@@ -1,6 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
-import { Card } from "@/components/ui/card";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -23,14 +22,13 @@ const LocationCards = () => {
     { 
       loop: true, 
       align: "center",
-      containScroll: "trimSnaps",
-      slidesToScroll: 1,
+      skipSnaps: false,
+      dragFree: false,
     },
     [autoplayRef.current]
   );
 
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const [isInteracting, setIsInteracting] = useState(false);
   const interactionTimeoutRef = useRef<NodeJS.Timeout>();
 
   const scrollPrev = useCallback(() => {
@@ -48,7 +46,6 @@ const LocationCards = () => {
   }, [emblaApi]);
 
   const handleUserInteraction = () => {
-    setIsInteracting(true);
     if (autoplayRef.current) {
       autoplayRef.current.stop();
     }
@@ -58,7 +55,6 @@ const LocationCards = () => {
     }
     
     interactionTimeoutRef.current = setTimeout(() => {
-      setIsInteracting(false);
       if (autoplayRef.current) {
         autoplayRef.current.play();
       }
@@ -74,8 +70,10 @@ const LocationCards = () => {
     if (!emblaApi) return;
     onSelect();
     emblaApi.on("select", onSelect);
+    emblaApi.on("reInit", onSelect);
     return () => {
       emblaApi.off("select", onSelect);
+      emblaApi.off("reInit", onSelect);
     };
   }, [emblaApi, onSelect]);
 
@@ -114,29 +112,24 @@ const LocationCards = () => {
               {carouselImages.map((image, index) => (
                 <div
                   key={index}
-                  className="flex-[0_0_85%] md:flex-[0_0_70%] lg:flex-[0_0_60%] min-w-0 transition-all duration-500"
+                  className="flex-[0_0_85%] md:flex-[0_0_70%] lg:flex-[0_0_60%] min-w-0"
                   onMouseEnter={handleUserInteraction}
                   onTouchStart={handleUserInteraction}
                 >
-                  <Card className="overflow-hidden shadow-luxury h-full group">
+                  <div className="overflow-hidden rounded-xl shadow-luxury h-full">
                     <div className="aspect-[16/10] md:aspect-[16/9] overflow-hidden relative">
                       <img
                         src={image}
                         alt={`Mercedes Benz V250 ${index + 1}`}
-                        className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+                        className="w-full h-full object-cover transition-transform duration-300 will-change-transform"
                         style={{
-                          filter: selectedIndex === index ? 'brightness(1)' : 'brightness(0.6)',
-                          transform: selectedIndex === index ? 'scale(1)' : 'scale(0.95)',
+                          opacity: selectedIndex === index ? 1 : 0.5,
+                          transform: selectedIndex === index ? 'scale(1)' : 'scale(0.92)',
                         }}
-                      />
-                      <div 
-                        className="absolute inset-0 bg-black transition-opacity duration-700"
-                        style={{
-                          opacity: selectedIndex === index ? 0 : 0.3,
-                        }}
+                        loading="lazy"
                       />
                     </div>
-                  </Card>
+                  </div>
                 </div>
               ))}
             </div>
