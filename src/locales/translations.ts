@@ -90,8 +90,7 @@ export const translations = {
     transfers: {
       title: "Transfers Aeroportos",
       subtitle: "Serviço porta-a-porta para todos os aeroportos de Milão",
-      mainTitle:
-        "Oferecemos um serviço de aluguel com motorista de e para o aeroporto de Malpensa em Milão.",
+      mainTitle: "Oferecemos um serviço de aluguel com motorista de e para o aeroporto de Malpensa em Milão.",
       chooseService: "Escolha nosso serviço e aproveite várias vantagens:",
       flightMonitoring: "planeje sua viagem com antecedência usando um dos veículos à sua disposição",
       comfortTravel: "viaje com total conforto em um carro de luxo",
@@ -150,11 +149,11 @@ export const translations = {
       cta: "Reservar Agora",
     },
     tariffs: {
-      title: "Tarifas de Viagem",
+      title: "Calcular orçamento",
       description:
         "Confira nossas tarifas para destinos de montanha, lagos, praias e grandes cidades, partindo do Aeroporto di Malpensa.",
       viewAll: "Ver todas as tarifas",
-      pageTitle: "Tarifas de Viagem",
+      pageTitle: "Calcular orçamento",
       pageSubtitle: "Partindo do Aeroporto di Malpensa",
       distanceNote: "Todas as distâncias indicadas são ida e volta (A/R).",
       mountainsTitle: "MONTANHAS & LAGOS (+30%)",
@@ -509,8 +508,7 @@ export const translations = {
     transfers: {
       title: "Transfer Aeroporti",
       subtitle: "Servizio porta a porta per tutti gli aeroporti di Milano",
-      mainTitle:
-        "Offriamo un servizio Noleggio con Conducente da e per l'aeroporto di Milano Malpensa.",
+      mainTitle: "Offriamo un servizio Noleggio con Conducente da e per l'aeroporto di Milano Malpensa.",
       chooseService: "Scegli il nostro servizio e goditi vari vantaggi:",
       flightMonitoring: "pianifica il tuo viaggio in anticipo utilizzando uno dei veicoli a tua disposizione",
       comfortTravel: "viaggia in completo comfort in un'auto di lusso",
@@ -719,8 +717,7 @@ export const translations = {
     transfers: {
       title: "Transferts Aéroports",
       subtitle: "Service porte-à-porte vers tous les aéroports de Milan",
-      mainTitle:
-        "Nous proposons un service de location avec chauffeur vers et depuis l'aéroport de Milan Malpensa.",
+      mainTitle: "Nous proposons un service de location avec chauffeur vers et depuis l'aéroport de Milan Malpensa.",
       chooseService: "Choisissez notre service et profitez de plusieurs avantages:",
       flightMonitoring: "planifiez votre voyage à l'avance en utilisant l'un des véhicules à votre disposition",
       comfortTravel: "voyagez en tout confort dans une voiture de luxe",
