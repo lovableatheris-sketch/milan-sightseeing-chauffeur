@@ -22,7 +22,7 @@ export const translations = {
     },
     whyChoose: {
       subtitle: "TRANSFERS PRIVADOS E PASSEIOS PELA CIDADE",
-      title: "POR QUE ESCOLHER SIGHTSEEING DI THOMAS TAGLIATTI",
+      title: "POR QUE ESCOLHER NOSSOS SERVIÇOS?",
       description: "Oferecemos um serviço profissional e confortável de motorista de Milão ou arredores para qualquer destino: transfers para aeroportos, passeios pela cidade e viagens personalizadas para negócios ou lazer.",
       feature1: "SERVIÇO PONTUAL E CONFIÁVEL",
       feature2: "VEÍCULOS CONFORTÁVEIS E LIMPOS",
@@ -218,7 +218,7 @@ export const translations = {
     },
     whyChoose: {
       subtitle: "PRIVATE TRANSFERS & CITY TOURS",
-      title: "WHY CHOOSE SIGHTSEEING DI THOMAS TAGLIATTI",
+      title: "WHY CHOOSE OUR SERVICES?",
       description: "We offer a professional and comfortable driver service from Milan or surrounding areas to any destination: airport transfers, city tours, and personalized trips for business or leisure.",
       feature1: "ON-TIME, RELIABLE SERVICE",
       feature2: "COMFORTABLE AND CLEAN VEHICLES",
@@ -414,7 +414,7 @@ export const translations = {
     },
     whyChoose: {
       subtitle: "TRANSFER PRIVATI E TOUR CITTADINI",
-      title: "PERCHÉ SCEGLIERE SIGHTSEEING DI THOMAS TAGLIATTI",
+      title: "PERCHÉ SCEGLIERE I NOSTRI SERVIZI?",
       description: "Offriamo un servizio professionale e confortevole di autista da Milano o zone limitrofe verso qualsiasi destinazione: transfer aeroportuali, tour cittadini e viaggi personalizzati per affari o piacere.",
       feature1: "SERVIZIO PUNTUALE E AFFIDABILE",
       feature2: "VEICOLI CONFORTEVOLI E PULITI",
