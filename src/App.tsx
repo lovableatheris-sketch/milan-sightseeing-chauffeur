@@ -7,7 +7,6 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import TouristTours from "./pages/TouristTours";
-import HourlyDisposal from "./pages/HourlyDisposal";
 import Transfers from "./pages/Transfers";
 
 
@@ -32,7 +31,6 @@ const App = () => (
             <Route path="/calcolo-preventivo" element={<CalcoloPreventivo />} />
             <Route path="/contato" element={<Contact />} />
             <Route path="/tours" element={<TouristTours />} />
-            <Route path="/disposicoes" element={<HourlyDisposal />} />
             <Route path="/transfers" element={<Transfers />} />
             
             

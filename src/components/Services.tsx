@@ -19,12 +19,6 @@ const Services = () => {
       onClick: () => navigate("/tours"),
     },
     {
-      icon: Clock,
-      title: t.disposalTitle,
-      description: t.disposalDesc,
-      onClick: () => navigate("/disposicoes"),
-    },
-    {
       icon: MessageCircle,
       title: t.whatsappTitle,
       description: t.whatsappDesc,
