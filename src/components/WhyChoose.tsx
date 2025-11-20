@@ -13,7 +13,7 @@ const WhyChoose = () => {
   ];
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20">
       <div className="container mx-auto px-4">
         <div className="max-w-5xl mx-auto text-center">
           {/* Subtitle */}
