@@ -588,8 +588,7 @@ export const translations = {
     },
     footer: {
       brand: "Sightseeing di Thomas Tagliatti",
-      brandDesc:
-        "Il tuo autista privato di fiducia a Milano. Trasporto esecutivo con eccellenza, comfort e puntualità.",
+      brandDesc: "La tua auto privata di fiducia a Milano. Trasporto di lusso con eccellenza, comfort e puntualità.",
       contactTitle: "Contatto",
       whatsapp: "WhatsApp",
       socialTitle: "Social Media",
