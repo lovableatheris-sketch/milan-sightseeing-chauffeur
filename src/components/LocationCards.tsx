@@ -1,29 +1,38 @@
-import sanSiroImage from "@/assets/san-siro-card.jpg";
-import lagoMaggioreImage from "@/assets/lago-maggiore-card.jpg";
-import lagoComoImage from "@/assets/lago-como-card.jpg";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
+import { Card } from "@/components/ui/card";
+import useEmblaCarousel from "embla-carousel-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useCallback } from "react";
+import mercedesInt1 from "@/assets/mercedes-interior-1.jpeg";
+import mercedesExt1 from "@/assets/mercedes-exterior-1.jpeg";
+import mercedesInt2 from "@/assets/mercedes-interior-2.jpeg";
+import mercedesInt3 from "@/assets/mercedes-interior-3.jpeg";
+import mercedesInt4 from "@/assets/mercedes-interior-4.jpeg";
+import mercedesExt2 from "@/assets/mercedes-exterior-2.jpeg";
+import mercedesExt3 from "@/assets/mercedes-exterior-3.jpeg";
 
 const LocationCards = () => {
   const { language } = useLanguage();
   const t = translations[language].locations;
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, align: "center" });
 
-  const locations = [
-    {
-      image: sanSiroImage,
-      title: t.historicTitle,
-      description: t.historicDesc,
-    },
-    {
-      image: lagoMaggioreImage,
-      title: t.luxuryTitle,
-      description: t.luxuryDesc,
-    },
-    {
-      image: lagoComoImage,
-      title: t.cultureTitle,
-      description: t.cultureDesc,
-    },
+  const scrollPrev = useCallback(() => {
+    if (emblaApi) emblaApi.scrollPrev();
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (emblaApi) emblaApi.scrollNext();
+  }, [emblaApi]);
+
+  const carouselImages = [
+    mercedesInt1,
+    mercedesExt1,
+    mercedesInt2,
+    mercedesInt3,
+    mercedesInt4,
+    mercedesExt2,
+    mercedesExt3,
   ];
 
   return (
@@ -38,39 +47,43 @@ const LocationCards = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {locations.map((location, index) => (
-            <div
-              key={index}
-              className="group relative overflow-hidden rounded-lg shadow-card hover:shadow-luxury transition-elegant cursor-pointer animate-fade-in-up"
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
-              {/* Image */}
-              <div className="aspect-[4/3] overflow-hidden">
-                <img
-                  src={location.image}
-                  alt={location.title}
-                  className="w-full h-full object-cover transition-elegant group-hover:scale-110"
-                />
+        <div className="max-w-5xl mx-auto relative">
+          <Card className="overflow-hidden shadow-luxury">
+            <div className="overflow-hidden" ref={emblaRef}>
+              <div className="flex">
+                {carouselImages.map((image, index) => (
+                  <div
+                    key={index}
+                    className="flex-[0_0_100%] min-w-0"
+                  >
+                    <div className="aspect-[16/9] md:aspect-[21/9] overflow-hidden">
+                      <img
+                        src={image}
+                        alt={`Mercedes Benz V250 ${index + 1}`}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                  </div>
+                ))}
               </div>
-
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-80 group-hover:opacity-90 transition-elegant" />
-
-              {/* Content */}
-              <div className="absolute inset-0 flex flex-col justify-end p-6 text-primary-foreground">
-                <h3 className="text-2xl font-heading font-bold mb-3 text-luxury-gold transform translate-y-0 group-hover:-translate-y-2 transition-elegant">
-                  {location.title}
-                </h3>
-                <p className="text-sm leading-relaxed opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-elegant">
-                  {location.description}
-                </p>
-              </div>
-
-              {/* Hover Border Effect */}
-              <div className="absolute inset-0 border-2 border-luxury-gold opacity-0 group-hover:opacity-100 transition-elegant rounded-lg" />
             </div>
-          ))}
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={scrollPrev}
+              className="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background/90 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
+              aria-label="Previous image"
+            >
+              <ChevronLeft className="w-6 h-6 text-foreground" />
+            </button>
+            <button
+              onClick={scrollNext}
+              className="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-background/90 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
+              aria-label="Next image"
+            >
+              <ChevronRight className="w-6 h-6 text-foreground" />
+            </button>
+          </Card>
         </div>
       </div>
     </section>
