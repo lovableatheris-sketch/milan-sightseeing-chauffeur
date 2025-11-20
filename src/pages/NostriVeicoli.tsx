@@ -5,6 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useNavigate } from "react-router-dom";
 import { Users, Briefcase } from "lucide-react";
+import mercedesImage from "@/assets/mercedes-e-class.webp";
 
 const NostriVeicoli = () => {
   const { language } = useLanguage();
@@ -30,7 +31,7 @@ const NostriVeicoli = () => {
               <div className="bg-card rounded-lg shadow-luxury overflow-hidden">
                 <div className="aspect-video bg-muted overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=800&q=80" 
+                    src={mercedesImage}
                     alt="Mercedes E-Class"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
                   />
