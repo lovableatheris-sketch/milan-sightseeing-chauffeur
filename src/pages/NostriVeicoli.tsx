@@ -25,7 +25,7 @@ const NostriVeicoli = () => {
             </p>
 
             {/* Vehicles Grid */}
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-1 gap-8 max-w-2xl mx-auto">
               {/* Mercedes E-Class */}
               <div className="bg-card rounded-lg shadow-luxury overflow-hidden">
                 <div className="aspect-video bg-muted overflow-hidden">
@@ -61,40 +61,6 @@ const NostriVeicoli = () => {
                 </div>
               </div>
 
-              {/* Mercedes V-Class */}
-              <div className="bg-card rounded-lg shadow-luxury overflow-hidden">
-                <div className="aspect-video bg-muted overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80" 
-                    alt="Mercedes V-Class"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-heading font-bold text-foreground mb-4">
-                    {t.vehicle2Title}
-                  </h3>
-                  <div className="flex items-center gap-4 mb-4 text-muted-foreground">
-                    <div className="flex items-center gap-2">
-                      <Users className="w-5 h-5" />
-                      <span>7 {t.passengers}</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <Briefcase className="w-5 h-5" />
-                      <span>{t.luggage}</span>
-                    </div>
-                  </div>
-                  <p className="text-foreground/80 mb-6 leading-relaxed">
-                    {t.vehicle2Desc}
-                  </p>
-                  <Button 
-                    onClick={() => navigate("/calcolo-preventivo")}
-                    className="w-full bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
-                  >
-                    {t.calcPreventivo}
-                  </Button>
-                </div>
-              </div>
             </div>
           </div>
         </div>
