@@ -6,6 +6,7 @@ import TariffSection from "@/components/TariffSection";
 import LocationCards from "@/components/LocationCards";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import FloatingDonationButton from "@/components/FloatingDonationButton";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
         <FinalCTA />
       </main>
       <Footer />
+      <FloatingDonationButton />
     </div>
   );
 };
