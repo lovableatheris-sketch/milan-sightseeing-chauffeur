@@ -115,6 +115,44 @@ const CalcoloPreventivo = () => {
                 </p>
               </div>
             </div>
+
+            {/* Additional Information Section */}
+            <div className="mt-16 grid md:grid-cols-2 gap-8">
+              {/* Milano Simple Transfer */}
+              <div className="bg-card rounded-lg shadow-lg p-6">
+                <h3 className="text-xl font-bold text-foreground mb-4">
+                  Milano - Transfer Simples
+                </h3>
+                <p className="text-3xl font-bold text-primary mb-2">€ 100</p>
+              </div>
+
+              {/* Corporate Rates */}
+              <div className="bg-card rounded-lg shadow-lg p-6">
+                <h3 className="text-xl font-bold text-foreground mb-4">
+                  Corporate (com fatura)
+                </h3>
+                <div className="space-y-3">
+                  <div className="flex justify-between items-center">
+                    <span className="text-foreground font-semibold">4 horas:</span>
+                    <span className="text-primary font-bold">€ 360 + IVA 10%</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span className="text-foreground font-semibold">8 horas:</span>
+                    <span className="text-primary font-bold">€ 680 + IVA 10%</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Capacity Info */}
+              <div className="bg-card rounded-lg shadow-lg p-6 md:col-span-2">
+                <h3 className="text-xl font-bold text-foreground mb-4">
+                  Capacidade
+                </h3>
+                <p className="text-foreground/80">
+                  Até 5–6 passageiros. Para confirmar o número de malas, entre em contato via WhatsApp.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </main>

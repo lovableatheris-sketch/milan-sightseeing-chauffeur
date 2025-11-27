@@ -19,21 +19,21 @@ const TouristTours = () => {
       description: t.lagoComoDesc,
       image: lagoComoImage,
       duration: "8",
-      price: "€350",
+      price: "€640",
     },
     {
       title: t.lagoMaggioreTitle,
       description: t.lagoMaggioreDesc,
       image: lagoMaggioreImage,
       duration: "8",
-      price: "€380",
+      price: "€720",
     },
     {
       title: t.sanSiroTitle,
       description: t.sanSiroDesc,
       image: sanSiroImage,
-      duration: "3",
-      price: "€150",
+      duration: "4",
+      price: "€360",
     },
   ];
 
