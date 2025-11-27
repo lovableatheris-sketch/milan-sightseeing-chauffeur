@@ -104,24 +104,24 @@ const Transfers = () => {
             <div className="max-w-4xl mx-auto mt-16">
               <div className="bg-card rounded-lg shadow-lg p-8">
                 <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-8 text-center">
-                  Prezzi Transfer Aeroporti
+                  {t.pricesTitle}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="bg-background rounded-lg p-6 text-center border-2 border-border hover:border-primary transition-colors">
                     <h3 className="text-lg font-semibold text-foreground mb-2">
-                      Malpensa – Milano
+                      {t.malpensaMilano}
                     </h3>
                     <p className="text-3xl font-bold text-primary">€ 170</p>
                   </div>
                   <div className="bg-background rounded-lg p-6 text-center border-2 border-border hover:border-primary transition-colors">
                     <h3 className="text-lg font-semibold text-foreground mb-2">
-                      Linate – Milano
+                      {t.linateMilano}
                     </h3>
                     <p className="text-3xl font-bold text-primary">€ 100</p>
                   </div>
                   <div className="bg-background rounded-lg p-6 text-center border-2 border-border hover:border-primary transition-colors">
                     <h3 className="text-lg font-semibold text-foreground mb-2">
-                      Orio al Serio – Milano
+                      {t.orioMilano}
                     </h3>
                     <p className="text-3xl font-bold text-primary">€ 180</p>
                   </div>

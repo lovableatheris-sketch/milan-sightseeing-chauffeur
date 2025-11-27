@@ -2,8 +2,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { MapPin, Search, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 const CalcoloPreventivo = () => {
+  const { language } = useLanguage();
+  const t = translations[language].tariffs;
   const [distance, setDistance] = useState(50);
   const pricePerKm = 2.59;
   const calculatedPrice = (distance * pricePerKm).toFixed(2);
@@ -121,7 +125,7 @@ const CalcoloPreventivo = () => {
               {/* Milano Simple Transfer */}
               <div className="bg-card rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-foreground mb-4">
-                  Milano - Transfer Simples
+                  {t.milanoTransferTitle}
                 </h3>
                 <p className="text-3xl font-bold text-primary mb-2">€ 100</p>
               </div>
@@ -129,15 +133,15 @@ const CalcoloPreventivo = () => {
               {/* Corporate Rates */}
               <div className="bg-card rounded-lg shadow-lg p-6">
                 <h3 className="text-xl font-bold text-foreground mb-4">
-                  Corporate (com fatura)
+                  {t.corporateTitle}
                 </h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
-                    <span className="text-foreground font-semibold">4 horas:</span>
+                    <span className="text-foreground font-semibold">{t.corporateHours4}</span>
                     <span className="text-primary font-bold">€ 360 + IVA 10%</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-foreground font-semibold">8 horas:</span>
+                    <span className="text-foreground font-semibold">{t.corporateHours8}</span>
                     <span className="text-primary font-bold">€ 680 + IVA 10%</span>
                   </div>
                 </div>
@@ -146,10 +150,10 @@ const CalcoloPreventivo = () => {
               {/* Capacity Info */}
               <div className="bg-card rounded-lg shadow-lg p-6 md:col-span-2">
                 <h3 className="text-xl font-bold text-foreground mb-4">
-                  Capacidade
+                  {t.capacityTitle}
                 </h3>
                 <p className="text-foreground/80">
-                  Até 5–6 passageiros. Para confirmar o número de malas, entre em contato via WhatsApp.
+                  {t.capacityDesc}
                 </p>
               </div>
             </div>
