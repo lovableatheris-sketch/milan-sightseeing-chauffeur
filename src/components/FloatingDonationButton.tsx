@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import tmtsLogo from "@/assets/tmts.png";
+import ronaldLogo from "@/assets/ronald-mcdonald-logo.png";
 
 const FloatingDonationButton = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -35,8 +35,8 @@ const FloatingDonationButton = () => {
         }`}
       >
         <img
-          src={tmtsLogo}
-          alt="TMTS Sightseeing"
+          src={ronaldLogo}
+          alt="Ronald McDonald House Charities"
           className={`object-contain transition-all duration-500 ${
             isExpanded ? "w-12 h-12" : "w-full h-full p-2"
           }`}
