@@ -13,7 +13,7 @@ export const translations = {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
       subtitle:
-        "Oferecemos serviços de tipo taxi do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
+        "Oferecemos serviços de noleggio con conducente (aluguel com motorista) do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
       cta: "Solicitar Corrida",
       ctaContact: "Entre em Contato",
     },
@@ -233,7 +233,7 @@ export const translations = {
       title: "BOOK YOUR CAR NOW",
       titleHighlight: "",
       subtitle:
-        "We offer taxi-type services from Malpensa airport to any destination with sanitized vehicles, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel with safety and professionalism.",
+        "We offer chauffeur-driven car rental services from Malpensa airport to any destination with sanitized vehicles, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel with safety and professionalism.",
       cta: "Request a Ride",
       ctaContact: "Contact Us",
     },
@@ -453,7 +453,7 @@ export const translations = {
       title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
       subtitle:
-        "Offriamo servizi di tipo taxi dall'aeroporto di Malpensa verso qualsiasi destinazione con veicoli sanificati, comfort garantito e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in sicurezza e professionalità.",
+        "Offriamo servizi di noleggio con conducente dall'aeroporto di Malpensa verso qualsiasi destinazione con veicoli sanificati, comfort garantito e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in sicurezza e professionalità.",
       cta: "Prenota su WhatsApp",
       ctaContact: "Contattaci",
     },
@@ -672,7 +672,7 @@ export const translations = {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
       subtitle:
-        "Nous offrons des services de type taxi depuis l'aéroport de Malpensa vers n'importe quelle destination avec des véhicules désinfectés, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en sécurité et professionnalisme.",
+        "Nous offrons des services de location de voiture avec chauffeur depuis l'aéroport de Malpensa vers n'importe quelle destination avec des véhicules désinfectés, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en sécurité et professionnalisme.",
       cta: "Demander une course",
       ctaContact: "Contactez-nous",
     },
