@@ -43,11 +43,11 @@ const Footer = () => {
                 <span>{t.whatsapp}</span>
               </a>
               <a
-                href="mailto:contato@sightseeingmilano.com"
+                href="mailto:thomastagliatti2022@gmail.com"
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"
               >
                 <Mail size={18} />
-                <span>contato@sightseeingmilano.com</span>
+                <span>thomastagliatti2022@gmail.com</span>
               </a>
             </div>
           </div>
