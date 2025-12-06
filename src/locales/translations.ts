@@ -13,7 +13,7 @@ export const translations = {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
       subtitle:
-        "Oferecemos serviços de noleggio con conducente (aluguel com motorista) do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
+        "Oferecemos serviços de aluguel com motorista do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
       cta: "Solicitar Corrida",
       ctaContact: "Entre em Contato",
     },
