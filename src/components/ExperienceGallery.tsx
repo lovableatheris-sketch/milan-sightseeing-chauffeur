@@ -26,10 +26,7 @@ import experience2 from "@/assets/experience-2.jpg.jpeg";
 import experience3 from "@/assets/experience-3.jpg.jpeg";
 import experience4 from "@/assets/experience-4.jpg.jpeg";
 import experience5 from "@/assets/experience-5.jpg.jpeg";
-// Adicione a imagem experience-6.jpg.jpeg na pasta assets
-// Por enquanto usando placeholder temporário
-import experience6Placeholder from "@/assets/mercedes-interior-3.jpeg";
-const experience6 = experience6Placeholder; // Substitua por: import experience6 from "@/assets/experience-6.jpg.jpeg"; quando adicionar a imagem
+import experience6 from "@/assets/experience-6.jpg.jpg";
 
 const ExperienceGallery = () => {
   const { language } = useLanguage();
