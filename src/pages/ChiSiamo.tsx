@@ -12,38 +12,42 @@ const ChiSiamo = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <main className="pt-24 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-[1400px] mx-auto">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-foreground mb-6 text-center">
+      <main>
+        {/* Hero Section with Background Image */}
+        <section className="relative min-h-[70vh] md:min-h-[80vh] flex items-center justify-center overflow-hidden">
+          {/* Background Image with Blur and Opacity */}
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{
+              backgroundImage: `url(${chiSiamoImage})`,
+              filter: 'blur(3px)',
+              transform: 'scale(1.1)',
+            }}
+          >
+            {/* Dark Overlay for better text readability */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
+            <div className="absolute inset-0 bg-black/40" />
+          </div>
+
+          {/* Content Overlay */}
+          <div className="relative z-10 container mx-auto px-4 py-24 md:py-32 text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in">
               {t.title}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-16 text-center">
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 animate-fade-in">
               {t.subtitle}
             </p>
-
-            {/* Image and Text Layout */}
-            <div className="grid md:grid-cols-2 gap-12 items-center min-h-[600px] mb-8 md:mb-12">
-              {/* Image - Left Side */}
-              <div className="rounded-lg overflow-hidden shadow-elegant h-full">
-                <img 
-                  src={chiSiamoImage} 
-                  alt="Mercedes luxury vehicle - Sightseeing di Thomas Tagliatti"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-
-              {/* Description - Right Side */}
-              <div className="p-10 md:p-12 bg-card rounded-lg shadow-lg h-full flex items-center">
-                <p className="text-xl md:text-2xl text-foreground/90 leading-relaxed">
-                  {t.description}
-                </p>
-              </div>
+            <div className="max-w-4xl mx-auto">
+              <p className="text-lg md:text-xl text-primary-foreground/85 leading-relaxed animate-fade-in-up">
+                {t.description}
+              </p>
             </div>
-
-            {/* Gallery Section */}
-            <ExperienceGallery />
           </div>
+        </section>
+
+        {/* Gallery Section */}
+        <div className="container mx-auto px-4">
+          <ExperienceGallery />
         </div>
       </main>
       <Footer />
