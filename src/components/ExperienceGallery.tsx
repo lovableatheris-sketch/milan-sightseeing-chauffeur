@@ -154,7 +154,7 @@ const ExperienceGallery = () => {
                   onMouseEnter={handleUserInteraction}
                   onTouchStart={handleUserInteraction}
                 >
-                  <div className="overflow-hidden rounded-xl shadow-luxury h-full group">
+                  <div className="overflow-hidden rounded-xl shadow-elegant h-full group">
                     <div className="aspect-[16/10] md:aspect-[16/9] overflow-hidden relative">
                       <img
                         src={image.src}
@@ -176,17 +176,17 @@ const ExperienceGallery = () => {
           {/* Navigation Buttons */}
           <button
             onClick={scrollPrev}
-            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full bg-background/90 hover:bg-background border-2 border-luxury-gold/50 hover:border-luxury-gold shadow-luxury flex items-center justify-center transition-all duration-300 hover:scale-110 z-10 backdrop-blur-sm"
+            className="absolute left-2 md:left-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full bg-background/90 hover:bg-background border-2 border-border shadow-elegant flex items-center justify-center transition-all duration-300 hover:scale-110 z-10 backdrop-blur-sm"
             aria-label="Imagem anterior"
           >
-            <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-luxury-gold" />
+            <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-foreground" />
           </button>
           <button
             onClick={scrollNext}
-            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full bg-background/90 hover:bg-background border-2 border-luxury-gold/50 hover:border-luxury-gold shadow-luxury flex items-center justify-center transition-all duration-300 hover:scale-110 z-10 backdrop-blur-sm"
+            className="absolute right-2 md:right-6 top-1/2 -translate-y-1/2 w-12 h-12 md:w-14 md:h-14 rounded-full bg-background/90 hover:bg-background border-2 border-border shadow-elegant flex items-center justify-center transition-all duration-300 hover:scale-110 z-10 backdrop-blur-sm"
             aria-label="Próxima imagem"
           >
-            <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-luxury-gold" />
+            <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-foreground" />
           </button>
 
           {/* Dots Indicator */}
@@ -200,7 +200,7 @@ const ExperienceGallery = () => {
                 }}
                 className={`transition-all duration-300 rounded-full ${
                   selectedIndex === index
-                    ? "w-10 h-2.5 bg-luxury-gold shadow-luxury"
+                    ? "w-10 h-2.5 bg-foreground"
                     : "w-2.5 h-2.5 bg-muted-foreground/40 hover:bg-muted-foreground/60"
                 }`}
                 aria-label={`Ir para imagem ${index + 1}`}
