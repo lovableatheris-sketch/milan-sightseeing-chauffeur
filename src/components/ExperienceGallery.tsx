@@ -133,7 +133,7 @@ const ExperienceGallery = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24 bg-background">
+    <section className="pt-8 md:pt-12 pb-16 md:pb-24 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-4">
@@ -161,13 +161,11 @@ const ExperienceGallery = () => {
                         alt={image.alt}
                         className="w-full h-full object-cover transition-all duration-500 will-change-transform group-hover:scale-110"
                         style={{
-                          opacity: selectedIndex === index ? 1 : 0.6,
+                          opacity: 1,
                           transform: selectedIndex === index ? 'scale(1)' : 'scale(0.95)',
                         }}
                         loading="lazy"
                       />
-                      {/* Overlay gradient para melhorar legibilidade */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     </div>
                   </div>
                 </div>
