@@ -23,6 +23,10 @@ export const translations = {
       description:
         "Sightseeing di Thomas Tagliatti é um serviço de aluguel com motorista de alto nível em Milão, semelhante a um táxi de luxo, mas com padrões ainda mais elevados. Oferecemos uma experiência de viagem exclusiva com veículos Mercedes de luxo e motoristas profissionais. Nossa missão é garantir conforto, pontualidade e segurança em cada viagem, seja para transfers aeroportuários, passeios turísticos ou serviços por hora para eventos corporativos.",
     },
+    experienceGallery: {
+      title: "Nossas Experiências",
+      description: "Descubra os destinos incríveis e a qualidade dos nossos serviços",
+    },
     whyChoose: {
       subtitle: "TRANSFERS PRIVADOS E PASSEIOS PELA CIDADE",
       title: "POR QUE ESCOLHER NOSSOS SERVIÇOS?",
@@ -242,6 +246,10 @@ export const translations = {
       subtitle: "Professionalism, reliability and comfort",
       description:
         "Sightseeing di Thomas Tagliatti is a premium chauffeur-driven car rental service in Milan, similar to a luxury taxi but with even higher standards. We offer an exclusive travel experience with luxury Mercedes vehicles and professional drivers. Our mission is to guarantee comfort, punctuality and safety on every journey, whether it's airport transfers, tourist tours or hourly arrangements for corporate events.",
+    },
+    experienceGallery: {
+      title: "Our Experiences",
+      description: "Discover incredible destinations and the quality of our services",
     },
     whyChoose: {
       subtitle: "PRIVATE TRANSFERS & CITY TOURS",
@@ -463,6 +471,10 @@ export const translations = {
       description:
         "Sightseeing di Thomas Tagliatti è un servizio di noleggio con conducente di alto livello a Milano, simile a un taxi di lusso ma con standard ancora più elevati. Offriamo un'esperienza di viaggio esclusiva con veicoli Mercedes di lusso e autisti professionisti. La nostra missione è garantire comfort, puntualità e sicurezza in ogni viaggio, che si tratti di transfer aeroportuali, tour turistici o disposizioni orarie per eventi aziendali.",
     },
+    experienceGallery: {
+      title: "Le Nostre Esperienze",
+      description: "Scopri destinazioni incredibili e la qualità dei nostri servizi",
+    },
     whyChoose: {
       subtitle: "TRANSFER PRIVATI E TOUR CITTADINI",
       title: "PERCHÉ SCEGLIERE I NOSTRI SERVIZI?",
@@ -681,6 +693,10 @@ export const translations = {
       subtitle: "Professionnalisme, fiabilité et confort",
       description:
         "Sightseeing di Thomas Tagliatti est un service de location de voiture avec chauffeur haut de gamme à Milan, semblable à un taxi de luxe mais avec des standards encore plus élevés. Nous offrons une expérience de voyage exclusive avec des véhicules Mercedes de luxe et des chauffeurs professionnels. Notre mission est de garantir confort, ponctualité et sécurité à chaque voyage, qu'il s'agisse de transferts aéroportuaires, de visites touristiques ou de services horaires pour événements d'entreprise.",
+    },
+    experienceGallery: {
+      title: "Nos Expériences",
+      description: "Découvrez des destinations incroyables et la qualité de nos services",
     },
     whyChoose: {
       subtitle: "TRANSFERTS PRIVÉS ET VISITES DE LA VILLE",

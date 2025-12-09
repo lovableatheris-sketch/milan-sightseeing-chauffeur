@@ -23,7 +23,7 @@ const ChiSiamo = () => {
             </p>
 
             {/* Image and Text Layout */}
-            <div className="grid md:grid-cols-2 gap-12 items-center min-h-[600px] mb-20">
+            <div className="grid md:grid-cols-2 gap-12 items-center min-h-[600px] mb-8 md:mb-12">
               {/* Image - Left Side */}
               <div className="rounded-lg overflow-hidden shadow-elegant h-full">
                 <img 

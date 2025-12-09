@@ -2,6 +2,8 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useCallback, useEffect, useState, useRef } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { translations } from "@/locales/translations";
 
 // INSTRUÇÕES: Adicione as 5 imagens na pasta src/assets e atualize os imports abaixo
 // Nomes sugeridos para as imagens:
@@ -30,6 +32,9 @@ import experience6Placeholder from "@/assets/mercedes-interior-3.jpeg";
 const experience6 = experience6Placeholder; // Substitua por: import experience6 from "@/assets/experience-6.jpg.jpeg"; quando adicionar a imagem
 
 const ExperienceGallery = () => {
+  const { language } = useLanguage();
+  const t = translations[language].experienceGallery;
+  
   const autoplayRef = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
@@ -135,10 +140,10 @@ const ExperienceGallery = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-4">
-            Nossas Experiências
+            {t.title}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Descubra os destinos incríveis e a qualidade dos nossos serviços
+            {t.description}
           </p>
         </div>
 
