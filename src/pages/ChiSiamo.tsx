@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ExperienceGallery from "@/components/ExperienceGallery";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import chiSiamoImage from "@/assets/chi-siamo-mercedes.jpeg";
@@ -22,7 +23,7 @@ const ChiSiamo = () => {
             </p>
 
             {/* Image and Text Layout */}
-            <div className="grid md:grid-cols-2 gap-12 items-center min-h-[600px]">
+            <div className="grid md:grid-cols-2 gap-12 items-center min-h-[600px] mb-20">
               {/* Image - Left Side */}
               <div className="rounded-lg overflow-hidden shadow-elegant h-full">
                 <img 
@@ -39,6 +40,9 @@ const ChiSiamo = () => {
                 </p>
               </div>
             </div>
+
+            {/* Gallery Section */}
+            <ExperienceGallery />
           </div>
         </div>
       </main>
