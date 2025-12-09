@@ -42,7 +42,7 @@ const FloatingDonationButton = () => {
           }`}
         />
         <span
-          className={`font-semibold text-lg text-foreground whitespace-nowrap transition-all duration-300 ${
+          className={`font-semibold text-lg text-primary whitespace-nowrap transition-all duration-300 ${
             isExpanded ? "opacity-100" : "opacity-0 w-0"
           }`}
         >

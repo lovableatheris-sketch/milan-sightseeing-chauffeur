@@ -80,13 +80,13 @@ const Hero = () => {
           >
             {t.cta}
           </Button>
-          <Link to="/contato">
+          <Link to="/chi-siamo">
             <Button
               size="lg"
               variant="outline"
               className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
             >
-              {t.ctaContact}
+              {translations[language].header.chiSiamo}
             </Button>
           </Link>
         </div>
