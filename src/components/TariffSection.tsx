@@ -21,7 +21,7 @@ const TariffSection = () => {
                 <p className="text-xl text-muted-foreground mb-8">
                   {t.tariffs.description}
                 </p>
-                <div className="flex items-center justify-center md:justify-start gap-3 text-primary font-semibold text-lg group-hover:gap-5 transition-all duration-300">
+                <div className="flex items-center justify-center md:justify-start gap-3 text-luxury-gold font-semibold text-lg group-hover:gap-5 transition-all duration-300">
                   <span>{t.tariffs.viewAll}</span>
                   <ArrowRight size={24} className="transition-transform duration-300 group-hover:translate-x-2" />
                 </div>

@@ -58,7 +58,7 @@ const Services = () => {
   }, []);
 
   return (
-    <section id="servicos" className="py-20 md:py-32 bg-primary/5" ref={sectionRef}>
+    <section id="servicos" className="py-20 md:py-32 bg-background" ref={sectionRef}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
@@ -83,8 +83,8 @@ const Services = () => {
                     : "opacity-0 translate-y-8"
                 }`}
               >
-                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-lg">
-                  <service.icon size={40} strokeWidth={1.5} className="text-primary-foreground" />
+                <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-luxury-gold flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-luxury">
+                  <service.icon size={40} strokeWidth={1.5} className="text-primary" />
                 </div>
                 
                 <h3 className="text-sm md:text-base font-heading font-semibold text-foreground text-center uppercase tracking-wide leading-tight">
