@@ -116,14 +116,14 @@ const LocationCards = () => {
                   onMouseEnter={handleUserInteraction}
                   onTouchStart={handleUserInteraction}
                 >
-                  <div className="overflow-hidden rounded-xl shadow-luxury h-full">
+                  <div className="overflow-hidden rounded-xl shadow-elegant h-full">
                     <div className="aspect-[16/10] md:aspect-[16/9] overflow-hidden relative">
                       <img
                         src={image}
                         alt={`Mercedes Benz V250 ${index + 1}`}
                         className="w-full h-full object-cover transition-transform duration-300 will-change-transform"
                         style={{
-                          opacity: selectedIndex === index ? 1 : 0.5,
+                          opacity: 1,
                           transform: selectedIndex === index ? 'scale(1)' : 'scale(0.92)',
                         }}
                         loading="lazy"
@@ -138,14 +138,14 @@ const LocationCards = () => {
           {/* Navigation Buttons */}
           <button
             onClick={scrollPrev}
-            className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/95 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
+            className="absolute left-0 md:left-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/95 hover:bg-background border border-border shadow-elegant flex items-center justify-center transition-smooth hover:scale-110 z-10"
             aria-label="Previous image"
           >
             <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
           </button>
           <button
             onClick={scrollNext}
-            className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/95 hover:bg-background border border-border shadow-luxury flex items-center justify-center transition-smooth hover:scale-110 z-10"
+            className="absolute right-0 md:right-4 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 rounded-full bg-background/95 hover:bg-background border border-border shadow-elegant flex items-center justify-center transition-smooth hover:scale-110 z-10"
             aria-label="Next image"
           >
             <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-foreground" />
@@ -162,7 +162,7 @@ const LocationCards = () => {
                 }}
                 className={`transition-all duration-300 rounded-full ${
                   selectedIndex === index
-                    ? "w-8 h-2 bg-luxury-gold"
+                    ? "w-8 h-2 bg-foreground"
                     : "w-2 h-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                 }`}
                 aria-label={`Go to slide ${index + 1}`}
