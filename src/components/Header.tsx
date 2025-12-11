@@ -91,7 +91,7 @@ const Header = () => {
               </button>
               <LanguageSelector />
               <Button
-                onClick={() => scrollToSection("contato")}
+                onClick={() => window.open("https://wa.me/393891430907", "_blank")}
                 className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
               >
                 {t.reserveAgora}
@@ -155,7 +155,7 @@ const Header = () => {
                   {t.contato}
                 </button>
                 <Button
-                  onClick={() => scrollToSection("contato")}
+                  onClick={() => window.open("https://wa.me/393891430907", "_blank")}
                   className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-semibold active:scale-95"
                 >
                   {t.reserveAgora}
