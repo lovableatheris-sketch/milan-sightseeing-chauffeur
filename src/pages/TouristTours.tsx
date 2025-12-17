@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, MapPin } from "lucide-react";
@@ -13,6 +14,62 @@ const TouristTours = () => {
   const { language } = useLanguage();
   const t = translations[language].touristTours;
 
+  const seoData = {
+    it: {
+      title: "Tour Turistici Milano | Lago di Como, Maggiore | NCC TMTransferLux",
+      description: "Tour privati con autista da Milano: Lago di Como, Lago Maggiore, San Siro. Veicoli Mercedes di lusso, autista professionale. Prenota il tuo tour esclusivo.",
+      keywords: "tour lago di como, tour lago maggiore, tour privato milano, gita lago como, escursione como milano, ncc tour turistici, chauffeur tour milan",
+    },
+    en: {
+      title: "Tourist Tours Milan | Lake Como, Maggiore | NCC TMTransferLux",
+      description: "Private tours with driver from Milan: Lake Como, Lake Maggiore, San Siro. Luxury Mercedes vehicles, professional chauffeur. Book your exclusive tour.",
+      keywords: "lake como tour, lake maggiore tour, private tour milan, como day trip, milan chauffeur tour, luxury tour italy",
+    },
+    pt: {
+      title: "Tours Turísticos Milão | Lago di Como, Maggiore | TMTransferLux",
+      description: "Tours privados com motorista de Milão: Lago di Como, Lago Maggiore, San Siro. Veículos Mercedes de luxo. Reserve seu tour exclusivo.",
+      keywords: "tour lago di como, tour lago maggiore, passeio privado milão, excursão como",
+    },
+    fr: {
+      title: "Tours Touristiques Milan | Lac de Côme, Majeur | TMTransferLux",
+      description: "Tours privés avec chauffeur depuis Milan: Lac de Côme, Lac Majeur, San Siro. Véhicules Mercedes de luxe. Réservez votre tour exclusif.",
+      keywords: "tour lac de come, tour lac majeur, visite privée milan, excursion come",
+    },
+  };
+
+  const currentSeo = seoData[language] || seoData.it;
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "TouristTrip",
+    "name": "Tour Turistici da Milano",
+    "description": currentSeo.description,
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "TMTransferLux - Sightseeing di Thomas Tagliatti",
+      "telephone": "+39 389 143 0907",
+      "url": "https://tmtransferlux.it"
+    },
+    "touristType": ["Couples", "Families", "Business travelers"],
+    "itinerary": [
+      {
+        "@type": "TouristAttraction",
+        "name": "Lago di Como",
+        "description": "Tour completo al Lago di Como"
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "Lago Maggiore",
+        "description": "Esplora le isole e i giardini del Lago Maggiore"
+      },
+      {
+        "@type": "TouristAttraction",
+        "name": "San Siro Stadium",
+        "description": "Visita il tempio del calcio italiano"
+      }
+    ]
+  };
+
   const tours = [
     {
       title: t.lagoComoTitle,
@@ -20,6 +77,7 @@ const TouristTours = () => {
       image: lagoComoImage,
       duration: "8",
       price: "€640",
+      alt: language === 'it' ? "Tour privato Lago di Como con autista - Mercedes di lusso" : "Private Lake Como tour with driver - Luxury Mercedes"
     },
     {
       title: t.lagoMaggioreTitle,
@@ -27,6 +85,7 @@ const TouristTours = () => {
       image: lagoMaggioreImage,
       duration: "8",
       price: "€720",
+      alt: language === 'it' ? "Tour privato Lago Maggiore - Escursione con autista" : "Private Lake Maggiore tour - Chauffeur day trip"
     },
     {
       title: t.sanSiroTitle,
@@ -34,6 +93,7 @@ const TouristTours = () => {
       image: sanSiroImage,
       duration: "4",
       price: "€360",
+      alt: language === 'it' ? "Tour Stadio San Siro Milano - Visita con autista privato" : "San Siro Stadium Tour Milan - Visit with private driver"
     },
   ];
 
@@ -43,6 +103,13 @@ const TouristTours = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        keywords={currentSeo.keywords}
+        canonicalUrl="https://tmtransferlux.it/tours"
+        structuredData={structuredData}
+      />
       <Header />
       <main className="pt-20">
         {/* Hero Section */}
@@ -66,8 +133,9 @@ const TouristTours = () => {
                   <div className="aspect-[4/3] overflow-hidden">
                     <img
                       src={tour.image}
-                      alt={tour.title}
+                      alt={tour.alt}
                       className="w-full h-full object-cover transition-elegant hover:scale-110"
+                      loading="lazy"
                     />
                   </div>
                   <CardHeader>

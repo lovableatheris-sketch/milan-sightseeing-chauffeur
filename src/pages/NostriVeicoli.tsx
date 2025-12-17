@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
@@ -12,8 +13,39 @@ const NostriVeicoli = () => {
   const t = translations[language].nostriVeicoli;
   const navigate = useNavigate();
 
+  const seoData = {
+    it: {
+      title: "I Nostri Veicoli Mercedes | NCC Milano | TMTransferLux",
+      description: "Flotta Mercedes di lusso per transfer e tour. Mercedes Classe V per 6 passeggeri, veicoli sanificati, climatizzati e con autista professionale. Scopri i nostri veicoli.",
+      keywords: "mercedes ncc milano, veicoli transfer malpensa, flotta mercedes lusso, auto con conducente milano, mercedes classe v noleggio",
+    },
+    en: {
+      title: "Our Mercedes Vehicles | NCC Milan | TMTransferLux",
+      description: "Luxury Mercedes fleet for transfers and tours. Mercedes V-Class for 6 passengers, sanitized, air-conditioned vehicles with professional driver. Discover our vehicles.",
+      keywords: "mercedes ncc milan, malpensa transfer vehicles, luxury mercedes fleet, chauffeur car milan, mercedes v-class rental",
+    },
+    pt: {
+      title: "Nossos Veículos Mercedes | NCC Milão | TMTransferLux",
+      description: "Frota Mercedes de luxo para transfers e tours. Mercedes Classe V para 6 passageiros, veículos higienizados com motorista profissional.",
+      keywords: "mercedes ncc milão, veículos transfer malpensa, frota mercedes luxo",
+    },
+    fr: {
+      title: "Nos Véhicules Mercedes | NCC Milan | TMTransferLux",
+      description: "Flotte Mercedes de luxe pour transferts et tours. Mercedes Classe V pour 6 passagers, véhicules désinfectés avec chauffeur professionnel.",
+      keywords: "mercedes ncc milan, véhicules transfert malpensa, flotte mercedes luxe",
+    },
+  };
+
+  const currentSeo = seoData[language] || seoData.it;
+
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        keywords={currentSeo.keywords}
+        canonicalUrl="https://tmtransferlux.it/nostri-veicoli"
+      />
       <Header />
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4">
