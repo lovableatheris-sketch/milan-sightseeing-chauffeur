@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { MapPin, Search, CheckCircle } from "lucide-react";
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -12,6 +13,31 @@ const CalcoloPreventivo = () => {
   const pricePerKm = 2.59;
   const calculatedPrice = (distance * pricePerKm).toFixed(2);
 
+  const seoData = {
+    it: {
+      title: "Calcolo Preventivo Transfer | Tariffe NCC Milano | TMTransferLux",
+      description: "Calcola il costo del tuo transfer da Malpensa. Preventivo gratuito e immediato. Tariffe: Malpensa-Milano €160, Linate €170, Lugano €240. Prezzo fisso garantito.",
+      keywords: "preventivo transfer malpensa, tariffe ncc milano, costo transfer aeroporto malpensa, prezzi transfer malpensa milano, calcolo preventivo ncc",
+    },
+    en: {
+      title: "Transfer Quote Calculator | NCC Milan Rates | TMTransferLux",
+      description: "Calculate your Malpensa transfer cost. Free instant quote. Rates: Malpensa-Milan €160, Linate €170, Lugano €240. Fixed price guaranteed.",
+      keywords: "malpensa transfer quote, ncc milan rates, malpensa airport transfer cost, transfer prices malpensa milan, ncc quote calculator",
+    },
+    pt: {
+      title: "Cálculo de Orçamento Transfer | Tarifas NCC Milão | TMTransferLux",
+      description: "Calcule o custo do seu transfer de Malpensa. Orçamento gratuito e imediato. Tarifas: Malpensa-Milão €160, Linate €170, Lugano €240.",
+      keywords: "orçamento transfer malpensa, tarifas ncc milão, custo transfer aeroporto malpensa",
+    },
+    fr: {
+      title: "Calcul Devis Transfert | Tarifs NCC Milan | TMTransferLux",
+      description: "Calculez le coût de votre transfert depuis Malpensa. Devis gratuit et immédiat. Tarifs: Malpensa-Milan €160, Linate €170, Lugano €240.",
+      keywords: "devis transfert malpensa, tarifs ncc milan, coût transfert aéroport malpensa",
+    },
+  };
+
+  const currentSeo = seoData[language] || seoData.it;
+
   const routes = [
     { from: "Malpensa", to: "Milano", price: 160 },
     { from: "Malpensa", to: "Rho Fiera", price: 120 },
@@ -21,6 +47,12 @@ const CalcoloPreventivo = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        keywords={currentSeo.keywords}
+        canonicalUrl="https://tmtransferlux.it/calcolo-preventivo"
+      />
       <Header />
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-4">

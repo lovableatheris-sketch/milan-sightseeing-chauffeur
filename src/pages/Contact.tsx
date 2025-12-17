@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
@@ -8,8 +9,39 @@ const Contact = () => {
   const { language } = useLanguage();
   const t = translations[language].contact;
 
+  const seoData = {
+    it: {
+      title: "Contatti | Prenota Transfer Malpensa | TMTransferLux",
+      description: "Contatta TMTransferLux per prenotare il tuo transfer Malpensa Milano. WhatsApp +39 389 143 0907, risposta immediata 24h. Preventivo gratuito.",
+      keywords: "contatti tmtransferlux, prenotare transfer malpensa, whatsapp transfer milano, contatto ncc milano",
+    },
+    en: {
+      title: "Contact | Book Malpensa Transfer | TMTransferLux",
+      description: "Contact TMTransferLux to book your Malpensa Milan transfer. WhatsApp +39 389 143 0907, immediate response 24h. Free quote.",
+      keywords: "contact tmtransferlux, book malpensa transfer, whatsapp transfer milan, contact ncc milan",
+    },
+    pt: {
+      title: "Contato | Reserve Transfer Malpensa | TMTransferLux",
+      description: "Entre em contato com TMTransferLux para reservar seu transfer Malpensa Milão. WhatsApp +39 389 143 0907, resposta imediata 24h.",
+      keywords: "contato tmtransferlux, reservar transfer malpensa, whatsapp transfer milão",
+    },
+    fr: {
+      title: "Contact | Réserver Transfert Malpensa | TMTransferLux",
+      description: "Contactez TMTransferLux pour réserver votre transfert Malpensa Milan. WhatsApp +39 389 143 0907, réponse immédiate 24h.",
+      keywords: "contact tmtransferlux, réserver transfert malpensa, whatsapp transfert milan",
+    },
+  };
+
+  const currentSeo = seoData[language] || seoData.it;
+
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        keywords={currentSeo.keywords}
+        canonicalUrl="https://tmtransferlux.it/contato"
+      />
       <Header />
       <main className="flex-1 flex items-center py-32">
         <div className="container mx-auto px-4">

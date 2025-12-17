@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ExperienceGallery from "@/components/ExperienceGallery";
+import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useState, useEffect } from "react";
@@ -11,6 +12,31 @@ const ChiSiamo = () => {
   const t = translations[language].chiSiamo;
   const [scrollBlur, setScrollBlur] = useState(0);
   const [scrollDarkness, setScrollDarkness] = useState(0);
+
+  const seoData = {
+    it: {
+      title: "Chi Siamo | NCC Milano Servizio Premium | TMTransferLux",
+      description: "TMTransferLux: servizio NCC noleggio con conducente Milano. Autisti professionali, veicoli Mercedes di lusso, transfer aeroporti e tour turistici. Scopri la nostra storia.",
+      keywords: "ncc milano, chi siamo tmtransferlux, noleggio con conducente milano, autista professionale milano, servizio taxi privato milano",
+    },
+    en: {
+      title: "About Us | NCC Milan Premium Service | TMTransferLux",
+      description: "TMTransferLux: premium chauffeur service in Milan. Professional drivers, luxury Mercedes vehicles, airport transfers and tourist tours. Discover our story.",
+      keywords: "ncc milan, about tmtransferlux, chauffeur service milan, professional driver milan, private taxi service milan",
+    },
+    pt: {
+      title: "Quem Somos | NCC Milão Serviço Premium | TMTransferLux",
+      description: "TMTransferLux: serviço de motorista particular em Milão. Motoristas profissionais, veículos Mercedes de luxo, transfers e tours turísticos.",
+      keywords: "ncc milão, quem somos tmtransferlux, motorista particular milão",
+    },
+    fr: {
+      title: "Qui Sommes-Nous | NCC Milan Service Premium | TMTransferLux",
+      description: "TMTransferLux: service de chauffeur privé à Milan. Chauffeurs professionnels, véhicules Mercedes de luxe, transferts et tours touristiques.",
+      keywords: "ncc milan, qui sommes-nous tmtransferlux, chauffeur privé milan",
+    },
+  };
+
+  const currentSeo = seoData[language] || seoData.it;
   
   useEffect(() => {
     const handleScroll = () => {
@@ -28,6 +54,12 @@ const ChiSiamo = () => {
 
   return (
     <div className="min-h-screen">
+      <SEOHead
+        title={currentSeo.title}
+        description={currentSeo.description}
+        keywords={currentSeo.keywords}
+        canonicalUrl="https://tmtransferlux.it/chi-siamo"
+      />
       <Header />
       <main>
         {/* Hero Section with Background Image */}
