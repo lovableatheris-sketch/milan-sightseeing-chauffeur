@@ -159,7 +159,7 @@ const CalcoloPreventivo = () => {
                 <h3 className="text-xl font-bold text-foreground mb-4">
                   {t.milanoTransferTitle}
                 </h3>
-                <p className="text-3xl font-bold text-primary mb-2">€ 100</p>
+                <p className="text-3xl font-bold text-white mb-2">€ 100</p>
               </div>
 
               {/* Corporate Rates */}
@@ -170,11 +170,11 @@ const CalcoloPreventivo = () => {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center">
                     <span className="text-foreground font-semibold">{t.corporateHours4}</span>
-                    <span className="text-primary font-bold">€ 360 + IVA 10%</span>
+                    <span className="text-white font-bold">€ 360 + IVA 10%</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-foreground font-semibold">{t.corporateHours8}</span>
-                    <span className="text-primary font-bold">€ 680 + IVA 10%</span>
+                    <span className="text-white font-bold">€ 680 + IVA 10%</span>
                   </div>
                 </div>
               </div>
