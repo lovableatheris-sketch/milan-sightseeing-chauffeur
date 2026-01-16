@@ -4,6 +4,7 @@ import WhyChoose from "@/components/WhyChoose";
 import Services from "@/components/Services";
 import TariffSection from "@/components/TariffSection";
 import LocationCards from "@/components/LocationCards";
+import CustomerReviews from "@/components/CustomerReviews";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import FloatingDonationButton from "@/components/FloatingDonationButton";
@@ -64,10 +65,17 @@ const Index = () => {
       "closes": "23:59"
     },
     "priceRange": "€€",
-    "image": "https://tmtransferlux.it/favicon.png",
+    "image": "https://tmtransferlux.it/og-image.jpg",
     "sameAs": [
       "https://wa.me/393891430907"
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "47"
+    }
   };
 
   return (
@@ -85,6 +93,7 @@ const Index = () => {
         <TariffSection />
         <Services />
         <WhyChoose />
+        <CustomerReviews />
         <LocationCards />
         <FinalCTA />
       </main>
