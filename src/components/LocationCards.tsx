@@ -95,7 +95,7 @@ const LocationCards = () => {
   ];
 
   return (
-    <section className="py-20 md:py-32 bg-background">
+    <section className="py-15 md:py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
