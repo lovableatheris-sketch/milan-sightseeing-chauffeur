@@ -15,24 +15,24 @@ const NostriVeicoli = () => {
 
   const seoData = {
     it: {
-      title: "I Nostri Veicoli Mercedes | NCC Milano | TMTransferLux",
-      description: "Flotta Mercedes di lusso per transfer e tour. Mercedes Classe V per 6 passeggeri, veicoli sanificati, climatizzati e con autista professionale. Scopri i nostri veicoli.",
-      keywords: "mercedes ncc milano, veicoli transfer malpensa, flotta mercedes lusso, auto con conducente milano, mercedes classe v noleggio",
+      title: "Mercedes NCC Milano | Veicoli Transfer Malpensa | TMTransferLux",
+      description: "Flotta Mercedes V250 per transfer Malpensa-Milano. Van di lusso fino a 6 passeggeri, WiFi gratuito, sedili in pelle, climatizzazione. Prenota il tuo NCC Milano.",
+      keywords: "mercedes ncc milano, veicoli transfer malpensa, mercedes v250 noleggio, auto con conducente milano aeroporto, van lusso milano",
     },
     en: {
-      title: "Our Mercedes Vehicles | NCC Milan | TMTransferLux",
-      description: "Luxury Mercedes fleet for transfers and tours. Mercedes V-Class for 6 passengers, sanitized, air-conditioned vehicles with professional driver. Discover our vehicles.",
-      keywords: "mercedes ncc milan, malpensa transfer vehicles, luxury mercedes fleet, chauffeur car milan, mercedes v-class rental",
+      title: "Mercedes NCC Milan | Malpensa Transfer Vehicles | TMTransferLux",
+      description: "Mercedes V250 fleet for Malpensa-Milan transfers. Luxury van up to 6 passengers, free WiFi, leather seats, air conditioning. Book your Milan chauffeur.",
+      keywords: "mercedes ncc milan, malpensa transfer vehicles, mercedes v250 rental, chauffeur car milan airport, luxury van milan",
     },
     pt: {
-      title: "Nossos Veículos Mercedes | NCC Milão | TMTransferLux",
-      description: "Frota Mercedes de luxo para transfers e tours. Mercedes Classe V para 6 passageiros, veículos higienizados com motorista profissional.",
-      keywords: "mercedes ncc milão, veículos transfer malpensa, frota mercedes luxo",
+      title: "Mercedes NCC Milão | Veículos Transfer Malpensa | TMTransferLux",
+      description: "Frota Mercedes V250 para transfers Malpensa-Milão. Van de luxo até 6 passageiros, WiFi grátis, bancos de couro. Reserve seu motorista em Milão.",
+      keywords: "mercedes ncc milão, veículos transfer malpensa, mercedes v250 aluguel",
     },
     fr: {
-      title: "Nos Véhicules Mercedes | NCC Milan | TMTransferLux",
-      description: "Flotte Mercedes de luxe pour transferts et tours. Mercedes Classe V pour 6 passagers, véhicules désinfectés avec chauffeur professionnel.",
-      keywords: "mercedes ncc milan, véhicules transfert malpensa, flotte mercedes luxe",
+      title: "Mercedes NCC Milan | Véhicules Transfert Malpensa | TMTransferLux",
+      description: "Flotte Mercedes V250 pour transferts Malpensa-Milan. Van de luxe jusqu'à 6 passagers, WiFi gratuit, sièges en cuir. Réservez votre chauffeur Milan.",
+      keywords: "mercedes ncc milan, véhicules transfert malpensa, mercedes v250 location",
     },
   };
 

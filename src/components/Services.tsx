@@ -62,15 +62,18 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <p className="text-sm font-medium text-muted-foreground uppercase tracking-wider mb-3">
-            HOW WE CAN HELP
+            NCC MILANO - NOLEGGIO CON CONDUCENTE
           </p>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-2">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-4">
             {t.title}
           </h2>
-          <div className="w-20 h-1 bg-luxury-gold mx-auto"></div>
+          <div className="w-20 h-1 bg-luxury-gold mx-auto mb-6"></div>
+          <p className="text-muted-foreground max-w-3xl mx-auto text-lg">
+            {t.subtitle}
+          </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-16 md:gap-20 lg:gap-28">
+        <div className="flex flex-wrap justify-center gap-16 md:gap-20 lg:gap-28 mb-16">
           {services.map((service, index) => {
             return (
               <button
@@ -90,9 +93,25 @@ const Services = () => {
                 <h3 className="text-sm md:text-base font-heading font-semibold text-foreground text-center uppercase tracking-wide leading-tight">
                   {service.title}
                 </h3>
+                <p className="text-xs text-muted-foreground text-center">
+                  {service.description}
+                </p>
               </button>
             );
           })}
+        </div>
+
+        {/* SEO Content Block */}
+        <div className="max-w-4xl mx-auto text-center bg-card/50 rounded-lg p-8 border border-border/50">
+          <h3 className="text-xl font-semibold text-foreground mb-4">
+            Servizio NCC Milano - Transfer Aeroporto Malpensa
+          </h3>
+          <p className="text-muted-foreground leading-relaxed">
+            TMTransferLux offre servizi di <strong>noleggio con conducente (NCC)</strong> professionali a Milano e provincia. 
+            Specializzati in <strong>transfer aeroporto Malpensa</strong>, Linate e Bergamo Orio al Serio, garantiamo 
+            puntualità, comfort e prezzi fissi senza sorprese. I nostri autisti professionisti ti aspettano in aeroporto 
+            con monitoraggio voli in tempo reale. Veicoli Mercedes sanificati, WiFi gratuito e assistenza 24 ore su 24.
+          </p>
         </div>
       </div>
     </section>

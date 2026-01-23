@@ -11,24 +11,24 @@ const Contact = () => {
 
   const seoData = {
     it: {
-      title: "Contatti | Prenota Transfer Malpensa | TMTransferLux",
-      description: "Contatta TMTransferLux per prenotare il tuo transfer Malpensa Milano. WhatsApp +39 389 143 0907, risposta immediata 24h. Preventivo gratuito.",
-      keywords: "contatti tmtransferlux, prenotare transfer malpensa, whatsapp transfer milano, contatto ncc milano",
+      title: "Prenota Transfer Malpensa Milano | Contatti NCC | TMTransferLux",
+      description: "Prenota il tuo transfer Malpensa-Milano su WhatsApp +39 389 143 0907. Risposta immediata 24h, preventivo gratuito, prezzo fisso. NCC Milano aeroporto.",
+      keywords: "prenotare transfer malpensa, contatti ncc milano, whatsapp transfer aeroporto, prenota taxi privato malpensa",
     },
     en: {
-      title: "Contact | Book Malpensa Transfer | TMTransferLux",
-      description: "Contact TMTransferLux to book your Malpensa Milan transfer. WhatsApp +39 389 143 0907, immediate response 24h. Free quote.",
-      keywords: "contact tmtransferlux, book malpensa transfer, whatsapp transfer milan, contact ncc milan",
+      title: "Book Malpensa Milan Transfer | NCC Contacts | TMTransferLux",
+      description: "Book your Malpensa-Milan transfer on WhatsApp +39 389 143 0907. Immediate response 24h, free quote, fixed price. Milan airport chauffeur service.",
+      keywords: "book malpensa transfer, ncc milan contact, whatsapp airport transfer, book private taxi malpensa",
     },
     pt: {
-      title: "Contato | Reserve Transfer Malpensa | TMTransferLux",
-      description: "Entre em contato com TMTransferLux para reservar seu transfer Malpensa Milão. WhatsApp +39 389 143 0907, resposta imediata 24h.",
-      keywords: "contato tmtransferlux, reservar transfer malpensa, whatsapp transfer milão",
+      title: "Reserve Transfer Malpensa Milão | Contatos NCC | TMTransferLux",
+      description: "Reserve seu transfer Malpensa-Milão no WhatsApp +39 389 143 0907. Resposta imediata 24h, orçamento grátis, preço fixo.",
+      keywords: "reservar transfer malpensa, contato ncc milão, whatsapp transfer aeroporto",
     },
     fr: {
-      title: "Contact | Réserver Transfert Malpensa | TMTransferLux",
-      description: "Contactez TMTransferLux pour réserver votre transfert Malpensa Milan. WhatsApp +39 389 143 0907, réponse immédiate 24h.",
-      keywords: "contact tmtransferlux, réserver transfert malpensa, whatsapp transfert milan",
+      title: "Réserver Transfert Malpensa Milan | Contacts NCC | TMTransferLux",
+      description: "Réservez votre transfert Malpensa-Milan sur WhatsApp +39 389 143 0907. Réponse immédiate 24h, devis gratuit, prix fixe.",
+      keywords: "réserver transfert malpensa, contact ncc milan, whatsapp transfert aéroport",
     },
   };
 

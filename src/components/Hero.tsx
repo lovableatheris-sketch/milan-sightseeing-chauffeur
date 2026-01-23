@@ -54,22 +54,21 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-6 animate-fade-in">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-4 animate-fade-in">
           {t.title}
-          {t.titleHighlight && (
-            <>
-              <br />
-              <span className="text-luxury-gold">{t.titleHighlight}</span>
-            </>
-          )}
         </h1>
+        {t.titleHighlight && (
+          <p className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-luxury-gold mb-6 animate-fade-in">
+            {t.titleHighlight}
+          </p>
+        )}
         <a 
           href="tel:+393891430907"
           className="inline-block text-2xl md:text-3xl font-bold text-luxury-gold hover:text-luxury-gold-dark transition-smooth mb-6 animate-fade-in"
         >
           +39 389 143 0907
         </a>
-        <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-2xl mx-auto animate-fade-in-up font-light">
+        <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-3xl mx-auto animate-fade-in-up font-light">
           {t.subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

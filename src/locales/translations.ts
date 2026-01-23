@@ -21,7 +21,9 @@ export const translations = {
       title: "Quem somos?",
       subtitle: "Profissionalismo, confiabilidade e conforto",
       description:
-        "Sightseeing di Thomas Tagliatti é um serviço de aluguel com motorista de alto nível em Milão, semelhante a um táxi de luxo, mas com padrões ainda mais elevados. Oferecemos uma experiência de viagem exclusiva com veículos Mercedes de luxo e motoristas profissionais. Nossa missão é garantir conforto, pontualidade e segurança em cada viagem, seja para transfers aeroportuários, passeios turísticos ou serviços por hora para eventos corporativos.",
+        "TMTransferLux é o seu serviço NCC (Noleggio Con Conducente) de referência em Milão. Oferecemos transfers aeroportuários de e para Malpensa, Linate e Bergamo Orio al Serio com veículos Mercedes de luxo e motoristas profissionais multilíngues. Diferente dos táxis tradicionais, garantimos preço fixo comunicado antecipadamente, sem surpresas, sem suplementos.",
+      descriptionExtra:
+        "Operamos 24 horas por dia, 7 dias por semana com monitoramento de voos em tempo real. Nosso motorista te espera no aeroporto com placa nominal, ajuda com as bagagens e te acompanha até o veículo climatizado.",
     },
     experienceGallery: {
       title: "Nossas Experiências",
@@ -245,7 +247,9 @@ export const translations = {
       title: "About us",
       subtitle: "Professionalism, reliability and comfort",
       description:
-        "Sightseeing di Thomas Tagliatti is a premium chauffeur-driven car rental service in Milan, similar to a luxury taxi but with even higher standards. We offer an exclusive travel experience with luxury Mercedes vehicles and professional drivers. Our mission is to guarantee comfort, punctuality and safety on every journey, whether it's airport transfers, tourist tours or hourly arrangements for corporate events.",
+        "TMTransferLux is your reference NCC (Noleggio Con Conducente) service in Milan. We offer airport transfers to and from Malpensa, Linate and Bergamo Orio al Serio with luxury Mercedes vehicles and multilingual professional drivers. Unlike traditional taxis, we guarantee a fixed price communicated in advance, no surprises, no supplements.",
+      descriptionExtra:
+        "We operate 24 hours a day, 7 days a week with real-time flight monitoring. Our driver waits for you at the airport with a name sign, helps with luggage and accompanies you to the air-conditioned vehicle.",
     },
     experienceGallery: {
       title: "Our Experiences",
@@ -458,18 +462,20 @@ export const translations = {
       reserveAgora: "Prenota Ora",
     },
     hero: {
-      title: "PRENOTA ORA LA TUA AUTO",
-      titleHighlight: "",
+      title: "TRANSFER MALPENSA MILANO",
+      titleHighlight: "NCC con Autista da €170",
       subtitle:
-        "Offriamo servizi di noleggio con conducente dall'aeroporto di Malpensa verso qualsiasi destinazione con veicoli sanificati, comfort garantito e prezzo fisso. Prenota subito la tua auto da o per l'aeroporto di Malpensa e viaggia in sicurezza e professionalità.",
+        "Servizio di noleggio con conducente (NCC) professionale per transfer aeroporto Malpensa-Milano. Prezzo fisso garantito, veicoli Mercedes sanificati, autista privato che ti aspetta in aeroporto. Prenota il tuo transfer Malpensa su WhatsApp e viaggia con comfort e sicurezza.",
       cta: "Prenota su WhatsApp",
       ctaContact: "Contattaci",
     },
     chiSiamo: {
-      title: "Chi siamo?",
-      subtitle: "Professionalità, affidabilità e comfort",
+      title: "NCC Milano - Il Tuo Autista Privato di Fiducia",
+      subtitle: "Noleggio con Conducente a Milano dal 2018",
       description:
-        "Sightseeing di Thomas Tagliatti è un servizio di noleggio con conducente di alto livello a Milano, simile a un taxi di lusso ma con standard ancora più elevati. Offriamo un'esperienza di viaggio esclusiva con veicoli Mercedes di lusso e autisti professionisti. La nostra missione è garantire comfort, puntualità e sicurezza in ogni viaggio, che si tratti di transfer aeroportuali, tour turistici o disposizioni orarie per eventi aziendali.",
+        "TMTransferLux è il tuo servizio NCC (Noleggio Con Conducente) di riferimento a Milano. Offriamo transfer aeroportuali da e per Malpensa, Linate e Bergamo Orio al Serio con veicoli Mercedes di lusso e autisti professionisti multilingue. A differenza dei taxi tradizionali, garantiamo prezzo fisso comunicato in anticipo, nessuna sorpresa, nessun supplemento. Siamo specializzati in transfer business, tour turistici ai laghi (Como, Maggiore, Garda) e servizi VIP per eventi aziendali. La nostra missione: comfort, puntualità e sicurezza in ogni viaggio.",
+      descriptionExtra:
+        "Operiamo 24 ore su 24, 7 giorni su 7 con monitoraggio voli in tempo reale. Il nostro autista ti aspetta in aeroporto con cartello nominativo, ti aiuta con i bagagli e ti accompagna al veicolo climatizzato. Serviamo Milano centro, hinterland milanese e tutta la Lombardia.",
     },
     experienceGallery: {
       title: "Le Nostre Esperienze",
@@ -485,11 +491,11 @@ export const translations = {
       feature3: "PREZZI EQUI E TRASPARENTI",
     },
     nostriVeicoli: {
-      title: "I nostri veicoli",
-      subtitle: "Flotta Mercedes di lusso per il tuo comfort",
-      vehicle1Title: "Mercedes Benz v250",
+      title: "Mercedes NCC Milano - La Nostra Flotta",
+      subtitle: "Veicoli di lusso per transfer Malpensa e tour turistici",
+      vehicle1Title: "Mercedes Benz V250 - Van di Lusso",
       vehicle1Desc:
-        "Capacità: fino a 6 passeggeri + bagagli. La Mercedes-Benz V250 unisce lusso, spazio e comfort in un unico veicolo. Con interni raffinati, ampia capacità per passeggeri e bagagli e tecnologia moderna, garantisce viaggi silenziosi e confortevoli. Perfetta per trasferimenti aziendali, gruppi e servizi VIP, offre eleganza e prestazioni eccellenti.",
+        "Il nostro Mercedes-Benz V250 è il veicolo ideale per transfer aeroportuali Malpensa-Milano e tour turistici ai laghi. Capacità: fino a 6 passeggeri + 6 bagagli grandi. Dotato di sedili in pelle premium, climatizzazione tri-zona, WiFi gratuito a bordo e prese USB per ogni passeggero. Vetri oscurati per la massima privacy, sospensioni pneumatiche per un viaggio silenzioso e confortevole. Perfetto per famiglie, gruppi business e servizi VIP. Sanificato dopo ogni corsa con prodotti certificati.",
       vehicle2Title: "Mercedes Classe V",
       vehicle2Desc:
         "Van di lusso ideale per gruppi e famiglie. Capacità: fino a 7 passeggeri + bagagli. Spazio ampio, comfort superiore e perfetto per tour turistici e transfer aeroportuali con più persone.",
@@ -640,9 +646,9 @@ export const translations = {
       copyright: "© 2025 Sightseeing di Thomas Tagliatti. Tutti i diritti riservati.",
     },
     contact: {
-      needInfo: "HAI BISOGNO DI MAGGIORI INFORMAZIONI?",
-      title: "CONTATTACI",
-      welcomeText: "Siamo qui per aiutarti a organizzare il tuo viaggio in modo semplice e veloce.",
+      needInfo: "PRENOTA IL TUO TRANSFER MALPENSA",
+      title: "Contatta TMTransferLux - NCC Milano",
+      welcomeText: "Prenota il tuo transfer aeroporto Malpensa-Milano in pochi minuti. Risposta immediata su WhatsApp 24 ore su 24. Preventivo gratuito e senza impegno per qualsiasi destinazione.",
       form: {
         name: "Nome",
         email: "E-mail",
@@ -692,7 +698,9 @@ export const translations = {
       title: "Qui sommes-nous?",
       subtitle: "Professionnalisme, fiabilité et confort",
       description:
-        "Sightseeing di Thomas Tagliatti est un service de location de voiture avec chauffeur haut de gamme à Milan, semblable à un taxi de luxe mais avec des standards encore plus élevés. Nous offrons une expérience de voyage exclusive avec des véhicules Mercedes de luxe et des chauffeurs professionnels. Notre mission est de garantir confort, ponctualité et sécurité à chaque voyage, qu'il s'agisse de transferts aéroportuaires, de visites touristiques ou de services horaires pour événements d'entreprise.",
+        "TMTransferLux est votre service NCC (Noleggio Con Conducente) de référence à Milan. Nous proposons des transferts aéroportuaires vers et depuis Malpensa, Linate et Bergamo Orio al Serio avec des véhicules Mercedes de luxe et des chauffeurs professionnels multilingues. Contrairement aux taxis traditionnels, nous garantissons un prix fixe communiqué à l'avance, sans surprises, sans suppléments.",
+      descriptionExtra:
+        "Nous opérons 24 heures sur 24, 7 jours sur 7 avec surveillance des vols en temps réel. Notre chauffeur vous attend à l'aéroport avec une pancarte nominative, vous aide avec les bagages et vous accompagne jusqu'au véhicule climatisé.",
     },
     experienceGallery: {
       title: "Nos Expériences",

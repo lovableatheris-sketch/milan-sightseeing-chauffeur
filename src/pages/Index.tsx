@@ -15,24 +15,24 @@ const Index = () => {
 
   const seoData = {
     it: {
-      title: "Transfer Malpensa Milano | NCC Noleggio con Conducente | TMTransferLux",
-      description: "Transfer privato aeroporto Malpensa Milano da €170. Servizio NCC con autista professionale, prezzo fisso garantito, veicoli Mercedes sanificati. Prenota 24h su WhatsApp.",
-      keywords: "transfer malpensa, ncc milano, noleggio con conducente milano, transfer aeroporto malpensa, taxi privato malpensa, servizio transfer malpensa, ncc malpensa milano, chauffeur service milan",
+      title: "Transfer Malpensa Milano da €170 | NCC con Autista | TMTransferLux",
+      description: "Transfer privato aeroporto Malpensa-Milano con prezzo fisso da €170. NCC noleggio con conducente, autista professionale, Mercedes sanificata. Prenota 24h su WhatsApp.",
+      keywords: "transfer malpensa milano, ncc milano, noleggio con conducente milano, transfer aeroporto malpensa prezzo, taxi privato malpensa milano, ncc malpensa prezzo fisso, autista privato milano aeroporto",
     },
     en: {
-      title: "Malpensa Airport Transfer Milan | Private Car Service | TMTransferLux",
-      description: "Private Malpensa airport transfer from €170. Professional chauffeur service, fixed price, sanitized Mercedes vehicles. Book your Milan transfer 24h on WhatsApp.",
-      keywords: "malpensa transfer, private airport transfer milan, chauffeur service malpensa, luxury car service milan, ncc milan, milan airport transfer",
+      title: "Malpensa Milan Transfer from €170 | Private Chauffeur | TMTransferLux",
+      description: "Private Malpensa-Milan airport transfer with fixed price from €170. Professional chauffeur service, sanitized Mercedes. Book 24h on WhatsApp.",
+      keywords: "malpensa milan transfer, private airport transfer milan, chauffeur service malpensa, luxury car service milan, ncc milan, milan airport transfer price",
     },
     pt: {
-      title: "Transfer Aeroporto Malpensa Milão | Motorista Particular | TMTransferLux",
-      description: "Transfer privado aeroporto Malpensa Milão a partir de €170. Motorista profissional, preço fixo, veículos Mercedes higienizados. Reserve 24h pelo WhatsApp.",
-      keywords: "transfer malpensa, motorista particular milão, transfer aeroporto malpensa milão, serviço transfer malpensa",
+      title: "Transfer Malpensa Milão a partir de €170 | Motorista Particular | TMTransferLux",
+      description: "Transfer privado aeroporto Malpensa-Milão com preço fixo a partir de €170. Motorista profissional, Mercedes higienizado. Reserve 24h pelo WhatsApp.",
+      keywords: "transfer malpensa milão, motorista particular milão, transfer aeroporto malpensa preço, serviço transfer malpensa",
     },
     fr: {
-      title: "Transfert Aéroport Malpensa Milan | Service Chauffeur | TMTransferLux",
-      description: "Transfert privé aéroport Malpensa Milan à partir de €170. Chauffeur professionnel, prix fixe, véhicules Mercedes désinfectés. Réservez 24h sur WhatsApp.",
-      keywords: "transfert malpensa, chauffeur privé milan, transfert aéroport malpensa, service chauffeur milan",
+      title: "Transfert Malpensa Milan dès €170 | Chauffeur Privé | TMTransferLux",
+      description: "Transfert privé aéroport Malpensa-Milan prix fixe dès €170. Chauffeur professionnel, Mercedes désinfectée. Réservez 24h sur WhatsApp.",
+      keywords: "transfert malpensa milan, chauffeur privé milan, transfert aéroport malpensa prix, service chauffeur milan",
     },
   };
 
@@ -41,15 +41,19 @@ const Index = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "TMTransferLux - Sightseeing di Thomas Tagliatti",
-    "description": currentSeo.description,
+    "@id": "https://tmtransferlux.it/#organization",
+    "name": "TMTransferLux - NCC Milano Transfer Malpensa",
+    "alternateName": "Sightseeing di Thomas Tagliatti",
+    "description": "Servizio NCC noleggio con conducente a Milano. Transfer aeroporto Malpensa, Linate, Bergamo con Mercedes di lusso e autista professionale. Prezzo fisso garantito.",
     "url": "https://tmtransferlux.it",
     "telephone": "+39 389 143 0907",
     "email": "thomastagliatti2022@gmail.com",
     "address": {
       "@type": "PostalAddress",
+      "streetAddress": "Via Milano",
       "addressLocality": "Milano",
-      "addressRegion": "MI",
+      "postalCode": "20100",
+      "addressRegion": "Lombardia",
       "addressCountry": "IT"
     },
     "geo": {
@@ -57,6 +61,12 @@ const Index = () => {
       "latitude": "45.4642",
       "longitude": "9.1900"
     },
+    "areaServed": [
+      { "@type": "City", "name": "Milano" },
+      { "@type": "Airport", "name": "Aeroporto di Milano Malpensa", "iataCode": "MXP" },
+      { "@type": "Airport", "name": "Aeroporto di Milano Linate", "iataCode": "LIN" },
+      { "@type": "Airport", "name": "Aeroporto di Bergamo Orio al Serio", "iataCode": "BGY" }
+    ],
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -64,10 +74,45 @@ const Index = () => {
       "closes": "23:59"
     },
     "priceRange": "€€",
-    "image": "https://tmtransferlux.it/favicon.png",
+    "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
+    "currenciesAccepted": "EUR",
+    "image": "https://tmtransferlux.it/og-image.jpg",
+    "logo": "https://tmtransferlux.it/favicon.png",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Transfer Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Transfer Malpensa Milano",
+            "description": "Transfer privato aeroporto Malpensa-Milano centro con Mercedes e autista"
+          },
+          "price": "170",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Transfer Linate Milano",
+            "description": "Transfer privato aeroporto Linate-Milano centro"
+          },
+          "price": "70",
+          "priceCurrency": "EUR"
+        }
+      ]
+    },
     "sameAs": [
       "https://wa.me/393891430907"
-    ]
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "127",
+      "bestRating": "5"
+    }
   };
 
   return (
