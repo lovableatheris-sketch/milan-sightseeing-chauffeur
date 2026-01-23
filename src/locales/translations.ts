@@ -463,7 +463,6 @@ export const translations = {
     },
     hero: {
       title: "PRENOTA ORA LA TUA AUTO",
-      titleHighlight: "NCC con Autista da €170",
       subtitle:
         "Servizio di noleggio con conducente (NCC) professionale per transfer aeroporto Malpensa-Milano. Prezzo fisso garantito, veicoli Mercedes sanificati, autista privato che ti aspetta in aeroporto. Prenota il tuo transfer Malpensa su WhatsApp e viaggia con comfort e sicurezza.",
       cta: "Prenota su WhatsApp",
