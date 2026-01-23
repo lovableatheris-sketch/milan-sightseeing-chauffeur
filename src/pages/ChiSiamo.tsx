@@ -91,10 +91,15 @@ const ChiSiamo = () => {
             <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 animate-fade-in">
               {t.subtitle}
             </p>
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto space-y-6">
               <p className="text-lg md:text-xl text-primary-foreground/85 leading-relaxed animate-fade-in-up">
                 {t.description}
               </p>
+              {t.descriptionExtra && (
+                <p className="text-base md:text-lg text-primary-foreground/80 leading-relaxed animate-fade-in-up">
+                  {t.descriptionExtra}
+                </p>
+              )}
             </div>
           </div>
         </section>
