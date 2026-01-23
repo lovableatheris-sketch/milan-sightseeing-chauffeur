@@ -15,7 +15,7 @@ const Index = () => {
 
   const seoData = {
     it: {
-      title: "Transfer Malpensa Milano da €170 | NCC con Autista | TMTransferLux",
+      title: "PRENOTA ORA LA TUA AUTO",
       description: "Transfer privato aeroporto Malpensa-Milano con prezzo fisso da €170. NCC noleggio con conducente, autista professionale, Mercedes sanificata. Prenota 24h su WhatsApp.",
       keywords: "transfer malpensa milano, ncc milano, noleggio con conducente milano, transfer aeroporto malpensa prezzo, taxi privato malpensa milano, ncc malpensa prezzo fisso, autista privato milano aeroporto",
     },
