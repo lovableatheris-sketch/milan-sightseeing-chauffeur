@@ -89,6 +89,12 @@ const Header = () => {
               >
                 {t.contato}
               </button>
+              <button
+                onClick={() => navigate("/milano-premium-mobility")}
+                className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-medium text-sm tracking-wide"
+              >
+                MILANO
+              </button>
               <LanguageSelector />
               <Button
                 onClick={() => window.open("https://wa.me/393891430907", "_blank")}
@@ -153,6 +159,15 @@ const Header = () => {
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.contato}
+                </button>
+                <button
+                  onClick={() => {
+                    navigate("/milano-premium-mobility");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95 text-sm tracking-wide border-t border-primary-foreground/10 mt-2 pt-4"
+                >
+                  MILANO Corporate
                 </button>
                 <Button
                   onClick={() => window.open("https://wa.me/393891430907", "_blank")}

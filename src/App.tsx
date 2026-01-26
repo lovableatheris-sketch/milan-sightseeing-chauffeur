@@ -15,6 +15,8 @@ import ChiSiamo from "./pages/ChiSiamo";
 import NostriVeicoli from "./pages/NostriVeicoli";
 import CalcoloPreventivo from "./pages/CalcoloPreventivo";
 import Contact from "./pages/Contact";
+import MilanoPremiumMobility from "./pages/MilanoPremiumMobility";
+import MilanoTariffe from "./pages/MilanoTariffe";
 
 const queryClient = new QueryClient();
 
@@ -33,6 +35,8 @@ const App = () => (
             <Route path="/contato" element={<Contact />} />
             <Route path="/tours" element={<TouristTours />} />
             <Route path="/transfers" element={<Transfers />} />
+            <Route path="/milano-premium-mobility" element={<MilanoPremiumMobility />} />
+            <Route path="/milano-prontuario-tariffe" element={<MilanoTariffe />} />
             
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
