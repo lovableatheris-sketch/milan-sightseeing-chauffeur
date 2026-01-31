@@ -341,9 +341,9 @@ const MilanoPremiumMobility = () => {
       <Header />
 
       {/* Hero Section - Premium Visual with Logo */}
-      <section className="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden">
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
         {/* Sophisticated gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_8%)]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_6%)]" />
         
         {/* Metallic silver/gold ambient glow effects */}
         <div className="absolute inset-0 overflow-hidden">
@@ -363,43 +363,31 @@ const MilanoPremiumMobility = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container text-center milano-fade-in">
             {/* Corporate tagline */}
-            <p className="milano-caption text-[hsl(0_0%_50%)] mb-8 tracking-[0.3em]">
+            <p className="milano-caption text-[hsl(0_0%_50%)] mb-6 tracking-[0.3em]">
               {c.heroTagline}
             </p>
             
-            {/* Central Logo */}
-            <div className="relative mx-auto mb-8 md:mb-10">
+            {/* Central Logo - MUCH LARGER */}
+            <div className="relative mx-auto">
               {/* Subtle glow behind logo */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 bg-[hsl(43_30%_40%)] rounded-full blur-[80px] opacity-20" />
+                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] bg-[hsl(43_30%_40%)] rounded-full blur-[100px] opacity-15" />
               </div>
-              {/* Logo image */}
+              {/* Logo image - Very Large */}
               <img 
                 src={milanoLogo} 
                 alt="MILANO Premium Mobility by TMT" 
-                className="relative z-10 w-72 h-auto md:w-96 lg:w-[28rem] xl:w-[32rem] mx-auto drop-shadow-2xl"
+                className="relative z-10 w-80 h-auto md:w-[28rem] lg:w-[36rem] xl:w-[42rem] mx-auto"
                 style={{
                   filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
                 }}
               />
             </div>
-            
-            {/* Decorative silver line */}
-            <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-[hsl(0_0%_40%)] to-transparent" />
-              <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)]" />
-              <div className="h-px w-16 md:w-24 bg-gradient-to-r from-transparent via-[hsl(0_0%_40%)] to-transparent" />
-            </div>
-            
-            {/* Subtitle text */}
-            <p className="text-sm md:text-base text-[hsl(0_0%_45%)] tracking-widest uppercase">
-              Mobility Premium Management
-            </p>
           </div>
         </div>
 
-        {/* Bottom gradient fade */}
-        <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        {/* Bottom gradient fade - smaller */}
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
       </section>
 
       {/* Introduction - with refined background */}
@@ -410,11 +398,6 @@ const MilanoPremiumMobility = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
             <div className="mb-10">
-              {/* Refined divider with metallic accent */}
-              <div className="flex items-center gap-3 mb-8">
-                <div className="w-8 h-px bg-gradient-to-r from-[hsl(43_40%_45%)] to-transparent" />
-                <div className="w-1 h-1 rounded-full bg-[hsl(43_40%_50%)]" />
-              </div>
               <h2 className="milano-heading-lg text-foreground mb-6">
                 {c.introTitle}
               </h2>
