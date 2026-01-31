@@ -61,37 +61,37 @@ const Header = () => {
             <nav className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-[13px]"
               >
                 {t.inicio}
               </button>
               <button
                 onClick={() => navigate("/chi-siamo")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-[13px]"
               >
                 {t.chiSiamo}
               </button>
               <button
                 onClick={() => navigate("/nostri-veicoli")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-[13px]"
               >
                 {t.nostriVeicoli}
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-[13px]"
               >
                 {t.servicos}
               </button>
               <button
                 onClick={() => navigate("/contato")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-[13px]"
               >
                 {t.contato}
               </button>
               <button
                 onClick={() => navigate("/milano-premium-mobility")}
-                className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-bold uppercase tracking-widest text-xs"
+                className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-bold uppercase tracking-widest text-[13px]"
               >
                 MILANO
               </button>
