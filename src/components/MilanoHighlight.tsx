@@ -17,9 +17,9 @@ const MilanoHighlight = () => {
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-5xl mx-auto">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                        {/* Left Content */}
-                        <div className="flex-1 text-center lg:text-left">
+                    <div className="flex flex-col items-center gap-12">
+                        {/* Content */}
+                        <div className="text-center max-w-3xl">
                             <MotionReveal>
                                 <span className="inline-block px-3 py-1 bg-[hsl(43_30%_50%)/10] text-[hsl(43_30%_60%)] text-xs font-semibold tracking-[0.2em] uppercase rounded-full mb-6">
                                     {t.heroTagline}
@@ -30,7 +30,7 @@ const MilanoHighlight = () => {
                                 <p className="text-lg text-white/60 mb-10 leading-relaxed font-light">
                                     {t.heroDescription}
                                 </p>
-                                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                                     <Button
                                         onClick={() => navigate("/milano-premium-mobility")}
                                         className="bg-[hsl(43_30%_50%)] hover:bg-[hsl(43_30%_40%)] text-black font-semibold h-14 px-8 rounded-sm group transition-all duration-500"
@@ -42,8 +42,8 @@ const MilanoHighlight = () => {
                             </MotionReveal>
                         </div>
 
-                        {/* Right Content - Features Grid */}
-                        <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        {/* Features Grid */}
+                        <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             {[
                                 { icon: ShieldCheck, title: t.standard1Title, delay: 0.1 },
                                 { icon: Globe, title: t.standard3Title, delay: 0.2 },
@@ -51,9 +51,9 @@ const MilanoHighlight = () => {
                                 { icon: ArrowRight, title: t.flexibilityTitle, delay: 0.4 }
                             ].map((item, idx) => (
                                 <MotionReveal key={idx} delay={item.delay}>
-                                    <div className="p-6 bg-white/[0.03] border border-white/[0.05] rounded-sm hover:border-[hsl(43_30%_50%)/30] hover:bg-white/[0.05] transition-all duration-500 group">
-                                        <item.icon className="w-6 h-6 text-[hsl(43_30%_50%)] mb-4 stroke-1 group-hover:scale-110 transition-transform duration-500" />
-                                        <h3 className="text-sm font-semibold text-white/90 uppercase tracking-wider">{item.title}</h3>
+                                    <div className="p-8 bg-white/[0.03] border border-white/[0.05] rounded-sm hover:border-[hsl(43_30%_50%)/30] hover:bg-white/[0.05] transition-all duration-500 group flex flex-col items-center justify-center text-center h-full min-h-[160px]">
+                                        <item.icon className="w-8 h-8 text-[hsl(43_30%_50%)] mb-5 stroke-1 group-hover:scale-110 transition-transform duration-500" />
+                                        <h3 className="text-[11px] font-bold text-white/90 uppercase tracking-[0.2em] leading-relaxed">{item.title}</h3>
                                     </div>
                                 </MotionReveal>
                             ))}
