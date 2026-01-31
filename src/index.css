@@ -356,7 +356,7 @@ All colors MUST be HSL.
 
   .milano-logo-3d {
     transform-style: preserve-3d;
-    animation: milano3DReveal 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    animation: milano3DReveal 1.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 
   @keyframes milano3DReveal {

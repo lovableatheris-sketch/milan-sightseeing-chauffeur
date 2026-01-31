@@ -10,7 +10,7 @@ const Hero = () => {
   const t = translations[language].hero;
   const [scrollBlur, setScrollBlur] = useState(0);
   const [scrollDarkness, setScrollDarkness] = useState(0);
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -24,7 +24,7 @@ const Hero = () => {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/393891430907", "_blank");
   };
@@ -45,7 +45,7 @@ const Hero = () => {
         }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
-        <div 
+        <div
           className="absolute inset-0 bg-black transition-opacity duration-300"
           style={{ opacity: scrollDarkness }}
         />
@@ -62,7 +62,7 @@ const Hero = () => {
             {t.titleHighlight}
           </p>
         )}
-        <a 
+        <a
           href="tel:+393891430907"
           className="inline-block text-4xl md:text-5xl font-bold text-luxury-gold hover:text-luxury-gold-dark transition-smooth mb-6 animate-fade-in"
         >
@@ -79,13 +79,13 @@ const Hero = () => {
           >
             {t.cta}
           </Button>
-          <Link to="/chi-siamo">
+          <Link to="/milano-premium-mobility">
             <Button
               size="lg"
               variant="outline"
               className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
             >
-              {translations[language].header.chiSiamo}
+              {translations[language].milano.navLabel}
             </Button>
           </Link>
         </div>

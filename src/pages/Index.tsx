@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import FloatingDonationButton from "@/components/FloatingDonationButton";
 import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
+import MilanoHighlight from "@/components/MilanoHighlight";
 
 const Index = () => {
   const { language } = useLanguage();
@@ -127,6 +128,7 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <MilanoHighlight />
         <TariffSection />
         <Services />
         <WhyChoose />
