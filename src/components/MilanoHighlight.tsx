@@ -11,12 +11,9 @@ const MilanoHighlight = () => {
     const t = translations[language].milano;
 
     return (
-        <section className="py-24 bg-black relative overflow-hidden">
-            {/* Top gradient for seamless blend with Hero */}
-            <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent z-10 pointer-events-none" />
-
-            {/* Ambient background glow - Moved slightly down and made more subtle at the top */}
-            <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[hsl(43_30%_40%)] rounded-full blur-[200px] opacity-10 pointer-events-none" />
+        <section className="pt-24 pb-24 bg-black relative overflow-hidden">
+            {/* Concentrated ambient glow behind the title */}
+            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[hsl(43_30%_40%)] rounded-full blur-[120px] opacity-20 pointer-events-none" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-5xl mx-auto">
