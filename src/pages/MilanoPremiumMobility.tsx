@@ -377,7 +377,7 @@ const MilanoPremiumMobility = () => {
               <img 
                 src={milanoLogo} 
                 alt="MILANO Premium Mobility by TMT" 
-                className="relative z-10 w-56 h-auto md:w-72 lg:w-80 mx-auto drop-shadow-2xl"
+                className="relative z-10 w-72 h-auto md:w-96 lg:w-[28rem] xl:w-[32rem] mx-auto drop-shadow-2xl"
                 style={{
                   filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
                 }}
