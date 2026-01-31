@@ -11,7 +11,7 @@ const MilanoHighlight = () => {
     const t = translations[language].milano;
 
     return (
-        <section className="py-24 bg-[hsl(0_0%_2%)] relative overflow-hidden border-t border-b border-[hsl(43_30%_50%)/10]">
+        <section className="py-24 bg-[hsl(0_0%_2%)] relative overflow-hidden">
             {/* Ambient background glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[hsl(43_30%_40%)] rounded-full blur-[180px] opacity-10 pointer-events-none" />
 
