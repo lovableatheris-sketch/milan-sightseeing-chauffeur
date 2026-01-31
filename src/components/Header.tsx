@@ -61,37 +61,37 @@ const Header = () => {
             <nav className="hidden md:flex items-center gap-8">
               <button
                 onClick={() => scrollToSection("inicio")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
               >
                 {t.inicio}
               </button>
               <button
                 onClick={() => navigate("/chi-siamo")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
               >
                 {t.chiSiamo}
               </button>
               <button
                 onClick={() => navigate("/nostri-veicoli")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
               >
                 {t.nostriVeicoli}
               </button>
               <button
                 onClick={() => scrollToSection("servicos")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
               >
                 {t.servicos}
               </button>
               <button
                 onClick={() => navigate("/contato")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium"
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
               >
                 {t.contato}
               </button>
               <button
                 onClick={() => navigate("/milano-premium-mobility")}
-                className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-medium text-sm tracking-wide"
+                className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-bold uppercase tracking-widest text-xs"
               >
                 MILANO
               </button>
@@ -123,7 +123,7 @@ const Header = () => {
               <div className="flex flex-col gap-4 bg-primary/95 backdrop-blur-lg rounded-lg p-6 shadow-luxury">
                 <button
                   onClick={() => scrollToSection("inicio")}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.inicio}
                 </button>
@@ -132,7 +132,7 @@ const Header = () => {
                     navigate("/chi-siamo");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.chiSiamo}
                 </button>
@@ -141,13 +141,13 @@ const Header = () => {
                     navigate("/nostri-veicoli");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.nostriVeicoli}
                 </button>
                 <button
                   onClick={() => scrollToSection("servicos")}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.servicos}
                 </button>
@@ -156,7 +156,7 @@ const Header = () => {
                     navigate("/contato");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.contato}
                 </button>
@@ -165,7 +165,7 @@ const Header = () => {
                     navigate("/milano-premium-mobility");
                     setIsMobileMenuOpen(false);
                   }}
-                  className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-medium text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95 text-sm tracking-wide border-t border-primary-foreground/10 mt-2 pt-4"
+                  className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-bold uppercase tracking-widest text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95 border-t border-primary-foreground/10 mt-2 pt-4"
                 >
                   MILANO Corporate
                 </button>
