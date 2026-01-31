@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import TouristTours from "./pages/TouristTours";
 import Transfers from "./pages/Transfers";
+import ScrollToTop from "./components/ScrollToTop";
 
 
 import ChiSiamo from "./pages/ChiSiamo";
@@ -27,6 +28,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/chi-siamo" element={<ChiSiamo />} />
@@ -37,8 +39,8 @@ const App = () => (
             <Route path="/transfers" element={<Transfers />} />
             <Route path="/milano-premium-mobility" element={<MilanoPremiumMobility />} />
             <Route path="/milano-prontuario-tariffe" element={<MilanoTariffe />} />
-            
-            
+
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

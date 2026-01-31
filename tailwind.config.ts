@@ -122,6 +122,14 @@ export default {
             "background-position": "-200% center",
           },
         },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -130,6 +138,7 @@ export default {
         "fade-in-up": "fade-in-up 0.8s ease-out",
         "scale-in": "scale-in 0.4s ease-out",
         "shine": "shine 3s linear infinite",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },

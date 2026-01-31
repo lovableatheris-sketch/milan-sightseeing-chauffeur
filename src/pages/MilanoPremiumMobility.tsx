@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Clock, Shield, Users, FileText, CheckCircle, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import milanoLogo from "@/assets/milano-logo.png";
+import MotionReveal from "@/components/MotionReveal";
 
 const MilanoPremiumMobility = () => {
   const { language } = useLanguage();
@@ -14,32 +15,32 @@ const MilanoPremiumMobility = () => {
   const content = {
     it: {
       // Hero
-      heroTagline: "Divisione Corporate",
+      heroTagline: "THE CORPORATE STANDARD",
       heroTitle: "MILANO",
-      heroSubtitle: "Premium Mobility",
+      heroSubtitle: "Excellence in Motion.",
       heroByline: "by TMT",
 
       // Introduction
-      introTitle: "La divisione corporate di TMT",
-      introP1: "MILANO è la divisione di TMT dedicata alla mobilità aziendale. Operiamo a Milano, in Lombardia e nelle principali aree del Nord Italia, fornendo servizi di trasporto con conducente a clienti corporate, executive e partner B2B.",
-      introP2: "Il nostro ambito operativo comprende trasferimenti aeroportuali da Malpensa, Linate e Orio al Serio, servizi a disposizione oraria e trasferte interregionali.",
+      introTitle: "Un nuovo standard di mobilità",
+      introP1: "MILANO non è solo trasporto. È la garanzia di un tempo perfettamente governato. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza è l'unica opzione accettata.",
+      introP2: "Dal transfer aeroportuale privato alla gestione completa della mobilità per roadshow ed eventi: ogni viaggio è un'esperienza di silenzio, comfort e controllo.",
 
       // Operational Philosophy
-      philosophyTitle: "Filosofia operativa",
-      philosophySubtitle: "Un servizio progettato per non richiedere attenzione",
-      philosophyP1: "Il nostro approccio si basa su tre elementi: discrezione, puntualità e prevedibilità. Ogni servizio è strutturato per integrarsi nella giornata lavorativa del cliente senza interferenze.",
+      philosophyTitle: "L'Arte dell'Assenza",
+      philosophySubtitle: "Il vero lusso non richiede la tua attenzione",
+      philosophyP1: "La nostra filosofia si fonda sull'invisibilità. Il servizio perfetto è quello che non noti, perché tutto accade esattamente come deve accadere. Discrezione assoluta, puntualità millimetrica.",
       philosophyItems: [
         {
-          title: "Discrezione",
-          desc: "L'autista interviene solo quando necessario. Nessuna conversazione non richiesta, nessuna interruzione del lavoro in corso."
+          title: "Invisibilità",
+          desc: "L'autista è una presenza impercettibile. Interviene solo se richiesto. Il tuo spazio e il tuo tempo rimangono inviolati."
         },
         {
-          title: "Ambiente riservato",
-          desc: "Il veicolo è uno spazio di lavoro. Chiamate, email, documentazione: tutto può proseguire senza interruzioni durante il trasferimento."
+          title: "Sanctuary",
+          desc: "L'abitacolo è il tuo ufficio mobile o la tua lounge privata. Silenzio, privacy e tecnologia per continuare a operare senza interruzioni."
         },
         {
-          title: "Prevedibilità",
-          desc: "Orari confermati, percorsi definiti, nessuna variabile imprevista. Il cliente conosce in anticipo ogni dettaglio del servizio."
+          title: "Certezza",
+          desc: "Nessuna variabile. Percorsi ottimizzati, orari garantiti. La tranquillità di sapere che ogni dettaglio è già stato gestito."
         }
       ],
 
@@ -341,70 +342,80 @@ const MilanoPremiumMobility = () => {
       <Header />
 
       {/* Hero Section - Premium Visual with Logo */}
-      <section className="relative pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden">
+      <section className="relative pt-32 pb-4 md:pt-40 md:pb-8">
         {/* Sophisticated gradient background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_6%)]" />
-        
+
         {/* Metallic silver/gold ambient glow effects */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-[hsl(43_30%_40%)] rounded-full blur-[150px] opacity-10" />
           <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[hsl(0_0%_50%)] rounded-full blur-[180px] opacity-5" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[hsl(43_20%_35%)] rounded-full blur-[200px] opacity-5" />
         </div>
-        
+
         {/* Subtle metallic grain texture overlay */}
-        <div className="absolute inset-0 opacity-[0.02]" 
+        <div className="absolute inset-0 opacity-[0.02]"
           style={{
             backgroundImage: `radial-gradient(circle at 50% 50%, hsl(0 0% 100% / 0.15) 0%, transparent 50%)`,
             backgroundSize: '3px 3px'
-          }} 
+          }}
         />
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container text-center milano-fade-in">
+          <div className="milano-container text-center">
             {/* Corporate tagline */}
-            <p className="milano-caption text-[hsl(0_0%_50%)] mb-6 tracking-[0.3em]">
-              {c.heroTagline}
-            </p>
-            
+            <MotionReveal delay={0.1}>
+              <p className="milano-caption text-[hsl(0_0%_50%)] mb-3 tracking-[0.3em]">
+                {c.heroTagline}
+              </p>
+            </MotionReveal>
+
             {/* Central Logo - MUCH LARGER */}
-            <div className="relative mx-auto">
-              {/* Subtle glow behind logo */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-64 h-64 md:w-80 md:h-80 lg:w-[28rem] lg:h-[28rem] bg-[hsl(43_30%_40%)] rounded-full blur-[100px] opacity-15" />
+            <MotionReveal delay={0.2} threshold={0.1}>
+              <div className="relative mx-auto">
+                {/* Subtle glow behind logo */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-80 h-80 md:w-[30rem] md:h-[30rem] lg:w-[40rem] lg:h-[40rem] bg-[hsl(43_30%_40%)] rounded-full blur-[100px] opacity-15" />
+                </div>
+                {/* Logo image - Adjusted Size */}
+                <img
+                  src={milanoLogo}
+                  alt="MILANO Premium Mobility by TMT"
+                  className="relative z-10 w-[24rem] h-auto md:w-[32rem] lg:w-[40rem] xl:w-[48rem] mx-auto"
+                  style={{
+                    filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
+                  }}
+                />
               </div>
-              {/* Logo image - Very Large */}
-              <img 
-                src={milanoLogo} 
-                alt="MILANO Premium Mobility by TMT" 
-                className="relative z-10 w-80 h-auto md:w-[28rem] lg:w-[36rem] xl:w-[42rem] mx-auto"
-                style={{
-                  filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
-                }}
-              />
-            </div>
+            </MotionReveal>
           </div>
         </div>
 
-        {/* Bottom gradient fade - smaller */}
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
+        {/* Bottom gradient fade - smoother transition */}
+        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/80 to-transparent" />
       </section>
 
       {/* Introduction - with refined background */}
-      <section className="milano-section relative overflow-hidden">
+      <section className="relative overflow-hidden pt-8 pb-24 md:pt-12 md:pb-32">
         {/* Subtle gradient background */}
         <div className="absolute inset-0 bg-gradient-to-b from-background via-[hsl(0_0%_4%)] to-background" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
-            <div className="mb-10">
-              <h2 className="milano-heading-lg text-foreground mb-6">
-                {c.introTitle}
-              </h2>
-            </div>
+            <MotionReveal>
+              <div className="mb-10">
+                <h2 className="milano-heading-lg text-foreground mb-6">
+                  {c.introTitle}
+                </h2>
+              </div>
+            </MotionReveal>
             <div className="space-y-5 milano-body-lg text-muted-foreground">
-              <p>{c.introP1}</p>
-              <p className="text-muted-foreground/80">{c.introP2}</p>
+              <MotionReveal delay={0.1}>
+                <p>{c.introP1}</p>
+              </MotionReveal>
+              <MotionReveal delay={0.2}>
+                <p className="text-muted-foreground/80">{c.introP2}</p>
+              </MotionReveal>
             </div>
           </div>
         </div>
@@ -415,10 +426,10 @@ const MilanoPremiumMobility = () => {
         {/* Refined background with subtle gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_5%)] via-[hsl(0_0%_6%)] to-[hsl(0_0%_5%)]" />
         <div className="absolute inset-0 border-y border-[hsl(0_0%_15%)]" />
-        
+
         {/* Subtle ambient glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-[hsl(43_20%_30%)] rounded-full blur-[150px] opacity-5" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container-wide">
             <div className="text-center mb-20">
@@ -440,18 +451,20 @@ const MilanoPremiumMobility = () => {
               {c.philosophyP1}
             </p>
 
-            <div className="milano-grid-3">
+            <div className="milano-grid-3 gap-8">
               {c.philosophyItems.map((item, index) => (
-                <div key={index} className="relative group p-10 rounded-xl bg-gradient-to-b from-[hsl(0_0%_8%)] to-[hsl(0_0%_6%)] border border-[hsl(0_0%_15%)] hover:border-[hsl(43_30%_35%)/40] transition-all duration-300">
-                  {/* Card accent bar with metallic gradient */}
-                  <div className="w-0.5 h-12 mb-8 rounded-full bg-gradient-to-b from-[hsl(43_40%_50%)] via-[hsl(43_30%_40%)] to-transparent" />
-                  <h3 className="milano-heading-sm text-foreground mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="milano-body text-[hsl(0_0%_55%)]">
-                    {item.desc}
-                  </p>
-                </div>
+                <MotionReveal key={index} delay={index * 0.1} className="h-full">
+                  <div className="relative group p-10 h-full rounded-sm bg-[hsl(0_0%_6%)]/80 backdrop-blur-md border border-[hsl(0_0%_15%)] hover:border-[hsl(43_30%_50%)/30] transition-all duration-700 hover:-translate-y-1 shadow-2xl">
+                    {/* Card accent bar with metallic gradient - Thinner and more subtle */}
+                    <div className="w-[1px] h-8 mb-6 bg-gradient-to-b from-[hsl(43_40%_50%)] to-transparent opacity-60 group-hover:h-12 transition-all duration-700" />
+                    <h3 className="text-xl font-heading font-medium text-[hsl(0_0%_90%)] mb-4 tracking-wide">
+                      {item.title}
+                    </h3>
+                    <p className="font-body text-[hsl(0_0%_60%)] leading-relaxed text-sm">
+                      {item.desc}
+                    </p>
+                  </div>
+                </MotionReveal>
               ))}
             </div>
           </div>
@@ -461,7 +474,7 @@ const MilanoPremiumMobility = () => {
       {/* Operational Standards - refined cards */}
       <section className="milano-section relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-background via-[hsl(0_0%_4%)] to-background" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container-wide">
             <div className="text-center mb-20">
@@ -478,23 +491,25 @@ const MilanoPremiumMobility = () => {
               </p>
             </div>
 
-            <div className="milano-grid-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {c.standardsItems.map((item, index) => (
-                <div key={index} className="flex gap-6 p-8 rounded-xl bg-gradient-to-br from-[hsl(0_0%_8%)] to-[hsl(0_0%_5%)] border border-[hsl(0_0%_15%)] hover:border-[hsl(43_30%_35%)/40] transition-all duration-300">
-                  <div className="flex-shrink-0">
-                    <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-gradient-to-br from-[hsl(43_30%_20%)/30] to-transparent border border-[hsl(43_30%_40%)/20]">
-                      <item.icon className="w-6 h-6 text-[hsl(43_40%_55%)]" strokeWidth={1.5} />
+                <MotionReveal key={index} delay={index * 0.1} className="h-full">
+                  <div className="flex gap-8 p-8 h-full rounded-sm bg-[hsl(0_0%_5%)] border border-[hsl(0_0%_12%)] hover:border-[hsl(0_0%_25%)] transition-all duration-500 group">
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm group-hover:border-[hsl(43_30%_40%)] transition-colors duration-500">
+                        <item.icon className="w-5 h-5 text-[hsl(0_0%_60%)] group-hover:text-[hsl(43_30%_50%)] transition-colors duration-500" strokeWidth={1} />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-heading font-normal text-[hsl(0_0%_90%)] mb-3 tracking-wide group-hover:text-white transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="font-body text-[hsl(0_0%_50%)] text-sm leading-relaxed group-hover:text-[hsl(0_0%_60%)] transition-colors">
+                        {item.desc}
+                      </p>
                     </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold text-foreground mb-3">
-                      {item.title}
-                    </h3>
-                    <p className="milano-body text-[hsl(0_0%_55%)]">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
+                </MotionReveal>
               ))}
             </div>
           </div>
@@ -505,7 +520,7 @@ const MilanoPremiumMobility = () => {
       <section className="milano-section relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_5%)] via-[hsl(0_0%_6%)] to-[hsl(0_0%_5%)]" />
         <div className="absolute inset-0 border-y border-[hsl(0_0%_15%)]" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
             <div className="text-center mb-16">
@@ -553,10 +568,10 @@ const MilanoPremiumMobility = () => {
       <section className="milano-section relative overflow-hidden">
         {/* Rich gradient background */}
         <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_3%)]" />
-        
+
         {/* Metallic ambient glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[hsl(43_25%_30%)] rounded-full blur-[150px] opacity-10" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container text-center">
             {/* Decorative element */}
@@ -571,23 +586,29 @@ const MilanoPremiumMobility = () => {
             </h2>
 
             <div className="space-y-4 mb-14">
-              <p className="milano-body-lg text-[hsl(0_0%_60%)] max-w-2xl mx-auto">
-                {c.closingP1}
-              </p>
-              <p className="milano-body text-[hsl(0_0%_45%)] max-w-2xl mx-auto">
-                {c.closingP2}
-              </p>
+              <MotionReveal delay={0.1}>
+                <p className="milano-body-lg text-[hsl(0_0%_60%)] max-w-2xl mx-auto">
+                  {c.closingP1}
+                </p>
+              </MotionReveal>
+              <MotionReveal delay={0.2}>
+                <p className="milano-body text-[hsl(0_0%_45%)] max-w-2xl mx-auto">
+                  {c.closingP2}
+                </p>
+              </MotionReveal>
             </div>
 
-            <Link to={c.closingCtaLink}>
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)] text-[hsl(0_0%_5%)] hover:from-[hsl(43_45%_50%)] hover:to-[hsl(43_35%_40%)] transition-all duration-300 px-10 py-6 text-base font-semibold shadow-lg shadow-[hsl(43_30%_30%)/20]"
-              >
-                {c.closingCta}
-                <ArrowRight className="ml-3 w-4 h-4" />
-              </Button>
-            </Link>
+            <MotionReveal delay={0.3}>
+              <Link to={c.closingCtaLink}>
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)] text-[hsl(0_0%_5%)] hover:from-[hsl(43_45%_50%)] hover:to-[hsl(43_35%_40%)] transition-all duration-300 px-10 py-6 text-base font-semibold shadow-lg shadow-[hsl(43_30%_30%)/20]"
+                >
+                  {c.closingCta}
+                  <ArrowRight className="ml-3 w-4 h-4" />
+                </Button>
+              </Link>
+            </MotionReveal>
           </div>
         </div>
       </section>

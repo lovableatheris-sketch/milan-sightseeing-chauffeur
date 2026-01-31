@@ -2,8 +2,9 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { Plane, Clock, MapPin, Info, CheckCircle } from "lucide-react";
+import { Plane, Clock, MapPin, Info, CheckCircle, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import MotionReveal from "@/components/MotionReveal";
 
 const MilanoTariffe = () => {
   const { language } = useLanguage();
@@ -56,7 +57,7 @@ const MilanoTariffe = () => {
       waitingRates: [
         { label: "Arrivi aeroportuali", detail: "60 minuti inclusi nel prezzo" },
         { label: "Prelievi in città", detail: "15 minuti inclusi nel prezzo" },
-        { label: "Attesa aggiuntiva", detail: "€ 30 ogni 30 minuti" }
+        { label: "Attesa aggiuntiva", detail: "€ 35 ogni 30 minuti" }
       ],
       waitingNote: "L'attesa decorre dal momento dell'atterraggio (arrivi) o dall'orario concordato (prelievi urbani).",
 
@@ -127,7 +128,7 @@ const MilanoTariffe = () => {
       waitingRates: [
         { label: "Airport arrivals", detail: "60 minutes included in price" },
         { label: "City pickups", detail: "15 minutes included in price" },
-        { label: "Additional waiting", detail: "€ 30 per 30 minutes" }
+        { label: "Additional waiting", detail: "€ 35 per 30 minutes" }
       ],
       waitingNote: "Waiting time starts from landing (arrivals) or from agreed time (urban pickups).",
 
@@ -196,7 +197,7 @@ const MilanoTariffe = () => {
       waitingRates: [
         { label: "Chegadas de aeroporto", detail: "60 minutos incluídos no preço" },
         { label: "Buscas na cidade", detail: "15 minutos incluídos no preço" },
-        { label: "Espera adicional", detail: "€ 30 a cada 30 minutos" }
+        { label: "Espera adicional", detail: "€ 35 a cada 30 minutos" }
       ],
       waitingNote: "O tempo de espera começa a partir do pouso (chegadas) ou do horário acordado (buscas urbanas).",
 
@@ -265,7 +266,7 @@ const MilanoTariffe = () => {
       waitingRates: [
         { label: "Arrivées aéroport", detail: "60 minutes incluses dans le prix" },
         { label: "Prises en charge en ville", detail: "15 minutes incluses dans le prix" },
-        { label: "Attente supplémentaire", detail: "€ 30 par 30 minutes" }
+        { label: "Attente supplémentaire", detail: "€ 35 par 30 minutes" }
       ],
       waitingNote: "Le temps d'attente démarre à partir de l'atterrissage (arrivées) ou de l'heure convenue (prises en charge urbaines).",
 
@@ -299,238 +300,281 @@ const MilanoTariffe = () => {
   const c = content[language] || content.it;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-[hsl(0_0%_3%)] font-sans selection:bg-[hsl(43_30%_40%)] selection:text-white">
       <SEOHead
         title={`${c.pageTitle} | MILANO Premium Mobility | TMT`}
         description={c.introP1}
         keywords="tariffe ncc milano, prezzi transfer malpensa, listino noleggio con conducente, costi autista privato milano"
         canonicalUrl="https://tmtransferlux.it/milano-prontuario-tariffe"
       />
+
+      {/* Custom Header for this sub-brand page - simplified for focus */}
       <Header />
 
-      {/* Hero */}
-      <section className="relative pt-40 pb-20 bg-primary overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]">
-          <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-milano-gold rounded-full blur-3xl" />
+      {/* Hero Section */}
+      <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 overflow-hidden">
+        {/* Sophisticated gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_6%)]" />
+
+        {/* Ambient glow effects */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[hsl(43_30%_40%)] rounded-full blur-[150px] opacity-5" />
+          <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[hsl(0_0%_20%)] rounded-full blur-[120px] opacity-5" />
         </div>
 
+        {/* Texture overlay */}
+        <div className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `radial-gradient(circle at 50% 50%, hsl(0 0% 100% / 0.15) 0%, transparent 50%)`,
+            backgroundSize: '3px 3px'
+          }}
+        />
+
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container text-center milano-fade-in">
-            <Link
-              to="/milano-premium-mobility"
-              className="milano-caption text-primary-foreground/40 hover:text-milano-gold transition-colors inline-block mb-8"
-            >
-              {c.breadcrumb}
-            </Link>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-4 tracking-tight">
-              {c.pageTitle}
-            </h1>
-            <p className="text-xl md:text-2xl text-milano-gold font-heading font-light tracking-wide">
-              {c.pageSubtitle}
-            </p>
+          <div className="milano-container text-center">
+            <MotionReveal delay={0.1}>
+              <Link
+                to="/milano-premium-mobility"
+                className="inline-flex items-center text-[hsl(0_0%_50%)] hover:text-[hsl(43_40%_60%)] transition-colors mb-8 tracking-widest text-xs uppercase"
+              >
+                <ArrowLeft className="w-3 h-3 mr-2" />
+                {c.breadcrumb}
+              </Link>
+            </MotionReveal>
+
+            <MotionReveal delay={0.2}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-medium text-[hsl(0_0%_95%)] mb-4 tracking-tight">
+                {c.pageTitle}
+              </h1>
+            </MotionReveal>
+
+            <MotionReveal delay={0.3}>
+              <p className="text-lg md:text-xl text-[hsl(43_30%_50%)] font-light tracking-wide">
+                {c.pageSubtitle}
+              </p>
+            </MotionReveal>
           </div>
         </div>
 
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background to-transparent" />
+        {/* Bottom gradient fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[hsl(0_0%_3%)] to-transparent" />
       </section>
 
       {/* Introduction */}
-      <section className="milano-section-sm bg-background border-b border-border/20">
+      <section className="relative py-16 md:py-24 bg-[hsl(0_0%_3%)]">
         <div className="container mx-auto px-4">
           <div className="milano-container">
-            <div className="mb-6">
-              <div className="milano-divider-gold mb-6" />
-              <h2 className="milano-heading-md text-foreground mb-4">
-                {c.introTitle}
-              </h2>
-            </div>
+            <MotionReveal>
+              <div className="mb-10 text-center md:text-left">
+                <div className="w-12 h-[1px] bg-[hsl(43_30%_40%)] mb-6 mx-auto md:mx-0" />
+                <h2 className="text-2xl md:text-3xl font-heading font-light text-white mb-6">
+                  {c.introTitle}
+                </h2>
+              </div>
+            </MotionReveal>
 
-            <p className="milano-body text-muted-foreground mb-6">
-              {c.introP1}
-            </p>
-
-            <div className="flex items-start gap-4 p-5 bg-milano-gold-subtle rounded-xl border border-milano-gold">
-              <Info className="w-5 h-5 text-milano-gold flex-shrink-0 mt-0.5" />
-              <p className="text-sm text-foreground/80">
-                {c.introNote}
+            <MotionReveal delay={0.1}>
+              <p className="text-lg text-[hsl(0_0%_60%)] leading-relaxed mb-8 font-light">
+                {c.introP1}
               </p>
-            </div>
+            </MotionReveal>
+
+            <MotionReveal delay={0.2}>
+              <div className="flex items-start gap-4 p-6 bg-[hsl(0_0%_6%)]/50 rounded-sm border border-[hsl(43_30%_50%)]/20">
+                <Info className="w-5 h-5 text-[hsl(43_30%_50%)] flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-[hsl(0_0%_70%)]">
+                  {c.introNote}
+                </p>
+              </div>
+            </MotionReveal>
           </div>
         </div>
       </section>
 
       {/* Tariffs */}
-      <section className="milano-section bg-background">
+      <section className="py-12 bg-[hsl(0_0%_3%)]">
         <div className="container mx-auto px-4">
           <div className="milano-container-wide">
 
             {/* Hourly + Kilometric Row */}
-            <div className="milano-grid-2 mb-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
 
               {/* Hourly */}
-              <div className="milano-card p-0 overflow-hidden">
-                <div className="p-6 border-b border-border/20 bg-muted/5">
-                  <div className="flex items-center gap-4">
-                    <div className="milano-icon-box">
-                      <Clock className="w-5 h-5 text-milano-gold" strokeWidth={1.5} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-heading font-semibold text-foreground">
-                        {c.hourlyTitle}
-                      </h3>
-                      <p className="text-sm text-muted-foreground/70 mt-1">
-                        {c.hourlyDesc}
-                      </p>
+              <MotionReveal delay={0.1} className="h-full">
+                <div className="bg-[hsl(0_0%_6%)]/80 backdrop-blur-md border border-[hsl(0_0%_12%)] p-0 rounded-sm hover:border-[hsl(43_30%_50%)/30] transition-colors duration-500 h-full flex flex-col">
+                  <div className="p-8 border-b border-[hsl(0_0%_12%)] bg-[hsl(0_0%_7%)]">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm text-[hsl(43_30%_50%)]">
+                        <Clock className="w-5 h-5" strokeWidth={1} />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-heading font-medium text-[hsl(0_0%_90%)] tracking-wide">
+                          {c.hourlyTitle}
+                        </h3>
+                        <p className="text-xs text-[hsl(0_0%_50%)] mt-1 uppercase tracking-wider">
+                          {c.hourlyDesc}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  {c.hourlyRates.map((rate, index) => (
-                    <div
-                      key={index}
-                      className={`flex justify-between items-center py-4 ${index !== c.hourlyRates.length - 1 ? 'border-b border-border/20' : ''
-                        }`}
-                    >
-                      <div>
-                        <span className="font-medium text-foreground">{rate.label}</span>
-                        {rate.note && <p className="text-xs text-muted-foreground/60 mt-1">{rate.note}</p>}
+                  <div className="p-8 flex-grow">
+                    {c.hourlyRates.map((rate, index) => (
+                      <div
+                        key={index}
+                        className={`flex justify-between items-start py-5 ${index !== c.hourlyRates.length - 1 ? 'border-b border-[hsl(0_0%_12%)]' : ''
+                          }`}
+                      >
+                        <div>
+                          <span className="font-medium text-[hsl(0_0%_80%)] block">{rate.label}</span>
+                          {rate.note && <p className="text-xs text-[hsl(0_0%_50%)] mt-1">{rate.note}</p>}
+                        </div>
+                        <span className="text-xl font-light text-[hsl(43_30%_60%)] tabular-nums">{rate.price}</span>
                       </div>
-                      <span className="text-xl font-bold text-foreground tabular-nums">{rate.price}</span>
-                    </div>
-                  ))}
-                  <p className="text-xs text-muted-foreground/60 mt-4 pt-4 border-t border-border/20">
-                    {c.hourlyNote}
-                  </p>
+                    ))}
+                    <p className="text-xs text-[hsl(0_0%_40%)] mt-6 pt-5 border-t border-[hsl(0_0%_12%)] leading-relaxed">
+                      {c.hourlyNote}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </MotionReveal>
 
               {/* Kilometric */}
-              <div className="milano-card p-0 overflow-hidden">
-                <div className="p-6 border-b border-border/20 bg-muted/5">
-                  <div className="flex items-center gap-4">
-                    <div className="milano-icon-box">
-                      <MapPin className="w-5 h-5 text-milano-gold" strokeWidth={1.5} />
-                    </div>
-                    <div>
-                      <h3 className="text-lg font-heading font-semibold text-foreground">
-                        {c.kmTitle}
-                      </h3>
-                      <p className="text-sm text-muted-foreground/70 mt-1">
-                        {c.kmDesc}
-                      </p>
+              <MotionReveal delay={0.2} className="h-full">
+                <div className="bg-[hsl(0_0%_6%)]/80 backdrop-blur-md border border-[hsl(0_0%_12%)] p-0 rounded-sm hover:border-[hsl(43_30%_50%)/30] transition-colors duration-500 h-full flex flex-col">
+                  <div className="p-8 border-b border-[hsl(0_0%_12%)] bg-[hsl(0_0%_7%)]">
+                    <div className="flex items-center gap-4">
+                      <div className="w-10 h-10 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm text-[hsl(43_30%_50%)]">
+                        <MapPin className="w-5 h-5" strokeWidth={1} />
+                      </div>
+                      <div>
+                        <h3 className="text-lg font-heading font-medium text-[hsl(0_0%_90%)] tracking-wide">
+                          {c.kmTitle}
+                        </h3>
+                        <p className="text-xs text-[hsl(0_0%_50%)] mt-1 uppercase tracking-wider">
+                          {c.kmDesc}
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  {c.kmRates.map((rate, index) => (
-                    <div
-                      key={index}
-                      className={`flex justify-between items-center py-4 ${index !== c.kmRates.length - 1 ? 'border-b border-border/20' : ''
-                        }`}
-                    >
-                      <div>
-                        <span className="font-medium text-foreground">{rate.label}</span>
-                        {rate.note && <p className="text-xs text-muted-foreground/60 mt-1">{rate.note}</p>}
+                  <div className="p-8 flex-grow">
+                    {c.kmRates.map((rate, index) => (
+                      <div
+                        key={index}
+                        className={`flex justify-between items-start py-5 ${index !== c.kmRates.length - 1 ? 'border-b border-[hsl(0_0%_12%)]' : ''
+                          }`}
+                      >
+                        <div>
+                          <span className="font-medium text-[hsl(0_0%_80%)] block">{rate.label}</span>
+                          {rate.note && <p className="text-xs text-[hsl(0_0%_50%)] mt-1">{rate.note}</p>}
+                        </div>
+                        <span className="text-xl font-light text-[hsl(43_30%_60%)] tabular-nums">{rate.price}</span>
                       </div>
-                      <span className="text-xl font-bold text-foreground tabular-nums">{rate.price}</span>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </MotionReveal>
 
             </div>
 
             {/* Airport Transfers */}
-            <div className="milano-card p-0 overflow-hidden mb-10">
-              <div className="p-6 border-b border-border/20 bg-muted/5">
-                <div className="flex items-center gap-4">
-                  <div className="milano-icon-box">
-                    <Plane className="w-5 h-5 text-milano-gold" strokeWidth={1.5} />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold text-foreground">
-                      {c.transfersTitle}
-                    </h3>
-                    <p className="text-sm text-muted-foreground/70 mt-1">
-                      {c.transfersDesc}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {c.transfersRates.map((transfer, index) => (
-                    <div
-                      key={index}
-                      className="flex justify-between items-center p-4 bg-muted/5 rounded-lg border border-border/20"
-                    >
-                      <span className="text-sm text-foreground">{transfer.route}</span>
-                      <span className="text-lg font-bold text-foreground tabular-nums ml-4">{transfer.price}</span>
+            <MotionReveal delay={0.3}>
+              <div className="bg-[hsl(0_0%_6%)]/80 backdrop-blur-md border border-[hsl(0_0%_12%)] p-0 rounded-sm hover:border-[hsl(43_30%_50%)/30] transition-colors duration-500 mb-12">
+                <div className="p-8 border-b border-[hsl(0_0%_12%)] bg-[hsl(0_0%_7%)]">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm text-[hsl(43_30%_50%)]">
+                      <Plane className="w-5 h-5" strokeWidth={1} />
                     </div>
-                  ))}
+                    <div>
+                      <h3 className="text-lg font-heading font-medium text-[hsl(0_0%_90%)] tracking-wide">
+                        {c.transfersTitle}
+                      </h3>
+                      <p className="text-xs text-[hsl(0_0%_50%)] mt-1 uppercase tracking-wider">
+                        {c.transfersDesc}
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-xs text-muted-foreground/60 mt-6 pt-4 border-t border-border/20">
-                  {c.transfersNote}
-                </p>
+                <div className="p-8">
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {c.transfersRates.map((transfer, index) => (
+                      <div
+                        key={index}
+                        className="flex justify-between items-center p-5 bg-[hsl(0_0%_4%)] rounded-sm border border-[hsl(0_0%_10%)] hover:border-[hsl(0_0%_20%)] transition-colors"
+                      >
+                        <span className="text-sm text-[hsl(0_0%_80%)] font-medium max-w-[70%]">{transfer.route}</span>
+                        <span className="text-lg font-light text-[hsl(43_30%_60%)] tabular-nums">{transfer.price}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs text-[hsl(0_0%_40%)] mt-8 pt-5 border-t border-[hsl(0_0%_12%)]">
+                    {c.transfersNote}
+                  </p>
+                </div>
               </div>
-            </div>
+            </MotionReveal>
 
             {/* Waiting Times */}
-            <div className="milano-card p-0 overflow-hidden">
-              <div className="p-6 border-b border-border/20 bg-muted/5">
-                <div className="flex items-center gap-4">
-                  <div className="milano-icon-box">
-                    <Clock className="w-5 h-5 text-milano-gold" strokeWidth={1.5} />
-                  </div>
-                  <h3 className="text-lg font-heading font-semibold text-foreground">
-                    {c.waitingTitle}
-                  </h3>
-                </div>
-              </div>
-              <div className="p-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {c.waitingRates.map((item, index) => (
-                    <div key={index} className="flex justify-between items-center p-4 bg-muted/5 rounded-lg">
-                      <span className="text-sm text-foreground">{item.label}</span>
-                      <span className="text-sm font-medium text-muted-foreground ml-4">{item.detail}</span>
+            <MotionReveal delay={0.4}>
+              <div className="bg-[hsl(0_0%_6%)]/80 backdrop-blur-md border border-[hsl(0_0%_12%)] p-0 rounded-sm hover:border-[hsl(43_30%_50%)/30] transition-colors duration-500">
+                <div className="p-8 border-b border-[hsl(0_0%_12%)] bg-[hsl(0_0%_7%)]">
+                  <div className="flex items-center gap-4">
+                    <div className="w-10 h-10 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm text-[hsl(43_30%_50%)]">
+                      <Clock className="w-5 h-5" strokeWidth={1} />
                     </div>
-                  ))}
+                    <h3 className="text-lg font-heading font-medium text-[hsl(0_0%_90%)] tracking-wide">
+                      {c.waitingTitle}
+                    </h3>
+                  </div>
                 </div>
-                <p className="text-xs text-muted-foreground/60 mt-4 pt-4 border-t border-border/20">
-                  {c.waitingNote}
-                </p>
+                <div className="p-8">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {c.waitingRates.map((item, index) => (
+                      <div key={index} className="flex flex-col gap-2 p-5 bg-[hsl(0_0%_4%)] rounded-sm border border-[hsl(0_0%_10%)]">
+                        <span className="text-sm font-medium text-[hsl(0_0%_80%)]">{item.label}</span>
+                        <span className="text-xs text-[hsl(0_0%_50%)]">{item.detail}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="text-xs text-[hsl(0_0%_40%)] mt-6 pt-5 border-t border-[hsl(0_0%_12%)]">
+                    {c.waitingNote}
+                  </p>
+                </div>
               </div>
-            </div>
+            </MotionReveal>
           </div>
         </div>
       </section>
 
       {/* General Conditions */}
-      <section className="milano-section bg-muted/5 border-y border-border/20">
+      <section className="py-20 bg-[hsl(0_0%_4%)] border-t border-[hsl(0_0%_10%)]">
         <div className="container mx-auto px-4">
           <div className="milano-container">
-            <div className="text-center mb-16">
-              <div className="milano-divider-gold mx-auto mb-8" />
-              <h2 className="milano-heading-md text-foreground">
-                {c.conditionsTitle}
-              </h2>
-            </div>
+            <MotionReveal>
+              <div className="text-center mb-16">
+                <div className="w-12 h-[1px] bg-[hsl(43_30%_40%)] mx-auto mb-6" />
+                <h2 className="text-2xl font-heading font-normal text-[hsl(0_0%_90%)] tracking-wide">
+                  {c.conditionsTitle}
+                </h2>
+              </div>
+            </MotionReveal>
 
-            <div className="milano-grid-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {c.conditions.map((condition, index) => (
-                <div key={index} className="flex gap-5 p-6 milano-card milano-card-hover">
-                  <div className="flex-shrink-0 mt-1">
-                    <CheckCircle className="w-5 h-5 text-milano-gold" strokeWidth={1.5} />
+                <MotionReveal key={index} delay={index * 0.1}>
+                  <div className="flex gap-6 p-6 md:p-8 rounded-sm hover:bg-[hsl(0_0%_6%)] transition-colors duration-300">
+                    <div className="flex-shrink-0 mt-1">
+                      <CheckCircle className="w-5 h-5 text-[hsl(43_30%_40%)]" strokeWidth={1.5} />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-heading font-medium text-[hsl(0_0%_85%)] mb-3">
+                        {condition.title}
+                      </h3>
+                      <p className="text-sm text-[hsl(0_0%_55%)] leading-relaxed">
+                        {condition.text}
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-base font-heading font-semibold text-foreground mb-2">
-                      {condition.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground/80 leading-relaxed">
-                      {condition.text}
-                    </p>
-                  </div>
-                </div>
+                </MotionReveal>
               ))}
             </div>
           </div>
@@ -538,34 +582,38 @@ const MilanoTariffe = () => {
       </section>
 
       {/* Contact Footer */}
-      <section className="py-16 bg-primary">
+      <section className="py-24 bg-[hsl(0_0%_3%)] border-t border-[hsl(0_0%_8%)]">
         <div className="container mx-auto px-4">
           <div className="milano-container text-center">
-            <p className="text-sm text-primary-foreground/50 mb-4">
-              {c.footerNote}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-              <a
-                href={`mailto:${c.contactEmail}`}
-                className="text-primary-foreground/70 hover:text-milano-gold transition-colors text-sm"
-              >
-                {c.contactEmail}
-              </a>
-              <span className="hidden sm:inline text-primary-foreground/20">|</span>
-              <a
-                href={`tel:${c.contactPhone.replace(/\s/g, '')}`}
-                className="text-primary-foreground/70 hover:text-milano-gold transition-colors text-sm"
-              >
-                {c.contactPhone}
-              </a>
-            </div>
+            <MotionReveal>
+              <p className="text-xs uppercase tracking-widest text-[hsl(0_0%_40%)] mb-6">
+                {c.footerNote}
+              </p>
 
-            <Link
-              to="/milano-premium-mobility"
-              className="inline-flex items-center text-sm text-milano-gold hover:text-milano-gold-muted transition-colors"
-            >
-              ← {c.backLink}
-            </Link>
+              <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-16">
+                <a
+                  href={`mailto:${c.contactEmail}`}
+                  className="text-lg text-[hsl(0_0%_80%)] hover:text-[hsl(43_30%_60%)] transition-colors font-light tracking-wide"
+                >
+                  {c.contactEmail}
+                </a>
+                <span className="hidden md:inline text-[hsl(0_0%_20%)]">|</span>
+                <a
+                  href={`tel:${c.contactPhone.replace(/\s/g, '')}`}
+                  className="text-lg text-[hsl(0_0%_80%)] hover:text-[hsl(43_30%_60%)] transition-colors font-light tracking-wide"
+                >
+                  {c.contactPhone}
+                </a>
+              </div>
+
+              <Link
+                to="/milano-premium-mobility"
+                className="inline-flex items-center justify-center px-8 py-4 border border-[hsl(43_30%_30%)] text-[hsl(43_30%_50%)] hover:bg-[hsl(43_30%_20%)/10] hover:text-[hsl(43_30%_60%)] transition-all duration-300 uppercase tracking-widest text-xs rounded-sm group"
+              >
+                <ArrowLeft className="w-3 h-3 mr-3 group-hover:-translate-x-1 transition-transform" />
+                {c.backLink}
+              </Link>
+            </MotionReveal>
           </div>
         </div>
       </section>

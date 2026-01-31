@@ -28,8 +28,8 @@ const Header = () => {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     } else {
-      // If element doesn't exist, navigate to home first
-      navigate("/");
+      // If element doesn't exist (we're on another page), navigate to home with the hash
+      navigate(`/#${id}`);
       setIsMobileMenuOpen(false);
     }
   };
