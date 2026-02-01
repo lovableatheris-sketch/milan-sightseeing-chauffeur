@@ -371,8 +371,8 @@ const MilanoPremiumMobility = () => {
             </MotionReveal>
 
             {/* Central Logo - MUCH LARGER with 3D Entrance */}
-            <div className="relative mx-auto perspective-2000 py-12 min-h-[300px] md:min-h-[500px] flex items-center justify-center">
-              <div className="milano-logo-3d w-full">
+            <div className="relative mx-auto perspective-2000 py-12">
+              <div className="milano-logo-3d">
                 {/* Subtle glow behind logo */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-80 h-80 md:w-[30rem] md:h-[30rem] lg:w-[40rem] lg:h-[40rem] bg-[hsl(43_30%_40%)] rounded-full blur-[100px] opacity-15" />
