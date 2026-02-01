@@ -109,7 +109,6 @@ const TouristTours = () => {
         keywords={currentSeo.keywords}
         canonicalUrl="https://tmtransferlux.it/tours"
         structuredData={structuredData}
-        lang={language}
       />
       <Header />
       <main className="pt-20">
@@ -158,7 +157,7 @@ const TouristTours = () => {
                         <span>{t.priceFrom} {tour.price}</span>
                       </div>
                     </div>
-                    <Button
+                    <Button 
                       onClick={handleWhatsAppClick}
                       className="w-full bg-luxury-gold text-primary hover:bg-luxury-gold-dark"
                     >

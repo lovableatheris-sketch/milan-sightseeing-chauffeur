@@ -141,17 +141,190 @@
         {
           "@type": "Place",
           "name": "Aeroporto di Bergamo Orio al Serio"
+        },
+        {
+          "@type": "Place",
+          "name": "Lago di Como"
+        },
+        {
+          "@type": "Place",
+          "name": "Lago Maggiore"
         }
       ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi Transfer e Tours",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transfer Malpensa - Milano Centro",
+              "description": "Transfer privato dall'aeroporto di Malpensa al centro di Milano"
+            },
+            "price": "170",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transfer Linate - Milano Centro",
+              "description": "Transfer privato dall'aeroporto di Linate al centro di Milano"
+            },
+            "price": "100",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Transfer Bergamo Orio al Serio - Milano Centro",
+              "description": "Transfer privato dall'aeroporto di Bergamo al centro di Milano"
+            },
+            "price": "180",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tour Lago di Como",
+              "description": "Tour turistico privato al Lago di Como con autista"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tour Lago Maggiore",
+              "description": "Tour turistico privato al Lago Maggiore con autista"
+            }
+          }
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5",
         "bestRating": "5",
         "worstRating": "1",
-        "ratingCount": "127"
+        "ratingCount": "47"
       },
       "sameAs": [
         "https://wa.me/393891430907"
+      ]
+    }
+    </script>
+
+  <!-- Structured Data - Service -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Airport Transfer Service",
+      "name": "Transfer Aeroporto Milano",
+      "description": "Servizio di transfer privato dagli aeroporti di Milano (Malpensa, Linate, Bergamo) con autista professionale e veicoli Mercedes",
+      "provider": {
+        "@type": "LocalBusiness",
+        "@id": "https://tmtransferlux.it/#organization"
+      },
+      "areaServed": {
+        "@type": "State",
+        "name": "Lombardia"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Transfer Aeroporti",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Transfer Malpensa",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Transfer Malpensa Milano"
+                },
+                "priceSpecification": {
+                  "@type": "PriceSpecification",
+                  "price": "170",
+                  "priceCurrency": "EUR"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+
+  <!-- Structured Data - FAQ -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quanto costa il transfer da Malpensa a Milano?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il transfer privato dall'aeroporto di Malpensa al centro di Milano costa €170 a tariffa fissa, senza costi nascosti. Il prezzo include l'attesa in aeroporto e l'assistenza bagagli."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come posso prenotare un transfer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puoi prenotare facilmente tramite WhatsApp al numero +39 389 143 0907, disponibile 24 ore su 24, 7 giorni su 7."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali veicoli utilizzate per i transfer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Utilizziamo esclusivamente veicoli Mercedes E-Class di ultima generazione, completamente sanificati e dotati di tutti i comfort."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Il servizio è disponibile 24 ore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì, il nostro servizio di transfer è disponibile 24 ore su 24, 7 giorni su 7, inclusi festivi."
+          }
+        }
+      ]
+    }
+    </script>
+
+  <!-- Structured Data - BreadcrumbList -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://tmtransferlux.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Transfer",
+          "item": "https://tmtransferlux.it/transfers"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Tours",
+          "item": "https://tmtransferlux.it/tours"
+        }
       ]
     }
     </script>

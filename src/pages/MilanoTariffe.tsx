@@ -306,7 +306,6 @@ const MilanoTariffe = () => {
         description={c.introP1}
         keywords="tariffe ncc milano, prezzi transfer malpensa, listino noleggio con conducente, costi autista privato milano"
         canonicalUrl="https://tmtransferlux.it/milano-prontuario-tariffe"
-        lang={language}
       />
 
       {/* Custom Header for this sub-brand page - simplified for focus */}

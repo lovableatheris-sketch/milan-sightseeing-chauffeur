@@ -52,7 +52,6 @@ const CalcoloPreventivo = () => {
         description={currentSeo.description}
         keywords={currentSeo.keywords}
         canonicalUrl="https://tmtransferlux.it/calcolo-preventivo"
-        lang={language}
       />
       <Header />
       <main className="pt-32 pb-16">
