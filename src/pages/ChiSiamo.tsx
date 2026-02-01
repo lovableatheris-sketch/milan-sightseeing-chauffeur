@@ -37,7 +37,7 @@ const ChiSiamo = () => {
   };
 
   const currentSeo = seoData[language] || seoData.it;
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -59,6 +59,7 @@ const ChiSiamo = () => {
         description={currentSeo.description}
         keywords={currentSeo.keywords}
         canonicalUrl="https://tmtransferlux.it/chi-siamo"
+        lang={language}
       />
       <Header />
       <main>
@@ -76,7 +77,7 @@ const ChiSiamo = () => {
           >
             {/* Dark Overlay for better text readability */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
-            <div 
+            <div
               className="absolute inset-0 bg-black transition-opacity duration-300"
               style={{ opacity: 0.4 + scrollDarkness }}
             />

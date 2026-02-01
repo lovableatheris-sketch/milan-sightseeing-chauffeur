@@ -41,6 +41,7 @@ const Contact = () => {
         description={currentSeo.description}
         keywords={currentSeo.keywords}
         canonicalUrl="https://tmtransferlux.it/contato"
+        lang={language}
       />
       <Header />
       <main className="flex-1 flex items-center py-32">

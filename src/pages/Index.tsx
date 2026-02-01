@@ -124,6 +124,7 @@ const Index = () => {
         keywords={currentSeo.keywords}
         canonicalUrl="https://tmtransferlux.it/"
         structuredData={structuredData}
+        lang={language}
       />
       <Header />
       <main>

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 interface SEOHeadProps {
   title: string;
@@ -6,7 +7,9 @@ interface SEOHeadProps {
   keywords?: string;
   canonicalUrl?: string;
   ogImage?: string;
-  structuredData?: object;
+  ogType?: string;
+  structuredData?: object | object[];
+  lang?: string;
 }
 
 const SEOHead = ({
@@ -14,87 +17,105 @@ const SEOHead = ({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://tmtransferlux.it/favicon.png",
+  ogImage = "https://tmtransferlux.it/og-image.jpg",
+  ogType = "website",
   structuredData,
+  lang = "it",
 }: SEOHeadProps) => {
+  const location = useLocation();
+
   useEffect(() => {
-    // Update document title
+    // 1. Update document title
     document.title = title;
 
-    // Update or create meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", description);
+    // 2. Update HTML lang attribute
+    document.documentElement.lang = lang;
+
+    // 3. Update Meta Tags
+    const updateMetaTag = (selector: string, attr: string, value: string, nameAttr: string = "name") => {
+      let element = document.querySelector(selector);
+      if (element) {
+        element.setAttribute("content", value);
+      } else {
+        element = document.createElement("meta");
+        element.setAttribute(nameAttr, selector.match(/\[(.*?)="(.*?)"\]/)?.[2] || "");
+        element.setAttribute("content", value);
+        document.head.appendChild(element);
+      }
+    };
+
+    updateMetaTag('meta[name="description"]', "content", description);
+    if (keywords) updateMetaTag('meta[name="keywords"]', "content", keywords);
+
+    // Open Graph
+    updateMetaTag('meta[property="og:title"]', "content", title, "property");
+    updateMetaTag('meta[property="og:description"]', "content", description, "property");
+    updateMetaTag('meta[property="og:image"]', "content", ogImage, "property");
+    updateMetaTag('meta[property="og:type"]', "content", ogType, "property");
+    updateMetaTag('meta[property="og:url"]', "content", window.location.href, "property");
+    updateMetaTag('meta[property="og:locale"]', "content", lang === 'it' ? 'it_IT' : lang === 'en' ? 'en_GB' : lang === 'pt' ? 'pt_BR' : 'fr_FR', "property");
+
+    // Twitter
+    updateMetaTag('meta[name="twitter:title"]', "content", title);
+    updateMetaTag('meta[name="twitter:description"]', "content", description);
+    updateMetaTag('meta[name="twitter:image"]', "content", ogImage);
+
+    // 4. Update Canonical Link
+    const finalCanonical = canonicalUrl || window.location.href.split('?')[0];
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute("href", finalCanonical);
     } else {
-      metaDescription = document.createElement("meta");
-      metaDescription.setAttribute("name", "description");
-      metaDescription.setAttribute("content", description);
-      document.head.appendChild(metaDescription);
+      canonical = document.createElement("link");
+      canonical.setAttribute("rel", "canonical");
+      canonical.setAttribute("href", finalCanonical);
+      document.head.appendChild(canonical);
     }
 
-    // Update or create meta keywords
-    if (keywords) {
-      let metaKeywords = document.querySelector('meta[name="keywords"]');
-      if (metaKeywords) {
-        metaKeywords.setAttribute("content", keywords);
+    // 5. Update Hreflang Tags (Dynamic based on current path)
+    const updateHreflang = (hreflang: string, url: string) => {
+      let link = document.querySelector(`link[hreflang="${hreflang}"]`);
+      if (link) {
+        link.setAttribute("href", url);
       } else {
-        metaKeywords = document.createElement("meta");
-        metaKeywords.setAttribute("name", "keywords");
-        metaKeywords.setAttribute("content", keywords);
-        document.head.appendChild(metaKeywords);
+        link = document.createElement("link");
+        link.setAttribute("rel", "alternate");
+        link.setAttribute("hreflang", hreflang);
+        link.setAttribute("href", url);
+        document.head.appendChild(link);
       }
-    }
+    };
 
-    // Update Open Graph tags
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) {
-      ogTitle.setAttribute("content", title);
-    }
+    const baseUrl = window.location.origin + location.pathname;
+    updateHreflang("it", baseUrl);
+    updateHreflang("en", `${baseUrl}?lang=en`);
+    updateHreflang("pt", `${baseUrl}?lang=pt`);
+    updateHreflang("fr", `${baseUrl}?lang=fr`);
+    updateHreflang("x-default", baseUrl);
 
-    let ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) {
-      ogDesc.setAttribute("content", description);
-    }
+    // 6. Manage Structured Data
+    // We use a specific ID to avoid clashing with index.html static scripts
+    const SCRIPT_ID = "page-specific-structured-data";
 
-    let ogImg = document.querySelector('meta[property="og:image"]');
-    if (ogImg) {
-      ogImg.setAttribute("content", ogImage);
-    }
-
-    // Add canonical URL
-    if (canonicalUrl) {
-      let canonical = document.querySelector('link[rel="canonical"]');
-      if (canonical) {
-        canonical.setAttribute("href", canonicalUrl);
-      } else {
-        canonical = document.createElement("link");
-        canonical.setAttribute("rel", "canonical");
-        canonical.setAttribute("href", canonicalUrl);
-        document.head.appendChild(canonical);
-      }
-    }
-
-    // Add structured data
     if (structuredData) {
-      let script = document.querySelector('script[type="application/ld+json"]');
-      if (script) {
-        script.textContent = JSON.stringify(structuredData);
-      } else {
+      let script = document.getElementById(SCRIPT_ID) as HTMLScriptElement;
+      if (!script) {
         script = document.createElement("script");
-        script.setAttribute("type", "application/ld+json");
-        script.textContent = JSON.stringify(structuredData);
+        script.id = SCRIPT_ID;
+        script.type = "application/ld+json";
         document.head.appendChild(script);
       }
+      script.textContent = JSON.stringify(structuredData);
+    } else {
+      const existingScript = document.getElementById(SCRIPT_ID);
+      if (existingScript) existingScript.remove();
     }
 
     return () => {
-      // Cleanup structured data on unmount
-      const script = document.querySelector('script[type="application/ld+json"]');
-      if (script) {
-        script.remove();
-      }
+      // Cleanup page-specific structured data on unmount if needed
+      // Actually, it's better to keep it and let the next page update it
     };
-  }, [title, description, keywords, canonicalUrl, ogImage, structuredData]);
+  }, [title, description, keywords, canonicalUrl, ogImage, ogType, structuredData, lang, location.pathname]);
 
   return null;
 };

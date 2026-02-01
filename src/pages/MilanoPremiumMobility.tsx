@@ -338,6 +338,7 @@ const MilanoPremiumMobility = () => {
         description={c.introP1}
         keywords="ncc corporate milano, noleggio con conducente aziende, transfer aziendale milano, servizio autista milano, mobilità aziendale lombardia"
         canonicalUrl="https://tmtransferlux.it/milano-premium-mobility"
+        lang={language}
       />
       <Header />
 
