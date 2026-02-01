@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ExperienceGallery from "@/components/ExperienceGallery";
-import MilanoHighlight from "@/components/MilanoHighlight";
 import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
@@ -109,9 +108,6 @@ const ChiSiamo = () => {
         <div className="container mx-auto px-4">
           <ExperienceGallery />
         </div>
-
-        {/* Milano Highlight Section */}
-        <MilanoHighlight />
       </main>
       <Footer />
     </div>
