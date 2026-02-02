@@ -63,8 +63,8 @@ const MilanoCorporateSection = () => {
 
     return (
         <section className="relative py-24 md:py-32 overflow-hidden">
-            {/* Dark elegant background */}
-            <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_3%)]" />
+            {/* Dark elegant background - fully black to match adjacent sections */}
+            <div className="absolute inset-0 bg-black" />
 
             {/* Subtle golden ambient glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[hsl(43_25%_25%)] rounded-full blur-[200px] opacity-10" />

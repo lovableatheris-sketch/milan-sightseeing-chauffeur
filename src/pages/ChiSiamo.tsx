@@ -106,9 +106,7 @@ const ChiSiamo = () => {
         </section>
 
         {/* Gallery Section */}
-        <div className="container mx-auto px-4">
-          <ExperienceGallery />
-        </div>
+        <ExperienceGallery />
 
         {/* Milano Corporate Section */}
         <MilanoCorporateSection />

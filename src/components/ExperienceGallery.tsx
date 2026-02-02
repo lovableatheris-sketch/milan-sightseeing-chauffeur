@@ -31,14 +31,14 @@ import experience6 from "@/assets/experience-6.jpg.jpg";
 const ExperienceGallery = () => {
   const { language } = useLanguage();
   const t = translations[language].experienceGallery;
-  
+
   const autoplayRef = useRef(
     Autoplay({ delay: 5000, stopOnInteraction: false, stopOnMouseEnter: true })
   );
-  
+
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
-      loop: true, 
+    {
+      loop: true,
       align: "center",
       skipSnaps: false,
       dragFree: false,
@@ -67,11 +67,11 @@ const ExperienceGallery = () => {
     if (autoplayRef.current) {
       autoplayRef.current.stop();
     }
-    
+
     if (interactionTimeoutRef.current) {
       clearTimeout(interactionTimeoutRef.current);
     }
-    
+
     interactionTimeoutRef.current = setTimeout(() => {
       if (autoplayRef.current) {
         autoplayRef.current.play();
@@ -133,7 +133,7 @@ const ExperienceGallery = () => {
   ];
 
   return (
-    <section className="pt-8 md:pt-12 pb-16 md:pb-24 bg-background">
+    <section className="pt-8 md:pt-12 pb-16 md:pb-24 bg-black relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 animate-fade-in">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-4">
@@ -198,11 +198,10 @@ const ExperienceGallery = () => {
                   emblaApi?.scrollTo(index);
                   handleUserInteraction();
                 }}
-                className={`transition-all duration-300 rounded-full ${
-                  selectedIndex === index
+                className={`transition-all duration-300 rounded-full ${selectedIndex === index
                     ? "w-10 h-2.5 bg-foreground"
                     : "w-2.5 h-2.5 bg-muted-foreground/40 hover:bg-muted-foreground/60"
-                }`}
+                  }`}
                 aria-label={`Ir para imagem ${index + 1}`}
               />
             ))}
