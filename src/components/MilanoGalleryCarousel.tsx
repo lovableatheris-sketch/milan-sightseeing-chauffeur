@@ -11,12 +11,12 @@ import MotionReveal from "@/components/MotionReveal";
 
 const galleryImages = [
     {
-        src: "/carousel/image1.png",
-        alt: "Milano Premium Mobility Team"
-    },
-    {
         src: "/carousel/image2.jpg",
         alt: "Milano Chauffeur Team"
+    },
+    {
+        src: "/carousel/image1.png",
+        alt: "Milano Premium Mobility Team"
     },
     {
         src: "/carousel/image3.png",
@@ -37,18 +37,6 @@ const galleryImages = [
     {
         src: "/carousel/image7.png",
         alt: "Milano Professional Chauffeur"
-    },
-    {
-        src: "/carousel/image8.png",
-        alt: "Milano VIP Client"
-    },
-    {
-        src: "/carousel/image9.png",
-        alt: "Milano Celebrity Service"
-    },
-    {
-        src: "/carousel/image10.png",
-        alt: "Milano Station Service"
     }
 ];
 
