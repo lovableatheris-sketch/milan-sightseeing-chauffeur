@@ -7,6 +7,7 @@ import { Clock, Shield, Users, FileText, CheckCircle, ArrowRight } from "lucide-
 import { Link } from "react-router-dom";
 import milanoLogo from "@/assets/milano-logo.png";
 import MotionReveal from "@/components/MotionReveal";
+import MilanoGalleryCarousel from "@/components/MilanoGalleryCarousel";
 
 const MilanoPremiumMobility = () => {
   const { language } = useLanguage();
@@ -343,8 +344,8 @@ const MilanoPremiumMobility = () => {
 
       {/* Hero Section - Premium Visual with Logo */}
       <section className="relative pt-32 pb-4 md:pt-40 md:pb-8">
-        {/* Sophisticated gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_6%)]" />
+        {/* Unified dark background */}
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
 
         {/* Metallic silver/gold ambient glow effects */}
         <div className="absolute inset-0 overflow-hidden">
@@ -391,14 +392,14 @@ const MilanoPremiumMobility = () => {
           </div>
         </div>
 
-        {/* Bottom gradient fade - smoother transition */}
-        <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        {/* Bottom gradient fade - removed for seamless connection */}
+        {/* <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/80 to-transparent" /> */}
       </section>
 
       {/* Introduction - with refined background */}
       <section className="relative overflow-hidden pt-8 pb-24 md:pt-12 md:pb-32">
-        {/* Subtle gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-[hsl(0_0%_4%)] to-background" />
+        {/* Unified dark background */}
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
@@ -421,11 +422,13 @@ const MilanoPremiumMobility = () => {
         </div>
       </section>
 
+      {/* Gallery Carousel */}
+      <MilanoGalleryCarousel />
+
       {/* Operational Philosophy - with metallic accents */}
       <section className="milano-section relative overflow-hidden">
-        {/* Refined background with subtle gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_5%)] via-[hsl(0_0%_6%)] to-[hsl(0_0%_5%)]" />
-        <div className="absolute inset-0 border-y border-[hsl(0_0%_15%)]" />
+        {/* Unified dark background */}
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
 
         {/* Subtle ambient glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-[hsl(43_20%_30%)] rounded-full blur-[150px] opacity-5" />
@@ -454,7 +457,7 @@ const MilanoPremiumMobility = () => {
             <div className="milano-grid-3 gap-8">
               {c.philosophyItems.map((item, index) => (
                 <MotionReveal key={index} delay={index * 0.1} className="h-full">
-                  <div className="relative group p-10 h-full rounded-sm bg-[hsl(0_0%_6%)]/80 backdrop-blur-md border border-[hsl(0_0%_15%)] hover:border-[hsl(43_30%_50%)/30] transition-all duration-700 hover:-translate-y-1 shadow-2xl">
+                  <div className="relative group p-10 h-full rounded-sm bg-[hsl(0_0%_9%)]/60 backdrop-blur-md border border-transparent hover:border-[hsl(43_30%_50%)/20] transition-all duration-700 hover:-translate-y-1 shadow-xl">
                     {/* Card accent bar with metallic gradient - Thinner and more subtle */}
                     <div className="w-[1px] h-8 mb-6 bg-gradient-to-b from-[hsl(43_40%_50%)] to-transparent opacity-60 group-hover:h-12 transition-all duration-700" />
                     <h3 className="text-xl font-heading font-medium text-[hsl(0_0%_90%)] mb-4 tracking-wide">
@@ -473,7 +476,7 @@ const MilanoPremiumMobility = () => {
 
       {/* Operational Standards - refined cards */}
       <section className="milano-section relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-background via-[hsl(0_0%_4%)] to-background" />
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container-wide">
@@ -494,7 +497,7 @@ const MilanoPremiumMobility = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {c.standardsItems.map((item, index) => (
                 <MotionReveal key={index} delay={index * 0.1} className="h-full">
-                  <div className="flex gap-8 p-8 h-full rounded-sm bg-[hsl(0_0%_5%)] border border-[hsl(0_0%_12%)] hover:border-[hsl(0_0%_25%)] transition-all duration-500 group">
+                  <div className="flex gap-8 p-8 h-full rounded-sm bg-[hsl(0_0%_8%)] border border-transparent hover:bg-[hsl(0_0%_9%)] hover:border-[hsl(43_30%_40%)/20] transition-all duration-500 group shadow-lg">
                     <div className="flex-shrink-0">
                       <div className="w-12 h-12 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm group-hover:border-[hsl(43_30%_40%)] transition-colors duration-500">
                         <item.icon className="w-5 h-5 text-[hsl(0_0%_60%)] group-hover:text-[hsl(43_30%_50%)] transition-colors duration-500" strokeWidth={1} />
@@ -518,8 +521,8 @@ const MilanoPremiumMobility = () => {
 
       {/* Operational Flexibility */}
       <section className="milano-section relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_5%)] via-[hsl(0_0%_6%)] to-[hsl(0_0%_5%)]" />
-        <div className="absolute inset-0 border-y border-[hsl(0_0%_15%)]" />
+        {/* Unified dark background */}
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
@@ -543,7 +546,7 @@ const MilanoPremiumMobility = () => {
 
             <div className="space-y-6">
               {c.flexItems.map((item, index) => (
-                <div key={index} className="flex gap-6 p-8 rounded-xl bg-gradient-to-br from-[hsl(0_0%_8%)] to-[hsl(0_0%_5%)] border border-[hsl(0_0%_15%)] hover:border-[hsl(43_30%_35%)/40] transition-all duration-300">
+                <div key={index} className="flex gap-6 p-8 rounded-xl bg-[hsl(0_0%_8%)] border border-transparent hover:bg-[hsl(0_0%_9%)] hover:border-[hsl(43_30%_35%)/20] transition-all duration-300">
                   <div className="flex-shrink-0 mt-1">
                     <div className="w-6 h-6 rounded-full flex items-center justify-center bg-gradient-to-br from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)]">
                       <CheckCircle className="w-4 h-4 text-[hsl(0_0%_10%)]" strokeWidth={2} />
@@ -566,8 +569,8 @@ const MilanoPremiumMobility = () => {
 
       {/* Closing - premium CTA section */}
       <section className="milano-section relative overflow-hidden">
-        {/* Rich gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[hsl(0_0%_3%)] via-[hsl(0_0%_5%)] to-[hsl(0_0%_3%)]" />
+        {/* Unified dark background */}
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
 
         {/* Metallic ambient glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[hsl(43_25%_30%)] rounded-full blur-[150px] opacity-10" />

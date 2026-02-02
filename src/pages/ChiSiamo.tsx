@@ -6,6 +6,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { useState, useEffect } from "react";
 import chiSiamoImage from "@/assets/chi-siamo-mercedes.jpeg";
+import MilanoCorporateSection from "@/components/MilanoCorporateSection";
 
 const ChiSiamo = () => {
   const { language } = useLanguage();
@@ -37,12 +38,12 @@ const ChiSiamo = () => {
   };
 
   const currentSeo = seoData[language] || seoData.it;
-  
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const maxScroll = 500;
-      const blurValue = Math.min((scrollY / maxScroll) * 10, 10);
+      const blurValue = Math.min((scrollY / maxScroll) * 4, 4);
       const darknessValue = Math.min((scrollY / maxScroll) * 0.6, 0.6);
       setScrollBlur(blurValue);
       setScrollDarkness(darknessValue);
@@ -70,13 +71,13 @@ const ChiSiamo = () => {
             style={{
               backgroundImage: `url(${chiSiamoImage})`,
               backgroundPosition: 'center 65%',
-              filter: `blur(${3 + scrollBlur}px)`,
+              filter: `blur(${1 + scrollBlur}px)`,
               transform: `scale(${1.1 + scrollBlur * 0.01})`,
             }}
           >
             {/* Dark Overlay for better text readability */}
             <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/70" />
-            <div 
+            <div
               className="absolute inset-0 bg-black transition-opacity duration-300"
               style={{ opacity: 0.4 + scrollDarkness }}
             />
@@ -108,6 +109,9 @@ const ChiSiamo = () => {
         <div className="container mx-auto px-4">
           <ExperienceGallery />
         </div>
+
+        {/* Milano Corporate Section */}
+        <MilanoCorporateSection />
       </main>
       <Footer />
     </div>

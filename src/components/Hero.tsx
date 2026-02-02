@@ -15,7 +15,7 @@ const Hero = () => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const maxScroll = 500;
-      const blurValue = Math.min((scrollY / maxScroll) * 10, 10);
+      const blurValue = Math.min((scrollY / maxScroll) * 4, 4);
       const darknessValue = Math.min((scrollY / maxScroll) * 0.6, 0.6);
       setScrollBlur(blurValue);
       setScrollDarkness(darknessValue);
@@ -91,12 +91,7 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-luxury-gold rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-luxury-gold rounded-full animate-pulse" />
-        </div>
-      </div>
+
     </section>
   );
 };

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChoose from "@/components/WhyChoose";
@@ -10,9 +11,17 @@ import FloatingDonationButton from "@/components/FloatingDonationButton";
 import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
 import MilanoHighlight from "@/components/MilanoHighlight";
+import WelcomeIntro from "@/components/WelcomeIntro";
 
 const Index = () => {
   const { language } = useLanguage();
+  const [showIntro, setShowIntro] = useState(() => {
+    // Check if we should show intro (only if not seen in this session)
+    if (typeof window !== "undefined") {
+      return !sessionStorage.getItem("hasSeenIntro");
+    }
+    return true;
+  });
 
   const seoData = {
     it: {
@@ -116,6 +125,10 @@ const Index = () => {
     }
   };
 
+  const handleIntroComplete = () => {
+    setShowIntro(false);
+  };
+
   return (
     <div className="min-h-screen">
       <SEOHead
@@ -125,6 +138,10 @@ const Index = () => {
         canonicalUrl="https://tmtransferlux.it/"
         structuredData={structuredData}
       />
+
+      {/* Welcome Intro Animation */}
+      {showIntro && <WelcomeIntro onComplete={handleIntroComplete} />}
+
       <Header />
       <main>
         <Hero />

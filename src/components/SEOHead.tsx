@@ -14,54 +14,62 @@ const SEOHead = ({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://tmtransferlux.it/favicon.png",
+  ogImage = "https://tmtransferlux.it/og-image.jpg",
   structuredData,
 }: SEOHeadProps) => {
   useEffect(() => {
     // Update document title
     document.title = title;
 
-    // Update or create meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute("content", description);
-    } else {
-      metaDescription = document.createElement("meta");
-      metaDescription.setAttribute("name", "description");
-      metaDescription.setAttribute("content", description);
-      document.head.appendChild(metaDescription);
-    }
-
-    // Update or create meta keywords
-    if (keywords) {
-      let metaKeywords = document.querySelector('meta[name="keywords"]');
-      if (metaKeywords) {
-        metaKeywords.setAttribute("content", keywords);
+    // Helper function to update or create meta tag
+    const updateMetaTag = (selector: string, attribute: string, content: string) => {
+      let meta = document.querySelector(selector);
+      if (meta) {
+        meta.setAttribute("content", content);
       } else {
-        metaKeywords = document.createElement("meta");
-        metaKeywords.setAttribute("name", "keywords");
-        metaKeywords.setAttribute("content", keywords);
-        document.head.appendChild(metaKeywords);
+        meta = document.createElement("meta");
+        const [type, value] = attribute.split("=");
+        meta.setAttribute(type === "name" ? "name" : "property", value.replace(/"/g, ""));
+        meta.setAttribute("content", content);
+        document.head.appendChild(meta);
       }
+    };
+
+    // Update meta description
+    updateMetaTag('meta[name="description"]', 'name="description"', description);
+
+    // Update meta keywords
+    if (keywords) {
+      updateMetaTag('meta[name="keywords"]', 'name="keywords"', keywords);
     }
 
     // Update Open Graph tags
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) {
-      ogTitle.setAttribute("content", title);
+    updateMetaTag('meta[property="og:title"]', 'property="og:title"', title);
+    updateMetaTag('meta[property="og:description"]', 'property="og:description"', description);
+    updateMetaTag('meta[property="og:image"]', 'property="og:image"', ogImage);
+
+    // Update og:url dynamically
+    if (canonicalUrl) {
+      updateMetaTag('meta[property="og:url"]', 'property="og:url"', canonicalUrl);
     }
 
-    let ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) {
-      ogDesc.setAttribute("content", description);
+    // Update Twitter Card tags
+    updateMetaTag('meta[name="twitter:title"]', 'name="twitter:title"', title);
+    updateMetaTag('meta[name="twitter:description"]', 'name="twitter:description"', description);
+    updateMetaTag('meta[name="twitter:image"]', 'name="twitter:image"', ogImage);
+
+    // Update Twitter URL
+    if (canonicalUrl) {
+      let twitterUrl = document.querySelector('meta[name="twitter:url"]');
+      if (!twitterUrl) {
+        twitterUrl = document.createElement("meta");
+        twitterUrl.setAttribute("name", "twitter:url");
+        document.head.appendChild(twitterUrl);
+      }
+      twitterUrl.setAttribute("content", canonicalUrl);
     }
 
-    let ogImg = document.querySelector('meta[property="og:image"]');
-    if (ogImg) {
-      ogImg.setAttribute("content", ogImage);
-    }
-
-    // Add canonical URL
+    // Add/update canonical URL
     if (canonicalUrl) {
       let canonical = document.querySelector('link[rel="canonical"]');
       if (canonical) {
@@ -74,24 +82,27 @@ const SEOHead = ({
       }
     }
 
-    // Add structured data
+    // Add page-specific structured data
     if (structuredData) {
-      let script = document.querySelector('script[type="application/ld+json"]');
-      if (script) {
-        script.textContent = JSON.stringify(structuredData);
-      } else {
-        script = document.createElement("script");
-        script.setAttribute("type", "application/ld+json");
-        script.textContent = JSON.stringify(structuredData);
-        document.head.appendChild(script);
+      // Remove existing page-specific structured data
+      const existingPageSchema = document.querySelector('script[data-page-schema="true"]');
+      if (existingPageSchema) {
+        existingPageSchema.remove();
       }
+
+      // Add new page-specific structured data
+      const script = document.createElement("script");
+      script.setAttribute("type", "application/ld+json");
+      script.setAttribute("data-page-schema", "true");
+      script.textContent = JSON.stringify(structuredData);
+      document.head.appendChild(script);
     }
 
     return () => {
-      // Cleanup structured data on unmount
-      const script = document.querySelector('script[type="application/ld+json"]');
-      if (script) {
-        script.remove();
+      // Cleanup page-specific structured data on unmount
+      const pageSchema = document.querySelector('script[data-page-schema="true"]');
+      if (pageSchema) {
+        pageSchema.remove();
       }
     };
   }, [title, description, keywords, canonicalUrl, ogImage, structuredData]);
