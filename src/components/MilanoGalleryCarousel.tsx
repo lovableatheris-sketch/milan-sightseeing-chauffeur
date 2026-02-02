@@ -47,8 +47,8 @@ const MilanoGalleryCarousel = () => {
 
     return (
         <section className="relative py-16 md:py-24 overflow-hidden">
-            {/* Unified dark background */}
-            <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+            {/* Unified dark background - pure black */}
+            <div className="absolute inset-0 bg-black" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-6xl mx-auto">

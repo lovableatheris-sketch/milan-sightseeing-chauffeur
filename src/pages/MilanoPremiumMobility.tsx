@@ -344,8 +344,8 @@ const MilanoPremiumMobility = () => {
 
       {/* Hero Section - Premium Visual with Logo */}
       <section className="relative pt-32 pb-4 md:pt-40 md:pb-8">
-        {/* Unified dark background */}
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        {/* Unified dark background - pure black */}
+        <div className="absolute inset-0 bg-black" />
 
         {/* Metallic silver/gold ambient glow effects */}
         <div className="absolute inset-0 overflow-hidden">
@@ -398,8 +398,8 @@ const MilanoPremiumMobility = () => {
 
       {/* Introduction - with refined background */}
       <section className="relative overflow-hidden pt-8 pb-24 md:pt-12 md:pb-32">
-        {/* Unified dark background */}
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        {/* Unified dark background - pure black */}
+        <div className="absolute inset-0 bg-black" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
@@ -424,14 +424,14 @@ const MilanoPremiumMobility = () => {
 
       {/* Gallery Section with Header Decoration */}
       <section className="relative overflow-hidden pt-12 pb-8">
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        <div className="absolute inset-0 bg-black" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-8">
             <MotionReveal>
               <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gradient-to-r from-transparent to-[hsl(0_0%_35%)]" />
-                <div className="w-1 h-1 rounded-full bg-[hsl(43_35%_45%)]" />
-                <div className="h-px w-8 bg-gradient-to-l from-transparent to-[hsl(0_0%_35%)]" />
+                <div className="h-px w-8 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
+                <div className="w-1 h-1 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)]" />
+                <div className="h-px w-8 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
               </div>
               <p className="text-[10px] tracking-[0.4em] text-[hsl(43_30%_50%)] uppercase mb-3 font-medium">
                 {language === 'it' ? 'Dettagli di Prestigio' :
@@ -451,45 +451,45 @@ const MilanoPremiumMobility = () => {
       {/* Gallery Carousel */}
       <MilanoGalleryCarousel />
 
-      {/* Operational Philosophy - with metallic accents */}
+      {/* Operational Philosophy - with gold accents */}
       <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background */}
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        {/* Unified dark background - pure black */}
+        <div className="absolute inset-0 bg-black" />
 
         {/* Subtle ambient glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-[hsl(43_20%_30%)] rounded-full blur-[150px] opacity-5" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-[hsl(43_25%_15%)] rounded-full blur-[150px] opacity-10" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container-wide">
             <div className="text-center mb-20">
               {/* Metallic decorative element */}
               <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(0_0%_35%)]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_35%_45%)]" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(0_0%_35%)]" />
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
               </div>
-              <h2 className="milano-heading-lg text-foreground mb-4">
+              <h2 className="milano-heading-lg text-white mb-4">
                 {c.philosophyTitle}
               </h2>
-              <p className="milano-body text-[hsl(0_0%_50%)]">
+              <p className="milano-body text-[hsl(43_20%_60%)]">
                 {c.philosophySubtitle}
               </p>
             </div>
 
-            <p className="milano-body-lg text-muted-foreground text-center max-w-3xl mx-auto mb-20">
+            <p className="milano-body-lg text-[hsl(0_0%_70%)] text-center max-w-3xl mx-auto mb-20">
               {c.philosophyP1}
             </p>
 
             <div className="milano-grid-3 gap-8">
               {c.philosophyItems.map((item, index) => (
                 <MotionReveal key={index} delay={index * 0.1} className="h-full">
-                  <div className="relative group p-10 h-full rounded-sm bg-[hsl(0_0%_9%)]/60 backdrop-blur-md border border-transparent hover:border-[hsl(43_30%_50%)/20] transition-all duration-700 hover:-translate-y-1 shadow-xl">
-                    {/* Card accent bar with metallic gradient - Thinner and more subtle */}
-                    <div className="w-[1px] h-8 mb-6 bg-gradient-to-b from-[hsl(43_40%_50%)] to-transparent opacity-60 group-hover:h-12 transition-all duration-700" />
-                    <h3 className="text-xl font-heading font-medium text-[hsl(0_0%_90%)] mb-4 tracking-wide">
+                  <div className="relative group p-10 h-full rounded-sm bg-white/[0.02] backdrop-blur-md border border-white/5 hover:border-[hsl(43_30%_50%)/40] transition-all duration-700 hover:-translate-y-1 shadow-2xl">
+                    {/* Card accent bar - prominent gold */}
+                    <div className="w-[2px] h-8 mb-6 bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)] group-hover:h-12 transition-all duration-700" />
+                    <h3 className="text-xl font-heading font-medium text-white mb-4 tracking-wide group-hover:text-[hsl(43_30%_60%)] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-body text-[hsl(0_0%_60%)] leading-relaxed text-sm">
+                    <p className="font-body text-[hsl(0_0%_65%)] leading-relaxed text-sm">
                       {item.desc}
                     </p>
                   </div>
@@ -500,22 +500,23 @@ const MilanoPremiumMobility = () => {
         </div>
       </section>
 
-      {/* Operational Standards - refined cards */}
+      {/* Operational Standards - refined cards with highlight */}
       <section className="milano-section relative overflow-hidden">
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        {/* Unified dark background - pure black */}
+        <div className="absolute inset-0 bg-black" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container-wide">
             <div className="text-center mb-20">
               <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(0_0%_35%)]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_35%_45%)]" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(0_0%_35%)]" />
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
               </div>
-              <h2 className="milano-heading-lg text-foreground mb-4">
+              <h2 className="milano-heading-lg text-white mb-4">
                 {c.standardsTitle}
               </h2>
-              <p className="milano-body text-[hsl(0_0%_50%)]">
+              <p className="milano-body text-[hsl(43_20%_60%)]">
                 {c.standardsSubtitle}
               </p>
             </div>
@@ -523,17 +524,17 @@ const MilanoPremiumMobility = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {c.standardsItems.map((item, index) => (
                 <MotionReveal key={index} delay={index * 0.1} className="h-full">
-                  <div className="flex gap-8 p-8 h-full rounded-sm bg-[hsl(0_0%_8%)] border border-transparent hover:bg-[hsl(0_0%_9%)] hover:border-[hsl(43_30%_40%)/20] transition-all duration-500 group shadow-lg">
+                  <div className="flex gap-8 p-8 h-full rounded-sm bg-white/[0.03] border border-white/5 hover:bg-white/[0.05] hover:border-[hsl(43_30%_50%)/30] transition-all duration-500 group shadow-lg">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 flex items-center justify-center border border-[hsl(0_0%_20%)] rounded-sm group-hover:border-[hsl(43_30%_40%)] transition-colors duration-500">
-                        <item.icon className="w-5 h-5 text-[hsl(0_0%_60%)] group-hover:text-[hsl(43_30%_50%)] transition-colors duration-500" strokeWidth={1} />
+                      <div className="w-12 h-12 flex items-center justify-center border border-white/10 rounded-sm group-hover:border-[hsl(43_30%_50%)] transition-colors duration-500 shadow-inner">
+                        <item.icon className="w-5 h-5 text-white/40 group-hover:text-[hsl(43_30%_60%)] transition-colors duration-500" strokeWidth={1} />
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-heading font-normal text-[hsl(0_0%_90%)] mb-3 tracking-wide group-hover:text-white transition-colors">
+                      <h3 className="text-lg font-heading font-normal text-white mb-3 tracking-wide group-hover:text-[hsl(43_30%_60%)] transition-colors">
                         {item.title}
                       </h3>
-                      <p className="font-body text-[hsl(0_0%_50%)] text-sm leading-relaxed group-hover:text-[hsl(0_0%_60%)] transition-colors">
+                      <p className="font-body text-[hsl(0_0%_60%)] text-sm leading-relaxed group-hover:text-[hsl(0_0%_70%)] transition-colors">
                         {item.desc}
                       </p>
                     </div>
@@ -545,44 +546,44 @@ const MilanoPremiumMobility = () => {
         </div>
       </section>
 
-      {/* Operational Flexibility */}
+      {/* Operational Flexibility - with gold accents */}
       <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background */}
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        {/* Unified dark background - pure black */}
+        <div className="absolute inset-0 bg-black" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container">
             <div className="text-center mb-16">
               <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(0_0%_35%)]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_35%_45%)]" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(0_0%_35%)]" />
+                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
+                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
               </div>
-              <h2 className="milano-heading-lg text-foreground mb-4">
+              <h2 className="milano-heading-lg text-white mb-4">
                 {c.flexTitle}
               </h2>
-              <p className="milano-body text-[hsl(0_0%_50%)]">
+              <p className="milano-body text-[hsl(43_20%_60%)]">
                 {c.flexSubtitle}
               </p>
             </div>
 
-            <p className="milano-body-lg text-muted-foreground text-center max-w-3xl mx-auto mb-16">
+            <p className="milano-body-lg text-[hsl(0_0%_70%)] text-center max-w-3xl mx-auto mb-16">
               {c.flexP1}
             </p>
 
             <div className="space-y-6">
               {c.flexItems.map((item, index) => (
-                <div key={index} className="flex gap-6 p-8 rounded-xl bg-[hsl(0_0%_8%)] border border-transparent hover:bg-[hsl(0_0%_9%)] hover:border-[hsl(43_30%_35%)/20] transition-all duration-300">
+                <div key={index} className="flex gap-6 p-8 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.05] hover:border-[hsl(43_30%_50%)/30] transition-all duration-300 group">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center bg-gradient-to-br from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)]">
-                      <CheckCircle className="w-4 h-4 text-[hsl(0_0%_10%)]" strokeWidth={2} />
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)]">
+                      <CheckCircle className="w-4 h-4 text-black" strokeWidth={2} />
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-lg font-heading font-semibold text-foreground mb-2">
+                    <h3 className="text-lg font-heading font-semibold text-white mb-2 group-hover:text-[hsl(43_30%_60%)] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="milano-body text-[hsl(0_0%_55%)]">
+                    <p className="milano-body text-[hsl(0_0%_60%)] group-hover:text-[hsl(0_0%_70%)] transition-colors">
                       {item.desc}
                     </p>
                   </div>
@@ -595,33 +596,33 @@ const MilanoPremiumMobility = () => {
 
       {/* Closing - premium CTA section */}
       <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background */}
-        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        {/* Unified dark background - pure black */}
+        <div className="absolute inset-0 bg-black" />
 
         {/* Metallic ambient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[hsl(43_25%_30%)] rounded-full blur-[150px] opacity-10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[hsl(43_30%_20%)] rounded-full blur-[150px] opacity-20" />
 
         <div className="container mx-auto px-4 relative z-10">
           <div className="milano-container text-center">
             {/* Decorative element */}
             <div className="flex items-center justify-center gap-4 mb-12">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[hsl(0_0%_30%)] to-transparent" />
-              <div className="w-2 h-2 rounded-full bg-gradient-to-br from-[hsl(43_40%_50%)] to-[hsl(43_30%_40%)]" />
-              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[hsl(0_0%_30%)] to-transparent" />
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[hsl(43_30%_50%)/30] to-transparent" />
+              <div className="w-2 h-2 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
+              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[hsl(43_30%_50%)/30] to-transparent" />
             </div>
 
-            <h2 className="milano-heading-lg text-foreground mb-10">
+            <h2 className="milano-heading-lg text-white mb-10">
               {c.closingTitle}
             </h2>
 
             <div className="space-y-4 mb-14">
               <MotionReveal delay={0.1}>
-                <p className="milano-body-lg text-[hsl(0_0%_60%)] max-w-2xl mx-auto">
+                <p className="milano-body-lg text-[hsl(0_0%_75%)] max-w-2xl mx-auto leading-relaxed">
                   {c.closingP1}
                 </p>
               </MotionReveal>
               <MotionReveal delay={0.2}>
-                <p className="milano-body text-[hsl(0_0%_45%)] max-w-2xl mx-auto">
+                <p className="milano-body text-[hsl(43_20%_60%)] max-w-2xl mx-auto uppercase tracking-widest text-[10px] font-bold">
                   {c.closingP2}
                 </p>
               </MotionReveal>
