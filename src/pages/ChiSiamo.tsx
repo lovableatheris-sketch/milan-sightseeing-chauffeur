@@ -81,7 +81,7 @@ const ChiSiamo = () => {
               className="absolute inset-0 bg-black transition-opacity duration-300"
               style={{ opacity: 0.4 + scrollDarkness }}
             />
-            <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-black via-black/20 to-transparent" />
           </div>
 
           {/* Content Overlay */}

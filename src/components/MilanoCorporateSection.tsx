@@ -62,7 +62,8 @@ const MilanoCorporateSection = () => {
     const c = content[language] || content.it;
 
     return (
-        <section className="relative py-24 md:py-32 overflow-hidden">
+        <section className="relative py-24 md:py-32 overflow-hidden"
+            style={{ maskImage: 'linear-gradient(to bottom, transparent, black 10%)' }}>
             {/* Dark elegant background - fully black to match adjacent sections */}
             <div className="absolute inset-0 bg-black" />
 
