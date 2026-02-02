@@ -422,6 +422,32 @@ const MilanoPremiumMobility = () => {
         </div>
       </section>
 
+      {/* Gallery Section with Header Decoration */}
+      <section className="relative overflow-hidden pt-12 pb-8">
+        <div className="absolute inset-0 bg-[hsl(0_0%_5%)]" />
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-8">
+            <MotionReveal>
+              <div className="flex items-center justify-center gap-3 mb-6">
+                <div className="h-px w-8 bg-gradient-to-r from-transparent to-[hsl(0_0%_35%)]" />
+                <div className="w-1 h-1 rounded-full bg-[hsl(43_35%_45%)]" />
+                <div className="h-px w-8 bg-gradient-to-l from-transparent to-[hsl(0_0%_35%)]" />
+              </div>
+              <p className="text-[10px] tracking-[0.4em] text-[hsl(43_30%_50%)] uppercase mb-3 font-medium">
+                {language === 'it' ? 'Dettagli di Prestigio' :
+                  language === 'pt' ? 'Detalhes de Prestígio' :
+                    language === 'en' ? 'Prestige Details' : 'Détails de Prestige'}
+              </p>
+              <h2 className="text-3xl md:text-4xl font-heading font-light text-white tracking-widest">
+                {language === 'it' ? "Visione d'Eccellenza" :
+                  language === 'pt' ? 'Visão de Excelência' :
+                    language === 'en' ? 'Vision of Excellence' : "Vision d'Excellence"}
+              </h2>
+            </MotionReveal>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Carousel */}
       <MilanoGalleryCarousel />
 
