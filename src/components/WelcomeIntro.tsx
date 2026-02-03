@@ -10,105 +10,108 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
     const fullText = "WELCOME TO TMT.";
 
     useEffect(() => {
-        // Check if user has seen the intro in this session
-        const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
-        if (hasSeenIntro) {
-            onComplete();
-            return;
+        // Safety check for sessionStorage and ensure intro eventually completes
+        try {
+            const hasSeenIntro = typeof window !== "undefined" && sessionStorage.getItem("hasSeenIntro");
+            if (hasSeenIntro) {
+                onComplete();
+                return;
+            }
+        } catch (e) {
+            console.error("Session storage error:", e);
         }
 
-        // Apple-style cinematic timing
-        const timeline = [
-            { phase: "revealing" as const, delay: 300 },      // Start reveal
-            { phase: "visible" as const, delay: 1800 },       // Fully visible, hold
-            { phase: "fading" as const, delay: 3200 },        // Begin fade out
-        ];
-
-        const timeouts: NodeJS.Timeout[] = [];
-
-        timeline.forEach(({ phase, delay }) => {
-            timeouts.push(setTimeout(() => setPhase(phase), delay));
-        });
-
-        // Complete after fade out
-        timeouts.push(setTimeout(() => {
-            sessionStorage.setItem("hasSeenIntro", "true");
+        // Force complete after absolute max time for safety
+        const forceComplete = setTimeout(() => {
+            console.log("Forcing intro completion");
             onComplete();
-        }, 4200));
+        }, 5000);
 
-        return () => timeouts.forEach(clearTimeout);
+        // Animation sequence
+        const t1 = setTimeout(() => setPhase("revealing"), 100);
+        const t2 = setTimeout(() => setPhase("visible"), 2000);
+        const t3 = setTimeout(() => setPhase("fading"), 3500);
+        const t4 = setTimeout(() => {
+            try { sessionStorage.setItem("hasSeenIntro", "true"); } catch (e) { }
+            onComplete();
+        }, 4500);
+
+        return () => {
+            clearTimeout(forceComplete);
+            clearTimeout(t1);
+            clearTimeout(t2);
+            clearTimeout(t3);
+            clearTimeout(t4);
+        };
     }, [onComplete]);
 
-    // Skip if already seen
-    const hasSeenIntro = typeof window !== "undefined" && sessionStorage.getItem("hasSeenIntro");
-    if (hasSeenIntro) {
-        return null;
-    }
+    // Skip if already seen (double check)
+    useEffect(() => {
+        try {
+            const hasSeenIntro = sessionStorage.getItem("hasSeenIntro");
+            if (hasSeenIntro) onComplete();
+        } catch (e) { }
+    }, [onComplete]);
 
     // Dynamic styles based on phase
     const getContainerStyles = () => {
-        const base = "fixed inset-0 z-[9999] bg-black flex items-center justify-center";
-        const transitions = "transition-opacity duration-[1000ms] ease-out";
-        const opacity = phase === "fading" ? "opacity-0" : "opacity-100";
-        return `${base} ${transitions} ${opacity}`;
+        const base = "fixed inset-0 z-[9999] bg-black flex items-center justify-center transition-opacity duration-1000 ease-in-out";
+        const stateClass = phase === "fading" ? "opacity-0 pointer-events-none" : "opacity-100";
+        return `${base} ${stateClass}`;
     };
 
     const getTextStyles = () => {
-        const base = "font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-[0.3em] text-white font-extralight";
-        
-        // CSS-based transitions for smooth Apple-like animation
-        const transitionProps = "transition-all duration-[1500ms] ease-[cubic-bezier(0.16,1,0.3,1)]";
-        
+        const base = "font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-[0.3em] text-white font-extralight transition-all duration-[1500ms] ease-[cubic-bezier(0.16,1,0.3,1)]";
+
         let transformStyles = "";
         let opacityStyles = "";
-        let filterStyles = "";
+        let blurStyles = "";
 
         switch (phase) {
             case "initial":
-                transformStyles = "scale-[0.92] translate-y-2";
+                transformStyles = "scale-95 translate-y-2";
                 opacityStyles = "opacity-0";
-                filterStyles = "[filter:blur(12px)]";
+                blurStyles = "blur-xl";
                 break;
             case "revealing":
-                transformStyles = "scale-100 translate-y-0";
-                opacityStyles = "opacity-100";
-                filterStyles = "[filter:blur(0px)]";
-                break;
             case "visible":
                 transformStyles = "scale-100 translate-y-0";
                 opacityStyles = "opacity-100";
-                filterStyles = "[filter:blur(0px)]";
+                blurStyles = "blur-none";
                 break;
             case "fading":
-                transformStyles = "scale-[1.02] -translate-y-1";
+                transformStyles = "scale-105 -translate-y-2";
                 opacityStyles = "opacity-0";
-                filterStyles = "[filter:blur(4px)]";
+                blurStyles = "blur-md";
                 break;
         }
 
-        return `${base} ${transitionProps} ${transformStyles} ${opacityStyles} ${filterStyles}`;
+        return `${base} ${transformStyles} ${opacityStyles} ${blurStyles}`;
     };
 
     const getUnderlineStyles = () => {
-        const base = "h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto mt-10";
-        const transitions = "transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-300";
-        
+        const base = "h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto mt-10 transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-300";
         const isVisible = phase === "revealing" || phase === "visible";
-        const widthOpacity = isVisible ? "w-32 sm:w-48 md:w-64 opacity-100" : "w-0 opacity-0";
-        
-        return `${base} ${transitions} ${widthOpacity}`;
+        const stateStyles = isVisible ? "w-32 sm:w-48 md:w-64 opacity-100" : "w-0 opacity-0";
+        return `${base} ${stateStyles}`;
     };
 
     return (
-        <div className={getContainerStyles()}>
-            <div className="text-center px-4">
-                {/* Main text with Apple-style reveal */}
+        <div
+            className={getContainerStyles()}
+            onClick={onComplete}
+            role="button"
+            tabIndex={0}
+            aria-label="Skip intro"
+        >
+            <div className="text-center px-4 cursor-pointer">
                 <h1 className={getTextStyles()}>
                     {fullText}
                 </h1>
-
-                {/* Elegant underline accent */}
                 <div className={getUnderlineStyles()} />
+                <p className="mt-8 text-white/30 text-xs font-light tracking-widest animate-pulse">
+                    (Click to skip)
+                </p>
             </div>
         </div>
     );

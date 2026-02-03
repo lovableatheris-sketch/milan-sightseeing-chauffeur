@@ -12,6 +12,7 @@ import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
 import MilanoHighlight from "@/components/MilanoHighlight";
 import WelcomeIntro from "@/components/WelcomeIntro";
+import { translations } from "@/locales/translations";
 
 const Index = () => {
   const { language } = useLanguage();
