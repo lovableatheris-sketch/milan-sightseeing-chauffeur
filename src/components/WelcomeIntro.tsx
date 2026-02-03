@@ -21,20 +21,19 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
             console.error("Session storage error:", e);
         }
 
-        // Force complete after absolute max time for safety
+        // Force complete after safety margin
         const forceComplete = setTimeout(() => {
-            console.log("Forcing intro completion");
             onComplete();
-        }, 5000);
+        }, 3500);
 
-        // Animation sequence
+        // Faster Apple-style cinematic timing
         const t1 = setTimeout(() => setPhase("revealing"), 100);
-        const t2 = setTimeout(() => setPhase("visible"), 2000);
-        const t3 = setTimeout(() => setPhase("fading"), 3500);
+        const t2 = setTimeout(() => setPhase("visible"), 1200); // Shorter hold
+        const t3 = setTimeout(() => setPhase("fading"), 2200);  // Start fade sooner
         const t4 = setTimeout(() => {
             try { sessionStorage.setItem("hasSeenIntro", "true"); } catch (e) { }
             onComplete();
-        }, 4500);
+        }, 2800); // Total time ~2.8s
 
         return () => {
             clearTimeout(forceComplete);
@@ -55,13 +54,13 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
 
     // Dynamic styles based on phase
     const getContainerStyles = () => {
-        const base = "fixed inset-0 z-[9999] bg-black flex items-center justify-center transition-opacity duration-1000 ease-in-out";
+        const base = "fixed inset-0 z-[9999] bg-black flex items-center justify-center transition-opacity duration-700 ease-in-out";
         const stateClass = phase === "fading" ? "opacity-0 pointer-events-none" : "opacity-100";
         return `${base} ${stateClass}`;
     };
 
     const getTextStyles = () => {
-        const base = "font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-[0.3em] text-white font-extralight transition-all duration-[1500ms] ease-[cubic-bezier(0.16,1,0.3,1)]";
+        const base = "font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl tracking-[0.3em] text-white font-extralight transition-all duration-[1000ms] ease-[cubic-bezier(0.16,1,0.3,1)]";
 
         let transformStyles = "";
         let opacityStyles = "";
@@ -90,7 +89,7 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
     };
 
     const getUnderlineStyles = () => {
-        const base = "h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto mt-10 transition-all duration-[1200ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-300";
+        const base = "h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent mx-auto mt-10 transition-all duration-[800ms] ease-[cubic-bezier(0.16,1,0.3,1)] delay-200";
         const isVisible = phase === "revealing" || phase === "visible";
         const stateStyles = isVisible ? "w-32 sm:w-48 md:w-64 opacity-100" : "w-0 opacity-0";
         return `${base} ${stateStyles}`;
@@ -109,9 +108,6 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
                     {fullText}
                 </h1>
                 <div className={getUnderlineStyles()} />
-                <p className="mt-8 text-white/30 text-xs font-light tracking-widest animate-pulse">
-                    (Click to skip)
-                </p>
             </div>
         </div>
     );
