@@ -44,7 +44,7 @@ const Hero = () => {
           transform: `scale(${1 + scrollBlur * 0.01})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-transparent" />
         <div
           className="absolute inset-0 bg-black transition-opacity duration-300"
           style={{ opacity: scrollDarkness }}
