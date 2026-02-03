@@ -9,6 +9,9 @@ export const translations = {
       contato: "Contato",
       reserveAgora: "Reserve Agora",
     },
+    common: {
+      whatsappMessage: "Olá, venho do site da TMT",
+    },
     hero: {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
@@ -249,9 +252,9 @@ export const translations = {
       tariffsTitle: "Prontuario Tariffe Corporate",
       tariffsSubtitle: "Listino Pubblico e Ufficiale",
       tariffsDescription: "Prezzi chiari e trasparenti per servizi corporate. Tutte le tariffe sono IVA esclusa.",
-      hourlyTitle: "Disposizioni Orarie",
-      hours4: "4 ore",
-      hours8: "8 ore",
+      hourlyTitle: "Disposições Orarie",
+      hours4: "4 horas",
+      hours8: "8 horas",
       hours4Price: "€360",
       hours8Price: "€680",
       transfersTitle: "Transfer Aeroportuali",
@@ -261,8 +264,8 @@ export const translations = {
       kmTitle: "Tariffa Chilometrica",
       kmBase: "€1,50/km",
       kmMountain: "€1,95/km (+30% laghi/montagna)",
-      notes: "* Tariffe per Mercedes Classe V (fino a 6 pax). Per Classe S o veicoli speciali, richiedere preventivo dedicato.",
-      invoiceNote: "Fatturazione elettronica disponibile. Condizioni speciali per contratti annuali.",
+      notes: "* Tariffe per Mercedes Classe V (fino a 6 pax). Per Classe S ou veículos especiais, richiedere preventivo dedicato.",
+      invoiceNote: "Fatturazione elettronica disponibile. Condições especiais para contratos anuais.",
     },
   },
   en: {
@@ -274,6 +277,9 @@ export const translations = {
       servicos: "Services",
       contato: "Contact",
       reserveAgora: "Book Now",
+    },
+    common: {
+      whatsappMessage: "Hi, I'm coming from the TMT website",
     },
     hero: {
       title: "BOOK YOUR CAR NOW",
@@ -541,6 +547,9 @@ export const translations = {
       contato: "Contatto",
       reserveAgora: "Prenota Ora",
     },
+    common: {
+      whatsappMessage: "Salve, vengo dal sito TMT",
+    },
     hero: {
       title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
@@ -805,6 +814,9 @@ export const translations = {
       servicos: "Services",
       contato: "Contact",
       reserveAgora: "Réserver",
+    },
+    common: {
+      whatsappMessage: "Bonjour, je viens du site TMT",
     },
     hero: {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",

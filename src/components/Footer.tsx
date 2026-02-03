@@ -5,7 +5,7 @@ import { translations } from "@/locales/translations";
 const Footer = () => {
   const { language } = useLanguage();
   const t = translations[language].footer;
-  
+
   return (
     <footer id="contato" className="bg-primary text-primary-foreground py-16">
       <div className="container mx-auto px-4">
@@ -34,7 +34,7 @@ const Footer = () => {
                 <span>+39 389 143 0907</span>
               </a>
               <a
-                href="https://wa.me/393891430907"
+                href={`https://wa.me/393891430907?text=${encodeURIComponent(translations[language].common.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"

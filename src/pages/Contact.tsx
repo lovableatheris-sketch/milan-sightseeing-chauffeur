@@ -79,7 +79,7 @@ const Contact = () => {
 
               {/* WhatsApp */}
               <a
-                href={`https://wa.me/${t.info.whatsappNumber.replace(/\s/g, "")}`}
+                href={`https://wa.me/${t.info.whatsappNumber.replace(/\s/g, "")}?text=${encodeURIComponent(translations[language].common.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-4 group transition-all duration-300 hover:scale-105"

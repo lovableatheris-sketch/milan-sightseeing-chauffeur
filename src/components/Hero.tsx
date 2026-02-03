@@ -26,7 +26,8 @@ const Hero = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/393891430907", "_blank");
+    const message = encodeURIComponent(translations[language].common.whatsappMessage);
+    window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
   };
 
   return (

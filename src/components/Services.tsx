@@ -22,7 +22,10 @@ const Services = () => {
       icon: MessageCircle,
       title: t.whatsappTitle,
       description: t.whatsappDesc,
-      onClick: () => window.open("https://wa.me/393891430907", "_blank"),
+      onClick: () => {
+        const message = encodeURIComponent(translations[language].common.whatsappMessage);
+        window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
+      },
     },
     {
       icon: MapPin,
@@ -80,16 +83,15 @@ const Services = () => {
                 key={index}
                 data-index={index}
                 onClick={service.onClick}
-                className={`flex flex-col items-center gap-4 transition-all duration-300 group cursor-pointer max-w-[200px] ${
-                  visibleCards.includes(index)
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-8"
-                }`}
+                className={`flex flex-col items-center gap-4 transition-all duration-300 group cursor-pointer max-w-[200px] ${visibleCards.includes(index)
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
+                  }`}
               >
                 <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-luxury-gold flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-luxury">
                   <service.icon size={40} strokeWidth={1.5} className="text-primary" />
                 </div>
-                
+
                 <h3 className="text-sm md:text-base font-heading font-semibold text-foreground text-center uppercase tracking-wide leading-tight">
                   {service.title}
                 </h3>
@@ -107,9 +109,9 @@ const Services = () => {
             Servizio NCC Milano - Transfer Aeroporto Malpensa
           </h3>
           <p className="text-muted-foreground leading-relaxed">
-            TMTransferLux offre servizi di <strong>noleggio con conducente (NCC)</strong> professionali a Milano e provincia. 
-            Specializzati in <strong>transfer aeroporto Malpensa</strong>, Linate e Bergamo Orio al Serio, garantiamo 
-            puntualità, comfort e prezzi fissi senza sorprese. I nostri autisti professionisti ti aspettano in aeroporto 
+            TMTransferLux offre servizi di <strong>noleggio con conducente (NCC)</strong> professionali a Milano e provincia.
+            Specializzati in <strong>transfer aeroporto Malpensa</strong>, Linate e Bergamo Orio al Serio, garantiamo
+            puntualità, comfort e prezzi fissi senza sorprese. I nostri autisti professionisti ti aspettano in aeroporto
             con monitoraggio voli in tempo reale. Veicoli Mercedes sanificati, WiFi gratuito e assistenza 24 ore su 24.
           </p>
         </div>

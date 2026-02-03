@@ -205,7 +205,8 @@ const Transfers = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/393891430907", "_blank");
+    const message = encodeURIComponent(translations[language].common.whatsappMessage);
+    window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
   };
 
   const toggleFaq = (index: number) => {
@@ -257,7 +258,7 @@ const Transfers = () => {
                   <h1 className="text-3xl md:text-4xl font-heading font-normal text-foreground mb-6 leading-tight">
                     {t.mainTitle}
                   </h1>
-                  
+
                   <p className="text-muted-foreground mb-8">
                     {t.chooseService}
                   </p>
@@ -376,8 +377,8 @@ const Transfers = () => {
               </h2>
               <div className="space-y-4">
                 {currentFaq.map((faq, index) => (
-                  <div 
-                    key={index} 
+                  <div
+                    key={index}
                     className="bg-card rounded-lg shadow-md overflow-hidden border border-border"
                   >
                     <button

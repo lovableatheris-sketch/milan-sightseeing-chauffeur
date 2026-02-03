@@ -97,7 +97,10 @@ const Header = () => {
               </button>
               <LanguageSelector />
               <Button
-                onClick={() => window.open("https://wa.me/393891430907", "_blank")}
+                onClick={() => {
+                  const message = encodeURIComponent(translations[language].common.whatsappMessage);
+                  window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
+                }}
                 className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
               >
                 {t.reserveAgora}
@@ -170,7 +173,10 @@ const Header = () => {
                   MILANO Corporate
                 </button>
                 <Button
-                  onClick={() => window.open("https://wa.me/393891430907", "_blank")}
+                  onClick={() => {
+                    const message = encodeURIComponent(translations[language].common.whatsappMessage);
+                    window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
+                  }}
                   className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-semibold active:scale-95"
                 >
                   {t.reserveAgora}

@@ -98,7 +98,8 @@ const TouristTours = () => {
   ];
 
   const handleWhatsAppClick = () => {
-    window.open("https://wa.me/393891430907", "_blank");
+    const message = encodeURIComponent(translations[language].common.whatsappMessage);
+    window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
   };
 
   return (
@@ -157,7 +158,7 @@ const TouristTours = () => {
                         <span>{t.priceFrom} {tour.price}</span>
                       </div>
                     </div>
-                    <Button 
+                    <Button
                       onClick={handleWhatsAppClick}
                       className="w-full bg-luxury-gold text-primary hover:bg-luxury-gold-dark"
                     >

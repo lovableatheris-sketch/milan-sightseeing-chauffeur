@@ -115,7 +115,7 @@ const Index = () => {
       ]
     },
     "sameAs": [
-      "https://wa.me/393891430907"
+      `https://wa.me/393891430907?text=${encodeURIComponent(translations[language].common.whatsappMessage)}`
     ],
     "aggregateRating": {
       "@type": "AggregateRating",
