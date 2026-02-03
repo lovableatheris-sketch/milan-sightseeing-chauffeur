@@ -32,7 +32,7 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-end overflow-hidden"
     >
       {/* Background Image with Overlay */}
       <div
@@ -44,38 +44,46 @@ const Hero = () => {
           transform: `scale(${1 + scrollBlur * 0.01})`,
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70" />
+        {/* Dark overlay - stronger at bottom for better text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/80" />
         <div
           className="absolute inset-0 bg-black transition-opacity duration-300"
           style={{ opacity: scrollDarkness }}
         />
-        <div className="absolute bottom-0 left-0 right-0 h-96 bg-gradient-to-t from-black via-black/40 to-transparent" />
+        {/* Stronger bottom gradient for content area */}
+        <div className="absolute bottom-0 left-0 right-0 h-[60%] bg-gradient-to-t from-black via-black/70 to-transparent" />
       </div>
 
-      {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 py-32 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold text-primary-foreground mb-4 animate-fade-in">
+      {/* Content - Positioned at bottom left */}
+      <div className="relative z-10 container mx-auto px-6 md:px-12 lg:px-16 pb-16 md:pb-24 lg:pb-32 text-left">
+        {/* Small subtitle label */}
+        <p className="text-sm md:text-base uppercase tracking-[0.25em] text-luxury-gold/90 mb-4 animate-fade-in font-medium">
+          {t.cta}
+        </p>
+
+        {/* Main headline */}
+        <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground mb-3 animate-fade-in leading-tight max-w-4xl">
           {t.title}
         </h1>
+
+        {/* Highlighted text line */}
         {t.titleHighlight && (
-          <p className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-luxury-gold mb-6 animate-fade-in">
+          <p className="text-2xl md:text-4xl lg:text-5xl font-heading font-bold text-luxury-gold mb-6 animate-fade-in leading-tight max-w-4xl">
             {t.titleHighlight}
           </p>
         )}
-        <a
-          href="tel:+393891430907"
-          className="inline-block text-4xl md:text-5xl font-bold text-luxury-gold hover:text-luxury-gold-dark transition-smooth mb-6 animate-fade-in"
-        >
-          +39 389 143 0907
-        </a>
-        <p className="text-lg md:text-xl text-primary-foreground/90 mb-12 max-w-3xl mx-auto animate-fade-in-up font-light">
+
+        {/* Subtitle/description */}
+        <p className="text-base md:text-lg text-primary-foreground/80 mb-8 max-w-2xl animate-fade-in-up font-light leading-relaxed">
           {t.subtitle}
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+
+        {/* CTA Buttons - Horizontal layout */}
+        <div className="flex flex-col sm:flex-row gap-4 items-start animate-scale-in">
           <Button
             onClick={handleWhatsAppClick}
             size="lg"
-            className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
+            className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-sm md:text-base px-6 md:px-8 py-5 md:py-6 font-semibold uppercase tracking-wide"
           >
             {t.cta}
           </Button>
@@ -83,15 +91,13 @@ const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-luxury-gold text-luxury-gold hover:bg-luxury-gold hover:text-primary transition-smooth shadow-luxury text-lg px-8 py-6 animate-scale-in font-semibold"
+              className="border-primary-foreground/80 text-primary-foreground hover:bg-primary-foreground hover:text-primary transition-smooth text-sm md:text-base px-6 md:px-8 py-5 md:py-6 font-semibold uppercase tracking-wide bg-transparent"
             >
               {translations[language].milano.navLabel}
             </Button>
           </Link>
         </div>
       </div>
-
-
     </section>
   );
 };

@@ -13,7 +13,7 @@ export const translations = {
       title: "RESERVE AGORA SEU CARRO",
       titleHighlight: "",
       subtitle:
-        "Oferecemos serviços de aluguel com motorista do aeroporto de Malpensa para qualquer destino com veículos higienizados, conforto garantido e preço fixo. Reserve agora seu carro de ou para o aeroporto de Malpensa e viaje com segurança e profissionalismo.",
+        "TMT é a plataforma de mobilidade premium pensada para toda necessidade de transfer e eventos, disponível em diversas cidades.",
       cta: "Solicitar Corrida",
       ctaContact: "Entre em Contato",
     },
@@ -279,7 +279,7 @@ export const translations = {
       title: "BOOK YOUR CAR NOW",
       titleHighlight: "",
       subtitle:
-        "We offer chauffeur-driven car rental services from Malpensa airport to any destination with sanitized vehicles, guaranteed comfort and fixed price. Book your car from or to Malpensa airport now and travel with safety and professionalism.",
+        "TMT is the premium mobility platform designed for every transfer and event need, available in several cities.",
       cta: "Request a Ride",
       ctaContact: "Contact Us",
     },
@@ -545,7 +545,7 @@ export const translations = {
       title: "PRENOTA ORA LA TUA AUTO",
       titleHighlight: "",
       subtitle:
-        "Servizio di noleggio con conducente (NCC) professionale per transfer aeroporto Malpensa-Milano. Prezzo fisso garantito, veicoli Mercedes sanificati, autista privato che ti aspetta in aeroporto. Prenota il tuo transfer Malpensa su WhatsApp e viaggia con comfort e sicurezza.",
+        "TMT è la piattaforma di mobilità premium pensata per ogni esigenza di transfer ed eventi, disponibile in diverse città.",
       cta: "Prenota su WhatsApp",
       ctaContact: "Contattaci",
     },
@@ -810,7 +810,7 @@ export const translations = {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
       subtitle:
-        "Nous offrons des services de location de voiture avec chauffeur depuis l'aéroport de Malpensa vers n'importe quelle destination avec des véhicules désinfectés, confort garanti et prix fixe. Réservez maintenant votre voiture depuis ou vers l'aéroport de Malpensa et voyagez en sécurité et professionnalisme.",
+        "TMT est la plateforme de mobilité premium conçue pour tous vos besoins de transfert et d'événements, disponible dans plusieurs villes.",
       cta: "Demander une course",
       ctaContact: "Contactez-nous",
     },
