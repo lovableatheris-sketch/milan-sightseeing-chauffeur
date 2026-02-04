@@ -7,7 +7,7 @@ interface WelcomeIntroProps {
 const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
     const [phase, setPhase] = useState<"initial" | "revealing" | "visible" | "fading">("initial");
 
-    const fullText = "WELCOME TO TMT.";
+    const fullText = "WELCOME TO TMT";
 
     useEffect(() => {
         // Safety check for sessionStorage and ensure intro eventually completes
@@ -24,16 +24,16 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
         // Force complete after safety margin
         const forceComplete = setTimeout(() => {
             onComplete();
-        }, 2500);
+        }, 5500);
 
-        // Faster Apple-style cinematic timing
+        // Apple-style cinematic timing with slower fadeout
         const t1 = setTimeout(() => setPhase("revealing"), 50);
         const t2 = setTimeout(() => setPhase("visible"), 800);  // Quick read
-        const t3 = setTimeout(() => setPhase("fading"), 1400);  // Start fade out
+        const t3 = setTimeout(() => setPhase("fading"), 2000);  // Start fade out
         const t4 = setTimeout(() => {
             try { sessionStorage.setItem("hasSeenIntro", "true"); } catch (e) { }
             onComplete();
-        }, 1900); // Total time ~1.9s
+        }, 4500); // Total time ~4.5s (slower fadeout)
 
         return () => {
             clearTimeout(forceComplete);
@@ -54,7 +54,7 @@ const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
 
     // Dynamic styles based on phase
     const getContainerStyles = () => {
-        const base = "fixed inset-0 z-[9999] bg-black flex items-center justify-center transition-opacity duration-500 ease-in-out";
+        const base = "fixed inset-0 z-[9999] bg-black flex items-center justify-center transition-opacity duration-[2000ms] ease-in-out";
         const stateClass = phase === "fading" ? "opacity-0 pointer-events-none" : "opacity-100";
         return `${base} ${stateClass}`;
     };
