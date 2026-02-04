@@ -37,14 +37,20 @@ const Hero = () => {
     >
       {/* Background Image with Overlay */}
       <div
-        className="absolute inset-0 bg-cover bg-no-repeat transition-all duration-300"
+        className="absolute inset-0 transition-all duration-300"
         style={{
-          backgroundImage: `url(${heroImage})`,
-          backgroundPosition: 'center 65%',
+          willChange: 'filter, transform',
+          backfaceVisibility: 'hidden',
+          transform: `scale(${1 + scrollBlur * 0.01}) translateZ(0)`,
           filter: `blur(${scrollBlur}px)`,
-          transform: `scale(${1 + scrollBlur * 0.01})`,
         }}
       >
+        <img 
+          src={heroImage} 
+          alt="" 
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ objectPosition: 'center 65%' }}
+        />
         {/* Dark overlay - stronger at bottom for better text contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/80" />
         <div
