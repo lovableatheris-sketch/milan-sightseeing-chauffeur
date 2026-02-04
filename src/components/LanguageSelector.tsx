@@ -8,10 +8,10 @@ const LanguageSelector = () => {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const languages = [
-    { code: "it" as const, label: "Italiano" },
-    { code: "en" as const, label: "English" },
-    { code: "pt" as const, label: "Português" },
-    { code: "fr" as const, label: "Français" },
+    { code: "it" as const, label: "IT" },
+    { code: "en" as const, label: "EN" },
+    { code: "pt" as const, label: "PT" },
+    { code: "fr" as const, label: "FR" },
   ];
 
   const currentLanguage = languages.find((lang) => lang.code === language);
@@ -50,9 +50,8 @@ const LanguageSelector = () => {
           {currentLanguage?.label}
         </span>
         <ChevronDown
-          className={`w-4 h-4 text-foreground transition-transform duration-200 ${
-            isOpen ? "rotate-180" : ""
-          }`}
+          className={`w-4 h-4 text-foreground transition-transform duration-200 ${isOpen ? "rotate-180" : ""
+            }`}
         />
       </button>
 
@@ -63,11 +62,10 @@ const LanguageSelector = () => {
               <button
                 key={lang.code}
                 onClick={() => handleLanguageSelect(lang.code)}
-                className={`w-full px-4 py-2.5 text-left text-sm transition-smooth hover:bg-muted ${
-                  language === lang.code
+                className={`w-full px-4 py-2.5 text-left text-sm transition-smooth hover:bg-muted ${language === lang.code
                     ? "bg-accent/10 text-accent font-semibold"
                     : "text-popover-foreground"
-                }`}
+                  }`}
               >
                 {lang.label}
               </button>
