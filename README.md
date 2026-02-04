@@ -1,140 +1,73 @@
-# TMT - Transfer Milano Transportation
+# Welcome to your Lovable project
 
-Site de serviço de transfer e turismo privado em Milão, Itália.
+## Project info
 
-**Website**: [tmtransferlux.it](https://tmtransferlux.it)
+**URL**: https://lovable.dev/projects/42f7cd27-5d5d-47bb-acd3-f02769dc9012
 
----
+## How can I edit this code?
 
-## 📋 Sobre o Projeto
+There are several ways of editing your application.
 
-TMT (Transfer Milano Transportation) é um site multilíngue para serviços de transfer privado de/para aeroportos de Milão (Malpensa, Linate, Bergamo) e tours turísticos pela região da Lombardia.
+**Use Lovable**
 
-### Funcionalidades Principais
+Simply visit the [Lovable Project](https://lovable.dev/projects/42f7cd27-5d5d-47bb-acd3-f02769dc9012) and start prompting.
 
-- **Transfer Aeroporto**: Preços fixos para transfers de/para Malpensa, Linate e Bergamo
-- **Tours Turísticos**: Lago di Como, Lago Maggiore, San Siro e outros destinos
-- **Multi-idioma**: Suporte para Italiano (IT), Inglês (EN), Português (PT) e Francês (FR)
-- **Calculadora de Preços**: Ferramenta para calcular preventivos de transfer
-- **Intro Animada**: Animação "Welcome to TMT" estilo Apple no primeiro acesso
-- **SEO Otimizado**: Structured data, meta tags e hreflang para múltiplos idiomas
+Changes made via Lovable will be committed automatically to this repo.
 
----
+**Use your preferred IDE**
 
-## 🛠️ Tecnologias Utilizadas
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-| Tecnologia | Descrição |
-|------------|-----------|
-| **Vite** | Build tool rápido para desenvolvimento |
-| **React 18** | Biblioteca de UI |
-| **TypeScript** | Tipagem estática |
-| **Tailwind CSS** | Framework CSS utility-first |
-| **shadcn/ui** | Componentes de UI acessíveis |
-| **React Router DOM** | Roteamento SPA |
-| **Framer Motion** | Animações |
-| **Lucide React** | Ícones |
-| **React Hook Form + Zod** | Formulários e validação |
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
----
+Follow these steps:
 
-## 📁 Estrutura do Projeto
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-```
-src/
-├── assets/           # Imagens e logos
-├── components/       # Componentes React
-│   ├── ui/           # Componentes shadcn/ui
-│   ├── Header.tsx    # Cabeçalho do site
-│   ├── Footer.tsx    # Rodapé
-│   ├── WelcomeIntro.tsx  # Animação de boas-vindas
-│   └── LanguageSelector.tsx  # Seletor de idioma
-├── contexts/         # Contextos React (LanguageContext)
-├── hooks/            # Custom hooks
-├── lib/              # Utilitários
-├── locales/          # Traduções (translations.ts)
-├── pages/            # Páginas do site
-│   ├── Index.tsx     # Homepage
-│   ├── Transfers.tsx # Página de transfers
-│   ├── TouristTours.tsx  # Tours turísticos
-│   ├── NostriVeicoli.tsx # Nossos veículos
-│   ├── ChiSiamo.tsx  # Quem somos
-│   ├── Contact.tsx   # Contato
-│   ├── CalcoloPreventivo.tsx  # Calculadora de preços
-│   ├── MilanoTariffe.tsx  # Tarifas Milano
-│   └── MilanoPremiumMobility.tsx  # Página premium
-└── index.css         # Estilos globais e tema
-```
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
----
+# Step 3: Install the necessary dependencies.
+npm i
 
-## 🚀 Como Executar
-
-### Pré-requisitos
-- Node.js 18+ 
-- npm ou yarn
-
-### Instalação
-
-```bash
-# Clonar o repositório
-git clone https://github.com/lovableatheris-sketch/milan-sightseeing-chauffeur.git
-
-# Entrar no diretório
-cd milan-sightseeing-chauffeur
-
-# Instalar dependências
-npm install
-
-# Iniciar servidor de desenvolvimento
+# Step 4: Start the development server with auto-reloading and an instant preview.
 npm run dev
 ```
 
-O site estará disponível em `http://localhost:8080`
+**Edit a file directly in GitHub**
 
-### Scripts Disponíveis
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-| Comando | Descrição |
-|---------|-----------|
-| `npm run dev` | Inicia servidor de desenvolvimento |
-| `npm run build` | Gera build de produção |
-| `npm run preview` | Visualiza build de produção |
-| `npm run lint` | Executa ESLint |
+**Use GitHub Codespaces**
 
----
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## 🌐 Sistema de Idiomas
+## What technologies are used for this project?
 
-O site suporta 4 idiomas através do `LanguageContext`:
+This project is built with:
 
-- 🇮🇹 **Italiano** (padrão)
-- 🇬🇧 **English**
-- 🇧🇷 **Português**
-- 🇫🇷 **Français**
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-As traduções estão em `src/locales/translations.ts`.
+## How can I deploy this project?
 
----
+Simply open [Lovable](https://lovable.dev/projects/42f7cd27-5d5d-47bb-acd3-f02769dc9012) and click on Share -> Publish.
 
-## ⚠️ Notas sobre Erros de Lint
+## Can I connect a custom domain to my Lovable project?
 
-O projeto pode mostrar alguns avisos/erros de lint que **NÃO afetam a funcionalidade**:
+Yes, you can!
 
-1. **`no-empty` (2 ocorrências)**: Blocos catch vazios em `WelcomeIntro.tsx` - usado intencionalmente para ignorar erros de sessionStorage
-2. **`no-empty-object-type` (2 ocorrências)**: Interfaces vazias nos componentes shadcn/ui - padrão do shadcn
-3. **`react-refresh/only-export-components` (8 avisos)**: Arquivos que exportam constantes junto com componentes - não afeta produção
-4. **`no-require-imports`**: Uso de require() no `tailwind.config.ts` - necessário para plugins Tailwind
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-Esses são problemas de **estilo de código**, não de funcionalidade. O site funciona normalmente.
-
----
-
-## 📱 Contato
-
-- **WhatsApp**: +39 389 143 0907
-- **Email**: thomastagliatti2022@gmail.com
-
----
-
-## 📄 Licença
-
-Projeto privado - TMTransferLux © 2024
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
