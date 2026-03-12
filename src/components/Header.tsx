@@ -90,6 +90,12 @@ const Header = () => {
                 {t.contato}
               </button>
               <button
+                onClick={() => navigate("/blog")}
+                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
+              >
+                Blog
+              </button>
+              <button
                 onClick={() => navigate("/milano-premium-mobility")}
                 className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-bold uppercase tracking-widest text-xs"
               >
@@ -162,6 +168,15 @@ const Header = () => {
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.contato}
+                </button>
+                <button
+                  onClick={() => {
+                    navigate("/blog");
+                    setIsMobileMenuOpen(false);
+                  }}
+                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
+                >
+                  Blog
                 </button>
                 <button
                   onClick={() => {

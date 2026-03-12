@@ -5,10 +5,15 @@ const ScrollToTop = () => {
     const { pathname, hash } = useLocation();
 
     useEffect(() => {
+        // If user visits any page other than home first, mark intro as seen
+        // This prevents the black screen flash when navigating to home from another page
+        if (pathname !== "/") {
+            try { sessionStorage.setItem("hasSeenIntro", "true"); } catch (e) { }
+        }
+
         if (!hash) {
             window.scrollTo(0, 0);
         } else {
-            // Give a small delay to ensure the page has rendered
             setTimeout(() => {
                 const id = hash.replace("#", "");
                 const element = document.getElementById(id);

@@ -17,7 +17,6 @@ import { translations } from "@/locales/translations";
 const Index = () => {
   const { language } = useLanguage();
   const [showIntro, setShowIntro] = useState(() => {
-    // Check if we should show intro (only if not seen in this session)
     if (typeof window !== "undefined") {
       return !sessionStorage.getItem("hasSeenIntro");
     }

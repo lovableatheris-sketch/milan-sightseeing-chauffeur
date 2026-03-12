@@ -19,6 +19,11 @@ import CalcoloPreventivo from "./pages/CalcoloPreventivo";
 import Contact from "./pages/Contact";
 import MilanoPremiumMobility from "./pages/MilanoPremiumMobility";
 import MilanoTariffe from "./pages/MilanoTariffe";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import CookiePolicy from "./pages/CookiePolicy";
 
 const queryClient = new QueryClient();
 
@@ -40,7 +45,11 @@ const App = () => (
             <Route path="/transfers" element={<Transfers />} />
             <Route path="/milano-premium-mobility" element={<MilanoPremiumMobility />} />
             <Route path="/milano-prontuario-tariffe" element={<MilanoTariffe />} />
-
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/termini-condizioni" element={<TermsConditions />} />
+            <Route path="/cookie-policy" element={<CookiePolicy />} />
 
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

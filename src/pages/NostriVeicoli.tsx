@@ -62,7 +62,7 @@ const NostriVeicoli = () => {
               {/* Mercedes E-Class */}
               <div className="bg-card rounded-lg shadow-luxury overflow-hidden">
                 <div className="aspect-video bg-muted overflow-hidden">
-                  <img 
+                  <img
                     src={mercedesImage}
                     alt="Mercedes E-Class"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
@@ -85,7 +85,7 @@ const NostriVeicoli = () => {
                   <p className="text-foreground/80 mb-6 leading-relaxed">
                     {t.vehicle1Desc}
                   </p>
-                  <Button 
+                  <Button
                     onClick={() => navigate("/calcolo-preventivo")}
                     className="w-full bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
                   >
