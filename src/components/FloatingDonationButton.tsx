@@ -23,28 +23,25 @@ const FloatingDonationButton = () => {
 
   return (
     <a
-      href="https://5x1000.fondazioneronald.org/firma"
+      href="https://casaronaldmcdonalditalia.org/"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 group"
       aria-label="Donate to Ronald McDonald House Charities"
     >
       <div
-        className={`rounded-full shadow-luxury hover:shadow-2xl transition-all duration-500 overflow-hidden bg-white group-hover:scale-110 flex items-center gap-3 ${
-          isExpanded ? "w-48 h-20 px-4" : "w-20 h-20"
-        }`}
+        className={`rounded-full shadow-luxury hover:shadow-2xl transition-all duration-500 overflow-hidden bg-white group-hover:scale-110 flex items-center gap-3 ${isExpanded ? "w-48 h-20 px-4" : "w-20 h-20"
+          }`}
       >
         <img
           src={ronaldLogo}
           alt="Ronald McDonald House Charities"
-          className={`object-contain transition-all duration-500 ${
-            isExpanded ? "w-12 h-12" : "w-full h-full p-2"
-          }`}
+          className={`object-contain transition-all duration-500 ${isExpanded ? "w-12 h-12" : "w-full h-full p-2"
+            }`}
         />
         <span
-          className={`font-semibold text-lg text-primary whitespace-nowrap transition-all duration-300 ${
-            isExpanded ? "opacity-100" : "opacity-0 w-0"
-          }`}
+          className={`font-semibold text-lg text-primary whitespace-nowrap transition-all duration-300 ${isExpanded ? "opacity-100" : "opacity-0 w-0"
+            }`}
         >
           Dona ora
         </span>
