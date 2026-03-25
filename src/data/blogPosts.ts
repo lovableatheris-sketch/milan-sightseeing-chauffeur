@@ -1,3 +1,6 @@
+import { newBlogPosts } from "./blogPostsNew";
+import { newBlogPosts2 } from "./blogPostsNew2";
+
 export interface BlogPost {
     id: string;
     slug: string;
@@ -9,7 +12,7 @@ export interface BlogPost {
     contents: { it: string; en: string; pt: string; fr: string };
 }
 
-export const blogPosts: BlogPost[] = [
+const originalPosts: BlogPost[] = [
     {
         id: "1",
         slug: "guida-transfer-malpensa-milano",
@@ -896,3 +899,5 @@ Spritz with Duomo views. €12-15 per drink.
         },
     },
 ];
+
+export const blogPosts: BlogPost[] = [...originalPosts, ...newBlogPosts, ...newBlogPosts2];

@@ -1,4 +1,4 @@
-import { Phone, Mail, MessageCircle, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Phone, Mail, MessageCircle, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { Link } from "react-router-dom";
@@ -57,14 +57,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-heading font-semibold mb-4 text-luxury-gold">{t.socialTitle}</h4>
             <div className="flex gap-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-luxury-gold hover:text-primary transition-smooth">
-                <Facebook size={20} />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-luxury-gold hover:text-primary transition-smooth">
+              <a href="https://www.instagram.com/tmtransferlux/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-luxury-gold hover:text-primary transition-smooth">
                 <Instagram size={20} />
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-luxury-gold hover:text-primary transition-smooth">
-                <Linkedin size={20} />
               </a>
             </div>
           </div>
