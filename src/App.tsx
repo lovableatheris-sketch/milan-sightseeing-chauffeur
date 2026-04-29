@@ -10,7 +10,7 @@ import NotFound from "./pages/NotFound";
 import TouristTours from "./pages/TouristTours";
 import Transfers from "./pages/Transfers";
 import ScrollToTop from "./components/ScrollToTop";
-import SideAds from "./components/SideAds";
+
 
 
 import ChiSiamo from "./pages/ChiSiamo";
@@ -56,7 +56,7 @@ const App = () => (
           </Routes>
         </BrowserRouter>
         <Analytics />
-        <SideAds />
+
       </TooltipProvider>
     </LanguageProvider>
   </QueryClientProvider>
