@@ -11,6 +11,18 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguageState] = useState<Language>(() => {
+    // Check URL parameters first
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const langParam = params.get("lang") as Language;
+      const validLanguages: Language[] = ["it", "en", "pt", "fr"];
+      
+      if (langParam && validLanguages.includes(langParam)) {
+        localStorage.setItem("language", langParam);
+        return langParam;
+      }
+    }
+
     const saved = localStorage.getItem("language");
     return (saved as Language) || "it";
   });
@@ -19,6 +31,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     setLanguageState(lang);
     localStorage.setItem("language", lang);
   };
+
+  useEffect(() => {
+    // Sync document language attribute
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>

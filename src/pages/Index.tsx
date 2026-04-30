@@ -13,6 +13,10 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import MilanoHighlight from "@/components/MilanoHighlight";
 import WelcomeIntro from "@/components/WelcomeIntro";
 import { translations } from "@/locales/translations";
+import { deobfuscate } from "@/utils/obfuscation";
+
+const OBFUSCATED_EMAIL = "bW9jLmxpYW1nQDIyMDJpdHRhaWxnYXRzYW1vaHQ=";
+const OBFUSCATED_PHONE = "NzA5MCAzNDEgOTgzIDkzKw==";
 
 const Index = () => {
   const { language } = useLanguage();
@@ -56,8 +60,8 @@ const Index = () => {
     "alternateName": "Sightseeing di Thomas Tagliatti",
     "description": "Servizio NCC noleggio con conducente a Milano. Transfer aeroporto Malpensa, Linate, Bergamo con Mercedes di lusso e autista professionale. Prezzo fisso garantito.",
     "url": "https://tmtransferlux.it",
-    "telephone": "+39 389 143 0907",
-    "email": "thomastagliatti2022@gmail.com",
+    "telephone": deobfuscate(OBFUSCATED_PHONE),
+    "email": deobfuscate(OBFUSCATED_EMAIL),
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Via Milano",

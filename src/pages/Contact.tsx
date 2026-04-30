@@ -4,6 +4,7 @@ import SEOHead from "@/components/SEOHead";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
+import { CONTACT_INFO } from "@/constants/contact";
 
 const Contact = () => {
   const { language } = useLanguage();
@@ -61,7 +62,8 @@ const Contact = () => {
             <div className="flex flex-wrap justify-center gap-12 md:gap-16 lg:gap-24">
               {/* Phone */}
               <a
-                href={`tel:${t.info.phoneNumber}`}
+                href="#"
+                onClick={(e) => { e.preventDefault(); window.location.href = `tel:${CONTACT_INFO.phone}`; }}
                 className="flex flex-col items-center gap-4 group transition-all duration-300 hover:scale-105"
               >
                 <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all">
@@ -72,14 +74,14 @@ const Contact = () => {
                     {t.info.phone}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    {t.info.phoneNumber}
+                    {CONTACT_INFO.phone}
                   </p>
                 </div>
               </a>
 
               {/* WhatsApp */}
               <a
-                href={`https://wa.me/${t.info.whatsappNumber.replace(/\s/g, "")}?text=${encodeURIComponent(translations[language].common.whatsappMessage)}`}
+                href={CONTACT_INFO.whatsappLink(translations[language].common.whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex flex-col items-center gap-4 group transition-all duration-300 hover:scale-105"
@@ -92,14 +94,15 @@ const Contact = () => {
                     {t.info.whatsapp}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    {t.info.whatsappNumber}
+                    {CONTACT_INFO.phone}
                   </p>
                 </div>
               </a>
 
               {/* Email */}
               <a
-                href={`mailto:${t.info.emailAddress}`}
+                href="#"
+                onClick={(e) => { e.preventDefault(); window.location.href = `mailto:${CONTACT_INFO.email}`; }}
                 className="flex flex-col items-center gap-4 group transition-all duration-300 hover:scale-105"
               >
                 <div className="w-24 h-24 md:w-28 md:h-28 rounded-full bg-primary flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all">
@@ -110,7 +113,7 @@ const Contact = () => {
                     E-MAIL
                   </h3>
                   <p className="text-sm text-muted-foreground break-all max-w-[200px]">
-                    {t.info.emailAddress}
+                    {CONTACT_INFO.email}
                   </p>
                 </div>
               </a>

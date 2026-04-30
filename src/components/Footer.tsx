@@ -2,10 +2,21 @@ import { Phone, Mail, MessageCircle, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import { Link } from "react-router-dom";
+import { CONTACT_INFO } from "@/constants/contact";
 
 const Footer = () => {
   const { language } = useLanguage();
   const t = translations[language].footer;
+
+  const handlePhoneClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = `tel:${CONTACT_INFO.phone}`;
+  };
+
+  const handleMailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = `mailto:${CONTACT_INFO.email}`;
+  };
 
   const policyLabels = {
     it: { privacy: "Privacy Policy", terms: "Termini e Condizioni", cookies: "Cookie Policy", blog: "Blog", links: "Link Utili" },
@@ -30,14 +41,27 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-heading font-semibold mb-4 text-luxury-gold">{t.contactTitle}</h4>
             <div className="space-y-3">
-              <a href="tel:+393891430907" className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth">
-                <Phone size={18} /><span>+39 389 143 0907</span>
+              <a 
+                href="#" 
+                onClick={handlePhoneClick}
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"
+              >
+                <Phone size={18} /><span>{CONTACT_INFO.phone}</span>
               </a>
-              <a href={`https://wa.me/393891430907?text=${encodeURIComponent(translations[language].common.whatsappMessage)}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth">
+              <a 
+                href={CONTACT_INFO.whatsappLink(translations[language].common.whatsappMessage)} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"
+              >
                 <MessageCircle size={18} /><span>{t.whatsapp}</span>
               </a>
-              <a href="mailto:thomastagliatti2022@gmail.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth">
-                <Mail size={18} /><span>thomastagliatti2022@gmail.com</span>
+              <a 
+                href="#" 
+                onClick={handleMailClick}
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-luxury-gold transition-smooth"
+              >
+                <Mail size={18} /><span>{CONTACT_INFO.email}</span>
               </a>
             </div>
           </div>
