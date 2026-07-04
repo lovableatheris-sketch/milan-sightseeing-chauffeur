@@ -2,9 +2,6 @@ import { useState } from "react";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChoose from "@/components/WhyChoose";
-import Services from "@/components/Services";
-import TariffSection from "@/components/TariffSection";
-import LocationCards from "@/components/LocationCards";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
 import FloatingDonationButton from "@/components/FloatingDonationButton";
@@ -29,22 +26,22 @@ const Index = () => {
 
   const seoData = {
     it: {
-      title: "Transfer Malpensa Milano da €170 | NCC con Autista | TMTransferLux",
+      title: "Transfer Malpensa Milano da €170 | NCC con Autista | Nexus",
       description: "Transfer privato aeroporto Malpensa-Milano con prezzo fisso da €170. NCC noleggio con conducente, autista professionale, Mercedes sanificata. Prenota 24h su WhatsApp.",
       keywords: "transfer malpensa milano, ncc milano, noleggio con conducente milano, transfer aeroporto malpensa prezzo, taxi privato malpensa milano, ncc malpensa prezzo fisso, autista privato milano aeroporto",
     },
     en: {
-      title: "Malpensa Milan Transfer from €170 | Private Chauffeur | TMTransferLux",
+      title: "Malpensa Milan Transfer from €170 | Private Chauffeur | Nexus",
       description: "Private Malpensa-Milan airport transfer with fixed price from €170. Professional chauffeur service, sanitized Mercedes. Book 24h on WhatsApp.",
       keywords: "malpensa milan transfer, private airport transfer milan, chauffeur service malpensa, luxury car service milan, ncc milan, milan airport transfer price",
     },
     pt: {
-      title: "Transfer Malpensa Milão a partir de €170 | Motorista Particular | TMTransferLux",
+      title: "Transfer Malpensa Milão a partir de €170 | Motorista Particular | Nexus",
       description: "Transfer privado aeroporto Malpensa-Milão com preço fixo a partir de €170. Motorista profissional, Mercedes higienizado. Reserve 24h pelo WhatsApp.",
       keywords: "transfer malpensa milão, motorista particular milão, transfer aeroporto malpensa preço, serviço transfer malpensa",
     },
     fr: {
-      title: "Transfert Malpensa Milan dès €170 | Chauffeur Privé | TMTransferLux",
+      title: "Transfert Malpensa Milan dès €170 | Chauffeur Privé | Nexus",
       description: "Transfert privé aéroport Malpensa-Milan prix fixe dès €170. Chauffeur professionnel, Mercedes désinfectée. Réservez 24h sur WhatsApp.",
       keywords: "transfert malpensa milan, chauffeur privé milan, transfert aéroport malpensa prix, service chauffeur milan",
     },
@@ -56,9 +53,9 @@ const Index = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://tmtransferlux.it/#organization",
-    "name": "TMTransferLux - NCC Milano Transfer Malpensa",
-    "alternateName": "Sightseeing di Thomas Tagliatti",
-    "description": "Servizio NCC noleggio con conducente a Milano. Transfer aeroporto Malpensa, Linate, Bergamo con Mercedes di lusso e autista professionale. Prezzo fisso garantito.",
+    "name": "Nexus",
+    "alternateName": "Nexus Company",
+    "description": "La presentazione sottolinea che l'esperienza di Nexus Group nasce da anni di lavoro diretto con clienti di alto livello ed è stata trasformata in un modello operativo focalizzato sulla prevenzione dei problemi, l'eccellenza nel servizio, la discrezione, la puntualità e l'attenzione ai dettagli.",
     "url": "https://tmtransferlux.it",
     "telephone": deobfuscate(OBFUSCATED_PHONE),
     "email": deobfuscate(OBFUSCATED_EMAIL),
@@ -150,13 +147,11 @@ const Index = () => {
       <main>
         <Hero />
         <MilanoHighlight />
-        <TariffSection />
-        <Services />
         <WhyChoose />
-        <LocationCards />
         <FinalCTA />
       </main>
       <Footer />
+
       <FloatingDonationButton />
     </div>
   );

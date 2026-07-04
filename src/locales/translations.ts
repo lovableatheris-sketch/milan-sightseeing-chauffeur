@@ -1,7 +1,7 @@
 export const translations = {
   pt: {
     header: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus",
       inicio: "Início",
       chiSiamo: "Quem somos?",
       nostriVeicoli: "Nossos veículos",
@@ -10,21 +10,21 @@ export const translations = {
       reserveAgora: "Reserve Agora",
     },
     common: {
-      whatsappMessage: "Olá, venho do site da TMT",
+      whatsappMessage: "Olá, venho do site da Nexus",
     },
     hero: {
-      title: "RESERVE AGORA SEU CARRO",
+      title: "A excelência passa despercebida. Ela é vivida.",
       titleHighlight: "",
       subtitle:
-        "TMT é a plataforma de mobilidade premium pensada para toda necessidade de transfer e eventos, disponível em diversas cidades.",
-      cta: "Solicitar Corrida",
+        "Nexus é a plataforma de mobilidade premium pensada para toda necessidade de transfer e eventos, disponível em diversas cidades.",
+      cta: "Nexus Company",
       ctaContact: "Entre em Contato",
     },
     chiSiamo: {
       title: "Quem somos?",
       subtitle: "Profissionalismo, confiabilidade e conforto",
       description:
-        "TMTransferLux é o seu serviço NCC (Noleggio Con Conducente) de referência em Milão. Oferecemos transfers aeroportuários de e para Malpensa, Linate e Bergamo Orio al Serio com veículos Mercedes de luxo e motoristas profissionais multilíngues. Diferente dos táxis tradicionais, garantimos preço fixo comunicado antecipadamente, sem surpresas, sem suplementos.",
+        "Nexus é o seu serviço NCC (Noleggio Con Conducente) de referência em Milão. Oferecemos transfers aeroportuários de e para Malpensa, Linate e Bergamo Orio al Serio com veículos Mercedes de luxo e motoristas profissionais multilíngues. Diferente dos táxis tradicionais, garantimos preço fixo comunicado antecipadamente, sem surpresas, sem suplementos.",
       descriptionExtra:
         "Operamos 24 horas por dia, 7 dias por semana com monitoramento de voos em tempo real. Nosso motorista te espera no aeroporto com placa nominal, ajuda com as bagagens e te acompanha até o veículo climatizado.",
     },
@@ -189,13 +189,13 @@ export const translations = {
       capacityDesc: "Até 5–6 passageiros. Para confirmar o número de malas, entre em contato via WhatsApp.",
     },
     footer: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus, the living experience",
       brandDesc:
         "Seu motorista particular de confiança em Milão. Transporte de luxo com excelência, conforto e pontualidade.",
       contactTitle: "Contato",
       whatsapp: "WhatsApp",
       socialTitle: "Redes Sociais",
-      copyright: "© 2025 Sightseeing di Thomas Tagliatti. Todos os direitos reservados.",
+      copyright: "© 2025 Nexus. Todos os direitos reservados.",
     },
     contact: {
       needInfo: "PRECISA DE MAIS INFORMAÇÕES?",
@@ -228,13 +228,13 @@ export const translations = {
       error: "Erro ao enviar mensagem. Tente novamente.",
     },
     milano: {
-      navLabel: "MILANO Corporate",
+      navLabel: "Nexus Company",
       heroTitle: "MILANO",
       heroSubtitle: "Premium Mobility",
-      heroTagline: "by TMT",
+      heroTagline: "by Nexus",
       heroDescription: "Divisão corporativa dedicada a clientes B2B. Mobilidade executiva premium com padrões internacionais de excelência.",
       manifestoTitle: "Manifesto Operativo",
-      manifestoText: "MILANO representa a evolução natural da excelência TMT para o mercado corporativo. Nossa abordagem operativa combina experiência consolidada com flexibilidade total, garantindo soluções de mobilidade sob medida para cada necessidade empresarial.",
+      manifestoText: "MILANO representa a evolução natural da excelência Nexus para o mercado corporativo. Nossa abordagem operativa combina experiência consolidada com flexibilidade total, garantindo soluções de mobilidade sob medida para cada necessidade empresarial.",
       standardsTitle: "Standard di Servizio",
       standard1Title: "Pontualidade Absoluta",
       standard1Desc: "Monitoramento de voos em tempo real. Zero tolerância a atrasos.",
@@ -270,7 +270,7 @@ export const translations = {
   },
   en: {
     header: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus, the living experience",
       inicio: "Home",
       chiSiamo: "About us",
       nostriVeicoli: "Our vehicles",
@@ -279,21 +279,21 @@ export const translations = {
       reserveAgora: "Book Now",
     },
     common: {
-      whatsappMessage: "Hi, I'm coming from the TMT website",
+      whatsappMessage: "Hi, I'm coming from the Nexu site"
     },
     hero: {
-      title: "BOOK YOUR CAR NOW",
+      title: "Excellence goes unnoticed. It is lived.",
       titleHighlight: "",
       subtitle:
-        "TMT is the premium mobility platform designed for every transfer and event need, available in several cities.",
-      cta: "Request a Ride",
+        "NEXUS is the premium mobility platform designed for every transfer and event need, available in several cities.",
+      cta: "NEXUS COMPANY",
       ctaContact: "Contact Us",
     },
     chiSiamo: {
       title: "About us",
       subtitle: "Professionalism, reliability and comfort",
       description:
-        "TMTransferLux is your reference NCC (Noleggio Con Conducente) service in Milan. We offer airport transfers to and from Malpensa, Linate and Bergamo Orio al Serio with luxury Mercedes vehicles and multilingual professional drivers. Unlike traditional taxis, we guarantee a fixed price communicated in advance, no surprises, no supplements.",
+        "Nexus is your reference NCC (Noleggio Con Conducente) service in Milan. We offer airport transfers to and from Malpensa, Linate and Bergamo Orio al Serio with luxury Mercedes vehicles and multilingual professional drivers. Unlike traditional taxis, we guarantee a fixed price communicated in advance, no surprises, no supplements.",
       descriptionExtra:
         "We operate 24 hours a day, 7 days a week with real-time flight monitoring. Our driver waits for you at the airport with a name sign, helps with luggage and accompanies you to the air-conditioned vehicle.",
     },
@@ -458,13 +458,13 @@ export const translations = {
       capacityDesc: "Up to 5–6 passengers. To confirm luggage quantity, contact us via WhatsApp.",
     },
     footer: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus, the living experience",
       brandDesc:
         "Your trusted private driver in Milan. Luxury transportation with excellence, comfort and punctuality.",
       contactTitle: "Contact",
       whatsapp: "WhatsApp",
       socialTitle: "Social Media",
-      copyright: "© 2025 Sightseeing di Thomas Tagliatti. All rights reserved.",
+      copyright: "© 2025 Nexus. All rights reserved.",
     },
     contact: {
       needInfo: "NEED MORE INFORMATION?",
@@ -497,13 +497,13 @@ export const translations = {
       error: "Error sending message. Please try again.",
     },
     milano: {
-      navLabel: "MILANO Corporate",
+      navLabel: "Nexus Company",
       heroTitle: "MILANO",
       heroSubtitle: "Premium Mobility",
-      heroTagline: "by TMT",
+      heroTagline: "by Nexus",
       heroDescription: "Corporate division dedicated to B2B clients. Premium executive mobility with international standards of excellence.",
       manifestoTitle: "Operational Manifesto",
-      manifestoText: "MILANO represents the natural evolution of TMT excellence for the corporate market. Our operational approach combines consolidated experience with total flexibility, guaranteeing tailored mobility solutions for every business need.",
+      manifestoText: "MILANO represents the natural evolution of Nexus excellence for the corporate market. Our operational approach combines consolidated experience with total flexibility, guaranteeing tailored mobility solutions for every business need.",
       standardsTitle: "Service Standards",
       standard1Title: "Absolute Punctuality",
       standard1Desc: "Real-time flight monitoring. Zero tolerance for delays.",
@@ -539,7 +539,7 @@ export const translations = {
   },
   it: {
     header: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus",
       inicio: "Home",
       chiSiamo: "Chi siamo?",
       nostriVeicoli: "I nostri veicoli",
@@ -548,21 +548,21 @@ export const translations = {
       reserveAgora: "Prenota Ora",
     },
     common: {
-      whatsappMessage: "Salve, vengo dal sito TMT",
+      whatsappMessage: "Salve, vengo dal sito Nexus",
     },
     hero: {
-      title: "PRENOTA ORA LA TUA AUTO",
+      title: "L'eccellenza non si nota. Si vive.",
       titleHighlight: "",
       subtitle:
-        "TMT è la piattaforma di mobilità premium pensata per ogni esigenza di transfer ed eventi, disponibile in diverse città.",
-      cta: "Prenota su WhatsApp",
+        "Nexus è la piattaforma di mobilità premium pensata per ogni esigenza di transfer ed eventi, disponibile in diverse città.",
+      cta: "NEXUS",
       ctaContact: "Contattaci",
     },
     chiSiamo: {
       title: "NCC Milano - Il Tuo Autista Privato di Fiducia",
       subtitle: "Noleggio con Conducente a Milano dal 2018",
       description:
-        "TMTransferLux è il tuo servizio NCC (Noleggio Con Conducente) di riferimento a Milano. Offriamo transfer aeroportuali da e per Malpensa, Linate e Bergamo Orio al Serio con veicoli Mercedes di lusso e autisti professionisti multilingue. A differenza dei taxi tradizionali, garantiamo prezzo fisso comunicato in anticipo, nessuna sorpresa, nessun supplemento. Siamo specializzati in transfer business, tour turistici ai laghi (Como, Maggiore, Garda) e servizi VIP per eventi aziendali. La nostra missione: comfort, puntualità e sicurezza in ogni viaggio.",
+        "Nexus è il tuo servizio NCC (Noleggio Con Conducente) di riferimento a Milano. Offriamo transfer aeroportuali da e per Malpensa, Linate e Bergamo Orio al Serio con veicoli Mercedes di lusso e autisti professionisti multilingue. A differenza dei taxi tradizionali, garantiamo prezzo fisso comunicato in anticipo, nessuna sorpresa, nessun supplemento. Siamo specializzati in transfer business, tour turistici ai laghi (Como, Maggiore, Garda) e servizi VIP per eventi aziendali. La nostra missione: comfort, puntualità e sicurezza in ogni viaggio.",
       descriptionExtra:
         "Operiamo 24 ore su 24, 7 giorni su 7 con monitoraggio voli in tempo reale. Il nostro autista ti aspetta in aeroporto con cartello nominativo, ti aiuta con i bagagli e ti accompagna al veicolo climatizzato. Serviamo Milano centro, hinterland milanese e tutta la Lombardia.",
     },
@@ -727,16 +727,16 @@ export const translations = {
       capacityDesc: "Fino a 5–6 passeggeri. Per confermare il numero di valigie, contattaci via WhatsApp.",
     },
     footer: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus, the living experience",
       brandDesc: "La tua auto privata di fiducia a Milano. Trasporto di lusso con eccellenza, comfort e puntualità.",
       contactTitle: "Contatto",
       whatsapp: "WhatsApp",
       socialTitle: "Social Media",
-      copyright: "© 2025 Sightseeing di Thomas Tagliatti. Tutti i diritti riservati.",
+      copyright: "© 2025 Nexus. Tutti i diritti riservati.",
     },
     contact: {
       needInfo: "PRENOTA IL TUO TRANSFER MALPENSA",
-      title: "Contatta TMTransferLux - NCC Milano",
+      title: "Contatta Nexus - NCC Milano",
       welcomeText: "Prenota il tuo transfer aeroporto Malpensa-Milano in pochi minuti. Risposta immediata su WhatsApp 24 ore su 24. Preventivo gratuito e senza impegno per qualsiasi destinazione.",
       form: {
         name: "Nome",
@@ -765,13 +765,13 @@ export const translations = {
       error: "Errore nell'invio del messaggio. Riprova.",
     },
     milano: {
-      navLabel: "MILANO Corporate",
-      heroTitle: "MILANO",
+      navLabel: "Nexus Company",
+      heroTitle: "NEXUS",
       heroSubtitle: "Premium Mobility",
-      heroTagline: "by TMT",
+      heroTagline: "by Nexus",
       heroDescription: "Divisione corporate dedicata a clienti B2B. Mobilità esecutiva premium con standard internazionali di eccellenza.",
       manifestoTitle: "Manifesto Operativo",
-      manifestoText: "MILANO rappresenta l'evoluzione naturale dell'eccellenza TMT per il mercato corporate. Il nostro approccio operativo combina esperienza consolidata con flessibilità totale, garantendo soluzioni di mobilità su misura per ogni esigenza aziendale.",
+      manifestoText: "MILANO rappresenta l'evoluzione naturale dell'eccellenza Nexus per il mercato corporate. Il nostro approccio operativo combina esperienza consolidata con flessibilità totale, garantendo soluzioni di mobilità su misura per ogni esigenza aziendale.",
       standardsTitle: "Standard di Servizio",
       standard1Title: "Puntualità Assoluta",
       standard1Desc: "Monitoraggio voli in tempo reale. Zero tolleranza ai ritardi.",
@@ -807,7 +807,7 @@ export const translations = {
   },
   fr: {
     header: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus Company",
       inicio: "Accueil",
       chiSiamo: "Qui sommes-nous?",
       nostriVeicoli: "Nos véhicules",
@@ -816,13 +816,13 @@ export const translations = {
       reserveAgora: "Réserver",
     },
     common: {
-      whatsappMessage: "Bonjour, je viens du site TMT",
+      whatsappMessage: "Bonjour, je viens du site Nexus",
     },
     hero: {
       title: "RÉSERVEZ VOTRE VOITURE MAINTENANT",
       titleHighlight: "",
       subtitle:
-        "TMT est la plateforme de mobilité premium conçue pour tous vos besoins de transfert et d'événements, disponible dans plusieurs villes.",
+        "Nexus est la plateforme de mobilité premium conçue pour tous vos besoins de transfert et d'événements, disponible dans plusieurs villes.",
       cta: "Demander une course",
       ctaContact: "Contactez-nous",
     },
@@ -830,7 +830,7 @@ export const translations = {
       title: "Qui sommes-nous?",
       subtitle: "Professionnalisme, fiabilité et confort",
       description:
-        "TMTransferLux est votre service NCC (Noleggio Con Conducente) de référence à Milan. Nous proposons des transferts aéroportuaires vers et depuis Malpensa, Linate et Bergamo Orio al Serio avec des véhicules Mercedes de luxe et des chauffeurs professionnels multilingues. Contrairement aux taxis traditionnels, nous garantissons un prix fixe communiqué à l'avance, sans surprises, sans suppléments.",
+        "Nexus est votre service NCC (Noleggio Con Conducente) de référence à Milan. Nous proposons des transferts aéroportuaires vers et depuis Malpensa, Linate et Bergamo Orio al Serio avec des véhicules Mercedes de luxe et des chauffeurs professionnels multilingues. Contrairement aux taxis traditionnels, nous garantissons un prix fixe communiqué à l'avance, sans surprises, sans suppléments.",
       descriptionExtra:
         "Nous opérons 24 heures sur 24, 7 jours sur 7 avec surveillance des vols en temps réel. Notre chauffeur vous attend à l'aéroport avec une pancarte nominative, vous aide avec les bagages et vous accompagne jusqu'au véhicule climatisé.",
     },
@@ -840,7 +840,7 @@ export const translations = {
     },
     whyChoose: {
       subtitle: "TRANSFERTS PRIVÉS ET VISITES DE LA VILLE",
-      title: "POURQUOI CHOISIR SIGHTSEEING DI THOMAS TAGLIATTI",
+      title: "POURQUOI CHOISIR Nexus",
       description:
         "Nous offrons un service de chauffeur professionnel et confortable de Milan ou des environs vers n'importe quelle destination : transferts aéroport, visites de la ville et voyages personnalisés pour affaires ou loisirs.",
       feature1: "SERVICE PONCTUEL ET FIABLE",
@@ -996,13 +996,13 @@ export const translations = {
       capacityDesc: "Jusqu'à 5–6 passagers. Pour confirmer le nombre de bagages, contactez-nous via WhatsApp.",
     },
     footer: {
-      brand: "Sightseeing di Thomas Tagliatti",
+      brand: "Nexus, the living experience",
       brandDesc:
         "Votre chauffeur privé de confiance à Milan. Transport de luxe avec excellence, confort et ponctualité.",
       contactTitle: "Contact",
       whatsapp: "WhatsApp",
       socialTitle: "Réseaux Sociaux",
-      copyright: "© 2025 Sightseeing di Thomas Tagliatti. Tous droits réservés.",
+      copyright: "© 2025 Nexus. Tous droits réservés.",
     },
     contact: {
       needInfo: "BESOIN DE PLUS D'INFORMATIONS?",
@@ -1035,13 +1035,13 @@ export const translations = {
       error: "Erreur lors de l'envoi du message. Réessayez.",
     },
     milano: {
-      navLabel: "MILANO Corporate",
+      navLabel: "Nexus Company",
       heroTitle: "MILANO",
       heroSubtitle: "Premium Mobility",
-      heroTagline: "by TMT",
+      heroTagline: "by Nexus",
       heroDescription: "Division corporate dédiée aux clients B2B. Mobilité executive premium avec standards internationaux d'excellence.",
       manifestoTitle: "Manifeste Opératif",
-      manifestoText: "MILANO représente l'évolution naturelle de l'excellence TMT pour le marché corporate. Notre approche opérative combine expérience consolidée avec flexibilité totale, garantissant des solutions de mobilité sur mesure pour chaque besoin d'entreprise.",
+      manifestoText: "MILANO représente l'évolution naturelle de l'excellence Nexus pour le marché corporate. Notre approche opérative combine expérience consolidée avec flexibilité totale, garantissant des solutions de mobilité sur mesure pour chaque besoin d'entreprise.",
       standardsTitle: "Standards de Service",
       standard1Title: "Ponctualité Absolue",
       standard1Desc: "Monitoring des vols en temps réel. Zéro tolérance aux retards.",

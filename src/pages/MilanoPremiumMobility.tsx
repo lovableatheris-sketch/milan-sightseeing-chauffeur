@@ -7,7 +7,6 @@ import { Clock, Shield, Users, FileText, CheckCircle, ArrowRight } from "lucide-
 import { Link } from "react-router-dom";
 import milanoLogo from "@/assets/milano-logo.png";
 import MotionReveal from "@/components/MotionReveal";
-import MilanoGalleryCarousel from "@/components/MilanoGalleryCarousel";
 
 const MilanoPremiumMobility = () => {
   const { language } = useLanguage();
@@ -447,9 +446,6 @@ const MilanoPremiumMobility = () => {
           </div>
         </div>
       </section>
-
-      {/* Gallery Carousel */}
-      <MilanoGalleryCarousel />
 
       {/* Operational Philosophy - with gold accents */}
       <section className="milano-section relative overflow-hidden">

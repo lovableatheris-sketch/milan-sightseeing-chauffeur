@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import LanguageSelector from "@/components/LanguageSelector";
-import logo from "@/assets/logo-tmt.png";
+
 
 const Header = () => {
   const navigate = useNavigate();
@@ -45,16 +45,15 @@ const Header = () => {
       )}
 
       <header
-        className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-elegant"
+        className="fixed top-0 left-0 right-0 z-50 bg-transparent "
       >
-        <div className="container mx-auto px-4">
+        <div className="w-full px-6 md:px-12">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <button
               onClick={() => navigate("/")}
-              className="transition-smooth hover:opacity-80"
-            >
-              <img src={logo} alt="TMT Sightseeing" className="h-14 md:h-16 w-auto object-contain" />
+              className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-light uppercase tracking-widest text-3xl"            >
+              NEXUS
             </button>
 
             {/* Desktop Navigation */}
@@ -65,24 +64,7 @@ const Header = () => {
               >
                 {t.inicio}
               </button>
-              <button
-                onClick={() => navigate("/chi-siamo")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
-              >
-                {t.chiSiamo}
-              </button>
-              <button
-                onClick={() => navigate("/nostri-veicoli")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
-              >
-                {t.nostriVeicoli}
-              </button>
-              <button
-                onClick={() => scrollToSection("servicos")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
-              >
-                {t.servicos}
-              </button>
+
               <button
                 onClick={() => navigate("/contato")}
                 className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
@@ -90,16 +72,10 @@ const Header = () => {
                 {t.contato}
               </button>
               <button
-                onClick={() => navigate("/blog")}
-                className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-xs"
-              >
-                Blog
-              </button>
-              <button
                 onClick={() => navigate("/milano-premium-mobility")}
                 className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-bold uppercase tracking-widest text-xs"
               >
-                MILANO
+                {t.chiSiamo}
               </button>
               <LanguageSelector />
               <Button
@@ -129,7 +105,7 @@ const Header = () => {
           {/* Mobile Navigation */}
           {isMobileMenuOpen && (
             <nav className="md:hidden pb-6 pt-2 animate-fade-in">
-              <div className="flex flex-col gap-4 bg-primary/95 backdrop-blur-lg rounded-lg p-6 shadow-luxury">
+              <div className="flex flex-col gap-4 bg-transparent/95 backdrop-blur-lg rounded-lg p-6">
                 <button
                   onClick={() => scrollToSection("inicio")}
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
@@ -146,15 +122,6 @@ const Header = () => {
                   {t.chiSiamo}
                 </button>
                 <button
-                  onClick={() => {
-                    navigate("/nostri-veicoli");
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
-                >
-                  {t.nostriVeicoli}
-                </button>
-                <button
                   onClick={() => scrollToSection("servicos")}
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
@@ -168,15 +135,6 @@ const Header = () => {
                   className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
                 >
                   {t.contato}
-                </button>
-                <button
-                  onClick={() => {
-                    navigate("/blog");
-                    setIsMobileMenuOpen(false);
-                  }}
-                  className="text-primary-foreground hover:text-luxury-gold transition-smooth font-semibold uppercase tracking-wider text-sm text-left py-3 px-4 rounded-lg hover:bg-luxury-gold/10 active:scale-95"
-                >
-                  Blog
                 </button>
                 <button
                   onClick={() => {
