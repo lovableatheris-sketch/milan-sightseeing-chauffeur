@@ -25,10 +25,7 @@ const Hero = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleWhatsAppClick = () => {
-    const message = encodeURIComponent(translations[language].common.whatsappMessage);
-    window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
-  };
+
 
   return (
     <section
@@ -81,13 +78,6 @@ const Hero = () => {
 
         {/* CTA Buttons - Horizontal layout */}
         <div className="flex flex-col sm:flex-row gap-4 items-start animate-scale-in">
-          <Button
-            onClick={handleWhatsAppClick}
-            size="lg"
-            className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury text-sm md:text-base px-6 md:px-8 py-5 md:py-6 font-semibold uppercase tracking-wide"
-          >
-            {t.cta}
-          </Button>
           <Link to="/milano-premium-mobility">
             <Button
               size="lg"

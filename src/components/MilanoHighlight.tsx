@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import MotionReveal from "./MotionReveal";
+import Imagem from "@/assets/american-milano-high.jpg";
 
 const MilanoHighlight = () => {
     const navigate = useNavigate();
@@ -11,9 +12,21 @@ const MilanoHighlight = () => {
     const t = translations[language].milano;
 
     return (
-        <section className="pt-24 pb-24 bg-black relative overflow-hidden">
+        <section className="pt-24 pb-44 bg-black relative overflow-hidden">
+
+            {/* 2. TAG DA IMAGEM DE FUNDO */}
+            <div className="absolute inset-0 z-0 pointer-events-none select-none">
+                <img
+                    src={Imagem}
+                    alt="Background"
+                    className="w-full h-full object-cover opacity-30" // Controla a opacidade para o texto continuar legível
+                />
+                {/* 3. Um overlay escuro opcional para garantir o contraste do texto branco */}
+                <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-60" />
+            </div>
             {/* Concentrated ambient glow behind the title */}
-            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[hsl(43_30%_40%)] rounded-full blur-[120px] opacity-20 pointer-events-none" />
+            {/* Mantido o z-10 para ficar acima do background original */}
+            <div className="absolute top-[20%] left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-[hsl(43_30%_40%)] rounded-full blur-[120px] opacity-20 pointer-events-none z-10" />
 
             <div className="container mx-auto px-4 relative z-10">
                 <div className="max-w-5xl mx-auto">

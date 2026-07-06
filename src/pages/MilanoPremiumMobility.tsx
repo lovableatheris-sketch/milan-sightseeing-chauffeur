@@ -371,7 +371,7 @@ const MilanoPremiumMobility = () => {
             </MotionReveal>
 
             {/* Central Logo - MUCH LARGER with 3D Entrance */}
-            <div className="relative mx-auto perspective-2000 py-12">
+            <div className="relative mx-auto perspective-2000 py-1">
               <div className="milano-logo-3d">
                 {/* Subtle glow behind logo */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
@@ -381,7 +381,7 @@ const MilanoPremiumMobility = () => {
                 <img
                   src={milanoLogo}
                   alt="MILANO Premium Mobility by TMT"
-                  className="relative z-10 w-[24rem] h-auto md:w-[32rem] lg:w-[40rem] xl:w-[48rem] mx-auto"
+                  className="relative z-10 w-[24rem] h-auto md:w-[32rem] lg:w-[40rem] xl:w-[28rem] mx-auto"
                   style={{
                     filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
                   }}

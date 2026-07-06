@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
 import LanguageSelector from "@/components/LanguageSelector";
-
+import { LoginScreen } from "./loginScreen"; // Importando o seu novo arquivo de login
 
 const Header = () => {
   const navigate = useNavigate();
@@ -13,6 +13,7 @@ const Header = () => {
   const t = translations[language].header;
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false); // Estado para controlar a janela flutuante de login
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +29,6 @@ const Header = () => {
       element.scrollIntoView({ behavior: "smooth" });
       setIsMobileMenuOpen(false);
     } else {
-      // If element doesn't exist (we're on another page), navigate to home with the hash
       navigate(`/#${id}`);
       setIsMobileMenuOpen(false);
     }
@@ -44,9 +44,34 @@ const Header = () => {
         />
       )}
 
-      <header
-        className="fixed top-0 left-0 right-0 z-50 bg-transparent "
-      >
+      {/* Modal de Login (Janela Flutuante para Desktop e Mobile) */}
+      {isLoginOpen && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in">
+          {/* Fundo clicável para fechar o modal */}
+          <div className="absolute inset-0" onClick={() => setIsLoginOpen(false)} />
+
+          {/* Container do Modal */}
+          <div className="relative w-full max-w-md bg-white rounded-xl shadow-2xl border border-gray-100 p-6 z-10 animate-scale-in">
+            {/* Botão de Fechar o Modal */}
+            <button
+              onClick={() => setIsLoginOpen(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+            >
+              <X size={20} />
+            </button>
+
+            <div className="text-center mb-4">
+              <h2 className="text-2xl font-bold text-gray-800 uppercase tracking-widest">NEXUS</h2>
+              <p className="text-xs text-gray-400 mt-1">Acesse sua Conta Executiva</p>
+            </div>
+
+            {/* Chamada para o seu componente Supabase Auth UI */}
+            <LoginScreen />
+          </div>
+        </div>
+      )}
+
+      <header className="fixed top-0 left-0 right-0 z-50 bg-transparent ">
         <div className="w-full px-6 md:px-12">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
@@ -78,14 +103,13 @@ const Header = () => {
                 {t.chiSiamo}
               </button>
               <LanguageSelector />
+
+              {/* O Botão agora virou "Login" e abre o Modal */}
               <Button
-                onClick={() => {
-                  const message = encodeURIComponent(translations[language].common.whatsappMessage);
-                  window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
-                }}
-                className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury"
+                onClick={() => setIsLoginOpen(true)}
+                className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury font-bold uppercase tracking-wider text-xs px-6"
               >
-                {t.reserveAgora}
+                Login
               </Button>
             </nav>
 
@@ -145,14 +169,16 @@ const Header = () => {
                 >
                   MILANO Corporate
                 </button>
+
+                {/* Botão de Login Mobile */}
                 <Button
                   onClick={() => {
-                    const message = encodeURIComponent(translations[language].common.whatsappMessage);
-                    window.open(`https://wa.me/393891430907?text=${message}`, "_blank");
+                    setIsMobileMenuOpen(false); // Fecha o menu lateral de celular primeiro
+                    setIsLoginOpen(true);       // Abre o formulário de login
                   }}
-                  className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-semibold active:scale-95"
+                  className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-bold uppercase tracking-wider active:scale-95"
                 >
-                  {t.reserveAgora}
+                  Login
                 </Button>
               </div>
             </nav>
