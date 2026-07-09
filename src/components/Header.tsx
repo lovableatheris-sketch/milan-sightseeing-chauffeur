@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Link, Menu, X } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { translations } from "@/locales/translations";
+import { supabase } from '@/supabaseClient';
 import LanguageSelector from "@/components/LanguageSelector";
 import { LoginScreen } from "./loginScreen"; // Importando o seu novo arquivo de login
 
 const Header = () => {
+  const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const { language } = useLanguage();
   const t = translations[language].header;
@@ -16,11 +18,28 @@ const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false); // Estado para controlar a janela flutuante de login
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+
+
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setUser(session?.user ?? null);
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      setUser(session?.user ?? null);
+      if (event === 'SIGNED_IN') {
+        setIsLoginOpen(false);
+      }
+    });
+
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+
+
+
+    return () => {
+      subscription.unsubscribe();
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -104,13 +123,16 @@ const Header = () => {
               </button>
               <LanguageSelector />
 
-              {/* O Botão agora virou "Login" e abre o Modal */}
-              <Button
-                onClick={() => setIsLoginOpen(true)}
-                className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury font-bold uppercase tracking-wider text-xs px-6"
-              >
-                Login
-              </Button>
+              {/* BOTÃO CORRIGIDO */}
+              {user ? (
+                <Button onClick={() => navigate("/perfil")} variant="ghost">
+                  Perfil
+                </Button>
+              ) : (
+                <Button onClick={() => setIsLoginOpen(true)} className="bg-luxury-gold">
+                  Login {/* Assumindo que existe no seu translations */}
+                </Button>
+              )}
             </nav>
 
             {/* Mobile Language Selector & Menu Button */}
@@ -171,15 +193,15 @@ const Header = () => {
                 </button>
 
                 {/* Botão de Login Mobile */}
-                <Button
-                  onClick={() => {
-                    setIsMobileMenuOpen(false); // Fecha o menu lateral de celular primeiro
-                    setIsLoginOpen(true);       // Abre o formulário de login
-                  }}
-                  className="bg-luxury-gold text-primary hover:bg-luxury-gold-dark transition-smooth shadow-luxury w-full py-6 text-lg font-bold uppercase tracking-wider active:scale-95"
-                >
-                  Login
-                </Button>
+                {user ? (
+                  <Button onClick={() => { navigate("/perfil"); setIsMobileMenuOpen(false); }} className="...">
+                    Perfil
+                  </Button>
+                ) : (
+                  <Button onClick={() => { setIsMobileMenuOpen(false); setIsLoginOpen(true); }} className="...">
+                    Login
+                  </Button>
+                )}
               </div>
             </nav>
           )}
