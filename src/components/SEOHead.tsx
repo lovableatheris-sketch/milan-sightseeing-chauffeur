@@ -14,7 +14,7 @@ const SEOHead = ({
   description,
   keywords,
   canonicalUrl,
-  ogImage = "https://tmtransferlux.it/og-image.jpg",
+  ogImage = "https://nexitus.it/og-image.jpg",
   structuredData,
 }: SEOHeadProps) => {
   useEffect(() => {

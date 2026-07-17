@@ -26,24 +26,24 @@ const Index = () => {
 
   const seoData = {
     it: {
-      title: "Transfer Malpensa Milano da â‚¬170 | NCC con Autista | Nexus",
-      description: "Transfer privato aeroporto Malpensa-Milano con prezzo fisso da â‚¬170. NCC noleggio con conducente, autista professionale, Mercedes sanificata. Prenota 24h su WhatsApp.",
+      title: "Transfer Malpensa Milano da €170 | NCC con Autista | NEXITUS",
+      description: "Transfer privato aeroporto Malpensa-Milano con prezzo fisso da €170. NCC noleggio con conducente, autista professionale, Mercedes sanificata. Prenota 24h su WhatsApp.",
       keywords: "transfer malpensa milano, ncc milano, noleggio con conducente milano, transfer aeroporto malpensa prezzo, taxi privato malpensa milano, ncc malpensa prezzo fisso, autista privato milano aeroporto",
     },
     en: {
-      title: "Malpensa Milan Transfer from â‚¬170 | Private Chauffeur | Nexus",
-      description: "Private Malpensa-Milan airport transfer with fixed price from â‚¬170. Professional chauffeur service, sanitized Mercedes. Book 24h on WhatsApp.",
+      title: "Malpensa Milan Transfer from €170 | Private Chauffeur | NEXITUS",
+      description: "Private Malpensa-Milan airport transfer with fixed price from €170. Professional chauffeur service, sanitized Mercedes. Book 24h on WhatsApp.",
       keywords: "malpensa milan transfer, private airport transfer milan, chauffeur service malpensa, luxury car service milan, ncc milan, milan airport transfer price",
     },
     pt: {
-      title: "Transfer Malpensa MilÃ£o a partir de â‚¬170 | Motorista Particular | Nexus",
-      description: "Transfer privado aeroporto Malpensa-MilÃ£o com preÃ§o fixo a partir de â‚¬170. Motorista profissional, Mercedes higienizado. Reserve 24h pelo WhatsApp.",
-      keywords: "transfer malpensa milÃ£o, motorista particular milÃ£o, transfer aeroporto malpensa preÃ§o, serviÃ§o transfer malpensa",
+      title: "Transfer Malpensa Milão a partir de €170 | Motorista Particular | NEXITUS",
+      description: "Transfer privado aeroporto Malpensa-Milão com preço fixo a partir de €170. Motorista profissional, Mercedes higienizado. Reserve 24h pelo WhatsApp.",
+      keywords: "transfer malpensa milão, motorista particular milão, transfer aeroporto malpensa preço, serviço transfer malpensa",
     },
     fr: {
-      title: "Transfert Malpensa Milan dÃ¨s â‚¬170 | Chauffeur PrivÃ© | Nexus",
-      description: "Transfert privÃ© aÃ©roport Malpensa-Milan prix fixe dÃ¨s â‚¬170. Chauffeur professionnel, Mercedes dÃ©sinfectÃ©e. RÃ©servez 24h sur WhatsApp.",
-      keywords: "transfert malpensa milan, chauffeur privÃ© milan, transfert aÃ©roport malpensa prix, service chauffeur milan",
+      title: "Transfert Malpensa Milan dès €170 | Chauffeur Privé | NEXITUS",
+      description: "Transfert privé aéroport Malpensa-Milan prix fixe dès €170. Chauffeur professionnel, Mercedes désinfectée. Réservez 24h sur WhatsApp.",
+      keywords: "transfert malpensa milan, chauffeur privé milan, transfert aéroport malpensa prix, service chauffeur milan",
     },
   };
 
@@ -52,11 +52,11 @@ const Index = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://tmtransferlux.it/#organization",
-    "name": "Nexus",
-    "alternateName": "Nexus Company",
-    "description": "La presentazione sottolinea che l'esperienza di Nexus Group nasce da anni di lavoro diretto con clienti di alto livello ed Ã¨ stata trasformata in un modello operativo focalizzato sulla prevenzione dei problemi, l'eccellenza nel servizio, la discrezione, la puntualitÃ  e l'attenzione ai dettagli.",
-    "url": "https://tmtransferlux.it",
+    "@id": "https://nexitus.it/#organization",
+    "name": "NEXITUS",
+    "alternateName": "NEXITUS Company",
+    "description": "La presentazione sottolinea che l'esperienza di NEXITUS Group nasce da anni di lavoro diretto con clienti di alto livello ed è stata trasformata in un modello operativo focalizzato sulla prevenzione dei problemi, l'eccellenza nel servizio, la discrezione, la puntualità e l'attenzione ai dettagli.",
+    "url": "https://nexitus.it",
     "telephone": deobfuscate(OBFUSCATED_PHONE),
     "email": deobfuscate(OBFUSCATED_EMAIL),
     "address": {
@@ -84,11 +84,11 @@ const Index = () => {
       "opens": "00:00",
       "closes": "23:59"
     },
-    "priceRange": "â‚¬â‚¬",
+    "priceRange": "€€",
     "paymentAccepted": ["Cash", "Credit Card", "Bank Transfer"],
     "currenciesAccepted": "EUR",
-    "image": "https://tmtransferlux.it/og-image.jpg",
-    "logo": "https://tmtransferlux.it/favicon.png",
+    "image": "https://nexitus.it/og-image.jpg",
+    "logo": "https://nexitus.it/favicon.png",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "Transfer Services",
@@ -136,7 +136,7 @@ const Index = () => {
         title={currentSeo.title}
         description={currentSeo.description}
         keywords={currentSeo.keywords}
-        canonicalUrl="https://tmtransferlux.it/"
+        canonicalUrl="https://nexitus.it/"
         structuredData={structuredData}
       />
 

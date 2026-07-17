@@ -66,12 +66,12 @@ const Header = () => {
       {/* Modal de Login (Janela Flutuante para Desktop e Mobile) */}
       {isLoginOpen && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fade-in">
-          {/* Fundo clicável para fechar o modal */}
+          {/* Fundo clic�vel para fechar o modal */}
           <div className="absolute inset-0" onClick={() => setIsLoginOpen(false)} />
 
           {/* Container do Modal */}
           <div className="relative w-full max-w-md bg-white rounded-xl shadow-2xl border border-gray-100 p-6 z-10 animate-scale-in">
-            {/* Botão de Fechar o Modal */}
+            {/* Bot�o de Fechar o Modal */}
             <button
               onClick={() => setIsLoginOpen(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
@@ -80,7 +80,7 @@ const Header = () => {
             </button>
 
             <div className="text-center mb-4">
-              <h2 className="text-2xl font-bold text-gray-800 uppercase tracking-widest">NEXUS</h2>
+              <h2 className="text-2xl font-bold text-gray-800 uppercase tracking-widest">NEXITUS</h2>
               <p className="text-xs text-gray-400 mt-1">Acesse sua Conta Executiva</p>
             </div>
 
@@ -97,7 +97,7 @@ const Header = () => {
             <button
               onClick={() => navigate("/")}
               className="text-luxury-gold hover:text-luxury-gold-dark transition-smooth font-light uppercase tracking-widest text-3xl"            >
-              NEXUS
+              NEXITUS
             </button>
 
             {/* Desktop Navigation */}
@@ -123,7 +123,7 @@ const Header = () => {
               </button>
               <LanguageSelector />
 
-              {/* BOTÃO CORRIGIDO */}
+              {/* BOT�O CORRIGIDO */}
               {user ? (
                 <Button onClick={() => navigate("/perfil")} variant="ghost">
                   Perfil
@@ -192,7 +192,7 @@ const Header = () => {
                   MILANO Corporate
                 </button>
 
-                {/* Botão de Login Mobile */}
+                {/* Bot�o de Login Mobile */}
                 {user ? (
                   <Button onClick={() => { navigate("/perfil"); setIsMobileMenuOpen(false); }} className="...">
                     Perfil

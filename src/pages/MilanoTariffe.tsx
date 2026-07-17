@@ -26,38 +26,38 @@ const MilanoTariffe = () => {
       hourlyTitle: "Servizio a disposizione oraria",
       hourlyDesc: "Veicolo con conducente a disposizione per il periodo indicato.",
       hourlyRates: [
-        { label: "Mezza giornata (4 ore)", price: "â‚¬ 360", note: "" },
-        { label: "Giornata intera (8 ore)", price: "â‚¬ 680", note: "" },
-        { label: "Ora aggiuntiva", price: "â‚¬ 85", note: "Oltre il pacchetto orario" }
+        { label: "Mezza giornata (4 ore)", price: "€ 360", note: "" },
+        { label: "Giornata intera (8 ore)", price: "€ 680", note: "" },
+        { label: "Ora aggiuntiva", price: "€ 85", note: "Oltre il pacchetto orario" }
       ],
-      hourlyNote: "Il chilometraggio Ã¨ incluso secondo accordi preventivi. Eventuali eccedenze vengono fatturate a tariffa chilometrica.",
+      hourlyNote: "Il chilometraggio è incluso secondo accordi preventivi. Eventuali eccedenze vengono fatturate a tariffa chilometrica.",
 
       // Section: Kilometric
       kmTitle: "Tariffa chilometrica",
       kmDesc: "Per trasferimenti a destinazione definita o percorsi personalizzati.",
       kmRates: [
-        { label: "Percorsi standard", price: "â‚¬ 1,50/km", note: "Pianura e aree urbane" },
-        { label: "Laghi e montagna", price: "â‚¬ 1,95/km", note: "Maggiorazione +30%" }
+        { label: "Percorsi standard", price: "€ 1,50/km", note: "Pianura e aree urbane" },
+        { label: "Laghi e montagna", price: "€ 1,95/km", note: "Maggiorazione +30%" }
       ],
 
       // Section: Airport Transfers
       transfersTitle: "Transfer aeroportuali",
       transfersDesc: "Prezzi fissi comprensivi di attesa in aeroporto, monitoraggio volo e assistenza bagagli.",
       transfersRates: [
-        { route: "Milano Malpensa â†” Milano centro", price: "â‚¬ 170" },
-        { route: "Milano Linate â†” Milano centro", price: "â‚¬ 100" },
-        { route: "Bergamo Orio al Serio â†” Milano centro", price: "â‚¬ 180" },
-        { route: "Milano Malpensa â†” Rho Fiera Milano", price: "â‚¬ 120" },
-        { route: "Milano Malpensa â†” Lugano (CH)", price: "â‚¬ 240" }
+        { route: "Milano Malpensa ? Milano centro", price: "€ 170" },
+        { route: "Milano Linate ? Milano centro", price: "€ 100" },
+        { route: "Bergamo Orio al Serio ? Milano centro", price: "€ 180" },
+        { route: "Milano Malpensa ? Rho Fiera Milano", price: "€ 120" },
+        { route: "Milano Malpensa ? Lugano (CH)", price: "€ 240" }
       ],
-      transfersNote: "Tariffe valide per Mercedes Classe V (fino a 6 passeggeri). Per altri veicoli o gruppi piÃ¹ numerosi, richiedere preventivo.",
+      transfersNote: "Tariffe valide per Mercedes Classe V (fino a 6 passeggeri). Per altri veicoli o gruppi più numerosi, richiedere preventivo.",
 
       // Section: Waiting Time
       waitingTitle: "Tempi di attesa",
       waitingRates: [
         { label: "Arrivi aeroportuali", detail: "60 minuti inclusi nel prezzo" },
-        { label: "Prelievi in cittÃ ", detail: "15 minuti inclusi nel prezzo" },
-        { label: "Attesa aggiuntiva", detail: "â‚¬ 35 ogni 30 minuti" }
+        { label: "Prelievi in città", detail: "15 minuti inclusi nel prezzo" },
+        { label: "Attesa aggiuntiva", detail: "€ 35 ogni 30 minuti" }
       ],
       waitingNote: "L'attesa decorre dal momento dell'atterraggio (arrivi) o dall'orario concordato (prelievi urbani).",
 
@@ -66,7 +66,7 @@ const MilanoTariffe = () => {
       conditions: [
         {
           title: "Trasparenza tariffaria",
-          text: "Il preventivo comunicato prima del servizio Ã¨ vincolante. Nessun costo aggiuntivo senza comunicazione e accordo preventivo."
+          text: "Il preventivo comunicato prima del servizio è vincolante. Nessun costo aggiuntivo senza comunicazione e accordo preventivo."
         },
         {
           title: "Nessun supplemento nascosto",
@@ -74,7 +74,7 @@ const MilanoTariffe = () => {
         },
         {
           title: "Fatturazione",
-          text: "Fattura elettronica emessa entro 48 ore dal servizio. ModalitÃ  di pagamento: bonifico bancario, carta di credito aziendale."
+          text: "Fattura elettronica emessa entro 48 ore dal servizio. Modalità di pagamento: bonifico bancario, carta di credito aziendale."
         },
         {
           title: "Modifiche e cancellazioni",
@@ -100,27 +100,27 @@ const MilanoTariffe = () => {
       hourlyTitle: "Hourly disposal service",
       hourlyDesc: "Vehicle with driver at disposal for the indicated period.",
       hourlyRates: [
-        { label: "Half day (4 hours)", price: "â‚¬ 360", note: "" },
-        { label: "Full day (8 hours)", price: "â‚¬ 680", note: "" },
-        { label: "Additional hour", price: "â‚¬ 85", note: "Beyond hourly package" }
+        { label: "Half day (4 hours)", price: "€ 360", note: "" },
+        { label: "Full day (8 hours)", price: "€ 680", note: "" },
+        { label: "Additional hour", price: "€ 85", note: "Beyond hourly package" }
       ],
       hourlyNote: "Mileage is included according to prior agreements. Any excess is charged at the kilometric rate.",
 
       kmTitle: "Kilometric rate",
       kmDesc: "For transfers to defined destinations or customised routes.",
       kmRates: [
-        { label: "Standard routes", price: "â‚¬ 1.50/km", note: "Lowland and urban areas" },
-        { label: "Lakes and mountains", price: "â‚¬ 1.95/km", note: "+30% surcharge" }
+        { label: "Standard routes", price: "€ 1.50/km", note: "Lowland and urban areas" },
+        { label: "Lakes and mountains", price: "€ 1.95/km", note: "+30% surcharge" }
       ],
 
       transfersTitle: "Airport transfers",
       transfersDesc: "Fixed prices including airport waiting, flight monitoring and luggage assistance.",
       transfersRates: [
-        { route: "Milan Malpensa â†” Milan centre", price: "â‚¬ 170" },
-        { route: "Milan Linate â†” Milan centre", price: "â‚¬ 100" },
-        { route: "Bergamo Orio al Serio â†” Milan centre", price: "â‚¬ 180" },
-        { route: "Milan Malpensa â†” Rho Fiera Milano", price: "â‚¬ 120" },
-        { route: "Milan Malpensa â†” Lugano (CH)", price: "â‚¬ 240" }
+        { route: "Milan Malpensa ? Milan centre", price: "€ 170" },
+        { route: "Milan Linate ? Milan centre", price: "€ 100" },
+        { route: "Bergamo Orio al Serio ? Milan centre", price: "€ 180" },
+        { route: "Milan Malpensa ? Rho Fiera Milano", price: "€ 120" },
+        { route: "Milan Malpensa ? Lugano (CH)", price: "€ 240" }
       ],
       transfersNote: "Rates valid for Mercedes V-Class (up to 6 passengers). For other vehicles or larger groups, request a quote.",
 
@@ -128,7 +128,7 @@ const MilanoTariffe = () => {
       waitingRates: [
         { label: "Airport arrivals", detail: "60 minutes included in price" },
         { label: "City pickups", detail: "15 minutes included in price" },
-        { label: "Additional waiting", detail: "â‚¬ 35 per 30 minutes" }
+        { label: "Additional waiting", detail: "€ 35 per 30 minutes" }
       ],
       waitingNote: "Waiting time starts from landing (arrivals) or from agreed time (urban pickups).",
 
@@ -159,141 +159,141 @@ const MilanoTariffe = () => {
     },
     pt: {
       breadcrumb: "MILANO Premium Mobility",
-      pageTitle: "ProntuÃ¡rio de Tarifas",
-      pageSubtitle: "Tarifas de referÃªncia pÃºblicas",
+      pageTitle: "Prontuário de Tarifas",
+      pageSubtitle: "Tarifas de referência públicas",
 
       introTitle: "Tarifas oficiais",
-      introP1: "As tarifas indicadas nesta pÃ¡gina representam os preÃ§os de referÃªncia pÃºblicos dos serviÃ§os MILANO Premium Mobility. SÃ£o aplicÃ¡veis a todos os clientes sem distinÃ§Ã£o.",
-      introNote: "PreÃ§os nÃ£o incluem IVA (10%). Sem taxas nÃ£o declaradas.",
+      introP1: "As tarifas indicadas nesta página representam os preços de referência públicos dos serviços MILANO Premium Mobility. São aplicáveis a todos os clientes sem distinção.",
+      introNote: "Preços não incluem IVA (10%). Sem taxas não declaradas.",
 
-      hourlyTitle: "ServiÃ§o Ã  disposiÃ§Ã£o por hora",
-      hourlyDesc: "VeÃ­culo com motorista Ã  disposiÃ§Ã£o pelo perÃ­odo indicado.",
+      hourlyTitle: "Serviço à disposição por hora",
+      hourlyDesc: "Veículo com motorista à disposição pelo período indicado.",
       hourlyRates: [
-        { label: "Meio dia (4 horas)", price: "â‚¬ 360", note: "" },
-        { label: "Dia inteiro (8 horas)", price: "â‚¬ 680", note: "" },
-        { label: "Hora adicional", price: "â‚¬ 85", note: "AlÃ©m do pacote horÃ¡rio" }
+        { label: "Meio dia (4 horas)", price: "€ 360", note: "" },
+        { label: "Dia inteiro (8 horas)", price: "€ 680", note: "" },
+        { label: "Hora adicional", price: "€ 85", note: "Além do pacote horário" }
       ],
-      hourlyNote: "A quilometragem estÃ¡ incluÃ­da conforme acordos prÃ©vios. Eventuais excessos sÃ£o cobrados Ã  tarifa quilomÃ©trica.",
+      hourlyNote: "A quilometragem está incluída conforme acordos prévios. Eventuais excessos são cobrados à tarifa quilométrica.",
 
-      kmTitle: "Tarifa quilomÃ©trica",
-      kmDesc: "Para transferÃªncias a destino definido ou rotas personalizadas.",
+      kmTitle: "Tarifa quilométrica",
+      kmDesc: "Para transferências a destino definido ou rotas personalizadas.",
       kmRates: [
-        { label: "Rotas padrÃ£o", price: "â‚¬ 1,50/km", note: "PlanÃ­cie e Ã¡reas urbanas" },
-        { label: "Lagos e montanha", price: "â‚¬ 1,95/km", note: "AcrÃ©scimo +30%" }
+        { label: "Rotas padrão", price: "€ 1,50/km", note: "Planície e áreas urbanas" },
+        { label: "Lagos e montanha", price: "€ 1,95/km", note: "Acréscimo +30%" }
       ],
 
-      transfersTitle: "Transfers aeroportuÃ¡rios",
-      transfersDesc: "PreÃ§os fixos incluindo espera no aeroporto, monitoramento de voo e assistÃªncia com bagagem.",
+      transfersTitle: "Transfers aeroportuários",
+      transfersDesc: "Preços fixos incluindo espera no aeroporto, monitoramento de voo e assistência com bagagem.",
       transfersRates: [
-        { route: "MilÃ£o Malpensa â†” Centro de MilÃ£o", price: "â‚¬ 170" },
-        { route: "MilÃ£o Linate â†” Centro de MilÃ£o", price: "â‚¬ 100" },
-        { route: "Bergamo Orio al Serio â†” Centro de MilÃ£o", price: "â‚¬ 180" },
-        { route: "MilÃ£o Malpensa â†” Rho Fiera Milano", price: "â‚¬ 120" },
-        { route: "MilÃ£o Malpensa â†” Lugano (CH)", price: "â‚¬ 240" }
+        { route: "Milão Malpensa ? Centro de Milão", price: "€ 170" },
+        { route: "Milão Linate ? Centro de Milão", price: "€ 100" },
+        { route: "Bergamo Orio al Serio ? Centro de Milão", price: "€ 180" },
+        { route: "Milão Malpensa ? Rho Fiera Milano", price: "€ 120" },
+        { route: "Milão Malpensa ? Lugano (CH)", price: "€ 240" }
       ],
-      transfersNote: "Tarifas vÃ¡lidas para Mercedes Classe V (atÃ© 6 passageiros). Para outros veÃ­culos ou grupos maiores, solicitar orÃ§amento.",
+      transfersNote: "Tarifas válidas para Mercedes Classe V (até 6 passageiros). Para outros veículos ou grupos maiores, solicitar orçamento.",
 
       waitingTitle: "Tempos de espera",
       waitingRates: [
-        { label: "Chegadas de aeroporto", detail: "60 minutos incluÃ­dos no preÃ§o" },
-        { label: "Buscas na cidade", detail: "15 minutos incluÃ­dos no preÃ§o" },
-        { label: "Espera adicional", detail: "â‚¬ 35 a cada 30 minutos" }
+        { label: "Chegadas de aeroporto", detail: "60 minutos incluídos no preço" },
+        { label: "Buscas na cidade", detail: "15 minutos incluídos no preço" },
+        { label: "Espera adicional", detail: "€ 35 a cada 30 minutos" }
       ],
-      waitingNote: "O tempo de espera comeÃ§a a partir do pouso (chegadas) ou do horÃ¡rio acordado (buscas urbanas).",
+      waitingNote: "O tempo de espera começa a partir do pouso (chegadas) ou do horário acordado (buscas urbanas).",
 
-      conditionsTitle: "CondiÃ§Ãµes gerais",
+      conditionsTitle: "Condições gerais",
       conditions: [
         {
-          title: "TransparÃªncia tarifÃ¡ria",
-          text: "O orÃ§amento fornecido antes do serviÃ§o Ã© vinculante. Nenhum custo adicional sem comunicaÃ§Ã£o e acordo prÃ©vio."
+          title: "Transparência tarifária",
+          text: "O orçamento fornecido antes do serviço é vinculante. Nenhum custo adicional sem comunicação e acordo prévio."
         },
         {
           title: "Sem taxas ocultas",
-          text: "Bagagens, cadeirinhas infantis, alteraÃ§Ãµes de rota acordadas: nenhum extra nÃ£o declarado na fase de orÃ§amento."
+          text: "Bagagens, cadeirinhas infantis, alterações de rota acordadas: nenhum extra não declarado na fase de orçamento."
         },
         {
-          title: "FaturaÃ§Ã£o",
-          text: "Fatura eletrÃ´nica emitida em atÃ© 48 horas apÃ³s o serviÃ§o. Formas de pagamento: transferÃªncia bancÃ¡ria, cartÃ£o corporativo."
+          title: "Faturação",
+          text: "Fatura eletrônica emitida em até 48 horas após o serviço. Formas de pagamento: transferência bancária, cartão corporativo."
         },
         {
-          title: "AlteraÃ§Ãµes e cancelamentos",
-          text: "AlteraÃ§Ãµes aceitas atÃ© 24 horas antes do serviÃ§o sem penalidade. Cancelamentos com menos de 24 horas: 50% do custo."
+          title: "Alterações e cancelamentos",
+          text: "Alterações aceitas até 24 horas antes do serviço sem penalidade. Cancelamentos com menos de 24 horas: 50% do custo."
         }
       ],
 
-      footerNote: "Para informaÃ§Ãµes ou pedidos de orÃ§amento:",
+      footerNote: "Para informações ou pedidos de orçamento:",
       contactEmail: "thomastagliatti2022@gmail.com",
       contactPhone: "+39 389 143 0907",
       backLink: "Voltar para MILANO Premium Mobility"
     },
     fr: {
       breadcrumb: "MILANO Premium Mobility",
-      pageTitle: "BarÃ¨me Tarifaire",
-      pageSubtitle: "Tarifs de rÃ©fÃ©rence publics",
+      pageTitle: "Barème Tarifaire",
+      pageSubtitle: "Tarifs de référence publics",
 
       introTitle: "Tarifs officiels",
-      introP1: "Les tarifs indiquÃ©s sur cette page reprÃ©sentent les prix de rÃ©fÃ©rence publics des services MILANO Premium Mobility. Ils s'appliquent Ã  tous les clients sans distinction.",
-      introNote: "Prix hors TVA (10%). Aucun supplÃ©ment non dÃ©clarÃ©.",
+      introP1: "Les tarifs indiqués sur cette page représentent les prix de référence publics des services MILANO Premium Mobility. Ils s'appliquent à tous les clients sans distinction.",
+      introNote: "Prix hors TVA (10%). Aucun supplément non déclaré.",
 
-      hourlyTitle: "Service Ã  disposition horaire",
-      hourlyDesc: "VÃ©hicule avec chauffeur Ã  disposition pour la pÃ©riode indiquÃ©e.",
+      hourlyTitle: "Service à disposition horaire",
+      hourlyDesc: "Véhicule avec chauffeur à disposition pour la période indiquée.",
       hourlyRates: [
-        { label: "Demi-journÃ©e (4 heures)", price: "â‚¬ 360", note: "" },
-        { label: "JournÃ©e complÃ¨te (8 heures)", price: "â‚¬ 680", note: "" },
-        { label: "Heure supplÃ©mentaire", price: "â‚¬ 85", note: "Au-delÃ  du forfait horaire" }
+        { label: "Demi-journée (4 heures)", price: "€ 360", note: "" },
+        { label: "Journée complète (8 heures)", price: "€ 680", note: "" },
+        { label: "Heure supplémentaire", price: "€ 85", note: "Au-delà du forfait horaire" }
       ],
-      hourlyNote: "Le kilomÃ©trage est inclus selon accords prÃ©alables. Tout excÃ©dent est facturÃ© au tarif kilomÃ©trique.",
+      hourlyNote: "Le kilométrage est inclus selon accords préalables. Tout excédent est facturé au tarif kilométrique.",
 
-      kmTitle: "Tarif kilomÃ©trique",
-      kmDesc: "Pour transferts vers destination dÃ©finie ou parcours personnalisÃ©s.",
+      kmTitle: "Tarif kilométrique",
+      kmDesc: "Pour transferts vers destination définie ou parcours personnalisés.",
       kmRates: [
-        { label: "Parcours standards", price: "â‚¬ 1,50/km", note: "Plaine et zones urbaines" },
-        { label: "Lacs et montagne", price: "â‚¬ 1,95/km", note: "Majoration +30%" }
+        { label: "Parcours standards", price: "€ 1,50/km", note: "Plaine et zones urbaines" },
+        { label: "Lacs et montagne", price: "€ 1,95/km", note: "Majoration +30%" }
       ],
 
-      transfersTitle: "Transferts aÃ©roport",
-      transfersDesc: "Prix fixes incluant attente aÃ©roport, suivi vol et assistance bagages.",
+      transfersTitle: "Transferts aéroport",
+      transfersDesc: "Prix fixes incluant attente aéroport, suivi vol et assistance bagages.",
       transfersRates: [
-        { route: "Milan Malpensa â†” Centre de Milan", price: "â‚¬ 170" },
-        { route: "Milan Linate â†” Centre de Milan", price: "â‚¬ 100" },
-        { route: "Bergamo Orio al Serio â†” Centre de Milan", price: "â‚¬ 180" },
-        { route: "Milan Malpensa â†” Rho Fiera Milano", price: "â‚¬ 120" },
-        { route: "Milan Malpensa â†” Lugano (CH)", price: "â‚¬ 240" }
+        { route: "Milan Malpensa ? Centre de Milan", price: "€ 170" },
+        { route: "Milan Linate ? Centre de Milan", price: "€ 100" },
+        { route: "Bergamo Orio al Serio ? Centre de Milan", price: "€ 180" },
+        { route: "Milan Malpensa ? Rho Fiera Milano", price: "€ 120" },
+        { route: "Milan Malpensa ? Lugano (CH)", price: "€ 240" }
       ],
-      transfersNote: "Tarifs valables pour Mercedes Classe V (jusqu'Ã  6 passagers). Pour autres vÃ©hicules ou groupes plus nombreux, demander un devis.",
+      transfersNote: "Tarifs valables pour Mercedes Classe V (jusqu'à 6 passagers). Pour autres véhicules ou groupes plus nombreux, demander un devis.",
 
       waitingTitle: "Temps d'attente",
       waitingRates: [
-        { label: "ArrivÃ©es aÃ©roport", detail: "60 minutes incluses dans le prix" },
+        { label: "Arrivées aéroport", detail: "60 minutes incluses dans le prix" },
         { label: "Prises en charge en ville", detail: "15 minutes incluses dans le prix" },
-        { label: "Attente supplÃ©mentaire", detail: "â‚¬ 35 par 30 minutes" }
+        { label: "Attente supplémentaire", detail: "€ 35 par 30 minutes" }
       ],
-      waitingNote: "Le temps d'attente dÃ©marre Ã  partir de l'atterrissage (arrivÃ©es) ou de l'heure convenue (prises en charge urbaines).",
+      waitingNote: "Le temps d'attente démarre à partir de l'atterrissage (arrivées) ou de l'heure convenue (prises en charge urbaines).",
 
-      conditionsTitle: "Conditions gÃ©nÃ©rales",
+      conditionsTitle: "Conditions générales",
       conditions: [
         {
           title: "Transparence tarifaire",
-          text: "Le devis fourni avant le service est contraignant. Aucun coÃ»t supplÃ©mentaire sans communication et accord prÃ©alable."
+          text: "Le devis fourni avant le service est contraignant. Aucun coût supplémentaire sans communication et accord préalable."
         },
         {
-          title: "Aucun supplÃ©ment cachÃ©",
-          text: "Bagages, siÃ¨ges enfants, modifications d'itinÃ©raire convenues : aucun extra non dÃ©clarÃ© au stade du devis."
+          title: "Aucun supplément caché",
+          text: "Bagages, sièges enfants, modifications d'itinéraire convenues : aucun extra non déclaré au stade du devis."
         },
         {
           title: "Facturation",
-          text: "Facture Ã©lectronique Ã©mise sous 48 heures aprÃ¨s le service. Modes de paiement : virement bancaire, carte corporate."
+          text: "Facture électronique émise sous 48 heures après le service. Modes de paiement : virement bancaire, carte corporate."
         },
         {
           title: "Modifications et annulations",
-          text: "Modifications acceptÃ©es jusqu'Ã  24 heures avant le service sans pÃ©nalitÃ©. Annulations Ã  moins de 24 heures : 50% du coÃ»t."
+          text: "Modifications acceptées jusqu'à 24 heures avant le service sans pénalité. Annulations à moins de 24 heures : 50% du coût."
         }
       ],
 
       footerNote: "Pour informations ou demandes de devis :",
       contactEmail: "thomastagliatti2022@gmail.com",
       contactPhone: "+39 389 143 0907",
-      backLink: "Retour Ã  MILANO Premium Mobility"
+      backLink: "Retour à MILANO Premium Mobility"
     }
   };
 
@@ -302,10 +302,10 @@ const MilanoTariffe = () => {
   return (
     <div className="min-h-screen bg-[hsl(0_0%_3%)] font-sans selection:bg-[hsl(43_30%_40%)] selection:text-white">
       <SEOHead
-        title={`${c.pageTitle} | MILANO Premium Mobility | TMT`}
+        title={`${c.pageTitle} | MILANO Premium Mobility | Nexitus`}
         description={c.introP1}
         keywords="tariffe ncc milano, prezzi transfer malpensa, listino noleggio con conducente, costi autista privato milano"
-        canonicalUrl="https://tmtransferlux.it/milano-prontuario-tariffe"
+        canonicalUrl="https://nexitus.it/milano-prontuario-tariffe"
       />
 
       {/* Custom Header for this sub-brand page - simplified for focus */}

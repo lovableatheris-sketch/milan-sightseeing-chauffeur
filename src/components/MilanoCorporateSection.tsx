@@ -13,7 +13,7 @@ const MilanoCorporateSection = () => {
             tagline: "DIVISIONE CORPORATE",
             title: "MILANO",
             subtitle: "Excellence in Motion",
-            description: "La nostra divisione dedicata alla mobilitÃ  aziendale. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza Ã¨ l'unica opzione accettata.",
+            description: "La nostra divisione dedicata alla mobilità aziendale. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza è l'unica opzione accettata.",
             features: [
                 "Transfer aeroportuali premium",
                 "Servizi a disposizione oraria",
@@ -34,14 +34,14 @@ const MilanoCorporateSection = () => {
             cta: "Discover MILANO"
         },
         pt: {
-            tagline: "DIVISÃƒO CORPORATE",
+            tagline: "DIVISÃO CORPORATE",
             title: "MILANO",
             subtitle: "Excellence in Motion",
-            description: "Nossa divisÃ£o dedicada Ã  mobilidade empresarial. Operamos com precisÃ£o absoluta em MilÃ£o e em todo o Norte da ItÃ¡lia, oferecendo um serviÃ§o onde a excelÃªncia Ã© a Ãºnica opÃ§Ã£o aceita.",
+            description: "Nossa divisão dedicada à mobilidade empresarial. Operamos com precisão absoluta em Milão e em todo o Norte da Itália, oferecendo um serviço onde a excelência é a única opção aceita.",
             features: [
-                "Transfers aeroportuÃ¡rios premium",
-                "ServiÃ§os Ã  disposiÃ§Ã£o por hora",
-                "GestÃ£o de roadshows e eventos"
+                "Transfers aeroportuários premium",
+                "Serviços à disposição por hora",
+                "Gestão de roadshows e eventos"
             ],
             cta: "Descubra MILANO"
         },
@@ -49,13 +49,13 @@ const MilanoCorporateSection = () => {
             tagline: "DIVISION CORPORATE",
             title: "MILANO",
             subtitle: "Excellence in Motion",
-            description: "Notre division dÃ©diÃ©e Ã  la mobilitÃ© d'entreprise. Nous opÃ©rons avec une prÃ©cision absolue Ã  Milan et dans tout le Nord de l'Italie, offrant un service oÃ¹ l'excellence est la seule option acceptÃ©e.",
+            description: "Notre division dédiée à la mobilité d'entreprise. Nous opérons avec une précision absolue à Milan et dans tout le Nord de l'Italie, offrant un service où l'excellence est la seule option acceptée.",
             features: [
-                "Transferts aÃ©roport premium",
-                "Services Ã  disposition horaire",
-                "Gestion de roadshows et Ã©vÃ©nements"
+                "Transferts aéroport premium",
+                "Services à disposition horaire",
+                "Gestion de roadshows et événements"
             ],
-            cta: "DÃ©couvrir MILANO"
+            cta: "Découvrir MILANO"
         }
     };
 
@@ -83,7 +83,7 @@ const MilanoCorporateSection = () => {
                                 </div>
                                 <img
                                     src={milanoLogo}
-                                    alt="MILANO Premium Mobility by TMT"
+                                    alt="MILANO Premium Mobility by Nexitus"
                                     className="relative z-10 w-64 md:w-80 lg:w-96 h-auto"
                                     style={{
                                         filter: 'drop-shadow(0 15px 40px rgba(0, 0, 0, 0.4))'

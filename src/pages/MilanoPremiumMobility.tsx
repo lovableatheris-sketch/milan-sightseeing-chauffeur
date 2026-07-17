@@ -18,29 +18,29 @@ const MilanoPremiumMobility = () => {
       heroTagline: "THE CORPORATE STANDARD",
       heroTitle: "MILANO",
       heroSubtitle: "Excellence in Motion.",
-      heroByline: "by TMT",
+      heroByline: "by Nexitus",
 
       // Introduction
-      introTitle: "Un nuovo standard di mobilitÃ ",
-      introP1: "MILANO non Ã¨ solo trasporto. Ãˆ la garanzia di un tempo perfettamente governato. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza Ã¨ l'unica opzione accettata.",
-      introP2: "Dal transfer aeroportuale privato alla gestione completa della mobilitÃ  per roadshow ed eventi: ogni viaggio Ã¨ un'esperienza di silenzio, comfort e controllo.",
+      introTitle: "Un nuovo standard di mobilità",
+      introP1: "MILANO non è solo trasporto. È la garanzia di un tempo perfettamente governato. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza è l'unica opzione accettata.",
+      introP2: "Dal transfer aeroportuale privato alla gestione completa della mobilità per roadshow ed eventi: ogni viaggio è un'esperienza di silenzio, comfort e controllo.",
 
       // Operational Philosophy
       philosophyTitle: "L'Arte dell'Assenza",
       philosophySubtitle: "Il vero lusso non richiede la tua attenzione",
-      philosophyP1: "La nostra filosofia si fonda sull'invisibilitÃ . Il servizio perfetto Ã¨ quello che non noti, perchÃ© tutto accade esattamente come deve accadere. Discrezione assoluta, puntualitÃ  millimetrica.",
+      philosophyP1: "La nostra filosofia si fonda sull'invisibilità. Il servizio perfetto è quello che non noti, perché tutto accade esattamente come deve accadere. Discrezione assoluta, puntualità millimetrica.",
       philosophyItems: [
         {
-          title: "InvisibilitÃ ",
-          desc: "L'autista Ã¨ una presenza impercettibile. Interviene solo se richiesto. Il tuo spazio e il tuo tempo rimangono inviolati."
+          title: "Invisibilità",
+          desc: "L'autista è una presenza impercettibile. Interviene solo se richiesto. Il tuo spazio e il tuo tempo rimangono inviolati."
         },
         {
           title: "Sanctuary",
-          desc: "L'abitacolo Ã¨ il tuo ufficio mobile o la tua lounge privata. Silenzio, privacy e tecnologia per continuare a operare senza interruzioni."
+          desc: "L'abitacolo è il tuo ufficio mobile o la tua lounge privata. Silenzio, privacy e tecnologia per continuare a operare senza interruzioni."
         },
         {
           title: "Certezza",
-          desc: "Nessuna variabile. Percorsi ottimizzati, orari garantiti. La tranquillitÃ  di sapere che ogni dettaglio Ã¨ giÃ  stato gestito."
+          desc: "Nessuna variabile. Percorsi ottimizzati, orari garantiti. La tranquillità di sapere che ogni dettaglio è già stato gestito."
         }
       ],
 
@@ -51,7 +51,7 @@ const MilanoPremiumMobility = () => {
         {
           icon: Users,
           title: "Condotta professionale",
-          desc: "Presentazione formale, comportamento discreto, familiaritÃ  con le esigenze di contesti aziendali e istituzionali."
+          desc: "Presentazione formale, comportamento discreto, familiarità con le esigenze di contesti aziendali e istituzionali."
         },
         {
           icon: Shield,
@@ -66,14 +66,14 @@ const MilanoPremiumMobility = () => {
         {
           icon: Clock,
           title: "Gestione oraria",
-          desc: "Monitoraggio voli, arrivo anticipato, margini operativi per garantire puntualitÃ  in ogni condizione di traffico."
+          desc: "Monitoraggio voli, arrivo anticipato, margini operativi per garantire puntualità in ogni condizione di traffico."
         }
       ],
 
       // Flexibility
-      flexTitle: "FlessibilitÃ  operativa",
+      flexTitle: "Flessibilità operativa",
       flexSubtitle: "Adattamento alle esigenze in corso di servizio",
-      flexP1: "Comprendiamo che i programmi aziendali possono variare. Il servizio Ã¨ strutturato per gestire modifiche senza compromettere l'efficienza.",
+      flexP1: "Comprendiamo che i programmi aziendali possono variare. Il servizio è strutturato per gestire modifiche senza compromettere l'efficienza.",
       flexItems: [
         {
           title: "Variazioni di percorso",
@@ -90,9 +90,9 @@ const MilanoPremiumMobility = () => {
       ],
 
       // Closing
-      closingTitle: "ContinuitÃ  e affidabilitÃ ",
-      closingP1: "MILANO Ã¨ un servizio pensato per relazioni continuative. Lavoriamo con aziende che richiedono un fornitore stabile, in grado di garantire lo stesso livello di servizio ad ogni utilizzo.",
-      closingP2: "La coerenza operativa Ã¨ il nostro criterio di valutazione.",
+      closingTitle: "Continuità e affidabilità",
+      closingP1: "MILANO è un servizio pensato per relazioni continuative. Lavoriamo con aziende che richiedono un fornitore stabile, in grado di garantire lo stesso livello di servizio ad ogni utilizzo.",
+      closingP2: "La coerenza operativa è il nostro criterio di valutazione.",
       closingCta: "Consulta il prontuario tariffe",
       closingCtaLink: "/milano-prontuario-tariffe"
     },
@@ -100,10 +100,10 @@ const MilanoPremiumMobility = () => {
       heroTagline: "Corporate Division",
       heroTitle: "MILANO",
       heroSubtitle: "Premium Mobility",
-      heroByline: "by TMT",
+      heroByline: "by Nexitus",
 
-      introTitle: "TMT's corporate division",
-      introP1: "MILANO is the TMT division dedicated to corporate mobility. We operate in Milan, Lombardy and the main areas of Northern Italy, providing chauffeur-driven transport services to corporate clients, executives and B2B partners.",
+      introTitle: "Nexitus's corporate division",
+      introP1: "MILANO is the Nexitus division dedicated to corporate mobility. We operate in Milan, Lombardy and the main areas of Northern Italy, providing chauffeur-driven transport services to corporate clients, executives and B2B partners.",
       introP2: "Our operational scope includes airport transfers from Malpensa, Linate and Orio al Serio, hourly disposal services and interregional transfers.",
 
       philosophyTitle: "Operational philosophy",
@@ -174,157 +174,157 @@ const MilanoPremiumMobility = () => {
       closingCtaLink: "/milano-prontuario-tariffe"
     },
     pt: {
-      heroTagline: "DivisÃ£o Corporate",
+      heroTagline: "Divisão Corporate",
       heroTitle: "MILANO",
       heroSubtitle: "Premium Mobility",
-      heroByline: "by TMT",
+      heroByline: "by Nexitus",
 
-      introTitle: "A divisÃ£o corporativa da TMT",
-      introP1: "MILANO Ã© a divisÃ£o da TMT dedicada Ã  mobilidade empresarial. Operamos em MilÃ£o, Lombardia e principais Ã¡reas do Norte da ItÃ¡lia, fornecendo serviÃ§os de transporte com motorista para clientes corporativos, executivos e parceiros B2B.",
-      introP2: "Nosso Ã¢mbito operacional inclui transferÃªncias aeroportuÃ¡rias de Malpensa, Linate e Orio al Serio, serviÃ§os Ã  disposiÃ§Ã£o por hora e transferÃªncias inter-regionais.",
+      introTitle: "A divisão corporativa da Nexitus",
+      introP1: "MILANO é a divisão da Nexitus dedicada à mobilidade empresarial. Operamos em Milão, Lombardia e principais áreas do Norte da Itália, fornecendo serviços de transporte com motorista para clientes corporativos, executivos e parceiros B2B.",
+      introP2: "Nosso âmbito operacional inclui transferências aeroportuárias de Malpensa, Linate e Orio al Serio, serviços à disposição por hora e transferências inter-regionais.",
 
       philosophyTitle: "Filosofia operacional",
-      philosophySubtitle: "Um serviÃ§o projetado para nÃ£o exigir atenÃ§Ã£o",
-      philosophyP1: "Nossa abordagem baseia-se em trÃªs elementos: discriÃ§Ã£o, pontualidade e previsibilidade. Cada serviÃ§o Ã© estruturado para se integrar ao dia de trabalho do cliente sem interferÃªncias.",
+      philosophySubtitle: "Um serviço projetado para não exigir atenção",
+      philosophyP1: "Nossa abordagem baseia-se em três elementos: discrição, pontualidade e previsibilidade. Cada serviço é estruturado para se integrar ao dia de trabalho do cliente sem interferências.",
       philosophyItems: [
         {
-          title: "DiscriÃ§Ã£o",
-          desc: "O motorista intervÃ©m apenas quando necessÃ¡rio. Nenhuma conversa nÃ£o solicitada, nenhuma interrupÃ§Ã£o ao trabalho em andamento."
+          title: "Discrição",
+          desc: "O motorista intervém apenas quando necessário. Nenhuma conversa não solicitada, nenhuma interrupção ao trabalho em andamento."
         },
         {
           title: "Ambiente reservado",
-          desc: "O veÃ­culo Ã© um espaÃ§o de trabalho. Chamadas, emails, documentaÃ§Ã£o: tudo pode continuar sem interrupÃ§Ãµes durante o translado."
+          desc: "O veículo é um espaço de trabalho. Chamadas, emails, documentação: tudo pode continuar sem interrupções durante o translado."
         },
         {
           title: "Previsibilidade",
-          desc: "HorÃ¡rios confirmados, rotas definidas, nenhuma variÃ¡vel imprevista. O cliente conhece antecipadamente cada detalhe do serviÃ§o."
+          desc: "Horários confirmados, rotas definidas, nenhuma variável imprevista. O cliente conhece antecipadamente cada detalhe do serviço."
         }
       ],
 
-      standardsTitle: "PadrÃµes operacionais",
-      standardsSubtitle: "Requisitos aplicados a cada serviÃ§o",
+      standardsTitle: "Padrões operacionais",
+      standardsSubtitle: "Requisitos aplicados a cada serviço",
       standardsItems: [
         {
           icon: Users,
           title: "Conduta profissional",
-          desc: "ApresentaÃ§Ã£o formal, comportamento discreto, familiaridade com as exigÃªncias de contextos corporativos e institucionais."
+          desc: "Apresentação formal, comportamento discreto, familiaridade com as exigências de contextos corporativos e institucionais."
         },
         {
           icon: Shield,
-          title: "FormaÃ§Ã£o especÃ­fica",
-          desc: "Cada motorista segue um percurso formativo que inclui direÃ§Ã£o segura, gestÃ£o do tempo, protocolos de confidencialidade."
+          title: "Formação específica",
+          desc: "Cada motorista segue um percurso formativo que inclui direção segura, gestão do tempo, protocolos de confidencialidade."
         },
         {
           icon: FileText,
-          title: "DocumentaÃ§Ã£o e relatÃ³rios",
-          desc: "Procedimentos padronizados, faturaÃ§Ã£o eletrÃ´nica, relatÃ³rios compatÃ­veis com sistemas de gestÃ£o de despesas corporativas."
+          title: "Documentação e relatórios",
+          desc: "Procedimentos padronizados, faturação eletrônica, relatórios compatíveis com sistemas de gestão de despesas corporativas."
         },
         {
           icon: Clock,
-          title: "GestÃ£o de horÃ¡rios",
-          desc: "Monitoramento de voos, chegada antecipada, margens operacionais para garantir pontualidade em qualquer condiÃ§Ã£o de trÃ¡fego."
+          title: "Gestão de horários",
+          desc: "Monitoramento de voos, chegada antecipada, margens operacionais para garantir pontualidade em qualquer condição de tráfego."
         }
       ],
 
       flexTitle: "Flexibilidade operacional",
-      flexSubtitle: "AdaptaÃ§Ã£o Ã s necessidades durante o serviÃ§o",
-      flexP1: "Compreendemos que programaÃ§Ãµes empresariais podem variar. O serviÃ§o Ã© estruturado para gerir mudanÃ§as sem comprometer a eficiÃªncia.",
+      flexSubtitle: "Adaptação às necessidades durante o serviço",
+      flexP1: "Compreendemos que programações empresariais podem variar. O serviço é estruturado para gerir mudanças sem comprometer a eficiência.",
       flexItems: [
         {
-          title: "VariaÃ§Ãµes de rota",
-          desc: "Eventuais mudanÃ§as de destino sÃ£o geridas em tempo real, mediante comunicaÃ§Ã£o ao condutor."
+          title: "Variações de rota",
+          desc: "Eventuais mudanças de destino são geridas em tempo real, mediante comunicação ao condutor."
         },
         {
-          title: "SolicitaÃ§Ãµes durante o serviÃ§o",
-          desc: "Paradas adicionais, antecipaÃ§Ãµes ou prolongamentos de horÃ¡rio sÃ£o geridos com a mesma precisÃ£o do serviÃ§o planejado."
+          title: "Solicitações durante o serviço",
+          desc: "Paradas adicionais, antecipações ou prolongamentos de horário são geridos com a mesma precisão do serviço planejado."
         },
         {
-          title: "PrestaÃ§Ã£o de contas transparente",
-          desc: "Ao final do serviÃ§o Ã© fornecido um resumo de tempos e quilÃ´metros efetivos. Nenhuma cobranÃ§a sem comunicaÃ§Ã£o prÃ©via."
+          title: "Prestação de contas transparente",
+          desc: "Ao final do serviço é fornecido um resumo de tempos e quilômetros efetivos. Nenhuma cobrança sem comunicação prévia."
         }
       ],
 
       closingTitle: "Continuidade e confiabilidade",
-      closingP1: "MILANO Ã© um serviÃ§o pensado para relacionamentos contÃ­nuos. Trabalhamos com empresas que necessitam de um fornecedor estÃ¡vel, capaz de garantir o mesmo nÃ­vel de serviÃ§o a cada utilizaÃ§Ã£o.",
-      closingP2: "A coerÃªncia operacional Ã© nosso critÃ©rio de avaliaÃ§Ã£o.",
-      closingCta: "Consultar prontuÃ¡rio de tarifas",
+      closingP1: "MILANO é um serviço pensado para relacionamentos contínuos. Trabalhamos com empresas que necessitam de um fornecedor estável, capaz de garantir o mesmo nível de serviço a cada utilização.",
+      closingP2: "A coerência operacional é nosso critério de avaliação.",
+      closingCta: "Consultar prontuário de tarifas",
       closingCtaLink: "/milano-prontuario-tariffe"
     },
     fr: {
       heroTagline: "Division Corporate",
       heroTitle: "MILANO",
       heroSubtitle: "Premium Mobility",
-      heroByline: "by TMT",
+      heroByline: "by Nexitus",
 
-      introTitle: "La division corporate de TMT",
-      introP1: "MILANO est la division de TMT dÃ©diÃ©e Ã  la mobilitÃ© d'entreprise. Nous opÃ©rons Ã  Milan, en Lombardie et dans les principales zones du Nord de l'Italie, fournissant des services de transport avec chauffeur aux clients corporate, dirigeants et partenaires B2B.",
-      introP2: "Notre pÃ©rimÃ¨tre opÃ©rationnel comprend les transferts aÃ©roport depuis Malpensa, Linate et Orio al Serio, les services Ã  disposition horaire et les transferts interrÃ©gionaux.",
+      introTitle: "La division corporate de Nexitus",
+      introP1: "MILANO est la division de Nexitus dédiée à la mobilité d'entreprise. Nous opérons à Milan, en Lombardie et dans les principales zones du Nord de l'Italie, fournissant des services de transport avec chauffeur aux clients corporate, dirigeants et partenaires B2B.",
+      introP2: "Notre périmètre opérationnel comprend les transferts aéroport depuis Malpensa, Linate et Orio al Serio, les services à disposition horaire et les transferts interrégionaux.",
 
-      philosophyTitle: "Philosophie opÃ©rationnelle",
-      philosophySubtitle: "Un service conÃ§u pour ne pas nÃ©cessiter d'attention",
-      philosophyP1: "Notre approche repose sur trois Ã©lÃ©ments : discrÃ©tion, ponctualitÃ© et prÃ©visibilitÃ©. Chaque service est structurÃ© pour s'intÃ©grer dans la journÃ©e de travail du client sans interfÃ©rence.",
+      philosophyTitle: "Philosophie opérationnelle",
+      philosophySubtitle: "Un service conçu pour ne pas nécessiter d'attention",
+      philosophyP1: "Notre approche repose sur trois éléments : discrétion, ponctualité et prévisibilité. Chaque service est structuré pour s'intégrer dans la journée de travail du client sans interférence.",
       philosophyItems: [
         {
-          title: "DiscrÃ©tion",
-          desc: "Le chauffeur n'intervient que lorsque c'est nÃ©cessaire. Aucune conversation non sollicitÃ©e, aucune interruption du travail en cours."
+          title: "Discrétion",
+          desc: "Le chauffeur n'intervient que lorsque c'est nécessaire. Aucune conversation non sollicitée, aucune interruption du travail en cours."
         },
         {
-          title: "Environnement rÃ©servÃ©",
-          desc: "Le vÃ©hicule est un espace de travail. Appels, emails, documentation : tout peut continuer sans interruption pendant le transfert."
+          title: "Environnement réservé",
+          desc: "Le véhicule est un espace de travail. Appels, emails, documentation : tout peut continuer sans interruption pendant le transfert."
         },
         {
-          title: "PrÃ©visibilitÃ©",
-          desc: "Horaires confirmÃ©s, itinÃ©raires dÃ©finis, aucune variable imprÃ©vue. Le client connaÃ®t Ã  l'avance chaque dÃ©tail du service."
+          title: "Prévisibilité",
+          desc: "Horaires confirmés, itinéraires définis, aucune variable imprévue. Le client connaît à l'avance chaque détail du service."
         }
       ],
 
-      standardsTitle: "Standards opÃ©rationnels",
-      standardsSubtitle: "Exigences appliquÃ©es Ã  chaque service",
+      standardsTitle: "Standards opérationnels",
+      standardsSubtitle: "Exigences appliquées à chaque service",
       standardsItems: [
         {
           icon: Users,
           title: "Conduite professionnelle",
-          desc: "PrÃ©sentation formelle, comportement discret, familiaritÃ© avec les exigences des contextes corporate et institutionnels."
+          desc: "Présentation formelle, comportement discret, familiarité avec les exigences des contextes corporate et institutionnels."
         },
         {
           icon: Shield,
-          title: "Formation spÃ©cifique",
-          desc: "Chaque chauffeur suit un parcours de formation incluant conduite sÃ»re, gestion du temps, protocoles de confidentialitÃ©."
+          title: "Formation spécifique",
+          desc: "Chaque chauffeur suit un parcours de formation incluant conduite sûre, gestion du temps, protocoles de confidentialité."
         },
         {
           icon: FileText,
           title: "Documentation et reporting",
-          desc: "ProcÃ©dures standardisÃ©es, facturation Ã©lectronique, reporting compatible avec les systÃ¨mes de gestion des dÃ©penses d'entreprise."
+          desc: "Procédures standardisées, facturation électronique, reporting compatible avec les systèmes de gestion des dépenses d'entreprise."
         },
         {
           icon: Clock,
           title: "Gestion horaire",
-          desc: "Suivi des vols, arrivÃ©e anticipÃ©e, marges opÃ©rationnelles pour garantir la ponctualitÃ© dans toutes les conditions de circulation."
+          desc: "Suivi des vols, arrivée anticipée, marges opérationnelles pour garantir la ponctualité dans toutes les conditions de circulation."
         }
       ],
 
-      flexTitle: "FlexibilitÃ© opÃ©rationnelle",
+      flexTitle: "Flexibilité opérationnelle",
       flexSubtitle: "Adaptation aux besoins en cours de service",
-      flexP1: "Nous comprenons que les programmes d'entreprise peuvent varier. Le service est structurÃ© pour gÃ©rer les modifications sans compromettre l'efficacitÃ©.",
+      flexP1: "Nous comprenons que les programmes d'entreprise peuvent varier. Le service est structuré pour gérer les modifications sans compromettre l'efficacité.",
       flexItems: [
         {
-          title: "Variations d'itinÃ©raire",
-          desc: "Tout changement de destination est gÃ©rÃ© en temps rÃ©el, aprÃ¨s communication au chauffeur."
+          title: "Variations d'itinéraire",
+          desc: "Tout changement de destination est géré en temps réel, après communication au chauffeur."
         },
         {
           title: "Demandes pendant le service",
-          desc: "ArrÃªts supplÃ©mentaires, avances ou prolongations d'horaire sont gÃ©rÃ©s avec la mÃªme prÃ©cision que le service planifiÃ©."
+          desc: "Arrêts supplémentaires, avances ou prolongations d'horaire sont gérés avec la même précision que le service planifié."
         },
         {
           title: "Compte-rendu transparent",
-          desc: "Ã€ la fin du service, un rÃ©capitulatif des temps et kilomÃ¨tres effectifs est fourni. Aucune facturation sans communication prÃ©alable."
+          desc: "À la fin du service, un récapitulatif des temps et kilomètres effectifs est fourni. Aucune facturation sans communication préalable."
         }
       ],
 
-      closingTitle: "ContinuitÃ© et fiabilitÃ©",
-      closingP1: "MILANO est un service conÃ§u pour des relations continues. Nous travaillons avec des entreprises qui ont besoin d'un fournisseur stable, capable de garantir le mÃªme niveau de service Ã  chaque utilisation.",
-      closingP2: "La cohÃ©rence opÃ©rationnelle est notre critÃ¨re d'Ã©valuation.",
-      closingCta: "Consulter le barÃ¨me tarifaire",
+      closingTitle: "Continuité et fiabilité",
+      closingP1: "MILANO est un service conçu pour des relations continues. Nous travaillons avec des entreprises qui ont besoin d'un fournisseur stable, capable de garantir le même niveau de service à chaque utilisation.",
+      closingP2: "La cohérence opérationnelle est notre critère d'évaluation.",
+      closingCta: "Consulter le barème tarifaire",
       closingCtaLink: "/milano-prontuario-tariffe"
     }
   };
@@ -334,10 +334,10 @@ const MilanoPremiumMobility = () => {
   return (
     <div className="min-h-screen bg-background">
       <SEOHead
-        title={`MILANO Premium Mobility | ${c.heroTagline} | TMT`}
+        title={`MILANO Premium Mobility | ${c.heroTagline} | Nexitus`}
         description={c.introP1}
-        keywords="ncc corporate milano, noleggio con conducente aziende, transfer aziendale milano, servizio autista milano, mobilitÃ  aziendale lombardia"
-        canonicalUrl="https://tmtransferlux.it/milano-premium-mobility"
+        keywords="ncc corporate milano, noleggio con conducente aziende, transfer aziendale milano, servizio autista milano, mobilità aziendale lombardia"
+        canonicalUrl="https://nexitus.it/milano-premium-mobility"
       />
       <Header />
 
@@ -380,7 +380,7 @@ const MilanoPremiumMobility = () => {
                 {/* Logo image - Adjusted Size */}
                 <img
                   src={milanoLogo}
-                  alt="MILANO Premium Mobility by TMT"
+                  alt="MILANO Premium Mobility by Nexitus"
                   className="relative z-10 w-[24rem] h-auto md:w-[32rem] lg:w-[40rem] xl:w-[28rem] mx-auto"
                   style={{
                     filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
@@ -434,12 +434,12 @@ const MilanoPremiumMobility = () => {
               </div>
               <p className="text-[10px] tracking-[0.4em] text-[hsl(43_30%_50%)] uppercase mb-3 font-medium">
                 {language === 'it' ? 'Dettagli di Prestigio' :
-                  language === 'pt' ? 'Detalhes de PrestÃ­gio' :
-                    language === 'en' ? 'Prestige Details' : 'DÃ©tails de Prestige'}
+                  language === 'pt' ? 'Detalhes de Prestígio' :
+                    language === 'en' ? 'Prestige Details' : 'Détails de Prestige'}
               </p>
               <h2 className="text-3xl md:text-4xl font-heading font-light text-white tracking-widest">
                 {language === 'it' ? "Visione d'Eccellenza" :
-                  language === 'pt' ? 'VisÃ£o de ExcelÃªncia' :
+                  language === 'pt' ? 'Visão de Excelência' :
                     language === 'en' ? 'Vision of Excellence' : "Vision d'Excellence"}
               </h2>
             </MotionReveal>

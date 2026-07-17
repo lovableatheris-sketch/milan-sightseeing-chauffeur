@@ -12,24 +12,24 @@ const Contact = () => {
 
   const seoData = {
     it: {
-      title: "Prenota Transfer Malpensa Milano | Contatti NCC | TMTransferLux",
+      title: "Prenota Transfer Malpensa Milano | Contatti NCC | Nexitus",
       description: "Prenota il tuo transfer Malpensa-Milano su WhatsApp +39 389 143 0907. Risposta immediata 24h, preventivo gratuito, prezzo fisso. NCC Milano aeroporto.",
       keywords: "prenotare transfer malpensa, contatti ncc milano, whatsapp transfer aeroporto, prenota taxi privato malpensa",
     },
     en: {
-      title: "Book Malpensa Milan Transfer | NCC Contacts | TMTransferLux",
+      title: "Book Malpensa Milan Transfer | NCC Contacts | Nexitus",
       description: "Book your Malpensa-Milan transfer on WhatsApp +39 389 143 0907. Immediate response 24h, free quote, fixed price. Milan airport chauffeur service.",
       keywords: "book malpensa transfer, ncc milan contact, whatsapp airport transfer, book private taxi malpensa",
     },
     pt: {
-      title: "Reserve Transfer Malpensa MilÃ£o | Contatos NCC | TMTransferLux",
-      description: "Reserve seu transfer Malpensa-MilÃ£o no WhatsApp +39 389 143 0907. Resposta imediata 24h, orÃ§amento grÃ¡tis, preÃ§o fixo.",
-      keywords: "reservar transfer malpensa, contato ncc milÃ£o, whatsapp transfer aeroporto",
+      title: "Reserve Transfer Malpensa Milão | Contatos NCC | Nexitus",
+      description: "Reserve seu transfer Malpensa-Milão no WhatsApp +39 389 143 0907. Resposta imediata 24h, orçamento grátis, preço fixo.",
+      keywords: "reservar transfer malpensa, contato ncc milão, whatsapp transfer aeroporto",
     },
     fr: {
-      title: "RÃ©server Transfert Malpensa Milan | Contacts NCC | TMTransferLux",
-      description: "RÃ©servez votre transfert Malpensa-Milan sur WhatsApp +39 389 143 0907. RÃ©ponse immÃ©diate 24h, devis gratuit, prix fixe.",
-      keywords: "rÃ©server transfert malpensa, contact ncc milan, whatsapp transfert aÃ©roport",
+      title: "Réserver Transfert Malpensa Milan | Contacts NCC | Nexitus",
+      description: "Réservez votre transfert Malpensa-Milan sur WhatsApp +39 389 143 0907. Réponse immédiate 24h, devis gratuit, prix fixe.",
+      keywords: "réserver transfert malpensa, contact ncc milan, whatsapp transfert aéroport",
     },
   };
 
@@ -41,7 +41,7 @@ const Contact = () => {
         title={currentSeo.title}
         description={currentSeo.description}
         keywords={currentSeo.keywords}
-        canonicalUrl="https://tmtransferlux.it/contato"
+        canonicalUrl="https://nexitus.it/contato"
       />
       <Header />
       <main className="flex-1 flex items-center py-32">

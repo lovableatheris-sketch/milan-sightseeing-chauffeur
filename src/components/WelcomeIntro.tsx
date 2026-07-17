@@ -7,7 +7,7 @@ interface WelcomeIntroProps {
 const WelcomeIntro = ({ onComplete }: WelcomeIntroProps) => {
     const [phase, setPhase] = useState<"initial" | "revealing" | "visible" | "fading">("initial");
 
-    const fullText = "WELCOME TO NEXUS";
+    const fullText = "WELCOME TO NEXITUS";
 
     useEffect(() => {
         // Safety check for sessionStorage and ensure intro eventually completes

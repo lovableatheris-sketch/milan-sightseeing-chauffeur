@@ -21,8 +21,8 @@ const Footer = () => {
   const policyLabels = {
     it: { privacy: "Privacy Policy", terms: "Termini e Condizioni", cookies: "Cookie Policy", blog: "Blog", links: "Link Utili" },
     en: { privacy: "Privacy Policy", terms: "Terms & Conditions", cookies: "Cookie Policy", blog: "Blog", links: "Useful Links" },
-    pt: { privacy: "PolÃ­tica de Privacidade", terms: "Termos e CondiÃ§Ãµes", cookies: "PolÃ­tica de Cookies", blog: "Blog", links: "Links Ãšteis" },
-    fr: { privacy: "Politique de ConfidentialitÃ©", terms: "Conditions GÃ©nÃ©rales", cookies: "Politique de Cookies", blog: "Blog", links: "Liens Utiles" },
+    pt: { privacy: "Política de Privacidade", terms: "Termos e Condições", cookies: "Política de Cookies", blog: "Blog", links: "Links Úteis" },
+    fr: { privacy: "Politique de Confidentialité", terms: "Conditions Générales", cookies: "Politique de Cookies", blog: "Blog", links: "Liens Utiles" },
   };
 
   const labels = policyLabels[language] || policyLabels.it;
@@ -81,7 +81,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-heading font-semibold mb-4 text-luxury-gold">{t.socialTitle}</h4>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/tmtransferlux/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-luxury-gold hover:text-primary transition-smooth">
+              <a href="https://www.instagram.com/Nexitus/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-luxury-gold hover:text-primary transition-smooth">
                 <Instagram size={20} />
               </a>
             </div>
