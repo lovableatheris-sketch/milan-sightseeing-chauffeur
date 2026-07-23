@@ -11,320 +11,319 @@ import MotionReveal from "@/components/MotionReveal";
 const MilanoPremiumMobility = () => {
   const { language } = useLanguage();
 
-  // FINAL PUBLISH-READY COPY
   const content = {
     it: {
       // Hero
       heroTagline: "THE CORPORATE STANDARD",
-      heroTitle: "MILANO",
+      heroTitle: "NEXITUS",
       heroSubtitle: "Excellence in Motion.",
-      heroByline: "by Nexitus",
+      heroByline: "Executive Mobility",
 
       // Introduction
-      introTitle: "Un nuovo standard di mobilità",
-      introP1: "MILANO non è solo trasporto. È la garanzia di un tempo perfettamente governato. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza è l'unica opzione accettata.",
-      introP2: "Dal transfer aeroportuale privato alla gestione completa della mobilità per roadshow ed eventi: ogni viaggio è un'esperienza di silenzio, comfort e controllo.",
+      introTitle: "Un nuovo standard di mobilitÃ  d'Ã©lite",
+      introP1: "La storia di NEXITUS non nasce dal caso, ma da anni di dedizione al fianco di una clientela d'Ã©lite. Abbiamo trasformato questa esperienza in un modello operativo dove la perfezione Ã¨ la norma e la reattivitÃ  anticipa ogni esigenza.",
+      introP2: "Dal transfer aeroportuale privato per Malpensa, Linate e Orio al Serio alla gestione completa della mobilitÃ  per roadshow ed eventi aziendali: ogni viaggio Ã¨ un'esperienza di silenzio, comfort e controllo assoluto.",
 
       // Operational Philosophy
-      philosophyTitle: "L'Arte dell'Assenza",
+      philosophyTitle: "L'Arte dell'Eccellenza Operativa",
       philosophySubtitle: "Il vero lusso non richiede la tua attenzione",
-      philosophyP1: "La nostra filosofia si fonda sull'invisibilità. Il servizio perfetto è quello che non noti, perché tutto accade esattamente come deve accadere. Discrezione assoluta, puntualità millimetrica.",
+      philosophyP1: "La nostra filosofia si fonda sull'invisibilitÃ  e la precisione. Il servizio perfetto Ã¨ quello in cui tutto accade esattamente come deve accadere. Riservatezza assoluta, puntualitÃ  millimetrica e massimo rispetto del tuo tempo.",
       philosophyItems: [
         {
-          title: "Invisibilità",
-          desc: "L'autista è una presenza impercettibile. Interviene solo se richiesto. Il tuo spazio e il tuo tempo rimangono inviolati."
+          title: "InvisibilitÃ  & Discrezione",
+          desc: "L'autista Ã¨ una presenza impercettibile ed altamente qualificata. Interviene solo se richiesto. Il tuo spazio e la tua privacy rimangono inviolati."
         },
         {
-          title: "Sanctuary",
-          desc: "L'abitacolo è il tuo ufficio mobile o la tua lounge privata. Silenzio, privacy e tecnologia per continuare a operare senza interruzioni."
+          title: "Executive Sanctuary",
+          desc: "L'abitacolo della flotta Mercedes-Benz Ã¨ il tuo ufficio mobile o la tua lounge riservata. Silenzio, connessione Wi-Fi e comfort per operare senza interruzioni."
         },
         {
-          title: "Certezza",
-          desc: "Nessuna variabile. Percorsi ottimizzati, orari garantiti. La tranquillità di sapere che ogni dettaglio è già stato gestito."
+          title: "Certezza Operativa",
+          desc: "Nessuna variabile o imprevisto. Percorsi ottimizzati preventivemente e monitoraggio voli in tempo reale per la massima serenitÃ ."
         }
       ],
 
       // Driver Standards
-      standardsTitle: "Standard operativi",
-      standardsSubtitle: "Requisiti applicati a ogni servizio",
+      standardsTitle: "Standard Operativi Corporativi",
+      standardsSubtitle: "Requisiti rigorosi applicati a ogni servizio",
       standardsItems: [
         {
           icon: Users,
-          title: "Condotta professionale",
-          desc: "Presentazione formale, comportamento discreto, familiarità con le esigenze di contesti aziendali e istituzionali."
+          title: "Condotta Professionale d'Ã‰lite",
+          desc: "Presentazione formale impeccabile, comportamento discreto e profonda familiaritÃ  con i contesti aziendali ed istituzionali internazionali."
         },
         {
           icon: Shield,
-          title: "Formazione specifica",
-          desc: "Ogni autista segue un percorso formativo che include guida sicura, gestione del tempo, protocolli di riservatezza."
+          title: "Formazione e Riservatezza Certificata",
+          desc: "Ogni autista segue percorsi di guida sicura, gestione del tempo e stretti protocolli di riservatezza per la tutela della clientela."
         },
         {
           icon: FileText,
-          title: "Documentazione e reportistica",
-          desc: "Procedure standardizzate, fatturazione elettronica, rendicontazione compatibile con i sistemi di expense management aziendali."
+          title: "Documentazione e Fatturazione B2B",
+          desc: "Procedure standardizzate, fatturazione elettronica e reportistica dettagliata compatibile con i sistemi di expense management aziendali."
         },
         {
           icon: Clock,
-          title: "Gestione oraria",
-          desc: "Monitoraggio voli, arrivo anticipato, margini operativi per garantire puntualità in ogni condizione di traffico."
+          title: "Gestione del Tempo e Monitoraggio",
+          desc: "Monitoraggio voli in tempo reale, arrivo anticipato e margini operativi per garantire puntualitÃ  in qualsiasi condizione di traffico."
         }
       ],
 
       // Flexibility
-      flexTitle: "Flessibilità operativa",
-      flexSubtitle: "Adattamento alle esigenze in corso di servizio",
-      flexP1: "Comprendiamo che i programmi aziendali possono variare. Il servizio è strutturato per gestire modifiche senza compromettere l'efficienza.",
+      flexTitle: "FlessibilitÃ  Operativa Su Misura",
+      flexSubtitle: "Adattamento istantaneo alle esigenze in corso di servizio",
+      flexP1: "Comprendiamo che le agende dei dirigenti possono variare rapidamente. Il nostro servizio Ã¨ strutturato per gestire modifiche in tempo reale senza mai compromettere l'efficienza.",
       flexItems: [
         {
-          title: "Variazioni di percorso",
-          desc: "Eventuali cambi di destinazione vengono gestiti in tempo reale, previa comunicazione al conducente."
+          title: "Variazioni di Percorso in Tempo Reale",
+          desc: "Eventuali cambi di destinazione o itinerario vengono gestiti istantaneamente, previa comunicazione diretta con il conducente."
         },
         {
-          title: "Richieste durante il servizio",
-          desc: "Fermate aggiuntive, anticipi o prolungamenti orari sono gestiti con la stessa precisione del servizio pianificato."
+          title: "Disposizione e Prolungamenti Orari",
+          desc: "Fermate aggiuntive, anticipi o prolungamenti della disposizione oraria sono coordinati con la medesima precisione del servizio pianificato."
         },
         {
-          title: "Rendicontazione trasparente",
-          desc: "Al termine del servizio viene fornito un riepilogo di tempi e chilometri effettivi. Nessun addebito senza comunicazione preventiva."
+          title: "Rendicontazione Trasparente",
+          desc: "Al termine del servizio viene fornito un riepilogo trasparente di tempi e chilometri effettivi. Nessun addebito senza comunicazione preventiva."
         }
       ],
 
       // Closing
-      closingTitle: "Continuità e affidabilità",
-      closingP1: "MILANO è un servizio pensato per relazioni continuative. Lavoriamo con aziende che richiedono un fornitore stabile, in grado di garantire lo stesso livello di servizio ad ogni utilizzo.",
-      closingP2: "La coerenza operativa è il nostro criterio di valutazione.",
-      closingCta: "Consulta il prontuario tariffe",
+      closingTitle: "ContinuitÃ , AffidabilitÃ  e Partnership B2B",
+      closingP1: "NEXITUS Ã¨ un servizio pensato per relazioni continuative di alto livello. Lavoriamo con aziende ed executive che richiedono un partner stabile, in grado di garantire lo stesso livello d'eccellenza a ogni utilizzo.",
+      closingP2: "La coerenza operativa e la perfezione costante sono i nostri criteri guida.",
+      closingCta: "Consulta il Prontuario Tariffe",
       closingCtaLink: "/milano-prontuario-tariffe"
     },
     en: {
-      heroTagline: "Corporate Division",
-      heroTitle: "MILANO",
-      heroSubtitle: "Premium Mobility",
-      heroByline: "by Nexitus",
+      heroTagline: "THE CORPORATE STANDARD",
+      heroTitle: "NEXITUS",
+      heroSubtitle: "Excellence in Motion.",
+      heroByline: "Executive Mobility",
 
-      introTitle: "Nexitus's corporate division",
-      introP1: "MILANO is the Nexitus division dedicated to corporate mobility. We operate in Milan, Lombardy and the main areas of Northern Italy, providing chauffeur-driven transport services to corporate clients, executives and B2B partners.",
-      introP2: "Our operational scope includes airport transfers from Malpensa, Linate and Orio al Serio, hourly disposal services and interregional transfers.",
+      introTitle: "A New Standard of Elite Mobility",
+      introP1: "The story of NEXITUS stems from years of dedicated service alongside an elite clientele. We turned this expertise into an operational model where perfection is the norm and proactive responsiveness anticipates every need.",
+      introP2: "From private airport transfers to Malpensa, Linate, and Orio al Serio to complete mobility management for roadshows and corporate events: every journey is an experience of silence, comfort, and absolute control.",
 
-      philosophyTitle: "Operational philosophy",
-      philosophySubtitle: "A service designed to require no attention",
-      philosophyP1: "Our approach is based on three elements: discretion, punctuality and predictability. Every service is structured to integrate into the client's working day without interference.",
+      philosophyTitle: "The Art of Operational Excellence",
+      philosophySubtitle: "True luxury requires none of your attention",
+      philosophyP1: "Our philosophy is built on discretion and precision. Perfect service is one where everything happens seamlessly. Absolute privacy, millimetric punctuality, and utter respect for your time.",
       philosophyItems: [
         {
-          title: "Discretion",
-          desc: "The driver intervenes only when necessary. No unsolicited conversation, no interruption to ongoing work."
+          title: "Discretion & Privacy",
+          desc: "The chauffeur is a highly qualified, imperceptible presence. Intervening only when required, your personal space and privacy remain untouched."
         },
         {
-          title: "Reserved environment",
-          desc: "The vehicle is a workspace. Calls, emails, documentation: everything can continue without interruption during the transfer."
+          title: "Executive Sanctuary",
+          desc: "The interior of our Mercedes-Benz fleet serves as your mobile office or private lounge. Silence, Wi-Fi connectivity, and refined comfort."
         },
         {
-          title: "Predictability",
-          desc: "Confirmed schedules, defined routes, no unexpected variables. The client knows every detail of the service in advance."
+          title: "Operational Certainty",
+          desc: "No unexpected variables. Pre-planned optimized routes and real-time flight tracking ensure total peace of mind."
         }
       ],
 
-      standardsTitle: "Operational standards",
-      standardsSubtitle: "Requirements applied to every service",
+      standardsTitle: "Corporate Operational Standards",
+      standardsSubtitle: "Rigorous criteria applied to every single journey",
       standardsItems: [
         {
           icon: Users,
-          title: "Professional conduct",
-          desc: "Formal presentation, discreet behaviour, familiarity with the requirements of corporate and institutional contexts."
+          title: "Elite Professional Conduct",
+          desc: "Impeccable formal attire, discreet behavior, and deep familiarity with top-tier corporate and institutional environments."
         },
         {
           icon: Shield,
-          title: "Specific training",
-          desc: "Every driver follows a training path that includes safe driving, time management, confidentiality protocols."
+          title: "Certified Training & Confidentiality",
+          desc: "Every chauffeur undergoes training in defensive driving, time management, and strict confidentiality protocols."
         },
         {
           icon: FileText,
-          title: "Documentation and reporting",
-          desc: "Standardised procedures, electronic invoicing, reporting compatible with corporate expense management systems."
+          title: "B2B Invoicing & Reporting",
+          desc: "Standardised procedures, electronic invoicing, and reporting compatible with corporate expense management systems."
         },
         {
           icon: Clock,
-          title: "Time management",
-          desc: "Flight monitoring, early arrival, operational margins to ensure punctuality in all traffic conditions."
+          title: "Precision Time Management",
+          desc: "Real-time flight monitoring, early arrival, and operational buffers ensuring punctuality regardless of traffic conditions."
         }
       ],
 
-      flexTitle: "Operational flexibility",
-      flexSubtitle: "Adaptation to requirements during service",
-      flexP1: "We understand that business schedules can vary. The service is structured to handle changes without compromising efficiency.",
+      flexTitle: "Tailored Operational Flexibility",
+      flexSubtitle: "Instant adaptation to dynamic schedule changes",
+      flexP1: "We understand that executive schedules shift rapidly. Our service is structured to seamlessly manage changes without ever compromising efficiency.",
       flexItems: [
         {
-          title: "Route variations",
-          desc: "Any destination changes are managed in real time, following communication to the driver."
+          title: "Real-time Route Variations",
+          desc: "Destination or route changes are handled instantly following direct communication with your chauffeur."
         },
         {
-          title: "Requests during service",
-          desc: "Additional stops, schedule changes or extensions are handled with the same precision as the planned service."
+          title: "On-demand Disposal Extensions",
+          desc: "Additional stops, earlier departures, or hourly extensions are managed with the exact same precision as pre-planned trips."
         },
         {
-          title: "Transparent reporting",
-          desc: "At the end of the service, a summary of actual times and kilometres is provided. No charge without prior communication."
+          title: "Transparent Reporting",
+          desc: "Detailed summary of actual times and mileage provided upon completion. Transparent pricing with no hidden charges."
         }
       ],
 
-      closingTitle: "Continuity and reliability",
-      closingP1: "MILANO is a service designed for ongoing relationships. We work with companies that require a stable provider, able to guarantee the same level of service with every use.",
-      closingP2: "Operational consistency is our evaluation criterion.",
-      closingCta: "View tariff schedule",
+      closingTitle: "Continuity, Reliability & B2B Partnership",
+      closingP1: "NEXITUS is designed for long-term corporate relationships. We partner with firms and executives who demand an unwavering standard of excellence.",
+      closingP2: "Operational consistency and perfection are our benchmarks.",
+      closingCta: "View Corporate Tariff Schedule",
       closingCtaLink: "/milano-prontuario-tariffe"
     },
     pt: {
-      heroTagline: "Divisão Corporate",
-      heroTitle: "MILANO",
-      heroSubtitle: "Premium Mobility",
-      heroByline: "by Nexitus",
+      heroTagline: "PADRÃƒO EXECUTIVO",
+      heroTitle: "NEXITUS",
+      heroSubtitle: "Excellence in Motion.",
+      heroByline: "Executive Mobility",
 
-      introTitle: "A divisão corporativa da Nexitus",
-      introP1: "MILANO é a divisão da Nexitus dedicada à mobilidade empresarial. Operamos em Milão, Lombardia e principais áreas do Norte da Itália, fornecendo serviços de transporte com motorista para clientes corporativos, executivos e parceiros B2B.",
-      introP2: "Nosso âmbito operacional inclui transferências aeroportuárias de Malpensa, Linate e Orio al Serio, serviços à disposição por hora e transferências inter-regionais.",
+      introTitle: "Um Novo PadrÃ£o de Mobilidade d'Ã‰lite",
+      introP1: "A trajetÃ³ria da NEXITUS nasce de anos de dedicaÃ§Ã£o ao lado de uma clientela d'Ã©lite. Transformamos essa experiÃªncia em um modelo operacional em que a perfeiÃ§Ã£o Ã© a norma e a reatividade antecipa cada necessidade.",
+      introP2: "Do transfer aeroportuÃ¡rio privado para Malpensa, Linate e Orio al Serio Ã  gestÃ£o logÃ­stica de roadshows e eventos corporativos: cada viagem Ã© uma experiÃªncia de silÃªncio, conforto e controle absoluto.",
 
-      philosophyTitle: "Filosofia operacional",
-      philosophySubtitle: "Um serviço projetado para não exigir atenção",
-      philosophyP1: "Nossa abordagem baseia-se em três elementos: discrição, pontualidade e previsibilidade. Cada serviço é estruturado para se integrar ao dia de trabalho do cliente sem interferências.",
+      philosophyTitle: "A Arte da ExcelÃªncia Operacional",
+      philosophySubtitle: "O verdadeiro luxo nÃ£o exige a sua atenÃ§Ã£o",
+      philosophyP1: "Nossa filosofia fundamenta-se na discriÃ§Ã£o e na precisÃ£o. O serviÃ§o perfeito Ã© aquele em que tudo acontece exatamente como deve acontecer. Privacidade absoluta, pontualidade milimÃ©trica e respeito ao seu tempo.",
       philosophyItems: [
         {
-          title: "Discrição",
-          desc: "O motorista intervém apenas quando necessário. Nenhuma conversa não solicitada, nenhuma interrupção ao trabalho em andamento."
+          title: "DiscriÃ§Ã£o & Privacidade",
+          desc: "O motorista Ã© uma presenÃ§a altamente qualificada e imperceptÃ­vel. IntervÃ©m apenas quando solicitado. Seu espaÃ§o e privacidade permanecem intocados."
         },
         {
-          title: "Ambiente reservado",
-          desc: "O veículo é um espaço de trabalho. Chamadas, emails, documentação: tudo pode continuar sem interrupções durante o translado."
+          title: "SantuÃ¡rio Executivo",
+          desc: "O interior de nossa frota Mercedes-Benz funciona como seu escritÃ³rio mÃ³vel ou sala VIP privativa. SilÃªncio, conexÃ£o Wi-Fi e conforto executivo."
         },
         {
-          title: "Previsibilidade",
-          desc: "Horários confirmados, rotas definidas, nenhuma variável imprevista. O cliente conhece antecipadamente cada detalhe do serviço."
+          title: "Certeza Operacional",
+          desc: "Nenhuma variÃ¡vel imprevisÃ­vel. Rotas otimizadas previamente e monitoramento de voos em tempo real para total tranquilidade."
         }
       ],
 
-      standardsTitle: "Padrões operacionais",
-      standardsSubtitle: "Requisitos aplicados a cada serviço",
+      standardsTitle: "PadrÃµes Operacionais Corporativos",
+      standardsSubtitle: "Requisitos rigorosos aplicados a cada atendimento",
       standardsItems: [
         {
           icon: Users,
-          title: "Conduta profissional",
-          desc: "Apresentação formal, comportamento discreto, familiaridade com as exigências de contextos corporativos e institucionais."
+          title: "Conduta Profissional d'Ã‰lite",
+          desc: "ApresentaÃ§Ã£o formal impecÃ¡vel, postura discreta e total familiaridade com ambientes corporativos e institucionais internacionais."
         },
         {
           icon: Shield,
-          title: "Formação específica",
-          desc: "Cada motorista segue um percurso formativo que inclui direção segura, gestão do tempo, protocolos de confidencialidade."
+          title: "Treinamento & Confidencialidade Certificada",
+          desc: "Todos os motoristas passam por treinamento avanÃ§ado de direÃ§Ã£o segura, gestÃ£o de tempo e rÃ­gidos protocolos de sigilo."
         },
         {
           icon: FileText,
-          title: "Documentação e relatórios",
-          desc: "Procedimentos padronizados, faturação eletrônica, relatórios compatíveis com sistemas de gestão de despesas corporativas."
+          title: "DocumentaÃ§Ã£o & Faturamento B2B",
+          desc: "Procedimentos padronizados, faturamento corporativo eletrÃ´nico e relatÃ³rios compatÃ­veis com gestÃ£o de despesas empresariais."
         },
         {
           icon: Clock,
-          title: "Gestão de horários",
-          desc: "Monitoramento de voos, chegada antecipada, margens operacionais para garantir pontualidade em qualquer condição de tráfego."
+          title: "GestÃ£o de Tempo & Monitoramento",
+          desc: "Acompanhamento de voos em tempo real, chegada antecipada e margens operacionais para pontualidade em qualquer trÃ¡fego."
         }
       ],
 
-      flexTitle: "Flexibilidade operacional",
-      flexSubtitle: "Adaptação às necessidades durante o serviço",
-      flexP1: "Compreendemos que programações empresariais podem variar. O serviço é estruturado para gerir mudanças sem comprometer a eficiência.",
+      flexTitle: "Flexibilidade Operacional Sob Medida",
+      flexSubtitle: "AdaptaÃ§Ã£o imediata Ã s mudanÃ§as de agenda",
+      flexP1: "Compreendemos que agendas executivas mudam rapidamente. Nosso serviÃ§o Ã© estruturado para gerenciar alteraÃ§Ãµes sem comprometer a eficiÃªncia.",
       flexItems: [
         {
-          title: "Variações de rota",
-          desc: "Eventuais mudanças de destino são geridas em tempo real, mediante comunicação ao condutor."
+          title: "VariaÃ§Ãµes de Rota em Tempo Real",
+          desc: "MudanÃ§as de destino ou itinerÃ¡rio sÃ£o gerenciadas instantaneamente mediante comunicaÃ§Ã£o ao condutor."
         },
         {
-          title: "Solicitações durante o serviço",
-          desc: "Paradas adicionais, antecipações ou prolongamentos de horário são geridos com a mesma precisão do serviço planejado."
+          title: "DisposiÃ§Ã£o HorÃ¡ria & ExtensÃµes",
+          desc: "Paradas adicionais, antecipaÃ§Ãµes ou prolongamentos de horÃ¡rio sÃ£o coordenados com a mesma precisÃ£o do plano original."
         },
         {
-          title: "Prestação de contas transparente",
-          desc: "Ao final do serviço é fornecido um resumo de tempos e quilômetros efetivos. Nenhuma cobrança sem comunicação prévia."
+          title: "PrestaÃ§Ã£o de Contas Transparente",
+          desc: "Ao final do serviÃ§o, Ã© fornecido um relatÃ³rio claro de tempos e quilÃ´metros rodados. Sem cobranÃ§as sem comunicaÃ§Ã£o prÃ©via."
         }
       ],
 
-      closingTitle: "Continuidade e confiabilidade",
-      closingP1: "MILANO é um serviço pensado para relacionamentos contínuos. Trabalhamos com empresas que necessitam de um fornecedor estável, capaz de garantir o mesmo nível de serviço a cada utilização.",
-      closingP2: "A coerência operacional é nosso critério de avaliação.",
-      closingCta: "Consultar prontuário de tarifas",
+      closingTitle: "Continuidade, Confiabilidade e Parceria B2B",
+      closingP1: "A NEXITUS Ã© projetada para parcerias continuativas de alto nÃ­vel. Atendemos empresas e executivos que exigem um fornecedor estÃ¡vel e impecÃ¡vel.",
+      closingP2: "ConsistÃªncia operacional e perfeiÃ§Ã£o constante sÃ£o nossas diretrizes.",
+      closingCta: "Consultar ProntuÃ¡rio de Tarifas",
       closingCtaLink: "/milano-prontuario-tariffe"
     },
     fr: {
-      heroTagline: "Division Corporate",
-      heroTitle: "MILANO",
-      heroSubtitle: "Premium Mobility",
-      heroByline: "by Nexitus",
+      heroTagline: "LE STANDARD CORPORATE",
+      heroTitle: "NEXITUS",
+      heroSubtitle: "Excellence in Motion.",
+      heroByline: "Executive Mobility",
 
-      introTitle: "La division corporate de Nexitus",
-      introP1: "MILANO est la division de Nexitus dédiée à la mobilité d'entreprise. Nous opérons à Milan, en Lombardie et dans les principales zones du Nord de l'Italie, fournissant des services de transport avec chauffeur aux clients corporate, dirigeants et partenaires B2B.",
-      introP2: "Notre périmètre opérationnel comprend les transferts aéroport depuis Malpensa, Linate et Orio al Serio, les services à disposition horaire et les transferts interrégionaux.",
+      introTitle: "Un Nouveau Standard de MobilitÃ© d'Ã‰lite",
+      introP1: "L'histoire de NEXITUS est nÃ©e d'annÃ©es de dÃ©vouement auprÃ¨s d'une clientÃ¨le d'Ã©lite. Nous avons transformÃ© cette expÃ©rience en un modÃ¨le opÃ©ratif oÃ¹ la perfection est la norme et la rÃ©activitÃ© anticipe chaque exigence.",
+      introP2: "Du transfert aÃ©roportuaire privÃ© pour Malpensa, Linate et Orio al Serio Ã  la gestion complÃ¨te de la mobilitÃ© pour roadshows et Ã©vÃ©nements d'entreprise: chaque trajet est une expÃ©rience de silence, confort et contrÃ´le absolu.",
 
-      philosophyTitle: "Philosophie opérationnelle",
-      philosophySubtitle: "Un service conçu pour ne pas nécessiter d'attention",
-      philosophyP1: "Notre approche repose sur trois éléments : discrétion, ponctualité et prévisibilité. Chaque service est structuré pour s'intégrer dans la journée de travail du client sans interférence.",
+      philosophyTitle: "L'Art de l'Excellence OpÃ©rationnelle",
+      philosophySubtitle: "Le vrai luxe ne requiert pas votre attention",
+      philosophyP1: "Notre philosophie repose sur la discrÃ©tion et la prÃ©cision. Le service parfait est celui oÃ¹ tout se dÃ©roule exactement comme il se doit. ConfidentialitÃ© absolue, ponctualitÃ© millimÃ©trÃ©e et respect de votre temps.",
       philosophyItems: [
         {
-          title: "Discrétion",
-          desc: "Le chauffeur n'intervient que lorsque c'est nécessaire. Aucune conversation non sollicitée, aucune interruption du travail en cours."
+          title: "DiscrÃ©tion & ConfidentialitÃ©",
+          desc: "Le chauffeur est une prÃ©sence hautement qualifiÃ©e et imperceptible. Intervenant uniquement sur demande, votre espace privÃ© reste prÃ©servÃ©."
         },
         {
-          title: "Environnement réservé",
-          desc: "Le véhicule est un espace de travail. Appels, emails, documentation : tout peut continuer sans interruption pendant le transfert."
+          title: "Executive Sanctuary",
+          desc: "L'habitacle de notre flotte Mercedes-Benz est votre bureau mobile ou votre salon privÃ©. Silence, connexion Wi-Fi et confort supÃ©rieur."
         },
         {
-          title: "Prévisibilité",
-          desc: "Horaires confirmés, itinéraires définis, aucune variable imprévue. Le client connaît à l'avance chaque détail du service."
+          title: "Certitude OpÃ©rationnelle",
+          desc: "Aucune variable imprÃ©vue. ItinÃ©raires optimisÃ©s Ã  l'avance et suivi des vols en temps rÃ©el pour une sÃ©rÃ©nitÃ© totale."
         }
       ],
 
-      standardsTitle: "Standards opérationnels",
-      standardsSubtitle: "Exigences appliquées à chaque service",
+      standardsTitle: "Standards OpÃ©rationnels Corporate",
+      standardsSubtitle: "Exigences rigoureuses appliquÃ©es Ã  chaque prestation",
       standardsItems: [
         {
           icon: Users,
-          title: "Conduite professionnelle",
-          desc: "Présentation formelle, comportement discret, familiarité avec les exigences des contextes corporate et institutionnels."
+          title: "Conduite Professionnelle d'Ã‰lite",
+          desc: "PrÃ©sentation formelle irrÃ©prochable, comportement discret et parfaite connaissance des contextes d'affaires et institutionnels."
         },
         {
           icon: Shield,
-          title: "Formation spécifique",
-          desc: "Chaque chauffeur suit un parcours de formation incluant conduite sûre, gestion du temps, protocoles de confidentialité."
+          title: "Formation & ConfidentialitÃ© CertifiÃ©e",
+          desc: "Chaque chauffeur bÃ©nÃ©ficie d'une formation continue en conduite sÃ©curisÃ©e, gestion du temps et protocoles de confidentialitÃ©."
         },
         {
           icon: FileText,
-          title: "Documentation et reporting",
-          desc: "Procédures standardisées, facturation électronique, reporting compatible avec les systèmes de gestion des dépenses d'entreprise."
+          title: "Facturation & Reporting B2B",
+          desc: "ProcÃ©dures standardisÃ©es, facturation Ã©lectronique et reporting dÃ©taillÃ© compatible avec la gestion des frais d'entreprise."
         },
         {
           icon: Clock,
-          title: "Gestion horaire",
-          desc: "Suivi des vols, arrivée anticipée, marges opérationnelles pour garantir la ponctualité dans toutes les conditions de circulation."
+          title: "Gestion du Temps & Suivi",
+          desc: "Suivi des vols en temps rÃ©el, arrivÃ©e anticipÃ©e et marges opÃ©rationnelles pour garantir la ponctualitÃ© en toute circonstance."
         }
       ],
 
-      flexTitle: "Flexibilité opérationnelle",
-      flexSubtitle: "Adaptation aux besoins en cours de service",
-      flexP1: "Nous comprenons que les programmes d'entreprise peuvent varier. Le service est structuré pour gérer les modifications sans compromettre l'efficacité.",
+      flexTitle: "FlexibilitÃ© OpÃ©rationnelle Sur Mesure",
+      flexSubtitle: "Adaptation instantanÃ©e aux Ã©volutions de votre agenda",
+      flexP1: "Nous comprenons que les plannings exÃ©cutifs Ã©voluent rapidement. Notre service est structurÃ© pour gÃ©rer les modifications sans compromettre l'efficacitÃ©.",
       flexItems: [
         {
-          title: "Variations d'itinéraire",
-          desc: "Tout changement de destination est géré en temps réel, après communication au chauffeur."
+          title: "Variations d'ItinÃ©raire en Temps RÃ©el",
+          desc: "Tout changement de destination est gÃ©rÃ© instantanÃ©ment sur simple communication au chauffeur."
         },
         {
-          title: "Demandes pendant le service",
-          desc: "Arrêts supplémentaires, avances ou prolongations d'horaire sont gérés avec la même précision que le service planifié."
+          title: "Dispositions & Prolongations",
+          desc: "ArrÃªts supplÃ©mentaires, dÃ©parts avancÃ©s ou extensions horaires sont coordonnÃ©s avec la mÃªme prÃ©cision que le service initial."
         },
         {
-          title: "Compte-rendu transparent",
-          desc: "À la fin du service, un récapitulatif des temps et kilomètres effectifs est fourni. Aucune facturation sans communication préalable."
+          title: "Compte-Rendu Transparent",
+          desc: "Ã€ la fin de la prestation, un rÃ©capitulatif clair des temps et kilomÃ¨tres est fourni. Aucune facturation sans accord prÃ©alable."
         }
       ],
 
-      closingTitle: "Continuité et fiabilité",
-      closingP1: "MILANO est un service conçu pour des relations continues. Nous travaillons avec des entreprises qui ont besoin d'un fournisseur stable, capable de garantir le même niveau de service à chaque utilisation.",
-      closingP2: "La cohérence opérationnelle est notre critère d'évaluation.",
-      closingCta: "Consulter le barème tarifaire",
+      closingTitle: "ContinuitÃ©, FiabilitÃ© & Partenariat B2B",
+      closingP1: "NEXITUS est conÃ§u pour des relations d'affaires durables. Nous accompagnons les entreprises et dirigeants exigeant un partenaire d'excellence constante.",
+      closingP2: "La cohÃ©rence opÃ©rationnelle et la perfection continue sont nos critÃ¨res fondamentaux.",
+      closingCta: "Consulter le BarÃ¨me Tarifaire",
       closingCtaLink: "/milano-prontuario-tariffe"
     }
   };
@@ -332,160 +331,136 @@ const MilanoPremiumMobility = () => {
   const c = content[language] || content.it;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black text-white">
       <SEOHead
-        title={`MILANO Premium Mobility | ${c.heroTagline} | Nexitus`}
+        title={`NEXITUS Executive Mobility | ${c.heroTagline}`}
         description={c.introP1}
-        keywords="ncc corporate milano, noleggio con conducente aziende, transfer aziendale milano, servizio autista milano, mobilità aziendale lombardia"
+        keywords="nexitus executive mobility, ncc corporate milano, noleggio con conducente aziende, transfer aziendale milano, servizio autista milano, mobilita aziendale lombardia"
         canonicalUrl="https://nexitus.it/milano-premium-mobility"
       />
       <Header />
 
-      {/* Hero Section - Premium Visual with Logo */}
-      <section className="relative pt-32 pb-4 md:pt-40 md:pb-8">
-        {/* Unified dark background - pure black */}
+      {/* Hero Section */}
+      <section className="relative pt-32 pb-12 md:pt-44 md:pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-black" />
 
-        {/* Metallic silver/gold ambient glow effects */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-[hsl(43_30%_40%)] rounded-full blur-[150px] opacity-10" />
-          <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[hsl(0_0%_50%)] rounded-full blur-[180px] opacity-5" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[hsl(43_20%_35%)] rounded-full blur-[200px] opacity-5" />
+        {/* Ambient lighting */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none">
+          <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[hsl(43_30%_40%)] rounded-full blur-[180px] opacity-15" />
+          <div className="absolute bottom-1/4 right-1/4 w-[600px] h-[600px] bg-[hsl(0_0%_40%)] rounded-full blur-[200px] opacity-10" />
         </div>
 
-        {/* Subtle metallic grain texture overlay */}
-        <div className="absolute inset-0 opacity-[0.02]"
-          style={{
-            backgroundImage: `radial-gradient(circle at 50% 50%, hsl(0 0% 100% / 0.15) 0%, transparent 50%)`,
-            backgroundSize: '3px 3px'
-          }}
-        />
-
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container text-center">
-            {/* Corporate tagline */}
+          <div className="max-w-4xl mx-auto text-center">
             <MotionReveal delay={0.1}>
-              <p className="milano-caption text-[hsl(0_0%_50%)] mb-3 tracking-[0.3em]">
+              <p className="text-xs md:text-sm tracking-[0.35em] text-[hsl(43_40%_55%)] mb-4 font-semibold uppercase">
                 {c.heroTagline}
               </p>
             </MotionReveal>
 
-            {/* Central Logo - MUCH LARGER with 3D Entrance */}
-            <div className="relative mx-auto perspective-2000 py-1">
+            {/* Central Logo with 3D Spin Animation */}
+            <div className="relative mx-auto perspective-2000 my-6">
               <div className="milano-logo-3d">
-                {/* Subtle glow behind logo */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-80 h-80 md:w-[30rem] md:h-[30rem] lg:w-[40rem] lg:h-[40rem] bg-[hsl(43_30%_40%)] rounded-full blur-[100px] opacity-15" />
+                  <div className="w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[42rem] lg:h-[42rem] bg-[hsl(43_30%_40%)] rounded-full blur-[120px] opacity-20" />
                 </div>
-                {/* Logo image - Adjusted Size */}
                 <img
                   src={milanoLogo}
-                  alt="MILANO Premium Mobility by Nexitus"
-                  className="relative z-10 w-[24rem] h-auto md:w-[32rem] lg:w-[40rem] xl:w-[28rem] mx-auto"
+                  alt="NEXITUS Executive Mobility"
+                  className="relative z-10 w-80 md:w-[28rem] lg:w-[34rem] xl:w-[40rem] mx-auto h-auto"
                   style={{
-                    filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.5)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
+                    filter: 'drop-shadow(0 20px 60px rgba(0, 0, 0, 0.6)) drop-shadow(0 8px 20px rgba(0, 0, 0, 0.3))'
                   }}
                 />
               </div>
             </div>
+
+            <MotionReveal delay={0.25}>
+              <h1 className="text-2xl md:text-4xl font-heading font-light text-white tracking-[0.2em] mb-2 uppercase">
+                {c.heroTitle}
+              </h1>
+              <p className="text-base md:text-xl text-[hsl(43_30%_55%)] italic font-light tracking-wide">
+                {c.heroSubtitle}
+              </p>
+            </MotionReveal>
           </div>
         </div>
-
-        {/* Bottom gradient fade - removed for seamless connection */}
-        {/* <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-background via-background/80 to-transparent" /> */}
       </section>
 
-      {/* Introduction - with refined background */}
-      <section className="relative overflow-hidden pt-8 pb-24 md:pt-12 md:pb-32">
-        {/* Unified dark background - pure black */}
-        <div className="absolute inset-0 bg-black" />
-
+      {/* Introduction */}
+      <section className="relative py-16 md:py-24 border-t border-white/[0.05]">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container">
+          <div className="max-w-4xl mx-auto">
             <MotionReveal>
-              <div className="mb-10">
-                <h2 className="milano-heading-lg text-foreground mb-6">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-5xl font-heading font-light text-white mb-6 tracking-wide">
                   {c.introTitle}
                 </h2>
+                <div className="w-20 h-[2px] bg-gradient-to-r from-transparent via-[hsl(43_40%_50%)] to-transparent mx-auto mb-8" />
               </div>
             </MotionReveal>
-            <div className="space-y-5 milano-body-lg text-muted-foreground">
+
+            <div className="space-y-6 text-base md:text-lg text-[hsl(0_0%_75%)] font-light leading-relaxed text-center md:text-left">
               <MotionReveal delay={0.1}>
-                <p>{c.introP1}</p>
+                <p className="bg-white/[0.02] border border-white/[0.06] p-6 md:p-8 rounded-2xl backdrop-blur-md">
+                  {c.introP1}
+                </p>
               </MotionReveal>
               <MotionReveal delay={0.2}>
-                <p className="text-muted-foreground/80">{c.introP2}</p>
+                <p className="text-[hsl(0_0%_65%)] px-2">
+                  {c.introP2}
+                </p>
               </MotionReveal>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Gallery Section with Header Decoration */}
-      <section className="relative overflow-hidden pt-12 pb-8">
-        <div className="absolute inset-0 bg-black" />
+      {/* Prestige Details Badge Header */}
+      <section className="relative py-8 bg-black">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-8">
+          <div className="text-center">
             <MotionReveal>
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="h-px w-8 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
-                <div className="w-1 h-1 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)]" />
-                <div className="h-px w-8 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-10 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
+                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)]" />
+                <div className="h-px w-10 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
               </div>
-              <p className="text-[10px] tracking-[0.4em] text-[hsl(43_30%_50%)] uppercase mb-3 font-medium">
+              <p className="text-xs tracking-[0.35em] text-[hsl(43_40%_55%)] uppercase font-medium">
                 {language === 'it' ? 'Dettagli di Prestigio' :
-                  language === 'pt' ? 'Detalhes de Prestígio' :
-                    language === 'en' ? 'Prestige Details' : 'Détails de Prestige'}
+                  language === 'pt' ? 'Detalhes de PrestÃ­gio' :
+                    language === 'en' ? 'Prestige Details' : 'DÃ©tails de Prestige'}
               </p>
-              <h2 className="text-3xl md:text-4xl font-heading font-light text-white tracking-widest">
-                {language === 'it' ? "Visione d'Eccellenza" :
-                  language === 'pt' ? 'Visão de Excelência' :
-                    language === 'en' ? 'Vision of Excellence' : "Vision d'Excellence"}
-              </h2>
             </MotionReveal>
           </div>
         </div>
       </section>
 
-      {/* Operational Philosophy - with gold accents */}
-      <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background - pure black */}
-        <div className="absolute inset-0 bg-black" />
-
-        {/* Subtle ambient glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-[hsl(43_25%_15%)] rounded-full blur-[150px] opacity-10" />
-
+      {/* Operational Philosophy */}
+      <section className="relative py-16 md:py-24 border-t border-white/[0.05]">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container-wide">
-            <div className="text-center mb-20">
-              {/* Metallic decorative element */}
-              <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
-              </div>
-              <h2 className="milano-heading-lg text-white mb-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-white mb-4 tracking-wide">
                 {c.philosophyTitle}
               </h2>
-              <p className="milano-body text-[hsl(43_20%_60%)]">
+              <p className="text-base md:text-lg text-[hsl(43_30%_55%)] italic font-light">
                 {c.philosophySubtitle}
+              </p>
+              <p className="text-base text-[hsl(0_0%_70%)] max-w-3xl mx-auto mt-6 leading-relaxed font-light">
+                {c.philosophyP1}
               </p>
             </div>
 
-            <p className="milano-body-lg text-[hsl(0_0%_70%)] text-center max-w-3xl mx-auto mb-20">
-              {c.philosophyP1}
-            </p>
-
-            <div className="milano-grid-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {c.philosophyItems.map((item, index) => (
-                <MotionReveal key={index} delay={index * 0.1} className="h-full">
-                  <div className="relative group p-10 h-full rounded-sm bg-white/[0.02] backdrop-blur-md border border-white/5 hover:border-[hsl(43_30%_50%)/40] transition-all duration-700 hover:-translate-y-1 shadow-2xl">
-                    {/* Card accent bar - prominent gold */}
-                    <div className="w-[2px] h-8 mb-6 bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)] group-hover:h-12 transition-all duration-700" />
-                    <h3 className="text-xl font-heading font-medium text-white mb-4 tracking-wide group-hover:text-[hsl(43_30%_60%)] transition-colors">
+                <MotionReveal key={index} delay={index * 0.12} className="h-full">
+                  <div className="group p-8 h-full rounded-2xl bg-white/[0.02] backdrop-blur-md border border-white/[0.06] hover:border-[hsl(43_40%_50%)]/30 hover:bg-white/[0.04] transition-all duration-500 shadow-xl flex flex-col justify-start">
+                    <div className="w-1 h-8 mb-6 bg-[hsl(43_40%_50%)] rounded-full group-hover:h-12 transition-all duration-500" />
+                    <h3 className="text-lg font-semibold text-white mb-3 tracking-wide group-hover:text-[hsl(43_40%_55%)] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="font-body text-[hsl(0_0%_65%)] leading-relaxed text-sm">
+                    <p className="text-sm text-[hsl(0_0%_65%)] leading-relaxed font-light">
                       {item.desc}
                     </p>
                   </div>
@@ -496,23 +471,15 @@ const MilanoPremiumMobility = () => {
         </div>
       </section>
 
-      {/* Operational Standards - refined cards with highlight */}
-      <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background - pure black */}
-        <div className="absolute inset-0 bg-black" />
-
+      {/* Operational Standards */}
+      <section className="relative py-16 md:py-24 border-t border-white/[0.05]">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container-wide">
-            <div className="text-center mb-20">
-              <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
-              </div>
-              <h2 className="milano-heading-lg text-white mb-4">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-white mb-4 tracking-wide">
                 {c.standardsTitle}
               </h2>
-              <p className="milano-body text-[hsl(43_20%_60%)]">
+              <p className="text-base md:text-lg text-[hsl(43_30%_55%)] italic font-light">
                 {c.standardsSubtitle}
               </p>
             </div>
@@ -520,17 +487,17 @@ const MilanoPremiumMobility = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {c.standardsItems.map((item, index) => (
                 <MotionReveal key={index} delay={index * 0.1} className="h-full">
-                  <div className="flex gap-8 p-8 h-full rounded-sm bg-white/[0.03] border border-white/5 hover:bg-white/[0.05] hover:border-[hsl(43_30%_50%)/30] transition-all duration-500 group shadow-lg">
+                  <div className="flex gap-6 p-8 h-full rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-[hsl(43_40%_50%)]/30 transition-all duration-500 group shadow-lg">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 flex items-center justify-center border border-white/10 rounded-sm group-hover:border-[hsl(43_30%_50%)] transition-colors duration-500 shadow-inner">
-                        <item.icon className="w-5 h-5 text-white/40 group-hover:text-[hsl(43_30%_60%)] transition-colors duration-500" strokeWidth={1} />
+                      <div className="w-12 h-12 rounded-xl bg-[hsl(43_30%_40%)]/10 border border-[hsl(43_40%_50%)]/20 flex items-center justify-center group-hover:border-[hsl(43_40%_50%)]/40 transition-colors">
+                        <item.icon className="w-5 h-5 text-[hsl(43_40%_55%)]" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-heading font-normal text-white mb-3 tracking-wide group-hover:text-[hsl(43_30%_60%)] transition-colors">
+                      <h3 className="text-lg font-semibold text-white mb-2 tracking-wide group-hover:text-[hsl(43_40%_55%)] transition-colors">
                         {item.title}
                       </h3>
-                      <p className="font-body text-[hsl(0_0%_60%)] text-sm leading-relaxed group-hover:text-[hsl(0_0%_70%)] transition-colors">
+                      <p className="text-sm text-[hsl(0_0%_65%)] leading-relaxed font-light">
                         {item.desc}
                       </p>
                     </div>
@@ -542,96 +509,74 @@ const MilanoPremiumMobility = () => {
         </div>
       </section>
 
-      {/* Operational Flexibility - with gold accents */}
-      <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background - pure black */}
-        <div className="absolute inset-0 bg-black" />
-
+      {/* Operational Flexibility */}
+      <section className="relative py-16 md:py-24 border-t border-white/[0.05]">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container">
+          <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <div className="flex items-center justify-center gap-3 mb-8">
-                <div className="h-px w-12 bg-gradient-to-r from-transparent to-[hsl(43_30%_50%)/40]" />
-                <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
-                <div className="h-px w-12 bg-gradient-to-l from-transparent to-[hsl(43_30%_50%)/40]" />
-              </div>
-              <h2 className="milano-heading-lg text-white mb-4">
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-white mb-4 tracking-wide">
                 {c.flexTitle}
               </h2>
-              <p className="milano-body text-[hsl(43_20%_60%)]">
+              <p className="text-base md:text-lg text-[hsl(43_30%_55%)] italic font-light mb-6">
                 {c.flexSubtitle}
+              </p>
+              <p className="text-base text-[hsl(0_0%_70%)] leading-relaxed max-w-3xl mx-auto font-light">
+                {c.flexP1}
               </p>
             </div>
 
-            <p className="milano-body-lg text-[hsl(0_0%_70%)] text-center max-w-3xl mx-auto mb-16">
-              {c.flexP1}
-            </p>
-
             <div className="space-y-6">
               {c.flexItems.map((item, index) => (
-                <div key={index} className="flex gap-6 p-8 rounded-xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.05] hover:border-[hsl(43_30%_50%)/30] transition-all duration-300 group">
-                  <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center bg-[hsl(43_40%_50%)] shadow-[0_0_8px_hsl(43_40%_50%)]">
-                      <CheckCircle className="w-4 h-4 text-black" strokeWidth={2} />
+                <MotionReveal key={index} delay={index * 0.1}>
+                  <div className="flex gap-6 p-8 rounded-2xl bg-white/[0.02] border border-white/[0.06] hover:bg-white/[0.04] hover:border-[hsl(43_40%_50%)]/30 transition-all duration-300 group">
+                    <div className="flex-shrink-0 mt-1">
+                      <div className="w-6 h-6 rounded-full flex items-center justify-center bg-[hsl(43_40%_50%)] text-black">
+                        <CheckCircle className="w-4 h-4" strokeWidth={2.5} />
+                      </div>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-[hsl(43_40%_55%)] transition-colors">
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-[hsl(0_0%_65%)] leading-relaxed font-light">
+                        {item.desc}
+                      </p>
                     </div>
                   </div>
-                  <div>
-                    <h3 className="text-lg font-heading font-semibold text-white mb-2 group-hover:text-[hsl(43_30%_60%)] transition-colors">
-                      {item.title}
-                    </h3>
-                    <p className="milano-body text-[hsl(0_0%_60%)] group-hover:text-[hsl(0_0%_70%)] transition-colors">
-                      {item.desc}
-                    </p>
-                  </div>
-                </div>
+                </MotionReveal>
               ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Closing - premium CTA section */}
-      <section className="milano-section relative overflow-hidden">
-        {/* Unified dark background - pure black */}
-        <div className="absolute inset-0 bg-black" />
-
-        {/* Metallic ambient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-[hsl(43_30%_20%)] rounded-full blur-[150px] opacity-20" />
-
+      {/* Closing CTA */}
+      <section className="relative py-24 md:py-32 border-t border-white/[0.05]">
         <div className="container mx-auto px-4 relative z-10">
-          <div className="milano-container text-center">
-            {/* Decorative element */}
-            <div className="flex items-center justify-center gap-4 mb-12">
-              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[hsl(43_30%_50%)/30] to-transparent" />
-              <div className="w-2 h-2 rounded-full bg-[hsl(43_40%_50%)] shadow-[0_0_10px_hsl(43_40%_50%)]" />
-              <div className="h-px w-16 bg-gradient-to-r from-transparent via-[hsl(43_30%_50%)/30] to-transparent" />
-            </div>
+          <div className="max-w-3xl mx-auto text-center">
+            <MotionReveal>
+              <h2 className="text-3xl md:text-5xl font-heading font-light text-white mb-6 tracking-wide">
+                {c.closingTitle}
+              </h2>
+            </MotionReveal>
 
-            <h2 className="milano-heading-lg text-white mb-10">
-              {c.closingTitle}
-            </h2>
+            <MotionReveal delay={0.1}>
+              <p className="text-base md:text-lg text-[hsl(0_0%_75%)] font-light leading-relaxed mb-4">
+                {c.closingP1}
+              </p>
+              <p className="text-base md:text-lg text-[hsl(43_30%_55%)] italic font-light mb-10">
+                {c.closingP2}
+              </p>
+            </MotionReveal>
 
-            <div className="space-y-4 mb-14">
-              <MotionReveal delay={0.1}>
-                <p className="milano-body-lg text-[hsl(0_0%_75%)] max-w-2xl mx-auto leading-relaxed">
-                  {c.closingP1}
-                </p>
-              </MotionReveal>
-              <MotionReveal delay={0.2}>
-                <p className="milano-body text-[hsl(43_20%_60%)] max-w-2xl mx-auto uppercase tracking-widest text-[10px] font-bold">
-                  {c.closingP2}
-                </p>
-              </MotionReveal>
-            </div>
-
-            <MotionReveal delay={0.3}>
+            <MotionReveal delay={0.2}>
               <Link to={c.closingCtaLink}>
                 <Button
                   size="lg"
-                  className="bg-gradient-to-r from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)] text-[hsl(0_0%_5%)] hover:from-[hsl(43_45%_50%)] hover:to-[hsl(43_35%_40%)] transition-all duration-300 px-10 py-6 text-base font-semibold shadow-lg shadow-[hsl(43_30%_30%)/20]"
+                  className="bg-gradient-to-r from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)] text-[hsl(0_0%_5%)] hover:from-[hsl(43_45%_50%)] hover:to-[hsl(43_35%_40%)] transition-all duration-300 px-10 py-6 text-sm md:text-base font-semibold shadow-xl shadow-[hsl(43_30%_30%)/20]"
                 >
                   {c.closingCta}
-                  <ArrowRight className="ml-3 w-4 h-4" />
+                  <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
             </MotionReveal>

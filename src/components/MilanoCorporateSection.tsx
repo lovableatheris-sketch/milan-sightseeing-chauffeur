@@ -1,144 +1,121 @@
-import { ArrowRight } from "lucide-react";
+import { Car, Users, ShieldCheck, ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
-import milanoLogo from "@/assets/milano-logo.png";
+import { translations } from "@/locales/translations";
 import MotionReveal from "@/components/MotionReveal";
+
+const WHATSAPP_NUMBER = "393891430907";
+
+const pillarsIcons = [Car, Users, ShieldCheck];
 
 const MilanoCorporateSection = () => {
     const { language } = useLanguage();
+    const t = translations[language]?.aboutNexitus ?? translations.it.aboutNexitus;
 
-    const content = {
-        it: {
-            tagline: "DIVISIONE CORPORATE",
-            title: "MILANO",
-            subtitle: "Excellence in Motion",
-            description: "La nostra divisione dedicata alla mobilità aziendale. Operiamo con precisione assoluta a Milano e in tutto il Nord Italia, offrendo un servizio dove l'eccellenza è l'unica opzione accettata.",
-            features: [
-                "Transfer aeroportuali premium",
-                "Servizi a disposizione oraria",
-                "Gestione roadshow ed eventi"
-            ],
-            cta: "Scopri MILANO"
-        },
-        en: {
-            tagline: "CORPORATE DIVISION",
-            title: "MILANO",
-            subtitle: "Excellence in Motion",
-            description: "Our division dedicated to corporate mobility. We operate with absolute precision in Milan and throughout Northern Italy, offering a service where excellence is the only accepted option.",
-            features: [
-                "Premium airport transfers",
-                "Hourly disposal services",
-                "Roadshow and event management"
-            ],
-            cta: "Discover MILANO"
-        },
-        pt: {
-            tagline: "DIVISÃO CORPORATE",
-            title: "MILANO",
-            subtitle: "Excellence in Motion",
-            description: "Nossa divisão dedicada à mobilidade empresarial. Operamos com precisão absoluta em Milão e em todo o Norte da Itália, oferecendo um serviço onde a excelência é a única opção aceita.",
-            features: [
-                "Transfers aeroportuários premium",
-                "Serviços à disposição por hora",
-                "Gestão de roadshows e eventos"
-            ],
-            cta: "Descubra MILANO"
-        },
-        fr: {
-            tagline: "DIVISION CORPORATE",
-            title: "MILANO",
-            subtitle: "Excellence in Motion",
-            description: "Notre division dédiée à la mobilité d'entreprise. Nous opérons avec une précision absolue à Milan et dans tout le Nord de l'Italie, offrant un service où l'excellence est la seule option acceptée.",
-            features: [
-                "Transferts aéroport premium",
-                "Services à disposition horaire",
-                "Gestion de roadshows et événements"
-            ],
-            cta: "Découvrir MILANO"
-        }
-    };
+    const pillars = [
+        { title: t.pillar1Title, desc: t.pillar1Desc, Icon: pillarsIcons[0] },
+        { title: t.pillar2Title, desc: t.pillar2Desc, Icon: pillarsIcons[1] },
+        { title: t.pillar3Title, desc: t.pillar3Desc, Icon: pillarsIcons[2] },
+    ];
 
-    const c = content[language] || content.it;
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+        translations[language]?.common?.whatsappMessage ?? ""
+    )}`;
 
     return (
-        <section className="relative py-24 md:py-32 overflow-hidden"
-            style={{ maskImage: 'linear-gradient(to bottom, transparent, black 10%)' }}>
-            {/* Dark elegant background - fully black to match adjacent sections */}
+        <section
+            id="about-nexitus"
+            className="relative py-24 md:py-36 overflow-hidden"
+            style={{ maskImage: "linear-gradient(to bottom, transparent, black 8%)" }}
+        >
+            {/* Background */}
             <div className="absolute inset-0 bg-black" />
 
-            {/* Subtle golden ambient glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-[hsl(43_25%_25%)] rounded-full blur-[200px] opacity-10" />
+            {/* Golden ambient glow */}
+            <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[600px] bg-[hsl(43_25%_20%)] rounded-full blur-[220px] opacity-[0.08]" />
+            <div className="absolute bottom-0 right-0 w-[500px] h-[400px] bg-[hsl(43_20%_15%)] rounded-full blur-[180px] opacity-[0.06]" />
 
             <div className="container mx-auto px-4 relative z-10">
-                <div className="max-w-6xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div className="max-w-5xl mx-auto">
 
-                        {/* Logo Side */}
-                        <MotionReveal className="order-2 lg:order-1">
-                            <div className="relative flex justify-center lg:justify-start">
-                                {/* Glow effect behind logo */}
-                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                    <div className="w-64 h-64 md:w-80 md:h-80 bg-[hsl(43_30%_40%)] rounded-full blur-[100px] opacity-15" />
-                                </div>
-                                <img
-                                    src={milanoLogo}
-                                    alt="MILANO Premium Mobility by Nexitus"
-                                    className="relative z-10 w-64 md:w-80 lg:w-96 h-auto"
-                                    style={{
-                                        filter: 'drop-shadow(0 15px 40px rgba(0, 0, 0, 0.4))'
-                                    }}
-                                />
-                            </div>
+                    {/* Header */}
+                    <div className="text-center mb-16 md:mb-20">
+                        <MotionReveal>
+                            <p className="text-xs md:text-sm tracking-[0.35em] text-[hsl(43_40%_55%)] mb-5 font-medium uppercase">
+                                {t.tagline}
+                            </p>
                         </MotionReveal>
 
-                        {/* Content Side */}
-                        <div className="order-1 lg:order-2 text-center lg:text-left">
-                            <MotionReveal>
-                                <p className="text-xs md:text-sm tracking-[0.3em] text-[hsl(43_40%_50%)] mb-4 font-medium">
-                                    {c.tagline}
-                                </p>
-                            </MotionReveal>
+                        <MotionReveal delay={0.1}>
+                            <h2 className="text-4xl md:text-6xl lg:text-7xl font-heading font-light text-white mb-3 tracking-[0.15em]">
+                                {t.title}
+                            </h2>
+                            <p className="text-lg md:text-xl text-[hsl(43_30%_55%)] italic tracking-wide">
+                                {t.subtitle}
+                            </p>
+                        </MotionReveal>
 
-                            <MotionReveal delay={0.1}>
-                                <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-light text-white mb-2 tracking-wider">
-                                    {c.title}
-                                </h2>
-                                <p className="text-lg md:text-xl text-[hsl(0_0%_60%)] mb-6 italic">
-                                    {c.subtitle}
-                                </p>
-                            </MotionReveal>
-
-                            <MotionReveal delay={0.2}>
-                                <p className="text-[hsl(0_0%_65%)] leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-                                    {c.description}
-                                </p>
-                            </MotionReveal>
-
-                            <MotionReveal delay={0.3}>
-                                <ul className="space-y-3 mb-10">
-                                    {c.features.map((feature, index) => (
-                                        <li key={index} className="flex items-center gap-3 justify-center lg:justify-start">
-                                            <div className="w-1.5 h-1.5 rounded-full bg-[hsl(43_40%_50%)]" />
-                                            <span className="text-[hsl(0_0%_75%)] text-sm">{feature}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </MotionReveal>
-
-                            <MotionReveal delay={0.4}>
-                                <Link to="/milano-premium-mobility">
-                                    <Button
-                                        size="lg"
-                                        className="bg-gradient-to-r from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)] text-[hsl(0_0%_5%)] hover:from-[hsl(43_45%_50%)] hover:to-[hsl(43_35%_40%)] transition-all duration-300 px-8 py-6 text-sm font-semibold shadow-lg shadow-[hsl(43_30%_30%)/20]"
-                                    >
-                                        {c.cta}
-                                        <ArrowRight className="ml-2 w-4 h-4" />
-                                    </Button>
-                                </Link>
-                            </MotionReveal>
-                        </div>
+                        <MotionReveal delay={0.2}>
+                            {/* Decorative line */}
+                            <div className="mx-auto mt-8 mb-10 w-24 h-px bg-gradient-to-r from-transparent via-[hsl(43_40%_50%)] to-transparent" />
+                            <p className="text-[hsl(0_0%_68%)] leading-relaxed max-w-3xl mx-auto text-base md:text-lg">
+                                {t.description}
+                            </p>
+                        </MotionReveal>
                     </div>
+
+                    {/* Pillars */}
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-20">
+                        {pillars.map((pillar, index) => (
+                            <MotionReveal key={index} delay={0.15 + index * 0.12}>
+                                <div className="group relative h-full rounded-2xl border border-white/[0.06] bg-white/[0.02] backdrop-blur-sm p-8 transition-all duration-500 hover:border-[hsl(43_40%_50%)]/20 hover:bg-white/[0.04]">
+                                    {/* Glow on hover */}
+                                    <div className="absolute inset-0 rounded-2xl bg-gradient-to-b from-[hsl(43_30%_40%)]/0 to-[hsl(43_30%_40%)]/0 group-hover:from-[hsl(43_30%_40%)]/[0.04] group-hover:to-transparent transition-all duration-500 pointer-events-none" />
+
+                                    {/* Icon */}
+                                    <div className="relative mb-6">
+                                        <div className="w-12 h-12 rounded-xl bg-[hsl(43_30%_40%)]/10 border border-[hsl(43_40%_50%)]/15 flex items-center justify-center transition-all duration-500 group-hover:bg-[hsl(43_30%_40%)]/15 group-hover:border-[hsl(43_40%_50%)]/25">
+                                            <pillar.Icon className="w-5 h-5 text-[hsl(43_40%_55%)]" strokeWidth={1.5} />
+                                        </div>
+                                    </div>
+
+                                    {/* Content */}
+                                    <h3 className="relative text-white text-lg font-semibold mb-3 tracking-wide">
+                                        {pillar.title}
+                                    </h3>
+                                    <p className="relative text-[hsl(0_0%_60%)] text-sm leading-relaxed">
+                                        {pillar.desc}
+                                    </p>
+                                </div>
+                            </MotionReveal>
+                        ))}
+                    </div>
+
+                    {/* CTAs */}
+                    <MotionReveal delay={0.55}>
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                            <Link to="/milano-premium-mobility">
+                                <Button
+                                    size="lg"
+                                    className="bg-gradient-to-r from-[hsl(43_40%_45%)] to-[hsl(43_30%_35%)] text-[hsl(0_0%_5%)] hover:from-[hsl(43_45%_50%)] hover:to-[hsl(43_35%_40%)] transition-all duration-300 px-8 py-6 text-sm font-semibold shadow-lg shadow-[hsl(43_30%_30%)/15]"
+                                >
+                                    {t.ctaServices}
+                                    <ArrowRight className="ml-2 w-4 h-4" />
+                                </Button>
+                            </Link>
+                            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+                                <Button
+                                    size="lg"
+                                    variant="outline"
+                                    className="border-[hsl(43_30%_40%)]/30 text-[hsl(43_40%_55%)] hover:bg-[hsl(43_30%_40%)]/10 hover:border-[hsl(43_40%_50%)]/40 transition-all duration-300 px-8 py-6 text-sm font-semibold bg-transparent"
+                                >
+                                    <MessageCircle className="mr-2 w-4 h-4" />
+                                    {t.ctaContact}
+                                </Button>
+                            </a>
+                        </div>
+                    </MotionReveal>
                 </div>
             </div>
         </section>
